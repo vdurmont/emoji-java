@@ -3,7 +3,7 @@
  * EMOJI-JAVA
  * =================
  *
- * The missing emoji library for java.
+ * The missing emoji library for Java.
  *
  * See http://github.com/vdurmont/emoji-java
  *

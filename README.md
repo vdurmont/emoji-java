@@ -42,9 +42,9 @@ An `Emoji` is a POJO (plain old java object), which provides the following metho
 * `getAliases` returns a list of aliases for this emoji
 * `getTags` returns a list of tags for this emoji
 
-### Parse a string
+### EmojiParser
 
-To replace all the aliases by their unicode, use `EmojiParser.parseToUnicode(myString)`.
+To replace all the aliases found in a string by their unicode, use `EmojiParser.parseToUnicode(myString)`.
 
 For example:
 
@@ -56,7 +56,7 @@ System.out.println(myString);
 // "An 😀awesome 😃string with a few 😉emojis!"
 ```
 
-To replace all the emoji's unicodes by their aliases, use `EmojiParser.parseToAliases(myString)`.
+To replace all the emoji's unicodes found in a string by their aliases, use `EmojiParser.parseToAliases(myString)`.
 
 For example:
 
