@@ -27,11 +27,12 @@ public class EmojiParser {
 	}
 
 	/**
-	 * Replaces the emoji's aliases (between 2 ':') occurences by their unicode.
+	 * Replaces the emoji's aliases (between 2 ':') occurences and the html representations by their unicode.
 	 * Example: ":smile:" => "😄"
+	 * "&#128516;" => "😄"
 	 *
 	 * @param input the string to parse
-	 * @return the string with the aliases replaced by their unicode.
+	 * @return the string with the aliases and html representations replaced by their unicode.
 	 */
 	public static String parseToUnicode(String input) {
 		// Get all the potential aliases
@@ -45,6 +46,12 @@ public class EmojiParser {
 				result = result.replace(":" + alias + ":", emoji.getUnicode());
 			}
 		}
+
+		// Replace the html
+		for (Emoji emoji : EmojiManager.getAll()) {
+			result = result.replace(emoji.getHtml(), emoji.getUnicode());
+		}
+
 		return result;
 	}
 
@@ -58,5 +65,20 @@ public class EmojiParser {
 			candidates.add(matcher.group());
 		}
 		return candidates;
+	}
+
+	/**
+	 * Replaces the emoji's unicode occurences by their html representation.
+	 * Example: "😄" => "&#128516;"
+	 *
+	 * @param input the string to parse
+	 * @return the string with the emojis replaced by their html representation.
+	 */
+	public static String parseToHtml(String input) {
+		String result = input;
+		for (Emoji emoji : EmojiManager.getAll()) {
+			result = result.replace(emoji.getUnicode(), emoji.getHtml());
+		}
+		return result;
 	}
 }

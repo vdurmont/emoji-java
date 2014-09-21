@@ -23,15 +23,27 @@ public class EmojiParserTest {
 	}
 
 	@Test
-	public void parseToUnicode_replaces_the_aliases_by_their_emoji() {
+	public void parseToHtml_replaces_the_emojis_by_their_html_representation() {
 		// GIVEN
-		String str = "An :grinning:awesome :smiley:string with a few :wink:emojis!";
+		String str = "An 😀awesome 😃string with a few 😉emojis!";
+
+		// WHEN
+		String result = EmojiParser.parseToHtml(str);
+
+		// THEN
+		assertEquals("An :grinning:awesome :smiley:string with a few :wink:emojis!", result);
+	}
+
+	@Test
+	public void parseToUnicode_replaces_the_aliases_and_the_html_by_their_emoji() {
+		// GIVEN
+		String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
 
 		// WHEN
 		String result = EmojiParser.parseToUnicode(str);
 
 		// THEN
-		assertEquals("An 😀awesome 😃string with a few 😉emojis!", result);
+		assertEquals("An 😀awesome 😃string 😄with a few 😉emojis!", result);
 	}
 
 	@Test

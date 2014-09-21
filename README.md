@@ -48,17 +48,21 @@ An `Emoji` is a POJO (plain old java object), which provides the following metho
 
 ### EmojiParser
 
-To replace all the aliases found in a string by their unicode, use `EmojiParser.parseToUnicode(myString)`.
+#### To unicode
+
+To replace all the aliases and the html representations found in a string by their unicode, use `EmojiParser.parseToUnicode(myString)`.
 
 For example:
 
 ```
-String str = "An :grinning:awesome :smiley:string with a few :wink:emojis!";
+String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
 String result = EmojiParser.parseToUnicode(myString);
 System.out.println(myString);
 // Prints:
-// "An 😀awesome 😃string with a few 😉emojis!"
+// "An 😀awesome 😃string 😄with a few 😉emojis!"
 ```
+
+#### To aliases
 
 To replace all the emoji's unicodes found in a string by their aliases, use `EmojiParser.parseToAliases(myString)`.
 
@@ -70,4 +74,18 @@ String result = EmojiParser.parseToAliases(myString);
 System.out.println(myString);
 // Prints:
 // "An :grinning:awesome :smiley:string with a few :wink:emojis!"
+```
+
+#### To html
+
+To replace all the emoji's unicodes found in a string by their html repsentation, use `EmojiParser.parseToHtml(myString)`.
+
+For example:
+
+```
+String str = "An 😀awesome 😃string with a few 😉emojis!";
+String result = EmojiParser.parseToAliases(myString);
+System.out.println(myString);
+// Prints:
+// "An &#128512;awesome &#128515;string with a few &#128521;emojis!"
 ```
