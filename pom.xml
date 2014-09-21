@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>emoji-java</name>
-	<url>http://github.com/vdurmont/emoji-java</url>
+	<url>https://github.com/vdurmont/emoji-java</url>
 	<description>The missing emoji library for Java.</description>
 
 	<scm>
@@ -21,7 +21,7 @@
 		<developer>
 			<name>Vincent DURMONT</name>
 			<email>vdurmont@gmail.com</email>
-			<url>http://www.vdurmont.com</url>
+			<url>http://www.vincent-durmont.com</url>
 		</developer>
 	</developers>
 
