@@ -31,7 +31,7 @@ public class EmojiParserTest {
 		String result = EmojiParser.parseToHtml(str);
 
 		// THEN
-		assertEquals("An :grinning:awesome :smiley:string with a few :wink:emojis!", result);
+		assertEquals("An &#128512;awesome &#128515;string with a few &#128521;emojis!", result);
 	}
 
 	@Test
