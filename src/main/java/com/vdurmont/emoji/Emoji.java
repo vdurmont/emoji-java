@@ -13,11 +13,13 @@ public class Emoji {
 	private final List<String> aliases;
 	private final List<String> tags;
 	private final byte[] bytes;
+	private final String html;
 
-	public Emoji(String description, List<String> aliases, List<String> tags, byte... bytes) {
+	public Emoji(String description, List<String> aliases, List<String> tags, String html, byte... bytes) {
 		this.description = description;
 		this.aliases = aliases;
 		this.tags = tags;
+		this.html = html;
 		this.bytes = bytes;
 	}
 
@@ -39,5 +41,9 @@ public class Emoji {
 		} catch (UnsupportedEncodingException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public String getHtml() {
+		return html;
 	}
 }

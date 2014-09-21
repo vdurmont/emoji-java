@@ -44,6 +44,7 @@ An `Emoji` is a POJO (plain old java object), which provides the following metho
 * `getDescription` returns the (optional) description of the emoji
 * `getAliases` returns a list of aliases for this emoji
 * `getTags` returns a list of tags for this emoji
+* `getHtml` returns an html representation of the emoji
 
 ### EmojiParser
 

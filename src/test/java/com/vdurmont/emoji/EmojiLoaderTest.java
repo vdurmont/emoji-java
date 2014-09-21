@@ -83,4 +83,22 @@ public class EmojiLoaderTest {
 		// THEN
 		assertNull(emoji);
 	}
+
+	@Test
+	public void buildEmojiFromJSON_computes_the_html() throws UnsupportedEncodingException {
+		// GIVEN
+		JSONObject json = new JSONObject("{"
+				+ "\"emoji\": \"😄\","
+				+ "\"description\": \"smiling face with open mouth and smiling eyes\","
+				+ "\"aliases\": [\"smile\"],"
+				+ "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
+				+ "}");
+
+		// WHEN
+		Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
+
+		// THEN
+		assertEquals("😄", emoji.getUnicode());
+		assertEquals("&#128516;", emoji.getHtml());
+	}
 }

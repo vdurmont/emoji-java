@@ -52,7 +52,13 @@ public class EmojiLoader {
 		}
 		List<String> aliases = jsonArrayToStringList(json.getJSONArray("aliases"));
 		List<String> tags = jsonArrayToStringList(json.getJSONArray("tags"));
-		return new Emoji(description, aliases, tags, bytes);
+		String html = getHtmlFromUnicode(bytes);
+		return new Emoji(description, aliases, tags, html, bytes);
+	}
+
+	private static String getHtmlFromUnicode(byte[] bytes) throws UnsupportedEncodingException {
+		String unicode = new String(bytes, "UTF-8");
+		return "&#" + Character.codePointAt(unicode, 0) + ";";
 	}
 
 	private static List<String> jsonArrayToStringList(JSONArray array) {
