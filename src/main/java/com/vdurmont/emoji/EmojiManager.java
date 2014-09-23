@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * Holds the loaded emojis and provides search functions.
  *
- * @author Vincent DURMONT <vdurmont@gmail.com>
+ * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
 	private static final String PATH = "/emojis-2014-07-13.json";

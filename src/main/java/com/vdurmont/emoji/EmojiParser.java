@@ -8,12 +8,12 @@ import java.util.regex.Pattern;
 /**
  * Provides methods to parse strings with emojis.
  *
- * @author Vincent DURMONT <vdurmont@gmail.com>
+ * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiParser {
 	/**
 	 * Replaces the emoji's unicode occurences by one of their alias (between 2 ':').
-	 * Example: "😄" => ":smile:"
+	 * Example: "😄" gives ":smile:"
 	 *
 	 * @param input the string to parse
 	 * @return the string with the emojis replaced by their alias.
@@ -28,8 +28,8 @@ public class EmojiParser {
 
 	/**
 	 * Replaces the emoji's aliases (between 2 ':') occurences and the html representations by their unicode.
-	 * Example: ":smile:" => "😄"
-	 * "&#128516;" => "😄"
+	 * Example: ":smile:" gives "😄"
+	 * "&amp;#128516;" gives "😄"
 	 *
 	 * @param input the string to parse
 	 * @return the string with the aliases and html representations replaced by their unicode.
@@ -69,7 +69,7 @@ public class EmojiParser {
 
 	/**
 	 * Replaces the emoji's unicode occurences by their html representation.
-	 * Example: "😄" => "&#128516;"
+	 * Example: "😄" gives "&amp;#128516;"
 	 *
 	 * @param input the string to parse
 	 * @return the string with the emojis replaced by their html representation.

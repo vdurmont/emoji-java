@@ -13,7 +13,7 @@ import java.util.Scanner;
 /**
  * Loads the emojis from a JSON database.
  *
- * @author Vincent DURMONT <vdurmont@gmail.com>
+ * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiLoader {
 	/**

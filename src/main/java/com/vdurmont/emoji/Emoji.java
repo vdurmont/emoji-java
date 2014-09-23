@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * This class represents an emoji.
  *
- * @author Vincent DURMONT <vdurmont@gmail.com>
+ * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class Emoji {
 	private final String description;
