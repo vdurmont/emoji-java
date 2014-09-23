@@ -16,11 +16,9 @@ Just add the dependency to your maven project:
 <dependency>
   <groupId>com.vdurmont<groupId>
   <artifactId>emoji-java<artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
 </dependency>
 ```
-
-**The library is currently being published to the maven central repository. It may take a few days before the maven dependency is available.**
 
 You can also download the project, build it with `mvn clean install` and add the generated jar to your buildpath.
 
