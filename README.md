@@ -37,6 +37,10 @@ You can also query the metadata:
 
 * `getAllTags` returns the available tags
 
+Or get everything:
+
+* `getAll` returns all the emojis
+
 ### Emoji model
 
 An `Emoji` is a POJO (plain old java object), which provides the following methods:
