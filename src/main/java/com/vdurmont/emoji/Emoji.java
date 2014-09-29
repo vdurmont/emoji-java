@@ -46,4 +46,15 @@ public class Emoji {
 	public String getHtml() {
 		return html;
 	}
+
+	@Override
+	public String toString() {
+		return "Emoji{" +
+				"description='" + description + '\'' +
+				", aliases=" + aliases +
+				", tags=" + tags +
+				", unicode=" + this.getUnicode() +
+				", html='" + html + '\'' +
+				'}';
+	}
 }
