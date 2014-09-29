@@ -85,7 +85,7 @@ For example:
 
 ```
 String str = "An 😀awesome 😃string with a few 😉emojis!";
-String result = EmojiParser.parseToAliases(myString);
+String result = EmojiParser.parseToHtml(myString);
 System.out.println(myString);
 // Prints:
 // "An &#128512;awesome &#128515;string with a few &#128521;emojis!"
