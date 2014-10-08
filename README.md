@@ -14,8 +14,8 @@ Just add the dependency to your maven project:
 
 ```
 <dependency>
-  <groupId>com.vdurmont<groupId>
-  <artifactId>emoji-java<artifactId>
+  <groupId>com.vdurmont</groupId>
+  <artifactId>emoji-java</artifactId>
   <version>1.0.0</version>
 </dependency>
 ```
