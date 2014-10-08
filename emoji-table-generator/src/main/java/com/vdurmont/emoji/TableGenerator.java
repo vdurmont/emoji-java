@@ -14,17 +14,29 @@ public class TableGenerator {
         StringBuilder sb = new StringBuilder();
 
         // Table header
-        sb.append("| Emoji | Aliases |\n");
-        sb.append("| :---: | ------- |\n");
+        sb.append("| Emoji | Aliases | Emoji | Aliases |\n");
+        sb.append("| :---: | ------- | :---: | ------- |\n");
 
         // Emojis!
+        int i = 0;
         for (Emoji emoji : EmojiManager.getAll()) {
             String aliases = getAliases(emoji);
-            sb.append("| ")
-                    .append(emoji.getUnicode())
-                    .append(" | ")
-                    .append(aliases)
-                    .append(" |\n");
+
+            if (i % 2 == 0) {
+                sb.append("| ")
+                        .append(emoji.getUnicode())
+                        .append(" | ")
+                        .append(aliases)
+                        .append(" |");
+            } else {
+                sb.append(" ")
+                        .append(emoji.getUnicode())
+                        .append(" | ")
+                        .append(aliases)
+                        .append(" |\n");
+            }
+
+            i++;
         }
 
         // Output!
