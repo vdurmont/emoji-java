@@ -47,6 +47,18 @@ public class EmojiParserTest {
 	}
 
 	@Test
+	public void parseToUnicode_with_the_thumbsup_emoji_replaces_the_alias_by_the_emoji() {
+		// GIVEN
+		String str = "An :+1:awesome :smiley:string &#128516;with a few :wink:emojis!";
+
+		// WHEN
+		String result = EmojiParser.parseToUnicode(str);
+
+		// THEN
+		assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
+	}
+
+	@Test
 	public void getAliasesCanditates_with_one_alias() {
 		// GIVEN
 		String str = "test :candidate: test";
