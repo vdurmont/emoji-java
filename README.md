@@ -12,7 +12,7 @@ Based on the data provided by [github/gemoji project](https://github.com/github/
 
 Just add the dependency to your maven project:
 
-```
+```xml
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
@@ -59,7 +59,7 @@ To replace all the aliases and the html representations found in a string by the
 
 For example:
 
-```
+```java
 String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
 String result = EmojiParser.parseToUnicode(myString);
 System.out.println(myString);
@@ -73,7 +73,7 @@ To replace all the emoji's unicodes found in a string by their aliases, use `Emo
 
 For example:
 
-```
+```java
 String str = "An 😀awesome 😃string with a few 😉emojis!";
 String result = EmojiParser.parseToAliases(myString);
 System.out.println(myString);
@@ -87,7 +87,7 @@ To replace all the emoji's unicodes found in a string by their html repsentation
 
 For example:
 
-```
+```java
 String str = "An 😀awesome 😃string with a few 😉emojis!";
 String result = EmojiParser.parseToHtml(myString);
 System.out.println(myString);
