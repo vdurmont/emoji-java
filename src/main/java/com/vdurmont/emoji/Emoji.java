@@ -47,10 +47,11 @@ public class Emoji {
         }
     }
 
-    public String getHtmlDecimalCode() {
+    public String getHtml() {
         return htmlDec;
     }
-    public String getHtmlHexCode() {
+
+    public String getHtmlHexidecimal() {
         return htmlHex;
     }
 

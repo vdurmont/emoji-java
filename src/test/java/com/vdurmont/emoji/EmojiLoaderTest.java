@@ -99,7 +99,7 @@ public class EmojiLoaderTest {
 
 		// THEN
 		assertEquals("😄", emoji.getUnicode());
-            assertEquals("&#128516;", emoji.getHtmlDecimalCode());
-            assertEquals("&#x1f604;", emoji.getHtmlHexCode());
+		assertEquals("&#128516;", emoji.getHtml());
+		assertEquals("&#x1f604;", emoji.getHtmlHexidecimal());
 	}
 }

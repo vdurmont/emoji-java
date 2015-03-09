@@ -35,6 +35,18 @@ public class EmojiParserTest {
 	}
 
 	@Test
+	public void parseToHtmlHexadecimal_replaces_the_emojis_by_their_htm_hexl_representation() {
+		// GIVEN
+		String str = "An 😀awesome 😃string with a few 😉emojis!";
+
+		// WHEN
+		String result = EmojiParser.parseToHtmlHexadecimal(str);
+
+		// THEN
+		assertEquals("An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!", result);
+	}
+
+	@Test
 	public void parseToUnicode_replaces_the_aliases_and_the_html_by_their_emoji() {
 		// GIVEN
 		String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
@@ -46,31 +58,31 @@ public class EmojiParserTest {
 		assertEquals("An 😀awesome 😃string 😄with a few 😉emojis!", result);
 	}
 
-    @Test
-    public void parseToUnicode_with_the_thumbsup_emoji_replaces_the_alias_by_the_emoji() {
-        // GIVEN
-        String str = "An :+1:awesome :smiley:string &#128516;with a few :wink:emojis!";
+	@Test
+	public void parseToUnicode_with_the_thumbsup_emoji_replaces_the_alias_by_the_emoji() {
+		// GIVEN
+		String str = "An :+1:awesome :smiley:string &#128516;with a few :wink:emojis!";
 
-        // WHEN
-        String result = EmojiParser.parseToUnicode(str);
+		// WHEN
+		String result = EmojiParser.parseToUnicode(str);
 
-        // THEN
-        assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
-    }
+		// THEN
+		assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
+	}
 
-    @Test
-    public void parseToUnicode_with_the_thumbsup_emoji_in_hex_replaces_the_alias_by_the_emoji() {
-        // GIVEN
-        String str = "An :+1:awesome :smiley:string &#x1f604;with a few :wink:emojis!";
+	@Test
+	public void parseToUnicode_with_the_thumbsup_emoji_in_hex_replaces_the_alias_by_the_emoji() {
+		// GIVEN
+		String str = "An :+1:awesome :smiley:string &#x1f604;with a few :wink:emojis!";
 
-        // WHEN
-        String result = EmojiParser.parseToUnicode(str);
+		// WHEN
+		String result = EmojiParser.parseToUnicode(str);
 
-        // THEN
-        assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
-    }
+		// THEN
+		assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
+	}
 
-    @Test
+	@Test
 	public void getAliasesCanditates_with_one_alias() {
 		// GIVEN
 		String str = "test :candidate: test";

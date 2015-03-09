@@ -49,8 +49,8 @@ public class EmojiParser {
 
 		// Replace the html
 		for (Emoji emoji : EmojiManager.getAll()) {
-                    result = result.replace(emoji.getHtmlHexCode(), emoji.getUnicode());
-                    result = result.replace(emoji.getHtmlDecimalCode(), emoji.getUnicode());
+	 	 	 	 	 result = result.replace(emoji.getHtmlHexidecimal(), emoji.getUnicode());
+	 	 	 	 	 result = result.replace(emoji.getHtml(), emoji.getUnicode());
 		}
 
 		return result;
@@ -69,7 +69,7 @@ public class EmojiParser {
 	}
 
 	/**
-	 * Replaces the emoji's unicode occurences by their html representation.
+	 * Replaces the emoji's unicode occurrences by their html representation.
 	 * Example: "😄" gives "&amp;#128516;"
 	 *
 	 * @param input the string to parse
@@ -78,8 +78,23 @@ public class EmojiParser {
 	public static String parseToHtml(String input) {
 		String result = input;
 		for (Emoji emoji : EmojiManager.getAll()) {
-			result = result.replace(emoji.getUnicode(), emoji.getHtmlDecimalCode());
+			result = result.replace(emoji.getUnicode(), emoji.getHtml());
 		}
 		return result;
 	}
+
+	 /**
+	  * Replaces the emoji's unicode occurrences by their html hex representation.
+	  * Example: "?" gives "&amp;#x1f064;"
+	  *
+	  * @param input the string to parse
+	  * @return the string with the emojis replaced by their html hex representation.
+	  */
+	 public static String parseToHtmlHexadecimal(String input) {
+	 	 String result = input;
+	 	 for (Emoji emoji : EmojiManager.getAll()) {
+	 	 	result = result.replace(emoji.getUnicode(), emoji.getHtmlHexidecimal());
+	 	 }
+	 	 return result;
+	 }
 }
