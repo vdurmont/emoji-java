@@ -3,58 +3,66 @@ package com.vdurmont.emoji;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
+
 /**
  * This class represents an emoji.
  *
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class Emoji {
-	private final String description;
-	private final List<String> aliases;
-	private final List<String> tags;
-	private final byte[] bytes;
-	private final String html;
 
-	public Emoji(String description, List<String> aliases, List<String> tags, String html, byte... bytes) {
-		this.description = description;
-		this.aliases = aliases;
-		this.tags = tags;
-		this.html = html;
-		this.bytes = bytes;
-	}
+    private final String description;
+    private final List<String> aliases;
+    private final List<String> tags;
+    private final byte[] bytes;
+    private final String htmlDec;
+    private final String htmlHex;
 
-	public String getDescription() {
-		return this.description;
-	}
+    public Emoji(String description, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
+        this.description = description;
+        this.aliases = aliases;
+        this.tags = tags;
+        this.htmlDec = "&#" + htmlCode + ";";
+        this.htmlHex = "&#x" + Integer.toHexString(htmlCode) + ";";
+        this.bytes = bytes;
+    }
 
-	public List<String> getAliases() {
-		return this.aliases;
-	}
+    public String getDescription() {
+        return this.description;
+    }
 
-	public List<String> getTags() {
-		return this.tags;
-	}
+    public List<String> getAliases() {
+        return this.aliases;
+    }
 
-	public String getUnicode() {
-		try {
-			return new String(this.bytes, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			throw new RuntimeException(e);
-		}
-	}
+    public List<String> getTags() {
+        return this.tags;
+    }
 
-	public String getHtml() {
-		return html;
-	}
+    public String getUnicode() {
+        try {
+            return new String(this.bytes, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
-	@Override
-	public String toString() {
-		return "Emoji{" +
-				"description='" + description + '\'' +
-				", aliases=" + aliases +
-				", tags=" + tags +
-				", unicode=" + this.getUnicode() +
-				", html='" + html + '\'' +
-				'}';
-	}
+    public String getHtmlDecimalCode() {
+        return htmlDec;
+    }
+    public String getHtmlHexCode() {
+        return htmlHex;
+    }
+
+    @Override
+    public String toString() {
+        return "Emoji{" +
+                "description='" + description + '\'' +
+                ", aliases=" + aliases +
+                ", tags=" + tags +
+                ", unicode=" + this.getUnicode() +
+                ", htmlDec='" + htmlDec + '\'' +
+                ", htmlHex='" + htmlHex + '\'' +
+                '}';
+    }
 }

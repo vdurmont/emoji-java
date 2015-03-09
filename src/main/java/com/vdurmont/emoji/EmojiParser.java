@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  */
 public class EmojiParser {
 	/**
-	 * Replaces the emoji's unicode occurences by one of their alias (between 2 ':').
+	 * Replaces the emoji's unicode occurrences by one of their alias (between 2 ':').
 	 * Example: "😄" gives ":smile:"
 	 *
 	 * @param input the string to parse
@@ -27,7 +27,7 @@ public class EmojiParser {
 	}
 
 	/**
-	 * Replaces the emoji's aliases (between 2 ':') occurences and the html representations by their unicode.
+	 * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.
 	 * Example: ":smile:" gives "😄"
 	 * "&amp;#128516;" gives "😄"
 	 *
@@ -49,7 +49,8 @@ public class EmojiParser {
 
 		// Replace the html
 		for (Emoji emoji : EmojiManager.getAll()) {
-			result = result.replace(emoji.getHtml(), emoji.getUnicode());
+                    result = result.replace(emoji.getHtmlHexCode(), emoji.getUnicode());
+                    result = result.replace(emoji.getHtmlDecimalCode(), emoji.getUnicode());
 		}
 
 		return result;
@@ -77,7 +78,7 @@ public class EmojiParser {
 	public static String parseToHtml(String input) {
 		String result = input;
 		for (Emoji emoji : EmojiManager.getAll()) {
-			result = result.replace(emoji.getUnicode(), emoji.getHtml());
+			result = result.replace(emoji.getUnicode(), emoji.getHtmlDecimalCode());
 		}
 		return result;
 	}
