@@ -49,7 +49,8 @@ An `Emoji` is a POJO (plain old java object), which provides the following metho
 * `getDescription` returns the (optional) description of the emoji
 * `getAliases` returns a list of aliases for this emoji
 * `getTags` returns a list of tags for this emoji
-* `getHtml` returns an html representation of the emoji
+* `getHtmlDecimal` returns an html decimal representation of the emoji
+* `getHtmlHexadecimal` returns an html decimal representation of the emoji
 
 ### EmojiParser
 
@@ -61,8 +62,8 @@ For example:
 
 ```java
 String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
-String result = EmojiParser.parseToUnicode(myString);
-System.out.println(myString);
+String result = EmojiParser.parseToUnicode(str);
+System.out.println(result);
 // Prints:
 // "An 😀awesome 😃string 😄with a few 😉emojis!"
 ```
@@ -75,24 +76,30 @@ For example:
 
 ```java
 String str = "An 😀awesome 😃string with a few 😉emojis!";
-String result = EmojiParser.parseToAliases(myString);
-System.out.println(myString);
+String result = EmojiParser.parseToAliases(str);
+System.out.println(result);
 // Prints:
 // "An :grinning:awesome :smiley:string with a few :wink:emojis!"
 ```
 
 #### To html
 
-To replace all the emoji's unicodes found in a string by their html repsentation, use `EmojiParser.parseToHtml(myString)`.
+To replace all the emoji's unicodes found in a string by their html representation, use `EmojiParser.parseToHtmlDecimal(myString)` or `EmojiParser.parseToHtmlHexadecimal(myString)`.
 
 For example:
 
 ```java
 String str = "An 😀awesome 😃string with a few 😉emojis!";
-String result = EmojiParser.parseToHtml(myString);
-System.out.println(myString);
+
+String resultDecimal = EmojiParser.parseToHtmlDecimal(str);
+System.out.println(resultDecimal);
 // Prints:
 // "An &#128512;awesome &#128515;string with a few &#128521;emojis!"
+
+String resultHexadecimal = EmojiParser.parseToHtmlHexadecimal(str);
+System.out.println(resultHexadecimal);
+// Prints:
+// "An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!"
 ```
 
 ## Available Emojis
