@@ -119,20 +119,20 @@ Here is a table of the available emojis and their aliases.
 | 😫 | tired_face | 👠 | high_heel |
 | 🌂 | closed_umbrella | 🔃 | arrows_clockwise |
 | 💵 | dollar | 🚝 | monorail |
-| 🐖 | pig2 | ⛳️ | golf |
+| 🐖 | pig2 | ⛳ | golf |
 | 😅 | sweat_smile | 🔢 | 1234 |
-| 🈴 | u5408 | ⛅️ | partly_sunny |
+| 🈴 | u5408 | ⛅ | partly_sunny |
 | 🚯 | do_not_litter | 😯 | hushed |
 | ✋ | hand, raised_hand | 🙈 | see_no_evil |
-| 🅰 | a | ☝️ | point_up |
-| 🅱 | b | 🔤 | abc |
-| 🀄️ | mahjong | 🚭 | no_smoking |
+| 🅰️ | a | ☝️ | point_up |
+| 🅱️ | b | 🔤 | abc |
+| 🀄 | mahjong | 🚭 | no_smoking |
 | 🍫 | chocolate_bar | 🎥 | movie_camera |
-| Ⓜ️ | m | ⭕️ | o |
+| Ⓜ️ | m | ⭕ | o |
 | 😻 | heart_eyes_cat | 🔆 | high_brightness |
 | 👄 | lips | 👜 | handbag |
 | 🌝 | full_moon_with_face | ✌️ | v |
-| 📲 | calling | ⚪️ | white_circle |
+| 📲 | calling | ⚪ | white_circle |
 | ❌ | x | 📊 | bar_chart |
 | 🐁 | mouse2 | 9️⃣ | nine |
 | 👫 | couple | 📹 | video_camera |
@@ -153,15 +153,15 @@ Here is a table of the available emojis and their aliases.
 | 🚙 | blue_car | 🔚 | end |
 | 📡 | satellite | 🐋 | whale2 |
 | 🎐 | wind_chime | 🔂 | repeat_one |
-| 🎫 | ticket | ☔️ | umbrella |
+| 🎫 | ticket | ☔ | umbrella |
 | 🍚 | rice | ✂️ | scissors |
-| 🈷 | u6708 | ♒️ | aquarius |
-| 🈶 | u6709 | ☕️ | coffee |
+| 🈷️ | u6708 | ♒ | aquarius |
+| 🈶 | u6709 | ☕ | coffee |
 | ✈️ | airplane | 😓 | sweat |
-| ♋️ | cancer | 👪 | family |
+| ♋ | cancer | 👪 | family |
 | 😘 | kissing_heart | 🎁 | gift |
-| ↕️ | arrow_up_down | ⛲️ | fountain |
-| © | copyright | 🌒 | waxing_crescent_moon |
+| ↕️ | arrow_up_down | ⛲ | fountain |
+| ©️ | copyright | 🌒 | waxing_crescent_moon |
 | 💟 | heart_decoration | 💊 | pill |
 | 🍢 | oden | 🐗 | boar |
 | 🐫 | camel | 📧 | e-mail |
@@ -174,16 +174,16 @@ Here is a table of the available emojis and their aliases.
 | 😑 | expressionless | 🚩 | triangular_flag_on_post |
 | 👩 | woman | 🚠 | mountain_cableway |
 | 🐠 | tropical_fish | 🍩 | doughnut |
-| 😒 | unamused | ⚫️ | black_circle |
+| 😒 | unamused | ⚫ | black_circle |
 | 👙 | bikini | 🔝 | top |
-| 🚟 | suspension_railway | ⬛️ | black_large_square |
+| 🚟 | suspension_railway | ⬛ | black_large_square |
 | 🙋 | raising_hand | 🚻 | restroom |
 | ❄️ | snowflake | 🎩 | tophat |
 | ↙️ | arrow_lower_left | ❓ | question |
 | 🚺 | womens | 😽 | kissing_cat |
-| ⛵️ | boat, sailboat | 💳 | credit_card |
+| ⛵ | boat, sailboat | 💳 | credit_card |
 | 🎱 | 8ball | 🍘 | rice_cracker |
-| ⚓️ | anchor | 🌹 | rose |
+| ⚓ | anchor | 🌹 | rose |
 | ♠️ | spades | 🔷 | large_blue_diamond |
 | 👰 | bride_with_veil | 🕣 | clock830 |
 | 👮 | cop | 📮 | postbox |
@@ -194,12 +194,12 @@ Here is a table of the available emojis and their aliases.
 | ♨️ | hotsprings | 🎡 | ferris_wheel |
 | 🌳 | deciduous_tree | ↩️ | leftwards_arrow_with_hook |
 | 🏄 | surfer | 🆕 | new |
-| ◾️ | black_medium_small_square | 🎋 | tanabata_tree |
+| ◾ | black_medium_small_square | 🎋 | tanabata_tree |
 | 💭 | thought_balloon | 🐎 | racehorse |
 | 🙅 | no_good | 🚐 | minibus |
 | 🕦 | clock1130 | 🎠 | carousel_horse |
 | ◼️ | black_medium_square | 🐔 | chicken |
-| 📳 | vibration_mode | ◽️ | white_medium_small_square |
+| 📳 | vibration_mode | ◽ | white_medium_small_square |
 | 🏃 | runner, running | 🐞 | beetle |
 | 🍱 | bento | ⛎ | ophiuchus |
 | 😝 | stuck_out_tongue_closed_eyes | 🎴 | flower_playing_cards |
@@ -209,17 +209,17 @@ Here is a table of the available emojis and their aliases.
 | 🌌 | milky_way | 🌼 | blossom |
 | 🐜 | ant | 🎑 | rice_scene |
 | 📬 | mailbox_with_mail | 😢 | cry |
-| 📝 | memo, pencil | 🈯️ | u6307 |
+| 📝 | memo, pencil | 🈯 | u6307 |
 | 🍍 | pineapple | 🈁 | koko |
 | 🎼 | musical_score | 💧 | droplet |
-| 💬 | speech_balloon | 🈚️ | u7121 |
+| 💬 | speech_balloon | 🈚 | u7121 |
 | 💍 | ring | 🐙 | octopus |
 | 🗾 | japan | 🕡 | clock630 |
 | 🚢 | ship | 📛 | name_badge |
 | 🌜 | last_quarter_moon_with_face | 🔏 | lock_with_ink_pen |
-| 🍰 | cake | ♌️ | leo |
+| 🍰 | cake | ♌ | leo |
 | ♻️ | recycle | ↪️ | arrow_right_hook |
-| 🚍 | oncoming_bus | ♏️ | scorpius |
+| 🚍 | oncoming_bus | ♏ | scorpius |
 | 🔇 | mute | 🔌 | electric_plug |
 | 🏊 | swimmer | ❎ | negative_squared_cross_mark |
 | 😶 | no_mouth | 👣 | footprints |
@@ -239,14 +239,14 @@ Here is a table of the available emojis and their aliases.
 | 😛 | stuck_out_tongue | 🙊 | speak_no_evil |
 | 💘 | cupid | 🚦 | vertical_traffic_light |
 | 💩 | hankey, poop, shit | 👕 | shirt, tshirt |
-| ⌚️ | watch | 👏 | clap |
+| ⌚ | watch | 👏 | clap |
 | ➡️ | arrow_right | 💹 | chart |
 | 🕟 | clock430 | 👇 | point_down |
 | 🎄 | christmas_tree | 💚 | green_heart |
 | 💣 | bomb | 🐭 | mouse |
 | 😞 | disappointed | 🐣 | hatching_chick |
 | 🏫 | school | 🈵 | u6e80 |
-| ♉️ | taurus | ⬅️ | arrow_left |
+| ♉ | taurus | ⬅️ | arrow_left |
 | 🏧 | atm | 🍀 | four_leaf_clover |
 | 🔓 | unlock | 💌 | love_letter |
 | 🌟 | star2 | ☎️ | phone, telephone |
@@ -272,7 +272,7 @@ Here is a table of the available emojis and their aliases.
 | 🕘 | clock9 | 🕗 | clock8 |
 | 🅿️ | parking | 🕝 | clock230 |
 | 🙉 | hear_no_evil | 💓 | heartbeat |
-| ⬜️ | white_large_square | 3️⃣ | three |
+| ⬜ | white_large_square | 3️⃣ | three |
 | 💗 | heartpulse | 💁 | information_desk_person |
 | 👸 | princess | 📠 | fax |
 | 🚊 | tram | 🚑 | ambulance |
@@ -302,24 +302,24 @@ Here is a table of the available emojis and their aliases.
 | 🗻 | mount_fuji | 🚖 | oncoming_taxi |
 | 🐳 | whale | ✏️ | pencil2 |
 | 🐻 | bear | 🎉 | tada |
-| 🍌 | banana | 〰 | wavy_dash |
+| 🍌 | banana | 〰️ | wavy_dash |
 | 🎻 | violin | 📦 | package |
 | 📂 | open_file_folder | 👊 | facepunch, punch |
 | ↖️ | arrow_upper_left | 😍 | heart_eyes |
 | 🌈 | rainbow | ➖ | heavy_minus_sign |
 | 📢 | loudspeaker | 🌍 | earth_africa |
-| ⛺️ | tent | 🔬 | microscope |
+| ⛺ | tent | 🔬 | microscope |
 | 🚲 | bike | ☺️ | relaxed |
 | 😂 | joy | ⏫ | arrow_double_up |
 | ✳️ | eight_spoked_asterisk | 🏥 | hospital |
 | 🍯 | honey_pot | 🐑 | sheep |
-| ⏳ | hourglass_flowing_sand | ⚽️ | soccer |
+| ⏳ | hourglass_flowing_sand | ⚽ | soccer |
 | 📉 | chart_with_downwards_trend | 🌚 | new_moon_with_face |
 | 🌖 | waning_gibbous_moon | 🚒 | fire_engine |
 | 🌏 | earth_asia | 📕 | closed_book |
 | 😇 | innocent | 💋 | kiss |
 | 😳 | flushed | 🍔 | hamburger |
-| 🚴 | bicyclist | ⌛️ | hourglass |
+| 🚴 | bicyclist | ⌛ | hourglass |
 | 🚥 | traffic_light | 🍮 | custard |
 | 🎦 | cinema | 🚔 | oncoming_police_car |
 | 🍺 | beer | 😃 | smiley |
@@ -342,7 +342,7 @@ Here is a table of the available emojis and their aliases.
 | 😲 | astonished | 👛 | purse |
 | 🐧 | penguin | 🇩🇪 | de |
 | 🐝 | bee, honeybee | ↗️ | arrow_upper_right |
-| 🚵 | mountain_bicyclist | ♈️ | aries |
+| 🚵 | mountain_bicyclist | ♈ | aries |
 | 👵 | older_woman | 🎳 | bowling |
 | 😚 | kissing_closed_eyes | 👥 | busts_in_silhouette |
 | 🔰 | beginner | 🐦 | bird |
@@ -351,7 +351,7 @@ Here is a table of the available emojis and their aliases.
 | 🐬 | dolphin, flipper | 🔳 | white_square_button |
 | 📏 | straight_ruler | 🚫 | no_entry_sign |
 | 🎀 | ribbon | 🎓 | mortar_board |
-| 🇪🇸 | es | ♑️ | capricorn |
+| 🇪🇸 | es | ♑ | capricorn |
 | 🍼 | baby_bottle | 🚣 | rowboat |
 | 🔪 | hocho, knife | 🌆 | city_sunset |
 | 🐅 | tiger2 | 🚂 | steam_locomotive |
@@ -386,24 +386,24 @@ Here is a table of the available emojis and their aliases.
 | 🇯🇵 | jp | 😏 | smirk |
 | 8️⃣ | eight | 🔍 | mag |
 | 😬 | grimacing | 🌲 | evergreen_tree |
-| 📃 | page_with_curl | ♎️ | libra |
+| 📃 | page_with_curl | ♎ | libra |
 | 👨 | man | 📷 | camera |
 | 🌓 | first_quarter_moon | 🍞 | bread |
 | 🚷 | no_pedestrians | 👍 | +1, thumbsup |
 | 🇰🇷 | kr | 🔅 | low_brightness |
-| ♓️ | pisces | 🚎 | trolleybus |
+| ♓ | pisces | 🚎 | trolleybus |
 | 🏮 | izakaya_lantern, lantern | 🚹 | mens |
 | 📗 | green_book | 🕧 | clock1230 |
 | ✖️ | heavy_multiplication_x | 🎌 | crossed_flags |
 | 📔 | notebook_with_decorative_cover | 🐾 | feet, paw_prints |
-| ⛄️ | snowman | ▫️ | white_small_square |
+| ⛄ | snowman | ▫️ | white_small_square |
 | 😭 | sob | 👼 | angel |
 | 🎒 | school_satchel | 🏢 | office |
 | ✴️ | eight_pointed_black_star | 💢 | anger |
 | 💦 | sweat_drops | 😄 | smile |
 | 📻 | radio | 😕 | confused |
 | 🆘 | sos | 🍡 | dango |
-| 🍣 | sushi | 🅾 | o2 |
+| 🍣 | sushi | 🅾️ | o2 |
 | 👎 | -1, thumbsdown | 🐢 | turtle |
 | 🚰 | potable_water | ❤️ | heart |
 | 🔧 | wrench | 🐤 | baby_chick |
@@ -423,18 +423,18 @@ Here is a table of the available emojis and their aliases.
 | 🐂 | ox | 🏇 | horse_racing |
 | ❔ | grey_question | 💯 | 100 |
 | 🍧 | shaved_ice | 🚳 | no_bicycles |
-| 🕥 | clock1030 | ⛔️ | no_entry |
-| ⛵️ | boat, sailboat | 💛 | yellow_heart |
+| 🕥 | clock1030 | ⛔ | no_entry |
+| ⛵ | boat, sailboat | 💛 | yellow_heart |
 | 🏯 | japanese_castle | 🚀 | rocket |
-| ® | registered | 😱 | scream |
+| ®️ | registered | 😱 | scream |
 | 🌗 | last_quarter_moon | 🛁 | bathtub |
 | 🏦 | bank | 📀 | dvd |
-| ❗️ | exclamation, heavy_exclamation_mark | 🔥 | fire |
+| ❗ | exclamation, heavy_exclamation_mark | 🔥 | fire |
 | 🏰 | european_castle | 🏃 | runner, running |
 | 🍄 | mushroom | 💕 | two_hearts |
 | 🈺 | u55b6 | 👈 | point_left |
 | 👱 | person_with_blond_hair | 🐹 | hamster |
-| ⚡️ | zap | 🚕 | taxi |
+| ⚡ | zap | 🚕 | taxi |
 | 💇 | haircut | 🐯 | tiger |
 | 🉑 | accept | 🐴 | horse |
 | 💺 | seat | 🔶 | large_orange_diamond |
@@ -442,22 +442,22 @@ Here is a table of the available emojis and their aliases.
 | ⏩ | fast_forward | 🚿 | shower |
 | 🍤 | fried_shrimp | 🇷🇺 | ru |
 | 🕢 | clock730 | 💅 | nail_care |
-| ✊ | fist | 🈂 | sa |
+| ✊ | fist | 🈂️ | sa |
 | 😮 | open_mouth | 🌵 | cactus |
 | 🆓 | free | ⁉️ | interrobang |
 | 🔑 | key | ✉️ | email, envelope |
-| 📆 | calendar | ⭐️ | star |
+| 📆 | calendar | ⭐ | star |
 | 🐺 | wolf | 😩 | weary |
 | 1️⃣ | one | 🏣 | post_office |
 | 😾 | pouting_cat | 〽️ | part_alternation_mark |
-| ⛽️ | fuelpump | 🍹 | tropical_drink |
+| ⛽ | fuelpump | 🍹 | tropical_drink |
 | 🐛 | bug | 🐟 | fish |
-| ™ | tm | 😼 | smirk_cat |
+| ™️ | tm | 😼 | smirk_cat |
 | 👓 | eyeglasses | 😆 | laughing, satisfied |
 | 🚌 | bus | 📺 | tv |
 | 😵 | dizzy_face | 🎧 | headphones |
 | ⏬ | arrow_double_down | 7️⃣ | seven |
-| ❗️ | exclamation, heavy_exclamation_mark | 🚈 | light_rail |
+| ❗ | exclamation, heavy_exclamation_mark | 🚈 | light_rail |
 | 0️⃣ | zero | 💞 | revolving_hearts |
 | 🍃 | leaves | 🇬🇧 | gb, uk |
 | 🚮 | put_litter_in_its_place | ➿ | loop |
@@ -468,7 +468,7 @@ Here is a table of the available emojis and their aliases.
 | 🌊 | ocean | 🙌 | raised_hands |
 | 🌕 | full_moon | 🔽 | arrow_down_small |
 | 🆚 | vs | 🔻 | small_red_triangle_down |
-| 🍇 | grapes | ♿️ | wheelchair |
+| 🍇 | grapes | ♿ | wheelchair |
 | 💶 | euro | 🌃 | night_with_stars |
 | 🕠 | clock530 | 👴 | older_man |
 | 🚾 | wc | 🍎 | apple |
@@ -490,5 +490,49 @@ Here is a table of the available emojis and their aliases.
 | 🌐 | globe_with_meridians | 🌸 | cherry_blossom |
 | 👐 | open_hands | 🕞 | clock330 |
 | 😖 | confounded | 👅 | tongue |
-| ⛪️ | church | 🌇 | city_sunrise |
-| 🚞 | mount
+| ⛪ | church | 🌇 | city_sunrise |
+| 🚞 | mountain_railway | 🗿 | moyai |
+| ㊙️ | secret | 🎆 | fireworks |
+| 💎 | gem | 👊 | facepunch, punch |
+| 🎯 | dart | 👻 | ghost |
+| 👂 | ear | 💈 | barber |
+| 💸 | money_with_wings | 😈 | smiling_imp |
+| 🛂 | passport_control | 👝 | pouch |
+| 🆒 | cool | 🎢 | roller_coaster |
+| 💰 | moneybag | 🎊 | confetti_ball |
+| 📅 | date | 👗 | dress |
+| 🐌 | snail | 📤 | outbox_tray |
+| 📘 | blue_book | 🔹 | small_blue_diamond |
+| ♐ | sagittarius | 🔸 | small_orange_diamond |
+| 🍒 | cherries | 🌽 | corn |
+| 🔉 | sound | 😀 | grinning |
+| 🏂 | snowboarder | 👚 | womans_clothes |
+| 🚅 | bullettrain_front | 🍂 | fallen_leaf |
+| ➕ | heavy_plus_sign | 🏀 | basketball |
+| 🐬 | dolphin, flipper | 🐸 | frog |
+| 🚘 | oncoming_automobile | 📶 | signal_strength |
+| 💆 | massage | ☀️ | sunny |
+| 📖 | book, open_book | 📓 | notebook |
+| 🐨 | koala | 💼 | briefcase |
+| 👆 | point_up_2 | 👭 | two_women_holding_hands |
+| 💐 | bouquet | 🍠 | sweet_potato |
+| 🚗 | car, red_car | 🐝 | bee, honeybee |
+| 🔪 | hocho, knife | 🔼 | arrow_up_small |
+| ♊ | gemini | 💥 | boom, collision |
+| 🎹 | musical_keyboard | 🔈 | speaker |
+| 🔺 | small_red_triangle | 💨 | dash |
+| 🕜 | clock130 | 🙀 | scream_cat |
+| 🐍 | snake | ㊗️ | congratulations |
+| 🔗 | link | 👿 | imp |
+| 🔵 | large_blue_circle | 🏁 | checkered_flag |
+| 🚗 | car, red_car | 🚶 | walking |
+| 🐱 | cat | 🍻 | beers |
+| 🚉 | station | ♥️ | hearts |
+| ♣️ | clubs | 🐾 | feet, paw_prints |
+| 🌿 | herb | 📄 | page_facing_up |
+| 👃 | nose | 🌙 | crescent_moon |
+| 🌁 | foggy | 🏭 | factory |
+| 🎈 | balloon | 🚄 | bullettrain_side |
+| 😥 | disappointed_relieved | 😨 | fearful |
+| 🏩 | love_hotel | ♍ | virgo |
+| 🗼 | tokyo_tower | ⬇️ | arrow_down |
