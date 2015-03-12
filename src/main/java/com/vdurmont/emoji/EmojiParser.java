@@ -69,19 +69,27 @@ public class EmojiParser {
 	}
 
 	/**
-	 * Replaces the emoji's unicode occurrences by their html representation.
-	 * Example: "😄" gives "&amp;#128516;"
-	 *
-	 * @param input the string to parse
-	 * @return the string with the emojis replaced by their html representation.
+	 * See {@link com.vdurmont.emoji.EmojiParser#parseToHtmlDecimal(String)}
 	 */
+    @Deprecated
 	public static String parseToHtml(String input) {
-		String result = input;
-		for (Emoji emoji : EmojiManager.getAll()) {
-			result = result.replace(emoji.getUnicode(), emoji.getHtml());
-		}
-		return result;
+		return parseToHtmlDecimal(input);
 	}
+
+    /**
+     * Replaces the emoji's unicode occurrences by their html representation.
+     * Example: "😄" gives "&amp;#128516;"
+     *
+     * @param input the string to parse
+     * @return the string with the emojis replaced by their html decimal representation.
+     */
+    public static String parseToHtmlDecimal(String input) {
+        String result = input;
+        for (Emoji emoji : EmojiManager.getAll()) {
+            result = result.replace(emoji.getUnicode(), emoji.getHtmlDecimal());
+        }
+        return result;
+    }
 
 	 /**
 	  * Replaces the emoji's unicode occurrences by their html hex representation.

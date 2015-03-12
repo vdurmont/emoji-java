@@ -47,12 +47,17 @@ public class Emoji {
         }
     }
 
+    @Deprecated
     public String getHtml() {
-        return htmlDec;
+        return this.getHtmlDecimal();
+    }
+
+    public String getHtmlDecimal() {
+        return this.htmlDec;
     }
 
     public String getHtmlHexidecimal() {
-        return htmlHex;
+        return this.htmlHex;
     }
 
     @Override

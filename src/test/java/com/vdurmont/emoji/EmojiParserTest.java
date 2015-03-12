@@ -23,7 +23,7 @@ public class EmojiParserTest {
 	}
 
 	@Test
-	public void parseToHtml_replaces_the_emojis_by_their_html_representation() {
+	public void parseToHtml_replaces_the_emojis_by_their_html_decimal_representation() {
 		// GIVEN
 		String str = "An 😀awesome 😃string with a few 😉emojis!";
 
@@ -34,8 +34,20 @@ public class EmojiParserTest {
 		assertEquals("An &#128512;awesome &#128515;string with a few &#128521;emojis!", result);
 	}
 
+    @Test
+    public void parseToHtmlDecimal_replaces_the_emojis_by_their_html_decimal_representation() {
+        // GIVEN
+        String str = "An 😀awesome 😃string with a few 😉emojis!";
+
+        // WHEN
+        String result = EmojiParser.parseToHtmlDecimal(str);
+
+        // THEN
+        assertEquals("An &#128512;awesome &#128515;string with a few &#128521;emojis!", result);
+    }
+
 	@Test
-	public void parseToHtmlHexadecimal_replaces_the_emojis_by_their_htm_hexl_representation() {
+	public void parseToHtmlHexadecimal_replaces_the_emojis_by_their_htm_hex_representation() {
 		// GIVEN
 		String str = "An 😀awesome 😃string with a few 😉emojis!";
 
@@ -49,7 +61,7 @@ public class EmojiParserTest {
 	@Test
 	public void parseToUnicode_replaces_the_aliases_and_the_html_by_their_emoji() {
 		// GIVEN
-		String str = "An :grinning:awesome :smiley:string &#128516;with a few :wink:emojis!";
+		String str = "An :grinning:awesome :smiley:string &#128516;with a few &#x1f609;emojis!";
 
 		// WHEN
 		String result = EmojiParser.parseToUnicode(str);
