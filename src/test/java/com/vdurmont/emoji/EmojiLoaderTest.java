@@ -85,7 +85,7 @@ public class EmojiLoaderTest {
 	}
 
 	@Test
-	public void buildEmojiFromJSON_computes_the_html() throws UnsupportedEncodingException {
+	public void buildEmojiFromJSON_computes_the_html_codes() throws UnsupportedEncodingException {
 		// GIVEN
 		JSONObject json = new JSONObject("{"
 				+ "\"emoji\": \"😄\","
@@ -100,5 +100,6 @@ public class EmojiLoaderTest {
 		// THEN
 		assertEquals("😄", emoji.getUnicode());
 		assertEquals("&#128516;", emoji.getHtml());
+		assertEquals("&#x1f604;", emoji.getHtmlHexidecimal());
 	}
 }
