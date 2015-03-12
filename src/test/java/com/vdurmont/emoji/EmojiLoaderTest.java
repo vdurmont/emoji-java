@@ -17,90 +17,90 @@ import static org.junit.Assert.assertNull;
 
 @RunWith(JUnit4.class)
 public class EmojiLoaderTest {
-	@Test
-	public void load_empty_database_returns_empty_list() throws IOException {
-		// GIVEN
-		InputStream stream = new ByteArrayInputStream(new JSONArray().toString().getBytes("UTF-8"));
+    @Test
+    public void load_empty_database_returns_empty_list() throws IOException {
+        // GIVEN
+        InputStream stream = new ByteArrayInputStream(new JSONArray().toString().getBytes("UTF-8"));
 
-		// WHEN
-		List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
+        // WHEN
+        List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
 
-		// THEN
-		assertEquals(0, emojis.size());
-	}
+        // THEN
+        assertEquals(0, emojis.size());
+    }
 
-	@Test
-	public void buildEmojiFromJSON() throws UnsupportedEncodingException {
-		// GIVEN
-		JSONObject json = new JSONObject("{"
-				+ "\"emoji\": \"😄\","
-				+ "\"description\": \"smiling face with open mouth and smiling eyes\","
-				+ "\"aliases\": [\"smile\"],"
-				+ "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
-				+ "}");
+    @Test
+    public void buildEmojiFromJSON() throws UnsupportedEncodingException {
+        // GIVEN
+        JSONObject json = new JSONObject("{"
+                + "\"emoji\": \"😄\","
+                + "\"description\": \"smiling face with open mouth and smiling eyes\","
+                + "\"aliases\": [\"smile\"],"
+                + "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
+                + "}");
 
-		// WHEN
-		Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
+        // WHEN
+        Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
-		// THEN
-		assertEquals("😄", emoji.getUnicode());
-		assertEquals("smiling face with open mouth and smiling eyes", emoji.getDescription());
-		assertEquals(1, emoji.getAliases().size());
-		assertEquals("smile", emoji.getAliases().get(0));
-		assertEquals(3, emoji.getTags().size());
-		assertEquals("happy", emoji.getTags().get(0));
-		assertEquals("joy", emoji.getTags().get(1));
-		assertEquals("pleased", emoji.getTags().get(2));
-	}
+        // THEN
+        assertEquals("😄", emoji.getUnicode());
+        assertEquals("smiling face with open mouth and smiling eyes", emoji.getDescription());
+        assertEquals(1, emoji.getAliases().size());
+        assertEquals("smile", emoji.getAliases().get(0));
+        assertEquals(3, emoji.getTags().size());
+        assertEquals("happy", emoji.getTags().get(0));
+        assertEquals("joy", emoji.getTags().get(1));
+        assertEquals("pleased", emoji.getTags().get(2));
+    }
 
-	@Test
-	public void buildEmojiFromJSON_without_description_sets_a_null_description() throws UnsupportedEncodingException {
-		// GIVEN
-		JSONObject json = new JSONObject("{"
-				+ "\"emoji\": \"😄\","
-				+ "\"aliases\": [\"smile\"],"
-				+ "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
-				+ "}");
+    @Test
+    public void buildEmojiFromJSON_without_description_sets_a_null_description() throws UnsupportedEncodingException {
+        // GIVEN
+        JSONObject json = new JSONObject("{"
+                + "\"emoji\": \"😄\","
+                + "\"aliases\": [\"smile\"],"
+                + "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
+                + "}");
 
-		// WHEN
-		Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
+        // WHEN
+        Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
-		// THEN
-		assertNull(emoji.getDescription());
-	}
+        // THEN
+        assertNull(emoji.getDescription());
+    }
 
-	@Test
-	public void buildEmojiFromJSON_without_unicode_returns_null() throws UnsupportedEncodingException {
-		// GIVEN
-		JSONObject json = new JSONObject("{"
-				+ "\"aliases\": [\"smile\"],"
-				+ "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
-				+ "}");
+    @Test
+    public void buildEmojiFromJSON_without_unicode_returns_null() throws UnsupportedEncodingException {
+        // GIVEN
+        JSONObject json = new JSONObject("{"
+                + "\"aliases\": [\"smile\"],"
+                + "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
+                + "}");
 
-		// WHEN
-		Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
+        // WHEN
+        Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
-		// THEN
-		assertNull(emoji);
-	}
+        // THEN
+        assertNull(emoji);
+    }
 
-	@Test
-	public void buildEmojiFromJSON_computes_the_html_codes() throws UnsupportedEncodingException {
-		// GIVEN
-		JSONObject json = new JSONObject("{"
-				+ "\"emoji\": \"😄\","
-				+ "\"description\": \"smiling face with open mouth and smiling eyes\","
-				+ "\"aliases\": [\"smile\"],"
-				+ "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
-				+ "}");
+    @Test
+    public void buildEmojiFromJSON_computes_the_html_codes() throws UnsupportedEncodingException {
+        // GIVEN
+        JSONObject json = new JSONObject("{"
+                + "\"emoji\": \"😄\","
+                + "\"description\": \"smiling face with open mouth and smiling eyes\","
+                + "\"aliases\": [\"smile\"],"
+                + "\"tags\": [\"happy\", \"joy\", \"pleased\"]"
+                + "}");
 
-		// WHEN
-		Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
+        // WHEN
+        Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
-		// THEN
-		assertEquals("😄", emoji.getUnicode());
+        // THEN
+        assertEquals("😄", emoji.getUnicode());
         assertEquals("&#128516;", emoji.getHtml());
         assertEquals("&#128516;", emoji.getHtmlDecimal());
-		assertEquals("&#x1f604;", emoji.getHtmlHexidecimal());
-	}
+        assertEquals("&#x1f604;", emoji.getHtmlHexidecimal());
+    }
 }

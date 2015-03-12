@@ -2904,7 +2904,7 @@
     ]
   }
 , {
-    "emoji": "⭐️"
+    "emoji": "⭐"
   , "description": "white medium star"
   , "aliases": [
       "star"
@@ -2923,7 +2923,7 @@
     ]
   }
 , {
-    "emoji": "⛅️"
+    "emoji": "⛅"
   , "description": "sun behind cloud"
   , "aliases": [
       "partly_sunny"
@@ -2943,7 +2943,7 @@
     ]
   }
 , {
-    "emoji": "⚡️"
+    "emoji": "⚡"
   , "description": "high voltage sign"
   , "aliases": [
       "zap"
@@ -2954,7 +2954,7 @@
     ]
   }
 , {
-    "emoji": "☔️"
+    "emoji": "☔"
   , "description": "umbrella with rain drops"
   , "aliases": [
       "umbrella"
@@ -2977,7 +2977,7 @@
     ]
   }
 , {
-    "emoji": "⛄️"
+    "emoji": "⛄"
   , "description": "snowman without snow"
   , "aliases": [
       "snowman"
@@ -3491,7 +3491,7 @@
     ]
   }
 , {
-    "emoji": "⌛️"
+    "emoji": "⌛"
   , "description": "hourglass"
   , "aliases": [
       "hourglass"
@@ -3511,7 +3511,7 @@
     ]
   }
 , {
-    "emoji": "⌚️"
+    "emoji": "⌚"
   , "description": "watch"
   , "aliases": [
       "watch"
@@ -4487,7 +4487,7 @@
     ]
   }
 , {
-    "emoji": "🀄️"
+    "emoji": "🀄"
   , "description": "mahjong tile red dragon"
   , "aliases": [
       "mahjong"
@@ -4537,7 +4537,7 @@
     ]
   }
 , {
-    "emoji": "⚽️"
+    "emoji": "⚽"
   , "description": "soccer ball"
   , "aliases": [
       "soccer"
@@ -4596,7 +4596,7 @@
     ]
   }
 , {
-    "emoji": "⛳️"
+    "emoji": "⛳"
   , "description": "flag in hole"
   , "aliases": [
       "golf"
@@ -4700,7 +4700,7 @@
     ]
   }
 , {
-    "emoji": "☕️"
+    "emoji": "☕"
   , "description": "hot beverage"
   , "aliases": [
       "coffee"
@@ -5358,7 +5358,7 @@
     ]
   }
 , {
-    "emoji": "⛪️"
+    "emoji": "⛪"
   , "description": "church"
   , "aliases": [
       "church"
@@ -5421,7 +5421,7 @@
     ]
   }
 , {
-    "emoji": "⛺️"
+    "emoji": "⛺"
   , "description": "tent"
   , "aliases": [
       "tent"
@@ -5530,7 +5530,7 @@
     ]
   }
 , {
-    "emoji": "⛲️"
+    "emoji": "⛲"
   , "description": "fountain"
   , "aliases": [
       "fountain"
@@ -5557,7 +5557,7 @@
     ]
   }
 , {
-    "emoji": "⛵️"
+    "emoji": "⛵"
   , "description": "sailboat"
   , "aliases": [
       "boat"
@@ -5586,7 +5586,7 @@
     ]
   }
 , {
-    "emoji": "⚓️"
+    "emoji": "⚓"
   , "description": "anchor"
   , "aliases": [
       "anchor"
@@ -6014,7 +6014,7 @@
     ]
   }
 , {
-    "emoji": "⛽️"
+    "emoji": "⛽"
   , "description": "fuel pump"
   , "aliases": [
       "fuelpump"
@@ -6696,10 +6696,7 @@
     ]
   }
 , {
-    "emoji": "🈯️"
-  , "unicodes": [
-      "指"
-    ]
+    "emoji": "🈯"
   , "description": "squared cjk unified ideograph-6307"
   , "aliases": [
       "u6307"
@@ -6709,9 +6706,6 @@
   }
 , {
     "emoji": "🈳"
-  , "unicodes": [
-      "空"
-    ]
   , "description": "squared cjk unified ideograph-7a7a"
   , "aliases": [
       "u7a7a"
@@ -6721,9 +6715,6 @@
   }
 , {
     "emoji": "🈵"
-  , "unicodes": [
-      "満"
-    ]
   , "description": "squared cjk unified ideograph-6e80"
   , "aliases": [
       "u6e80"
@@ -6733,9 +6724,6 @@
   }
 , {
     "emoji": "🈴"
-  , "unicodes": [
-      "合"
-    ]
   , "description": "squared cjk unified ideograph-5408"
   , "aliases": [
       "u5408"
@@ -6745,9 +6733,6 @@
   }
 , {
     "emoji": "🈲"
-  , "unicodes": [
-      "禁"
-    ]
   , "description": "squared cjk unified ideograph-7981"
   , "aliases": [
       "u7981"
@@ -6766,9 +6751,6 @@
   }
 , {
     "emoji": "🈹"
-  , "unicodes": [
-      "割"
-    ]
   , "description": "squared cjk unified ideograph-5272"
   , "aliases": [
       "u5272"
@@ -6778,9 +6760,6 @@
   }
 , {
     "emoji": "🈺"
-  , "unicodes": [
-      "営"
-    ]
   , "description": "squared cjk unified ideograph-55b6"
   , "aliases": [
       "u55b6"
@@ -6790,9 +6769,6 @@
   }
 , {
     "emoji": "🈶"
-  , "unicodes": [
-      "有"
-    ]
   , "description": "squared cjk unified ideograph-6709"
   , "aliases": [
       "u6709"
@@ -6801,10 +6777,7 @@
     ]
   }
 , {
-    "emoji": "🈚️"
-  , "unicodes": [
-      "無"
-    ]
+    "emoji": "🈚"
   , "description": "squared cjk unified ideograph-7121"
   , "aliases": [
       "u7121"
@@ -6888,7 +6861,7 @@
     ]
   }
 , {
-    "emoji": "♿️"
+    "emoji": "♿"
   , "description": "wheelchair symbol"
   , "aliases": [
       "wheelchair"
@@ -6907,10 +6880,7 @@
     ]
   }
 , {
-    "emoji": "🈷"
-  , "unicodes": [
-      "月"
-    ]
+    "emoji": "🈷️"
   , "description": "squared cjk unified ideograph-6708"
   , "aliases": [
       "u6708"
@@ -6920,9 +6890,6 @@
   }
 , {
     "emoji": "🈸"
-  , "unicodes": [
-      "申"
-    ]
   , "description": "squared cjk unified ideograph-7533"
   , "aliases": [
       "u7533"
@@ -6931,7 +6898,7 @@
     ]
   }
 , {
-    "emoji": "🈂"
+    "emoji": "🈂️"
   , "description": "squared katakana sa"
   , "aliases": [
       "sa"
@@ -7116,7 +7083,7 @@
     ]
   }
 , {
-    "emoji": "⛔️"
+    "emoji": "⛔"
   , "description": "no entry"
   , "aliases": [
       "no_entry"
@@ -7209,7 +7176,7 @@
     ]
   }
 , {
-    "emoji": "🅰"
+    "emoji": "🅰️"
   , "description": "negative squared latin capital letter a"
   , "aliases": [
       "a"
@@ -7218,7 +7185,7 @@
     ]
   }
 , {
-    "emoji": "🅱"
+    "emoji": "🅱️"
   , "description": "negative squared latin capital letter b"
   , "aliases": [
       "b"
@@ -7236,7 +7203,7 @@
     ]
   }
 , {
-    "emoji": "🅾"
+    "emoji": "🅾️"
   , "description": "negative squared latin capital letter o"
   , "aliases": [
       "o2"
@@ -7274,7 +7241,7 @@
     ]
   }
 , {
-    "emoji": "♈️"
+    "emoji": "♈"
   , "description": "aries"
   , "aliases": [
       "aries"
@@ -7283,7 +7250,7 @@
     ]
   }
 , {
-    "emoji": "♉️"
+    "emoji": "♉"
   , "description": "taurus"
   , "aliases": [
       "taurus"
@@ -7292,7 +7259,7 @@
     ]
   }
 , {
-    "emoji": "♊️"
+    "emoji": "♊"
   , "description": "gemini"
   , "aliases": [
       "gemini"
@@ -7301,7 +7268,7 @@
     ]
   }
 , {
-    "emoji": "♋️"
+    "emoji": "♋"
   , "description": "cancer"
   , "aliases": [
       "cancer"
@@ -7310,7 +7277,7 @@
     ]
   }
 , {
-    "emoji": "♌️"
+    "emoji": "♌"
   , "description": "leo"
   , "aliases": [
       "leo"
@@ -7319,7 +7286,7 @@
     ]
   }
 , {
-    "emoji": "♍️"
+    "emoji": "♍"
   , "description": "virgo"
   , "aliases": [
       "virgo"
@@ -7328,7 +7295,7 @@
     ]
   }
 , {
-    "emoji": "♎️"
+    "emoji": "♎"
   , "description": "libra"
   , "aliases": [
       "libra"
@@ -7337,7 +7304,7 @@
     ]
   }
 , {
-    "emoji": "♏️"
+    "emoji": "♏"
   , "description": "scorpius"
   , "aliases": [
       "scorpius"
@@ -7346,7 +7313,7 @@
     ]
   }
 , {
-    "emoji": "♐️"
+    "emoji": "♐"
   , "description": "sagittarius"
   , "aliases": [
       "sagittarius"
@@ -7355,7 +7322,7 @@
     ]
   }
 , {
-    "emoji": "♑️"
+    "emoji": "♑"
   , "description": "capricorn"
   , "aliases": [
       "capricorn"
@@ -7364,7 +7331,7 @@
     ]
   }
 , {
-    "emoji": "♒️"
+    "emoji": "♒"
   , "description": "aquarius"
   , "aliases": [
       "aquarius"
@@ -7373,7 +7340,7 @@
     ]
   }
 , {
-    "emoji": "♓️"
+    "emoji": "♓"
   , "description": "pisces"
   , "aliases": [
       "pisces"
@@ -7436,7 +7403,7 @@
     ]
   }
 , {
-    "emoji": "©"
+    "emoji": "©️"
   , "description": "copyright sign"
   , "aliases": [
       "copyright"
@@ -7445,7 +7412,7 @@
     ]
   }
 , {
-    "emoji": "®"
+    "emoji": "®️"
   , "description": "registered sign"
   , "aliases": [
       "registered"
@@ -7454,7 +7421,7 @@
     ]
   }
 , {
-    "emoji": "™"
+    "emoji": "™️"
   , "description": "trade mark sign"
   , "aliases": [
       "tm"
@@ -7491,7 +7458,7 @@
     ]
   }
 , {
-    "emoji": "❗️"
+    "emoji": "❗"
   , "description": "heavy exclamation mark symbol"
   , "aliases": [
       "exclamation"
@@ -7530,7 +7497,7 @@
     ]
   }
 , {
-    "emoji": "⭕️"
+    "emoji": "⭕"
   , "description": "heavy large circle"
   , "aliases": [
       "o"
@@ -7946,7 +7913,7 @@
     ]
   }
 , {
-    "emoji": "〰"
+    "emoji": "〰️"
   , "description": "wavy dash"
   , "aliases": [
       "wavy_dash"
@@ -7991,7 +7958,7 @@
     ]
   }
 , {
-    "emoji": "◾️"
+    "emoji": "◾"
   , "description": "black medium small square"
   , "aliases": [
       "black_medium_small_square"
@@ -8000,7 +7967,7 @@
     ]
   }
 , {
-    "emoji": "◽️"
+    "emoji": "◽"
   , "description": "white medium small square"
   , "aliases": [
       "white_medium_small_square"
@@ -8054,7 +8021,7 @@
     ]
   }
 , {
-    "emoji": "⚫️"
+    "emoji": "⚫"
   , "description": "medium black circle"
   , "aliases": [
       "black_circle"
@@ -8063,7 +8030,7 @@
     ]
   }
 , {
-    "emoji": "⚪️"
+    "emoji": "⚪"
   , "description": "medium white circle"
   , "aliases": [
       "white_circle"
@@ -8099,7 +8066,7 @@
     ]
   }
 , {
-    "emoji": "⬜️"
+    "emoji": "⬜"
   , "description": "white large square"
   , "aliases": [
       "white_large_square"
@@ -8108,7 +8075,7 @@
     ]
   }
 , {
-    "emoji": "⬛️"
+    "emoji": "⬛"
   , "description": "black large square"
   , "aliases": [
       "black_large_square"
@@ -8148,6 +8115,20 @@
   , "description": "small blue diamond"
   , "aliases": [
       "small_blue_diamond"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "aliases": [
+      "basecamp"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "aliases": [
+      "basecampy"
     ]
   , "tags": [
     ]
@@ -8261,6 +8242,13 @@
 , {
     "aliases": [
       "suspect"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "aliases": [
+      "taco"
     ]
   , "tags": [
     ]
