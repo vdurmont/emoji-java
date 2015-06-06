@@ -54,8 +54,16 @@ public class EmojiParser {
         Matcher matcher = pattern.matcher(result);
         while (matcher.find()) {
             String match = matcher.group(0);
-            result = result.replace(match, EmojiManager.getUnicodeForHtmlHexadecimal(match));
-            result = result.replace(match, EmojiManager.getUnicodeForHtmlDecimal(match));
+            
+            final String unicodeForHtmlHexadecimal = EmojiManager.getUnicodeForHtmlHexadecimal(match);
+            if (unicodeForHtmlHexadecimal != null) {
+                result = result.replace(match, unicodeForHtmlHexadecimal);
+            }
+            
+            final String unicodeForHtmlDecimal = EmojiManager.getUnicodeForHtmlDecimal(match);
+            if (unicodeForHtmlDecimal != null) {
+                result = result.replace(match, unicodeForHtmlDecimal);
+            }
         }
 
         return result;
