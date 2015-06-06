@@ -16,8 +16,12 @@ import java.util.Set;
  */
 public class EmojiManager {
     private static final String PATH = "/emojis-2014-12-11.json";
+    
     private static final Map<String, Emoji> EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
     private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
+
+    private static final Map<String, String> UNICODE_BY_HTML_HEXADECIMAL = new HashMap<String, String>();
+    private static final Map<String, String> UNICODE_BY_HTML_DECIMAL = new HashMap<String, String>();
 
     static {
         try {
@@ -33,6 +37,10 @@ public class EmojiManager {
                 for (String alias : emoji.getAliases()) {
                     EMOJIS_BY_ALIAS.put(alias, emoji);
                 }
+                
+                
+                UNICODE_BY_HTML_HEXADECIMAL.put(emoji.getHtmlHexidecimal(), emoji.getUnicode());
+                UNICODE_BY_HTML_DECIMAL.put(emoji.getHtmlDecimal(), emoji.getUnicode());
             }
             stream.close();
         } catch (IOException e) {
@@ -66,6 +74,20 @@ public class EmojiManager {
             return null;
         }
         return EMOJIS_BY_ALIAS.get(trimAlias(alias));
+    }
+    
+    public static String getUnicodeForHtmlHexadecimal(String htmlHexadecimal) {
+        if (htmlHexadecimal == null) {
+            return null;
+        }
+        return UNICODE_BY_HTML_HEXADECIMAL.get(htmlHexadecimal);
+    }
+    
+    public static String getUnicodeForHtmlDecimal(String htmlDecimal) {
+        if (htmlDecimal == null) {
+            return null;
+        }
+        return UNICODE_BY_HTML_DECIMAL.get(htmlDecimal);
     }
 
     private static String trimAlias(String alias) {
