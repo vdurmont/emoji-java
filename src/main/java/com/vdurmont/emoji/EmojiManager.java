@@ -38,7 +38,6 @@ public class EmojiManager {
                     EMOJIS_BY_ALIAS.put(alias, emoji);
                 }
                 
-                
                 UNICODE_BY_HTML_HEXADECIMAL.put(emoji.getHtmlHexidecimal(), emoji.getUnicode());
                 UNICODE_BY_HTML_DECIMAL.put(emoji.getHtmlDecimal(), emoji.getUnicode());
             }
