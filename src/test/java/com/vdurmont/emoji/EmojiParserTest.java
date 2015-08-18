@@ -70,7 +70,7 @@ public class EmojiParserTest {
         String result = EmojiParser.parseToAliases(str, FitzpatrickAction.IGNORE);
 
         // THEN
-        assertEquals(":boy:", result);
+        assertEquals(":boy:\uD83C\uDFFF", result);
     }
 
     @Test

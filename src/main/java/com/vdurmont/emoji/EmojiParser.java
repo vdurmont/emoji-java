@@ -43,12 +43,11 @@ public class EmojiParser {
         for (Emoji emoji : EmojiManager.getAll()) {
             if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
                 if (emoji.supportsFitzpatrick()) {
-                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                        String replacement = ":" + emoji.getAliases().get(0) + ":";
-                        if (fitzpatrickAction == FitzpatrickAction.PARSE) {
-                            replacement = ":" + emoji.getAliases().get(0) + "|" + fitzpatrick.toString().toLowerCase() + ":";
+                    if (fitzpatrickAction == FitzpatrickAction.PARSE) {
+                        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                            String replacement = ":" + emoji.getAliases().get(0) + "|" + fitzpatrick.toString().toLowerCase() + ":";
+                            result = result.replace(emoji.getUnicode(fitzpatrick), replacement);
                         }
-                        result = result.replace(emoji.getUnicode(fitzpatrick), replacement);
                     }
                 }
             }
