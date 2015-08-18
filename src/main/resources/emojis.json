@@ -10544,5 +10544,16 @@
       "kiss",
       "man"
     ]
+  },
+  {
+    "emoji": "🖖",
+    "description": "raised hand with part between middle and ring fingers",
+    "aliases": [
+      "vulcan_salute"
+    ],
+    "tags": [
+      "vulcan",
+      "salute"
+    ]
   }
 ]
