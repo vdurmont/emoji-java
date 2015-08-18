@@ -15,7 +15,7 @@ import java.util.Set;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
-    private static final String PATH = "/emojis-2014-12-11.json";
+    private static final String PATH = "/emojis.json";
     private static final Map<String, Emoji> EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
     private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
 
