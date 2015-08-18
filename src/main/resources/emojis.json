@@ -10496,5 +10496,53 @@
       "man",
       "girl"
     ]
+  },
+  {
+    "emoji": "👩‍❤️‍👩",
+    "description": "couple with heart (woman, woman)",
+    "aliases": [
+      "couple_with_heart_woman_woman"
+    ],
+    "tags": [
+      "couple",
+      "heart",
+      "woman"
+    ]
+  },
+  {
+    "emoji": "👨‍❤️‍👨",
+    "description": "couple with heart (man, man)",
+    "aliases": [
+      "couple_with_heart_man_man"
+    ],
+    "tags": [
+      "couple",
+      "heart",
+      "man"
+    ]
+  },
+  {
+    "emoji": "👩‍❤️‍💋‍👩",
+    "description": "kiss (woman, woman)",
+    "aliases": [
+      "couplekiss_woman_woman"
+    ],
+    "tags": [
+      "couple",
+      "kiss",
+      "woman"
+    ]
+  },
+  {
+    "emoji": "👨‍❤️‍💋‍👨",
+    "description": "kiss (man, man)",
+    "aliases": [
+      "couplekiss_man_man"
+    ],
+    "tags": [
+      "couple",
+      "kiss",
+      "man"
+    ]
   }
 ]
