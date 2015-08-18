@@ -10,7 +10,7 @@ Based on the data provided by [github/gemoji project](https://github.com/github/
 
 ## How to get it?
 
-##### Via Maven project:
+##### Via Maven:
 ```xml
 <dependency>
   <groupId>com.vdurmont</groupId>
@@ -21,7 +21,7 @@ Based on the data provided by [github/gemoji project](https://github.com/github/
 
 You can also download the project, build it with `mvn clean install` and add the generated jar to your buildpath.
 
-##### Via Gradle
+##### Via Gradle:
 ```gradle
 compile 'com.vdurmont:emoji-java:1.1.1'
 ```
