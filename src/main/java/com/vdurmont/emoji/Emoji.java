@@ -15,7 +15,7 @@ public class Emoji {
     private final boolean supportsFitzpatrick;
     private final List<String> aliases;
     private final List<String> tags;
-    private final byte[] bytes;
+    private final String unicode;
     private final String htmlDec;
     private final String htmlHex;
 
@@ -26,7 +26,11 @@ public class Emoji {
         this.tags = tags;
         this.htmlDec = "&#" + htmlCode + ";";
         this.htmlHex = "&#x" + Integer.toHexString(htmlCode) + ";";
-        this.bytes = bytes;
+        try {
+            this.unicode = new String(bytes, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String getDescription() {
@@ -46,11 +50,16 @@ public class Emoji {
     }
 
     public String getUnicode() {
-        try {
-            return new String(this.bytes, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
+        return this.unicode;
+    }
+
+    public String getUnicode(Fitzpatrick fitzpatrick) {
+        if (!this.supportsFitzpatrick()) {
+            throw new UnsupportedOperationException("Cannot get the unicode with a fitzpatrick modifier, the emoji doesn't support fitzpatrick.");
+        } else if (fitzpatrick == null) {
+            return this.getUnicode();
         }
+        return this.getUnicode() + fitzpatrick.unicode;
     }
 
     @Deprecated

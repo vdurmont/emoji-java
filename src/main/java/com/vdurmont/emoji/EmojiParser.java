@@ -12,16 +12,46 @@ import java.util.regex.Pattern;
  */
 public class EmojiParser {
     /**
+     * See {@link #parseToAliases(String, FitzpatrickAction)} with the action "PARSE"
+     */
+    public static String parseToAliases(String input) {
+        return parseToAliases(input, FitzpatrickAction.PARSE);
+    }
+
+    /**
      * Replaces the emoji's unicode occurrences by one of their alias (between 2 ':').
      * Example: "😄" gives ":smile:"
      *
-     * @param input the string to parse
+     * When a fitzpatrick modifier is present with a PARSE action, a "|" will be appendend to the alias, with the fitzpatrick type.
+     * Example: "👦🏿" gives ":boy|type_6:"
+     * The fitzpatrick types are: type_1_2, type_3, type_4, type_5, type_6
+     *
+     * When a fitzpatrick modifier is present with a REMOVE action, the modifier will be deleted.
+     * Example: "👦🏿" gives ":boy:"
+     *
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
+     * Example: "👦🏿" gives ":boy:🏿"
+     *
+     * @param input             the string to parse
+     * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
      *
      * @return the string with the emojis replaced by their alias.
      */
-    public static String parseToAliases(String input) {
-        String result = input;
+    public static String parseToAliases(String input, FitzpatrickAction fitzpatrickAction) {
+        String result = prepareParsing(input, fitzpatrickAction);
+
         for (Emoji emoji : EmojiManager.getAll()) {
+            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
+                if (emoji.supportsFitzpatrick()) {
+                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                        String replacement = ":" + emoji.getAliases().get(0) + ":";
+                        if (fitzpatrickAction == FitzpatrickAction.PARSE) {
+                            replacement = ":" + emoji.getAliases().get(0) + "|" + fitzpatrick.toString().toLowerCase() + ":";
+                        }
+                        result = result.replace(emoji.getUnicode(fitzpatrick), replacement);
+                    }
+                }
+            }
             result = result.replace(emoji.getUnicode(), ":" + emoji.getAliases().get(0) + ":");
         }
         return result;
@@ -31,6 +61,7 @@ public class EmojiParser {
      * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.
      * Example: ":smile:" gives "😄"
      * "&amp;#128516;" gives "😄"
+     * ":boy|type_6:" gives "👦🏿"
      *
      * @param input the string to parse
      *
@@ -38,14 +69,20 @@ public class EmojiParser {
      */
     public static String parseToUnicode(String input) {
         // Get all the potential aliases
-        List<String> aliases = getAliasesCandidates(input);
+        List<AliasCandidate> candidates = getAliasCandidates(input);
 
         // Replace the aliases by their unicode
         String result = input;
-        for (String alias : aliases) {
-            Emoji emoji = EmojiManager.getForAlias(alias);
+        for (AliasCandidate candidate : candidates) {
+            Emoji emoji = EmojiManager.getForAlias(candidate.alias);
             if (emoji != null) {
-                result = result.replace(":" + alias + ":", emoji.getUnicode());
+                if (emoji.supportsFitzpatrick() || (!emoji.supportsFitzpatrick() && candidate.fitzpatrick == null)) {
+                    String replacement = emoji.getUnicode();
+                    if (candidate.fitzpatrick != null) {
+                        replacement += candidate.fitzpatrick.unicode;
+                    }
+                    result = result.replace(":" + candidate.fullString + ":", replacement);
+                }
             }
         }
 
@@ -58,14 +95,24 @@ public class EmojiParser {
         return result;
     }
 
-    protected static List<String> getAliasesCandidates(String input) {
-        List<String> candidates = new ArrayList<String>();
-        String regex = "(?<=:)\\+?\\w+(?=:)";
+    protected static List<AliasCandidate> getAliasCandidates(String input) {
+        List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
+        String regex = "(?<=:)\\+?(\\w|\\|)+(?=:)";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(input);
         matcher = matcher.useTransparentBounds(true);
         while (matcher.find()) {
-            candidates.add(matcher.group());
+            String match = matcher.group();
+            if (!match.contains("|")) {
+                candidates.add(new AliasCandidate(match, match, null));
+            } else {
+                String[] splitted = match.split("\\|");
+                if (splitted.length == 2 || splitted.length > 2) {
+                    candidates.add(new AliasCandidate(match, splitted[0], splitted[1]));
+                } else {
+                    candidates.add(new AliasCandidate(match, match, null));
+                }
+            }
         }
         return candidates;
     }
@@ -79,34 +126,133 @@ public class EmojiParser {
     }
 
     /**
+     * See {@link #parseToHtmlDecimal(String, FitzpatrickAction)} with the action "PARSE"
+     */
+    public static String parseToHtmlDecimal(String input) {
+        return parseToHtmlDecimal(input, FitzpatrickAction.PARSE);
+    }
+
+    /**
      * Replaces the emoji's unicode occurrences by their html representation.
      * Example: "😄" gives "&amp;#128516;"
      *
-     * @param input the string to parse
+     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.
+     * Example: "👦🏿" gives "&#128102;"
+     *
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
+     * Example: "👦🏿" gives "&#128102;🏿"
+     *
+     * @param input             the string to parse
+     * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
      *
      * @return the string with the emojis replaced by their html decimal representation.
      */
-    public static String parseToHtmlDecimal(String input) {
-        String result = input;
+    public static String parseToHtmlDecimal(String input, FitzpatrickAction fitzpatrickAction) {
+        String result = prepareParsing(input, fitzpatrickAction);
+
         for (Emoji emoji : EmojiManager.getAll()) {
+            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
+                if (emoji.supportsFitzpatrick()) {
+                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                        String search = fitzpatrickAction == FitzpatrickAction.PARSE ? emoji.getUnicode(fitzpatrick) : emoji.getUnicode();
+                        result = result.replace(search, emoji.getHtmlDecimal());
+                    }
+                }
+            }
             result = result.replace(emoji.getUnicode(), emoji.getHtmlDecimal());
         }
         return result;
     }
 
     /**
+     * See {@link #parseToHtmlHexadecimal(String, FitzpatrickAction)} with the action "PARSE"
+     */
+    public static String parseToHtmlHexadecimal(String input) {
+        return parseToHtmlHexadecimal(input, FitzpatrickAction.PARSE);
+    }
+
+    /**
      * Replaces the emoji's unicode occurrences by their html hex representation.
      * Example: "?" gives "&amp;#x1f064;"
      *
-     * @param input the string to parse
+     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.
+     * Example: "👦🏿" gives "&#x1f466;"
+     *
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
+     * Example: "👦🏿" gives "&#x1f466;🏿"
+     *
+     * @param input             the string to parse
+     * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
      *
      * @return the string with the emojis replaced by their html hex representation.
      */
-    public static String parseToHtmlHexadecimal(String input) {
-        String result = input;
+    public static String parseToHtmlHexadecimal(String input, FitzpatrickAction fitzpatrickAction) {
+        String result = prepareParsing(input, fitzpatrickAction);
+
         for (Emoji emoji : EmojiManager.getAll()) {
+            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
+                if (emoji.supportsFitzpatrick()) {
+                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                        String search = fitzpatrickAction == FitzpatrickAction.PARSE ? emoji.getUnicode(fitzpatrick) : emoji.getUnicode();
+                        result = result.replace(search, emoji.getHtmlHexidecimal());
+                    }
+                }
+            }
             result = result.replace(emoji.getUnicode(), emoji.getHtmlHexidecimal());
         }
         return result;
+    }
+
+    private static String prepareParsing(String input, FitzpatrickAction fitzpatrickAction) {
+        if (fitzpatrickAction == FitzpatrickAction.REMOVE) {
+            for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                input = input.replace(fitzpatrick.unicode, "");
+            }
+        }
+        return input;
+    }
+
+    protected static class AliasCandidate {
+        public final String fullString;
+        public final String alias;
+        public final Fitzpatrick fitzpatrick;
+
+        private AliasCandidate(String fullString, String alias, String fitzpatrickString) {
+            this.fullString = fullString;
+            this.alias = alias;
+            if (fitzpatrickString == null) {
+                this.fitzpatrick = null;
+            } else {
+                this.fitzpatrick = resolveFitzpatrick(fitzpatrickString);
+            }
+        }
+
+        private static Fitzpatrick resolveFitzpatrick(String fitzpatrickString) {
+            try {
+                return Fitzpatrick.valueOf(fitzpatrickString.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                return null;
+            }
+        }
+    }
+
+    /**
+     * Enum used to indicate what should be done when a Fitzpatrick modifier is found.
+     */
+    public enum FitzpatrickAction {
+        /**
+         * Tries to match the Fitzpatrick modifier with the previous emoji
+         */
+        PARSE,
+
+        /**
+         * Removes the Fitzpatrick modifier from the string
+         */
+        REMOVE,
+
+        /**
+         * Ignores the Fitzpatrick modifier (it will stay in the string)
+         */
+        IGNORE
     }
 }
