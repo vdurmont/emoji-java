@@ -89,7 +89,7 @@ public class EmojiParser {
         // Replace the html
         for (Emoji emoji : EmojiManager.getAll()) {
             result = result.replace(emoji.getHtmlHexidecimal(), emoji.getUnicode());
-            result = result.replace(emoji.getHtml(), emoji.getUnicode());
+            result = result.replace(emoji.getHtmlDecimal(), emoji.getUnicode());
         }
 
         return result;
@@ -115,14 +115,6 @@ public class EmojiParser {
             }
         }
         return candidates;
-    }
-
-    /**
-     * See {@link com.vdurmont.emoji.EmojiParser#parseToHtmlDecimal(String)}
-     */
-    @Deprecated
-    public static String parseToHtml(String input) {
-        return parseToHtmlDecimal(input);
     }
 
     /**

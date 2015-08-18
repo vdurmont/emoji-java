@@ -62,11 +62,6 @@ public class Emoji {
         return this.getUnicode() + fitzpatrick.unicode;
     }
 
-    @Deprecated
-    public String getHtml() {
-        return this.getHtmlDecimal();
-    }
-
     public String getHtmlDecimal() {
         return this.htmlDec;
     }

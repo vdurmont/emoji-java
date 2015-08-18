@@ -86,18 +86,6 @@ public class EmojiParserTest {
     }
 
     @Test
-    public void parseToHtml_replaces_the_emojis_by_their_html_decimal_representation() {
-        // GIVEN
-        String str = "An 😀awesome 😃string with a few 😉emojis!";
-
-        // WHEN
-        String result = EmojiParser.parseToHtml(str);
-
-        // THEN
-        assertEquals("An &#128512;awesome &#128515;string with a few &#128521;emojis!", result);
-    }
-
-    @Test
     public void parseToHtmlDecimal_replaces_the_emojis_by_their_html_decimal_representation() {
         // GIVEN
         String str = "An 😀awesome 😃string with a few 😉emojis!";

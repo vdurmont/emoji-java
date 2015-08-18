@@ -14,6 +14,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
@@ -45,6 +46,7 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertEquals("😄", emoji.getUnicode());
         assertEquals("smiling face with open mouth and smiling eyes", emoji.getDescription());
         assertEquals(1, emoji.getAliases().size());
@@ -68,6 +70,7 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertNull(emoji.getDescription());
     }
 
@@ -100,8 +103,8 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertEquals("😄", emoji.getUnicode());
-        assertEquals("&#128516;", emoji.getHtml());
         assertEquals("&#128516;", emoji.getHtmlDecimal());
         assertEquals("&#x1f604;", emoji.getHtmlHexidecimal());
     }
@@ -125,6 +128,7 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertTrue(emoji.supportsFitzpatrick());
     }
 
@@ -146,6 +150,7 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertFalse(emoji.supportsFitzpatrick());
     }
 
@@ -166,6 +171,7 @@ public class EmojiLoaderTest {
         Emoji emoji = EmojiLoader.buildEmojiFromJSON(json);
 
         // THEN
+        assertNotNull(emoji);
         assertFalse(emoji.supportsFitzpatrick());
     }
 }
