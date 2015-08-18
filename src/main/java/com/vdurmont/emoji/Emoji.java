@@ -12,14 +12,16 @@ import java.util.List;
 public class Emoji {
 
     private final String description;
+    private final boolean supportsFitzpatrick;
     private final List<String> aliases;
     private final List<String> tags;
     private final byte[] bytes;
     private final String htmlDec;
     private final String htmlHex;
 
-    public Emoji(String description, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
+    public Emoji(String description, boolean supportsFitzpatrick, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
         this.description = description;
+        this.supportsFitzpatrick = supportsFitzpatrick;
         this.aliases = aliases;
         this.tags = tags;
         this.htmlDec = "&#" + htmlCode + ";";
@@ -29,6 +31,10 @@ public class Emoji {
 
     public String getDescription() {
         return this.description;
+    }
+
+    public boolean supportsFitzpatrick() {
+        return this.supportsFitzpatrick;
     }
 
     public List<String> getAliases() {
@@ -64,6 +70,7 @@ public class Emoji {
     public String toString() {
         return "Emoji{" +
                 "description='" + description + '\'' +
+                ", supportsFitzpatrick=" + supportsFitzpatrick +
                 ", aliases=" + aliases +
                 ", tags=" + tags +
                 ", unicode=" + this.getUnicode() +
