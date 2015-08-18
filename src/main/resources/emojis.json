@@ -10607,5 +10607,14 @@
       "vulcan",
       "salute"
     ]
+  },
+  {
+    "emoji": "🖕",
+    "description": "reversed hand with middle finger extended",
+    "supports_skin_tone": true,
+    "aliases": [
+      "middle_finger"
+    ],
+    "tags": []
   }
 ]
