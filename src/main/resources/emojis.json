@@ -600,6 +600,7 @@
   {
     "emoji": "👲",
     "description": "man with gua pi mao",
+    "supports_skin_tone": true,
     "aliases": [
       "man_with_gua_pi_mao"
     ],
@@ -609,6 +610,7 @@
   {
     "emoji": "👳",
     "description": "man with turban",
+    "supports_skin_tone": true,
     "aliases": [
       "man_with_turban"
     ],
@@ -618,6 +620,7 @@
   {
     "emoji": "👮",
     "description": "police officer",
+    "supports_skin_tone": true,
     "aliases": [
       "cop"
     ],
@@ -629,6 +632,7 @@
   {
     "emoji": "👷",
     "description": "construction worker",
+    "supports_skin_tone": true,
     "aliases": [
       "construction_worker"
     ],
@@ -639,6 +643,7 @@
   {
     "emoji": "💂",
     "description": "guardsman",
+    "supports_skin_tone": true,
     "aliases": [
       "guardsman"
     ],
@@ -648,6 +653,7 @@
   {
     "emoji": "👶",
     "description": "baby",
+    "supports_skin_tone": true,
     "aliases": [
       "baby"
     ],
@@ -659,6 +665,7 @@
   {
     "emoji": "👦",
     "description": "boy",
+    "supports_skin_tone": true,
     "aliases": [
       "boy"
     ],
@@ -669,6 +676,7 @@
   {
     "emoji": "👧",
     "description": "girl",
+    "supports_skin_tone": true,
     "aliases": [
       "girl"
     ],
@@ -679,6 +687,7 @@
   {
     "emoji": "👨",
     "description": "man",
+    "supports_skin_tone": true,
     "aliases": [
       "man"
     ],
@@ -691,6 +700,7 @@
   {
     "emoji": "👩",
     "description": "woman",
+    "supports_skin_tone": true,
     "aliases": [
       "woman"
     ],
@@ -701,6 +711,7 @@
   {
     "emoji": "👴",
     "description": "older man",
+    "supports_skin_tone": true,
     "aliases": [
       "older_man"
     ],
@@ -710,6 +721,7 @@
   {
     "emoji": "👵",
     "description": "older woman",
+    "supports_skin_tone": true,
     "aliases": [
       "older_woman"
     ],
@@ -719,6 +731,7 @@
   {
     "emoji": "👱",
     "description": "person with blond hair",
+    "supports_skin_tone": true,
     "aliases": [
       "person_with_blond_hair"
     ],
@@ -729,6 +742,7 @@
   {
     "emoji": "👼",
     "description": "baby angel",
+    "supports_skin_tone": true,
     "aliases": [
       "angel"
     ],
@@ -738,6 +752,7 @@
   {
     "emoji": "👸",
     "description": "princess",
+    "supports_skin_tone": true,
     "aliases": [
       "princess"
     ],
@@ -1079,6 +1094,7 @@
   {
     "emoji": "👍",
     "description": "thumbs up sign",
+    "supports_skin_tone": true,
     "aliases": [
       "+1",
       "thumbsup"
@@ -1091,6 +1107,7 @@
   {
     "emoji": "👎",
     "description": "thumbs down sign",
+    "supports_skin_tone": true,
     "aliases": [
       "-1",
       "thumbsdown"
@@ -1103,6 +1120,7 @@
   {
     "emoji": "👌",
     "description": "ok hand sign",
+    "supports_skin_tone": true,
     "aliases": [
       "ok_hand"
     ],
@@ -1112,6 +1130,7 @@
   {
     "emoji": "👊",
     "description": "fisted hand sign",
+    "supports_skin_tone": true,
     "aliases": [
       "facepunch",
       "punch"
@@ -1123,6 +1142,7 @@
   {
     "emoji": "✊",
     "description": "raised fist",
+    "supports_skin_tone": true,
     "aliases": [
       "fist"
     ],
@@ -1144,6 +1164,7 @@
   {
     "emoji": "👋",
     "description": "waving hand sign",
+    "supports_skin_tone": true,
     "aliases": [
       "wave"
     ],
@@ -1154,6 +1175,7 @@
   {
     "emoji": "✋",
     "description": "raised hand",
+    "supports_skin_tone": true,
     "aliases": [
       "hand",
       "raised_hand"
@@ -1166,6 +1188,7 @@
   {
     "emoji": "👐",
     "description": "open hands sign",
+    "supports_skin_tone": true,
     "aliases": [
       "open_hands"
     ],
@@ -1175,6 +1198,7 @@
   {
     "emoji": "👆",
     "description": "white up pointing backhand index",
+    "supports_skin_tone": true,
     "aliases": [
       "point_up_2"
     ],
@@ -1184,6 +1208,7 @@
   {
     "emoji": "👇",
     "description": "white down pointing backhand index",
+    "supports_skin_tone": true,
     "aliases": [
       "point_down"
     ],
@@ -1193,6 +1218,7 @@
   {
     "emoji": "👉",
     "description": "white right pointing backhand index",
+    "supports_skin_tone": true,
     "aliases": [
       "point_right"
     ],
@@ -1202,6 +1228,7 @@
   {
     "emoji": "👈",
     "description": "white left pointing backhand index",
+    "supports_skin_tone": true,
     "aliases": [
       "point_left"
     ],
@@ -1211,6 +1238,7 @@
   {
     "emoji": "🙌",
     "description": "person raising both hands in celebration",
+    "supports_skin_tone": true,
     "aliases": [
       "raised_hands"
     ],
@@ -1221,6 +1249,7 @@
   {
     "emoji": "🙏",
     "description": "person with folded hands",
+    "supports_skin_tone": true,
     "aliases": [
       "pray"
     ],
@@ -1242,6 +1271,7 @@
   {
     "emoji": "👏",
     "description": "clapping hands sign",
+    "supports_skin_tone": true,
     "aliases": [
       "clap"
     ],
@@ -1253,6 +1283,7 @@
   {
     "emoji": "💪",
     "description": "flexed biceps",
+    "supports_skin_tone": true,
     "aliases": [
       "muscle"
     ],
@@ -1266,6 +1297,7 @@
   {
     "emoji": "🚶",
     "description": "pedestrian",
+    "supports_skin_tone": true,
     "aliases": [
       "walking"
     ],
@@ -1275,6 +1307,7 @@
   {
     "emoji": "🏃",
     "description": "runner",
+    "supports_skin_tone": true,
     "aliases": [
       "runner",
       "running"
@@ -1288,6 +1321,7 @@
   {
     "emoji": "💃",
     "description": "dancer",
+    "supports_skin_tone": true,
     "aliases": [
       "dancer"
     ],
@@ -1360,6 +1394,7 @@
   {
     "emoji": "👯",
     "description": "woman with bunny ears",
+    "supports_skin_tone": true,
     "aliases": [
       "dancers"
     ],
@@ -1370,6 +1405,7 @@
   {
     "emoji": "🙆",
     "description": "face with ok gesture",
+    "supports_skin_tone": true,
     "aliases": [
       "ok_woman"
     ],
@@ -1379,6 +1415,7 @@
   {
     "emoji": "🙅",
     "description": "face with no good gesture",
+    "supports_skin_tone": true,
     "aliases": [
       "no_good"
     ],
@@ -1390,6 +1427,7 @@
   {
     "emoji": "💁",
     "description": "information desk person",
+    "supports_skin_tone": true,
     "aliases": [
       "information_desk_person"
     ],
@@ -1399,6 +1437,7 @@
   {
     "emoji": "🙋",
     "description": "happy person raising one hand",
+    "supports_skin_tone": true,
     "aliases": [
       "raising_hand"
     ],
@@ -1408,6 +1447,7 @@
   {
     "emoji": "💆",
     "description": "face massage",
+    "supports_skin_tone": true,
     "aliases": [
       "massage"
     ],
@@ -1418,6 +1458,7 @@
   {
     "emoji": "💇",
     "description": "haircut",
+    "supports_skin_tone": true,
     "aliases": [
       "haircut"
     ],
@@ -1439,6 +1480,7 @@
   {
     "emoji": "👰",
     "description": "bride with veil",
+    "supports_skin_tone": true,
     "aliases": [
       "bride_with_veil"
     ],
@@ -1450,6 +1492,7 @@
   {
     "emoji": "🙎",
     "description": "person with pouting face",
+    "supports_skin_tone": true,
     "aliases": [
       "person_with_pouting_face"
     ],
@@ -1459,6 +1502,7 @@
   {
     "emoji": "🙍",
     "description": "person frowning",
+    "supports_skin_tone": true,
     "aliases": [
       "person_frowning"
     ],
@@ -3147,6 +3191,7 @@
   {
     "emoji": "🎅",
     "description": "father christmas",
+    "supports_skin_tone": true,
     "aliases": [
       "santa"
     ],
@@ -3660,6 +3705,7 @@
   {
     "emoji": "🛀",
     "description": "bath",
+    "supports_skin_tone": true,
     "aliases": [
       "bath"
     ],
@@ -4607,6 +4653,7 @@
   {
     "emoji": "🚵",
     "description": "mountain bicyclist",
+    "supports_skin_tone": true,
     "aliases": [
       "mountain_bicyclist"
     ],
@@ -4616,6 +4663,7 @@
   {
     "emoji": "🚴",
     "description": "bicyclist",
+    "supports_skin_tone": true,
     "aliases": [
       "bicyclist"
     ],
@@ -4636,6 +4684,7 @@
   {
     "emoji": "🏇",
     "description": "horse racing",
+    "supports_skin_tone": true,
     "aliases": [
       "horse_racing"
     ],
@@ -4675,6 +4724,7 @@
   {
     "emoji": "🏊",
     "description": "swimmer",
+    "supports_skin_tone": true,
     "aliases": [
       "swimmer"
     ],
@@ -4684,6 +4734,7 @@
   {
     "emoji": "🏄",
     "description": "surfer",
+    "supports_skin_tone": true,
     "aliases": [
       "surfer"
     ],
@@ -10548,6 +10599,7 @@
   {
     "emoji": "🖖",
     "description": "raised hand with part between middle and ring fingers",
+    "supports_skin_tone": true,
     "aliases": [
       "vulcan_salute"
     ],
