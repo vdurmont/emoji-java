@@ -10322,5 +10322,179 @@
     "aliases": [
       "zw"
     ]
+  },
+  {
+    "emoji": "👨‍👩‍👦",
+    "description": "family (man, woman, boy)",
+    "aliases": [
+      "family_man_woman_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "woman",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👨‍👩‍👧",
+    "description": "family (man, woman, girl)",
+    "aliases": [
+      "family_man_woman_girl"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "woman",
+      "girl"
+    ]
+  },
+  {
+    "emoji": "👨‍👩‍👦‍👦",
+    "description": "family (man, woman, boy, boy)",
+    "aliases": [
+      "family_man_woman_boy_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "woman",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👨‍👩‍👧‍👧",
+    "description": "family (man, woman, girl, girl)",
+    "aliases": [
+      "family_man_woman_girl_girl"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "woman",
+      "girl"
+    ]
+  },
+  {
+    "emoji": "👩‍👩‍👦",
+    "description": "family (woman, woman, boy)",
+    "aliases": [
+      "family_woman_woman_boy"
+    ],
+    "tags": [
+      "family",
+      "woman",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👩‍👩‍👧",
+    "description": "family (woman, woman, girl)",
+    "aliases": [
+      "family_woman_woman_girl"
+    ],
+    "tags": [
+      "family",
+      "woman",
+      "girl"
+    ]
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👦",
+    "description": "family (woman, woman, girl, boy)",
+    "aliases": [
+      "family_woman_woman_girl_boy"
+    ],
+    "tags": [
+      "family",
+      "woman",
+      "girl",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👩‍👩‍👦‍👦",
+    "description": "family (woman, woman, boy, boy)",
+    "aliases": [
+      "family_woman_woman_boy_boy"
+    ],
+    "tags": [
+      "family",
+      "woman",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👩‍👩‍👧‍👧",
+    "description": "family (woman, woman, girl, girl)",
+    "aliases": [
+      "family_woman_woman_girl_girl"
+    ],
+    "tags": [
+      "family",
+      "woman",
+      "girl"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👦",
+    "description": "family (man, man, boy)",
+    "aliases": [
+      "family_man_man_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👧",
+    "description": "family (man, man, girl)",
+    "aliases": [
+      "family_man_man_girl"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "girl"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👦",
+    "description": "family (man, man, girl, boy)",
+    "aliases": [
+      "family_man_man_girl_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "girl",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👦‍👦",
+    "description": "family (man, man, boy, boy)",
+    "aliases": [
+      "family_man_man_boy_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "boy"
+    ]
+  },
+  {
+    "emoji": "👨‍👨‍👧‍👧",
+    "description": "family (man, man, girl, girl)",
+    "aliases": [
+      "family_man_man_girl_girl"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "girl"
+    ]
   }
 ]
