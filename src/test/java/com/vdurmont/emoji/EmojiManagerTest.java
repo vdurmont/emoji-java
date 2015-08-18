@@ -115,7 +115,7 @@ public class EmojiManagerTest {
         Collection<String> tags = EmojiManager.getAllTags();
 
         // THEN
-        // We know the database has 364 distinct tags...!
-        assertEquals(364, tags.size());
+        // We know the database has 561 distinct tags...!
+        assertEquals(561, tags.size());
     }
 }

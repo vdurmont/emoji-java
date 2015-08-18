@@ -173,4 +173,13 @@ public class EmojiParserTest {
         assertEquals("candi", candidates.get(0));
         assertEquals("candidate", candidates.get(1));
     }
+
+    @Test
+    public void test_with_a_new_flag() {
+        String input = "Cuba has a new flag! :cu:";
+        String expected = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
+
+        assertEquals(expected, EmojiParser.parseToUnicode(input));
+        assertEquals(input, EmojiParser.parseToAliases(expected));
+    }
 }
