@@ -6,7 +6,7 @@
 
 *The missing emoji library for java.*
 
-Based on the data provided by [github/gemoji project](https://github.com/github/gemoji), **emoji-java** is a lightweight java library that helps you use Emojis in your java applications.
+**emoji-java** is a lightweight java library that helps you use Emojis in your java applications.
 
 ## How to get it?
 
@@ -50,17 +50,45 @@ Or get everything:
 An `Emoji` is a POJO (plain old java object), which provides the following methods:
 
 * `getUnicode` returns the unicode representation of the emoji
+* `getUnicode(Fitzpatrick)` returns the unicode representation of the emoji with the provided Fitzpatrick modifier. If the emoji doesn't support the Fitzpatrick modifiers, this method will throw an `UnsupportedOperationException`. If the provided Fitzpatrick is null, this method will return the unicode of the emoji.
 * `getDescription` returns the (optional) description of the emoji
 * `getAliases` returns a list of aliases for this emoji
 * `getTags` returns a list of tags for this emoji
 * `getHtmlDecimal` returns an html decimal representation of the emoji
 * `getHtmlHexadecimal` returns an html decimal representation of the emoji
+* `supportsFitzpatrick` returns true if the emoji supports the Fitzpatrick modifiers, else false
+
+### Fitzpatrick modifiers
+
+Some emojis now support the use of Fitzpatrick modifiers that gives the choice between 5 shades of skin tones:
+
+| Modifier | Type |
+| :---: | ------- |
+| 🏻 | type_1_2 |
+| 🏼 | type_3 |
+| 🏽 | type_4 |
+| 🏾 | type_5 |
+| 🏿 | type_6 |
+
+We defined the format of the aliases including a Fitzpatrick modifier as:
+
+```
+:ALIAS|TYPE:
+```
+
+A few examples:
+
+```
+:boy|type_1_2:
+:swimmer|type_4:
+:santa|type_6:
+```
 
 ### EmojiParser
 
 #### To unicode
 
-To replace all the aliases and the html representations found in a string by their unicode, use `EmojiParser.parseToUnicode(myString)`.
+To replace all the aliases and the html representations found in a string by their unicode, use `EmojiParser#parseToUnicode(String)`.
 
 For example:
 
@@ -74,7 +102,7 @@ System.out.println(result);
 
 #### To aliases
 
-To replace all the emoji's unicodes found in a string by their aliases, use `EmojiParser.parseToAliases(myString)`.
+To replace all the emoji's unicodes found in a string by their aliases, use `EmojiParser#parseToAliases(String)`.
 
 For example:
 
@@ -86,9 +114,22 @@ System.out.println(result);
 // "An :grinning:awesome :smiley:string with a few :wink:emojis!"
 ```
 
+By default, the aliases will parse and include any Fitzpatrick modifier that would be provided. If you want to remove or ignore the Fitzpatrick modifiers, use `EmojiParser#parseToAliases(String, FitzpatrickAction)`. Examples:
+
+```java
+String str = "Here is a boy: \uD83D\uDC66\uD83C\uDFFF!";
+System.out.println(EmojiParser.parseToAliases(str));
+System.out.println(EmojiParser.parseToAliases(str, FitzpatrickAction.PARSE));
+// Prints twice: "Here is a boy: :boy|type_6:!"
+System.out.println(EmojiParser.parseToAliases(str, FitzpatrickAction.REMOVE));
+// Prints: "Here is a boy: :boy:!"
+System.out.println(EmojiParser.parseToAliases(str, FitzpatrickAction.IGNORE));
+// Prints: "Here is a boy: :boy:🏿!"
+```
+
 #### To html
 
-To replace all the emoji's unicodes found in a string by their html representation, use `EmojiParser.parseToHtmlDecimal(myString)` or `EmojiParser.parseToHtmlHexadecimal(myString)`.
+To replace all the emoji's unicodes found in a string by their html representation, use `EmojiParser#parseToHtmlDecimal(String)` or `EmojiParser#parseToHtmlHexadecimal(String)`.
 
 For example:
 
@@ -105,6 +146,24 @@ System.out.println(resultHexadecimal);
 // Prints:
 // "An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!"
 ```
+
+By default, any Fitzpatrick modifier will be removed. If you want to ignore the Fitzpatrick modifiers, use `EmojiParser#parseToAliases(String, FitzpatrickAction)`. Examples:
+
+```java
+String str = "Here is a boy: \uD83D\uDC66\uD83C\uDFFF!";
+System.out.println(EmojiParser.parseToHtmlDecimal(str));
+System.out.println(EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.PARSE));
+System.out.println(EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.REMOVE));
+// Print 3 times: "Here is a boy: &#128102;!"
+System.out.println(EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.IGNORE));
+// Prints: "Here is a boy: &#128102;🏿!"
+```
+
+The same applies for the methods `EmojiParser#parseToHtmlHexadecimal(String)` and `EmojiParser#parseToHtmlHexadecimal(String, FitzpatrickAction)`.
+
+## Credits
+
+**emoji-java** originally used the data provided by the [github/gemoji project](https://github.com/github/gemoji). It is still based on it but has evolved since.
 
 ## Available Emojis
 
