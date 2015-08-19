@@ -4,6 +4,7 @@
 
 * Update of the emoji database
   * Add 14 new family emojis (man_man_boy, woman_woman_girl, etc.)
+  * Add 4 new couple emojis
   * Add the "vulcan_salute" and "middle_finger" emojis
   * Add 198 flags
 * Addition of the support for the diversity emojis (Fitzpatrick modifiers)
