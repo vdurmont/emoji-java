@@ -50,9 +50,20 @@ public class EmojiParser {
         }
 
         // Replace the html
-        for (Emoji emoji : EmojiManager.getAll()) {
-            result = result.replace(emoji.getHtmlHexidecimal(), emoji.getUnicode());
-            result = result.replace(emoji.getHtml(), emoji.getUnicode());
+        Pattern pattern = Pattern.compile("(&#)\\w+(;)");
+        Matcher matcher = pattern.matcher(result);
+        while (matcher.find()) {
+            String match = matcher.group(0);
+            
+            final String unicodeForHtmlHexadecimal = EmojiManager.getUnicodeForHtmlHexadecimal(match);
+            if (unicodeForHtmlHexadecimal != null) {
+                result = result.replace(match, unicodeForHtmlHexadecimal);
+            }
+            
+            final String unicodeForHtmlDecimal = EmojiManager.getUnicodeForHtmlDecimal(match);
+            if (unicodeForHtmlDecimal != null) {
+                result = result.replace(match, unicodeForHtmlDecimal);
+            }
         }
 
         return result;
