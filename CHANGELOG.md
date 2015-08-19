@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.0.0
+
+* Update of the emoji database
+  * Add 14 new family emojis (man_man_boy, woman_woman_girl, etc.)
+  * Add the "vulcan_salute" emoji
+  * Add 198 flags
+* Addition of the support for the diversity emojis (Fitzpatrick modifiers)
+* Removal of the deprecated methods `Emoji#getHtml` and `EmojiParser#parseToHtml`
+
 ## v1.1.1
 
 Closing the stream used to read the emoji database in `EmojiManager.java`
