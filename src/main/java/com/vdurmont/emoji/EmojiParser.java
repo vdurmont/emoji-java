@@ -18,6 +18,10 @@ public class EmojiParser {
 
     /**
      * See {@link #parseToAliases(String, FitzpatrickAction)} with the action "PARSE"
+     *
+     * @param input the string to parse
+     *
+     * @return the string with the emojis replaced by their alias.
      */
     public static String parseToAliases(String input) {
         return parseToAliases(input, FitzpatrickAction.PARSE);
@@ -123,6 +127,10 @@ public class EmojiParser {
 
     /**
      * See {@link #parseToHtmlDecimal(String, FitzpatrickAction)} with the action "PARSE"
+     *
+     * @param input the string to parse
+     *
+     * @return the string with the emojis replaced by their html decimal representation.
      */
     public static String parseToHtmlDecimal(String input) {
         return parseToHtmlDecimal(input, FitzpatrickAction.PARSE);
@@ -132,11 +140,11 @@ public class EmojiParser {
      * Replaces the emoji's unicode occurrences by their html representation.
      * Example: "😄" gives "&amp;#128516;"
      *
-     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.
-     * Example: "👦🏿" gives "&#128102;"
+     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted from the string.
+     * Example: "👦🏿" gives "&amp;#128102;"
      *
-     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
-     * Example: "👦🏿" gives "&#128102;🏿"
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.
+     * Example: "👦🏿" gives "&amp;#128102;🏿"
      *
      * @param input             the string to parse
      * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
@@ -162,6 +170,10 @@ public class EmojiParser {
 
     /**
      * See {@link #parseToHtmlHexadecimal(String, FitzpatrickAction)} with the action "PARSE"
+     *
+     * @param input the string to parse
+     *
+     * @return the string with the emojis replaced by their html hex representation.
      */
     public static String parseToHtmlHexadecimal(String input) {
         return parseToHtmlHexadecimal(input, FitzpatrickAction.PARSE);
@@ -172,10 +184,10 @@ public class EmojiParser {
      * Example: "?" gives "&amp;#x1f064;"
      *
      * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.
-     * Example: "👦🏿" gives "&#x1f466;"
+     * Example: "👦🏿" gives "&amp;#x1f466;"
      *
-     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
-     * Example: "👦🏿" gives "&#x1f466;🏿"
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.
+     * Example: "👦🏿" gives "&amp;#x1f466;🏿"
      *
      * @param input             the string to parse
      * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
