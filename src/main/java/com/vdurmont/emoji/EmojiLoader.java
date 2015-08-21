@@ -17,6 +17,11 @@ import java.util.Scanner;
  */
 public class EmojiLoader {
     /**
+     * No need for a constructor, all the methods are static.
+     */
+    private EmojiLoader() {}
+
+    /**
      * Loads a JSONArray of emojis from an InputStream, parses it and returns the associated list of {@link com.vdurmont.emoji.Emoji}s
      *
      * @param stream the stream of the JSONArray

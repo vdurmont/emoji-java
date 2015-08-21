@@ -12,6 +12,11 @@ import java.util.regex.Pattern;
  */
 public class EmojiParser {
     /**
+     * No need for a constructor, all the methods are static.
+     */
+    private EmojiParser() {}
+
+    /**
      * See {@link #parseToAliases(String, FitzpatrickAction)} with the action "PARSE"
      */
     public static String parseToAliases(String input) {

@@ -41,6 +41,11 @@ public class EmojiManager {
     }
 
     /**
+     * No need for a constructor, all the methods are static.
+     */
+    private EmojiManager() {}
+
+    /**
      * Returns all the {@link com.vdurmont.emoji.Emoji}s for a given tag.
      *
      * @param tag the tag
