@@ -1,11 +1,14 @@
 package com.vdurmont.emoji;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Collections;
 import java.util.List;
 
 
 /**
- * This class represents an emoji.
+ * This class represents an emoji.<br>
+ * <br>
+ * This object is immutable so it can be used safely in a multithreaded context.
  *
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
@@ -25,18 +28,18 @@ public class Emoji {
      * @param supportsFitzpatrick wether the emoji supports the Fitzpatrick modifiers or not
      * @param aliases             the aliases for this emoji
      * @param tags                the tags associated with this emoji
-     * @param htmlCode            the html code for the emoji
      * @param bytes               the bytes that represent the emoji
      */
-    protected Emoji(String description, boolean supportsFitzpatrick, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
+    protected Emoji(String description, boolean supportsFitzpatrick, List<String> aliases, List<String> tags, byte... bytes) {
         this.description = description;
         this.supportsFitzpatrick = supportsFitzpatrick;
-        this.aliases = aliases;
-        this.tags = tags;
-        this.htmlDec = "&#" + htmlCode + ";";
-        this.htmlHex = "&#x" + Integer.toHexString(htmlCode) + ";";
+        this.aliases = Collections.unmodifiableList(aliases);
+        this.tags = Collections.unmodifiableList(tags);
         try {
             this.unicode = new String(bytes, "UTF-8");
+            int htmlCode = Character.codePointAt(this.unicode, 0);
+            this.htmlDec = "&#" + htmlCode + ";";
+            this.htmlHex = "&#x" + Integer.toHexString(htmlCode) + ";";
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
@@ -63,7 +66,7 @@ public class Emoji {
     /**
      * Returns the aliases of the emoji
      *
-     * @return the aliases
+     * @return the aliases (unmodifiable)
      */
     public List<String> getAliases() {
         return this.aliases;
@@ -72,7 +75,7 @@ public class Emoji {
     /**
      * Returns the tags of the emoji
      *
-     * @return the tags
+     * @return the tags (unmodifiable)
      */
     public List<String> getTags() {
         return this.tags;
@@ -123,6 +126,14 @@ public class Emoji {
         return this.htmlHex;
     }
 
+    /**
+     * Returns the String representation of the Emoji object.<br>
+     * <br>
+     * Example:<br>
+     * <code>Emoji{description='smiling face with open mouth and smiling eyes', supportsFitzpatrick=false, aliases=[smile], tags=[happy, joy, pleased], unicode='😄', htmlDec='&amp;#128516;', htmlHex='&amp;#x1f604;'}</code>
+     *
+     * @return the string representation
+     */
     @Override
     public String toString() {
         return "Emoji{" +
@@ -130,7 +141,7 @@ public class Emoji {
                 ", supportsFitzpatrick=" + supportsFitzpatrick +
                 ", aliases=" + aliases +
                 ", tags=" + tags +
-                ", unicode=" + this.getUnicode() +
+                ", unicode='" + unicode + '\'' +
                 ", htmlDec='" + htmlDec + '\'' +
                 ", htmlHex='" + htmlHex + '\'' +
                 '}';

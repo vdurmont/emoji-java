@@ -28,18 +28,18 @@ public class EmojiParser {
     }
 
     /**
-     * Replaces the emoji's unicode occurrences by one of their alias (between 2 ':').
-     * Example: "😄" gives ":smile:"
-     *
-     * When a fitzpatrick modifier is present with a PARSE action, a "|" will be appendend to the alias, with the fitzpatrick type.
-     * Example: "👦🏿" gives ":boy|type_6:"
-     * The fitzpatrick types are: type_1_2, type_3, type_4, type_5, type_6
-     *
-     * When a fitzpatrick modifier is present with a REMOVE action, the modifier will be deleted.
-     * Example: "👦🏿" gives ":boy:"
-     *
-     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.
-     * Example: "👦🏿" gives ":boy:🏿"
+     * Replaces the emoji's unicode occurrences by one of their alias (between 2 ':').<br>
+     * Example: <code>😄</code> will be replaced by <code>:smile:</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a PARSE action, a "|" will be appendend to the alias, with the fitzpatrick type.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>:boy|type_6:</code><br>
+     * The fitzpatrick types are: type_1_2, type_3, type_4, type_5, type_6<br>
+     * <br>
+     * When a fitzpatrick modifier is present with a REMOVE action, the modifier will be deleted.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>:boy:</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>:boy:🏿</code><br>
      *
      * @param input             the string to parse
      * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
@@ -66,10 +66,11 @@ public class EmojiParser {
     }
 
     /**
-     * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.
-     * Example: ":smile:" gives "😄"
-     * "&amp;#128516;" gives "😄"
-     * ":boy|type_6:" gives "👦🏿"
+     * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.<br>
+     * Examples:<br>
+     * <code>:smile:</code> will be replaced by <code>😄</code><br>
+     * <code>&amp;#128516;</code> will be replaced by <code>😄</code><br>
+     * <code>:boy|type_6:</code> will be replaced by <code>👦🏿</code>
      *
      * @param input the string to parse
      *
@@ -137,14 +138,14 @@ public class EmojiParser {
     }
 
     /**
-     * Replaces the emoji's unicode occurrences by their html representation.
-     * Example: "😄" gives "&amp;#128516;"
-     *
-     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted from the string.
-     * Example: "👦🏿" gives "&amp;#128102;"
-     *
-     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.
-     * Example: "👦🏿" gives "&amp;#128102;🏿"
+     * Replaces the emoji's unicode occurrences by their html representation.<br>
+     * Example: <code>😄</code> will be replaced by <code>&amp;#128516;</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted from the string.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>&amp;#128102;</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>&amp;#128102;🏿</code>
      *
      * @param input             the string to parse
      * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers
@@ -180,14 +181,14 @@ public class EmojiParser {
     }
 
     /**
-     * Replaces the emoji's unicode occurrences by their html hex representation.
-     * Example: "?" gives "&amp;#x1f064;"
-     *
-     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.
-     * Example: "👦🏿" gives "&amp;#x1f466;"
-     *
-     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.
-     * Example: "👦🏿" gives "&amp;#x1f466;🏿"
+     * Replaces the emoji's unicode occurrences by their html hex representation.<br>
+     * Example: <code>👦</code> will be replaced by <code>&amp;#x1f466;</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a PARSE or REMOVE action, the modifier will be deleted.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>&amp;#x1f466;</code><br>
+     * <br>
+     * When a fitzpatrick modifier is present with a IGNORE action, the modifier will be ignored and will remain in the string.<br>
+     * Example: <code>👦🏿</code> will be replaced by <code>&amp;#x1f466;🏿</code>
      *
      * @param input             the string to parse
      * @param fitzpatrickAction the action to apply for the fitzpatrick modifiers

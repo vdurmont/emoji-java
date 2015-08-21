@@ -62,13 +62,7 @@ public class EmojiLoader {
         }
         List<String> aliases = jsonArrayToStringList(json.getJSONArray("aliases"));
         List<String> tags = jsonArrayToStringList(json.getJSONArray("tags"));
-        int html = getHtmlCodeFromBytes(bytes);
-        return new Emoji(description, supportsFitzpatrick, aliases, tags, html, bytes);
-    }
-
-    private static int getHtmlCodeFromBytes(byte[] bytes) throws UnsupportedEncodingException {
-        String unicode = new String(bytes, "UTF-8");
-        return Character.codePointAt(unicode, 0);
+        return new Emoji(description, supportsFitzpatrick, aliases, tags, bytes);
     }
 
     private static List<String> jsonArrayToStringList(JSONArray array) {
