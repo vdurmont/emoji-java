@@ -10,7 +10,6 @@ import java.util.List;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class Emoji {
-
     private final String description;
     private final boolean supportsFitzpatrick;
     private final List<String> aliases;
@@ -19,7 +18,17 @@ public class Emoji {
     private final String htmlDec;
     private final String htmlHex;
 
-    public Emoji(String description, boolean supportsFitzpatrick, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
+    /**
+     * Constructor for the Emoji.
+     *
+     * @param description         The description of the emoji
+     * @param supportsFitzpatrick wether the emoji supports the Fitzpatrick modifiers or not
+     * @param aliases             the aliases for this emoji
+     * @param tags                the tags associated with this emoji
+     * @param htmlCode            the html code for the emoji
+     * @param bytes               the bytes that represent the emoji
+     */
+    protected Emoji(String description, boolean supportsFitzpatrick, List<String> aliases, List<String> tags, int htmlCode, byte... bytes) {
         this.description = description;
         this.supportsFitzpatrick = supportsFitzpatrick;
         this.aliases = aliases;
@@ -33,26 +42,60 @@ public class Emoji {
         }
     }
 
+    /**
+     * Returns the description of the emoji
+     *
+     * @return the description
+     */
     public String getDescription() {
         return this.description;
     }
 
+    /**
+     * Returns wether the emoji supports the Fitzpatrick modifiers or not
+     *
+     * @return true if the emoji supports the Fitzpatrick modifiers
+     */
     public boolean supportsFitzpatrick() {
         return this.supportsFitzpatrick;
     }
 
+    /**
+     * Returns the aliases of the emoji
+     *
+     * @return the aliases
+     */
     public List<String> getAliases() {
         return this.aliases;
     }
 
+    /**
+     * Returns the tags of the emoji
+     *
+     * @return the tags
+     */
     public List<String> getTags() {
         return this.tags;
     }
 
+    /**
+     * Returns the unicode representation of the emoji
+     *
+     * @return the unicode representation
+     */
     public String getUnicode() {
         return this.unicode;
     }
 
+    /**
+     * Returns the unicode representation of the emoji associated with the provided Fitzpatrick modifier.<br>
+     * If the modifier is null, then the result is similar to {@link Emoji#getUnicode()}
+     *
+     * @param fitzpatrick the fitzpatrick modifier or null
+     *
+     * @return the unicode representation
+     * @throws UnsupportedOperationException if the emoji doesn't support the Fitzpatrick modifiers
+     */
     public String getUnicode(Fitzpatrick fitzpatrick) {
         if (!this.supportsFitzpatrick()) {
             throw new UnsupportedOperationException("Cannot get the unicode with a fitzpatrick modifier, the emoji doesn't support fitzpatrick.");
@@ -62,10 +105,20 @@ public class Emoji {
         return this.getUnicode() + fitzpatrick.unicode;
     }
 
+    /**
+     * Returns the HTML decimal representation of the emoji
+     *
+     * @return the HTML decimal representation
+     */
     public String getHtmlDecimal() {
         return this.htmlDec;
     }
 
+    /**
+     * Returns the HTML hexadecimal representation of the emoji
+     *
+     * @return the HTML hexadecimal representation
+     */
     public String getHtmlHexidecimal() {
         return this.htmlHex;
     }
