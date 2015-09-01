@@ -106,7 +106,7 @@ public class EmojiParser {
 
     protected static List<AliasCandidate> getAliasCandidates(String input) {
         List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
-        String regex = "(?<=:)\\+?(\\w|\\|)+(?=:)";
+        String regex = "(?<=:)\\+?(\\w|\\||\\-)+(?=:)";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(input);
         matcher = matcher.useTransparentBounds(true);
