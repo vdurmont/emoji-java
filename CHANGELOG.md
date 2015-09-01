@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.1
+
+Bug fix on the :-1: emoji
+
 ## v2.0.0
 
 * Update of the emoji database
