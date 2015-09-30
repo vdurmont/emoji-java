@@ -265,10 +265,10 @@ public class EmojiParser {
         IGNORE
     }
 
-        /**
+    /**
      * Removes all emojis from a String
      */
-    public static String removeEmojis(String str) {
+    public static String removeAllEmojis(String str) {
         //remove all fitzpatrick modifiers
         for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
             str = str.replaceAll(fitzpatrick.unicode, "");
