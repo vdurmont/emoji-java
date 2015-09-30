@@ -1,6 +1,7 @@
 package com.vdurmont.emoji;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -236,6 +237,50 @@ public class EmojiParser {
         // Remove all emojis
         for (Emoji emoji : EmojiManager.getAll()) {
             str = str.replaceAll(emoji.getUnicode(), "");
+        }
+
+        return str;
+    }
+
+    /**
+     * Removes a set of emojis from a String
+     *
+     * @param str            the string to process
+     * @param emojisToRemove the emojis to remove from this string
+     *
+     * @return the string without the emojis that were removed
+     */
+    public static String removeEmojis(String str, Collection<Emoji> emojisToRemove) {
+        for (Emoji emoji : emojisToRemove) {
+            if (emoji.supportsFitzpatrick()) {
+                for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                    str = str.replaceAll(emoji.getUnicode(fitzpatrick), "");
+                }
+            }
+            str = str.replaceAll(emoji.getUnicode(), "");
+        }
+
+        return str;
+    }
+
+    /**
+     * Removes all the emojis in a String except a provided set
+     *
+     * @param str          the string to process
+     * @param emojisToKeep the emojis to keep in this string
+     *
+     * @return the string without the emojis that were removed
+     */
+    public static String removeAllEmojisExcept(String str, Collection<Emoji> emojisToKeep) {
+        for (Emoji emoji : EmojiManager.getAll()) {
+            if (!emojisToKeep.contains(emoji)) {
+                if (emoji.supportsFitzpatrick()) {
+                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+                        str = str.replaceAll(emoji.getUnicode(fitzpatrick), "");
+                    }
+                }
+                str = str.replaceAll(emoji.getUnicode(), "");
+            }
         }
 
         return str;

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -365,17 +366,49 @@ public class EmojiParserTest {
 
     @Test
     public void removeAllEmojis_removes_all_the_emojis_from_the_string() {
+        // GIVEN
         String input = "An 😀awesome 😃string 😄with a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
-        String expected = "An awesome string with a few emojis!";
 
-        assertEquals(expected, EmojiParser.removeAllEmojis(input));
+        // WHEN
+        String result = EmojiParser.removeAllEmojis(input);
+
+        // THEN
+        String expected = "An awesome string with a few emojis!";
+        assertEquals(expected, result);
+
     }
 
     @Test
     public void removeEmojis_only_removes_the_emojis_in_the_iterable_from_the_string() {
-        String input = "An 😀awesome 😃string 😄with a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
-        String expected = "An awesome string with a few emojis!";
+        // GIVEN
+        String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
-        assertEquals(expected, EmojiParser.removeAllEmojis(input));
+        List<Emoji> emojis = new ArrayList<Emoji>();
+        emojis.add(EmojiManager.getForAlias("smile"));
+        emojis.add(EmojiManager.getForAlias("+1"));
+
+        // WHEN
+        String result = EmojiParser.removeEmojis(input, emojis);
+
+        // THEN
+        String expected = "An\uD83D\uDE03 awesome string with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void removeAllEmojisExcept_removes_all_the_emojis_from_the_string_except_those_in_the_iterable() {
+        // GIVEN
+        String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
+
+        List<Emoji> emojis = new ArrayList<Emoji>();
+        emojis.add(EmojiManager.getForAlias("smile"));
+        emojis.add(EmojiManager.getForAlias("+1"));
+
+        // WHEN
+        String result = EmojiParser.removeAllEmojisExcept(input, emojis);
+
+        // THEN
+        String expected = "An awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF with a few emojis!";
+        assertEquals(expected, result);
     }
 }
