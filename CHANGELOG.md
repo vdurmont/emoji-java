@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.1.0
+
+* Add methods:
+  * `EmojiParser#removeAllEmojis(String)`
+  * `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`
+  * `EmojiParser#removeEmojis(String, Collection<Emoji>)`
+* Upgrade dependency org.json:json
+
 ## v2.0.1
 
 Bug fix on the :-1: emoji
