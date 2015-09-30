@@ -364,11 +364,18 @@ public class EmojiParserTest {
     }
 
     @Test
-    public void removeAllEmojis_test() {
+    public void removeAllEmojis_removes_all_the_emojis_from_the_string() {
         String input = "An 😀awesome 😃string 😄with a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
         String expected = "An awesome string with a few emojis!";
 
         assertEquals(expected, EmojiParser.removeAllEmojis(input));
     }
 
+    @Test
+    public void removeEmojis_only_removes_the_emojis_in_the_iterable_from_the_string() {
+        String input = "An 😀awesome 😃string 😄with a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
+        String expected = "An awesome string with a few emojis!";
+
+        assertEquals(expected, EmojiParser.removeAllEmojis(input));
+    }
 }

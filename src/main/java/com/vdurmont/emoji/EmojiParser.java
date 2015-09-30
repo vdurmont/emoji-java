@@ -221,6 +221,26 @@ public class EmojiParser {
         return input;
     }
 
+    /**
+     * Removes all emojis from a String
+     *
+     * @param str the string to process
+     *
+     * @return the string without any emoji
+     */
+    public static String removeAllEmojis(String str) {
+        // Remove all fitzpatrick modifiers
+        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+            str = str.replaceAll(fitzpatrick.unicode, "");
+        }
+        // Remove all emojis
+        for (Emoji emoji : EmojiManager.getAll()) {
+            str = str.replaceAll(emoji.getUnicode(), "");
+        }
+
+        return str;
+    }
+
     protected static class AliasCandidate {
         public final String fullString;
         public final String alias;
@@ -264,21 +284,4 @@ public class EmojiParser {
          */
         IGNORE
     }
-
-    /**
-     * Removes all emojis from a String
-     */
-    public static String removeAllEmojis(String str) {
-        //remove all fitzpatrick modifiers
-        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-            str = str.replaceAll(fitzpatrick.unicode, "");
-        }
-        //remove all emojis
-        for (Emoji emoji : EmojiManager.getAll()) {
-            str = str.replaceAll(emoji.getUnicode(), "");
-        }
-
-        return str;
-    }
-
 }
