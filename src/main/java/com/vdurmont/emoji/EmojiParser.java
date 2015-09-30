@@ -264,4 +264,21 @@ public class EmojiParser {
          */
         IGNORE
     }
+
+        /**
+     * Removes all emojis from a String
+     */
+    public static String removeEmojis(String str) {
+        //remove all fitzpatrick modifiers
+        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+            str = str.replaceAll(fitzpatrick.unicode, "");
+        }
+        //remove all emojis
+        for (Emoji emoji : EmojiManager.getAll()) {
+            str = str.replaceAll(emoji.getUnicode(), "");
+        }
+
+        return str;
+    }
+
 }
