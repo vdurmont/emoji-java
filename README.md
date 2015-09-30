@@ -161,6 +161,31 @@ System.out.println(EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.IGNORE)
 
 The same applies for the methods `EmojiParser#parseToHtmlHexadecimal(String)` and `EmojiParser#parseToHtmlHexadecimal(String, FitzpatrickAction)`.
 
+#### Remove emojis
+
+You can easily remove emojis from a string using one of the following methods:
+
+* `EmojiParser#removeAllEmojis(String)`: removes all the emojis from the String
+* `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`: removes all the emojis from the String, except the ones in the Collection
+* `EmojiParser#removeEmojis(String, Collection<Emoji>)`: removes the emojis in the Collection from the String
+
+For example:
+
+```java
+String str = "An 😀awesome 😃string with a few 😉emojis!";
+Collection<Emoji> collection = new ArrayList<Emoji>();
+collection.add(EmojiManager.getForAlias("wink")); // This is 😉
+
+System.out.println(EmojiParser.removeAllEmojis(str));
+System.out.println(EmojiParser.removeAllEmojisExcept(str, collection));
+System.out.println(EmojiParser.removeEmojis(str, collection));
+
+// Prints:
+// "An awesome string with a few emojis!"
+// "An awesome string with a few 😉emojis!"
+// "An 😀awesome 😃string with a few emojis!"
+```
+
 ## Credits
 
 **emoji-java** originally used the data provided by the [github/gemoji project](https://github.com/github/gemoji). It is still based on it but has evolved since.
