@@ -362,4 +362,13 @@ public class EmojiParserTest {
         assertEquals(expected, EmojiParser.parseToUnicode(input));
         assertEquals(input, EmojiParser.parseToAliases(expected));
     }
+
+    @Test
+    public void removeAllEmojisFromString() {
+        String input = "An 😀awesome 😃string 😄with a few 😉emojis!";
+        String expected = "An awesome string with a few emojis!";
+
+        assertEquals(expected, EmojiParser.removeEmojis(input));
+    }
+
 }
