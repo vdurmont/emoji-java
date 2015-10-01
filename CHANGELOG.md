@@ -2,6 +2,10 @@
 
 ## v2.1.0
 
+Rollback dependency org.json:json to 20140107 to keep the compatibility with Java 6 & 7
+
+## v2.1.0
+
 * Add methods:
   * `EmojiParser#removeAllEmojis(String)`
   * `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`
