@@ -10616,5 +10616,210 @@
       "middle_finger"
     ],
     "tags": []
+  },
+  {
+    "emoji": "🙂",
+    "description": "slightly smiling face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "slightly_smiling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤗",
+    "description": "hugging face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hugging",
+      "hug",
+      "hugs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤔",
+    "description": "thinking face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "thinking",
+      "think",
+      "thinker"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙄",
+    "description": "face with rolling eyes",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "eye_roll",
+      "rolling_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤐",
+    "description": "zipper-mouth face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "zipper_mouth",
+      "zip_it",
+      "sealed_lips",
+      "lips_sealed"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤓",
+    "description": "nerd face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "nerd",
+      "nerdy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☹",
+    "description": "white frowning face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "frowning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙁",
+    "description": "slightly frowning face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "slightly_frowning"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙃",
+    "description": "upside-down face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "upside_down",
+      "flipped_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤒",
+    "description": "face with thermometer",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "sick",
+      "ill",
+      "thermometer_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤕",
+    "description": "face with head bandage",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "injured",
+      "head_bandage",
+      "head_bandaged",
+      "bandaged"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤑",
+    "description": "money-mouth face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "money_mouth",
+      "money_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛑",
+    "description": "helmet with white crosse",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "helmet_white_cross"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕵",
+    "description": "sleuth or spy",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "detective",
+      "sleuth",
+      "private_eye",
+      "spy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗣",
+    "description": "speaking head in silhouette",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "speaking_head_in_silhouette"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕴",
+    "description": "man in business suit levitating",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hovering_man",
+      "levitating_man"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤘",
+    "description": "sign of the horns",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "horns_sign",
+      "rock_on",
+      "heavy_metal",
+      "devil_fingers"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖐",
+    "description": "raised hand with five fingers splayed",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "raised_hand_with_fingers_splayed",
+      "splayed_hand"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✍",
+    "description": "writing hand",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "writing",
+      "writing_hand"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👁",
+    "description": "eye",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "eye"
+    ],
+    "tags": []
   }
 ]
