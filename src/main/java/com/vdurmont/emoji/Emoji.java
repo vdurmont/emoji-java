@@ -52,8 +52,8 @@ public class Emoji {
 
                 offset += Character.charCount(codePoint);
             }
-            this.htmlDec = stringJoin(pointCodes);
-            this.htmlHex = stringJoin(pointCodesHex);
+            this.htmlDec = stringJoin(pointCodes, count);
+            this.htmlHex = stringJoin(pointCodesHex, count);
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
@@ -64,10 +64,10 @@ public class Emoji {
      * @param array the array to be concatenated
      * @return concatenated String
      */
-    private String stringJoin(String[] array){
+    private String stringJoin(String[] array, int count){
         String joined = "";
-        for(String str: array)
-            joined += str;
+        for(int i = 0; i < count; i++)
+            joined += array[i];
         return joined;
     }
 
