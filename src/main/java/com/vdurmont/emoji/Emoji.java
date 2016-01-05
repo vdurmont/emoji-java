@@ -52,11 +52,23 @@ public class Emoji {
 
                 offset += Character.charCount(codePoint);
             }
-            this.htmlDec = String.join("", Arrays.copyOfRange(pointCodes, 0, count));
-            this.htmlHex = String.join("", Arrays.copyOfRange(pointCodesHex, 0, count));
+            this.htmlDec = stringJoin(pointCodes);
+            this.htmlHex = stringJoin(pointCodesHex);
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * Method to replace String.join, since it was only introduced in java8
+     * @param array the array to be concatenated
+     * @return concatenated String
+     */
+    private String stringJoin(String[] array){
+        String joined = "";
+        for(String str: array)
+            joined += str;
+        return joined;
     }
 
     /**
