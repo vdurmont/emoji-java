@@ -18,7 +18,7 @@ public class EmojiManager {
     private static final String PATH = "/emojis.json";
     private static final Map<String, Emoji> EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
     private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
-
+    private static final Trie EMOJIS_TRIE = new Trie();
     static {
         try {
             InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
@@ -33,6 +33,15 @@ public class EmojiManager {
                 for (String alias : emoji.getAliases()) {
                     EMOJIS_BY_ALIAS.put(alias, emoji);
                 }
+                int stringLength = emoji.getUnicode().length();
+                Trie.Node node = EMOJIS_TRIE.getRoot();
+                for (int offset = 0; offset < stringLength; ) {
+                    final int codePoint = emoji.getUnicode().codePointAt(offset);
+                    node.add(codePoint);
+                    node = node.getNode(codePoint);
+                    offset += Character.charCount(codePoint);
+                }
+                node.setEnd();
             }
             stream.close();
         } catch (IOException e) {
@@ -102,11 +111,23 @@ public class EmojiManager {
      */
     public static boolean isEmoji(String string) {
         if (string != null) {
-            for (Emoji emoji : getAll()) {
-                if (emoji.getUnicode().equals(string)) {
-                    return true;
+            int stringLength = string.length();
+            Trie.Node node = EMOJIS_TRIE.getRoot();
+            for (int offset = 0; offset < stringLength; ) {
+                final int codePoint = string.codePointAt(offset);
+                if(!node.nodeContains(codePoint)) {
+                    if(node == EMOJIS_TRIE.getRoot())
+                        return false;
+                    else if(node != EMOJIS_TRIE.getRoot() && node.isEnd())
+                        node = EMOJIS_TRIE.getRoot();
+                    else if(node != EMOJIS_TRIE.getRoot() && !node.isEnd())
+                        return false;
+                }else{
+                    node = node.getNode(codePoint);
                 }
+                offset += Character.charCount(codePoint);
             }
+            return true;
         }
         return false;
     }

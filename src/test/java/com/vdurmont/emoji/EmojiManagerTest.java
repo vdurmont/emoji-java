@@ -108,6 +108,43 @@ public class EmojiManagerTest {
     }
 
     @Test
+    public void isEmoji_for_multiple_emoji_returns_true() {
+        // GIVEN
+
+        String str = "😃😃👨‍👨‍👧‍👦";
+
+        // WHEN
+        boolean isEmoji = EmojiManager.isEmoji(str);
+
+        // THEN
+        assertTrue(isEmoji);
+    }
+
+    @Test
+    public void isEmoji_for_invalid_multiple_emoji_returns_false() {
+        // GIVEN
+        String str = "\uDE03\uD83D\uDE03\uD83D\uDC68\u200D\uD83D\uDC68\u200D\uD83D\uDC67\u200D\uD83D\uDC66";
+
+        // WHEN
+        boolean isEmoji = EmojiManager.isEmoji(str);
+
+        // THEN
+        assertFalse(isEmoji);
+    }
+
+    @Test
+    public void isEmoji_for_multiple_emoji_and_other_chars_returns_false() {
+        // GIVEN
+        String str = "😀😀asdfgjk;";
+
+        // WHEN
+        boolean isEmoji = EmojiManager.isEmoji(str);
+
+        // THEN
+        assertFalse(isEmoji);
+    }
+
+    @Test
     public void getAllTags_returns_the_tags() {
         // GIVEN
 
