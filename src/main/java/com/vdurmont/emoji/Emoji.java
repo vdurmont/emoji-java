@@ -1,6 +1,7 @@
 package com.vdurmont.emoji;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -35,14 +36,39 @@ public class Emoji {
         this.supportsFitzpatrick = supportsFitzpatrick;
         this.aliases = Collections.unmodifiableList(aliases);
         this.tags = Collections.unmodifiableList(tags);
+
+        int count = 0;
         try {
             this.unicode = new String(bytes, "UTF-8");
-            int htmlCode = Character.codePointAt(this.unicode, 0);
-            this.htmlDec = "&#" + htmlCode + ";";
-            this.htmlHex = "&#x" + Integer.toHexString(htmlCode) + ";";
+            int stringLength = getUnicode().length();
+            String[] pointCodes = new String[stringLength];
+            String[] pointCodesHex = new String[stringLength];
+
+            for (int offset = 0; offset < stringLength; ) {
+                final int codePoint = getUnicode().codePointAt(offset);
+
+                pointCodes[count] = String.format("&#%d;", codePoint);
+                pointCodesHex[count++] = String.format("&#x%x;", codePoint);
+
+                offset += Character.charCount(codePoint);
+            }
+            this.htmlDec = stringJoin(pointCodes, count);
+            this.htmlHex = stringJoin(pointCodesHex, count);
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * Method to replace String.join, since it was only introduced in java8
+     * @param array the array to be concatenated
+     * @return concatenated String
+     */
+    private String stringJoin(String[] array, int count){
+        String joined = "";
+        for(int i = 0; i < count; i++)
+            joined += array[i];
+        return joined;
     }
 
     /**
