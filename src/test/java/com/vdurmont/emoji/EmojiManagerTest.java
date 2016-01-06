@@ -123,7 +123,7 @@ public class EmojiManagerTest {
     @Test
     public void isEmoji_for_invalid_multiple_emoji_returns_false() {
         // GIVEN
-        String str = "\uDE03\uD83D\uDE03\uD83D\uDC68\u200D\uD83D\uDC68\u200D\uD83D\uDC67\u200D\uD83D\uDC66";
+        String str = "\uD83D\uDE03\uD83D\uDE03\uD83D\uDC68\u200D\uD83D\uDC68\u200D\uD83D\uDC67\u200D\uD83D";
 
         // WHEN
         boolean isEmoji = EmojiManager.isEmoji(str);

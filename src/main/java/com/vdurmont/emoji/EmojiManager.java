@@ -105,7 +105,7 @@ public class EmojiManager {
     /**
      * Tests if a given String is an emoji.
      *
-     * @param string the string to test
+     * @param string the string to test. Can contain multiple emoji
      *
      * @return true if the string is an emoji's unicode, false else
      */
@@ -118,16 +118,14 @@ public class EmojiManager {
                 if(!node.nodeContains(codePoint)) {
                     if(node == EMOJIS_TRIE.getRoot())
                         return false;
-                    else if(node != EMOJIS_TRIE.getRoot() && node.isEnd())
+                    else
                         node = EMOJIS_TRIE.getRoot();
-                    else if(node != EMOJIS_TRIE.getRoot() && !node.isEnd())
-                        return false;
                 }else{
                     node = node.getNode(codePoint);
+                    offset += Character.charCount(codePoint);
                 }
-                offset += Character.charCount(codePoint);
             }
-            return true;
+            return node.isEnd();
         }
         return false;
     }
