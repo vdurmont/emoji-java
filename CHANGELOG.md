@@ -1,6 +1,10 @@
 # Changelog
 
-## v2.1.0
+## v2.2.1
+
+Fix the `htmlDec` and `htmlHex` codes for the multiple emojis (such as `family (man, man, girl, boy)`)
+
+## v2.2.0
 
 Rollback dependency org.json:json to 20140107 to keep the compatibility with Java 6 & 7
 

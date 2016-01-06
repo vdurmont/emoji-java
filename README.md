@@ -16,7 +16,7 @@
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>2.2.0</version>
+  <version>2.2.1</version>
 </dependency>
 ```
 
@@ -24,14 +24,14 @@ You can also download the project, build it with `mvn clean install` and add the
 
 ##### Via Gradle:
 ```gradle
-compile 'com.vdurmont:emoji-java:2.2.0'
+compile 'com.vdurmont:emoji-java:2.2.1'
 ```
 
 ## How to use it?
 
 ### EmojiManager
 
-The `EmojiManager` provides several static methods to search throught the emojis database:
+The `EmojiManager` provides several static methods to search through the emojis database:
 
 * `getForTag` returns all the emojis for a given tag
 * `getForAlias` returns the emoji for an alias
