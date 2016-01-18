@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.0.0
+
+Update the emoji database to support the additions of iOS 9.1
+
 ## v2.2.1
 
 Fix the `htmlDec` and `htmlHex` codes for the multiple emojis (such as `family (man, man, girl, boy)`)
