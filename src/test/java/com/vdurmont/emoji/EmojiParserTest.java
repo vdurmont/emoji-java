@@ -411,4 +411,16 @@ public class EmojiParserTest {
         String expected = "An awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF with a few emojis!";
         assertEquals(expected, result);
     }
+
+    @Test
+    public void parseToUnicode_with_the_keycap_asterisk_emoji_replaces_the_alias_by_the_emoji() {
+        // GIVEN
+        String str = "Let's test the :keycap_asterisk: emoji and its other alias :star_keycap:";
+
+        // WHEN
+        String result = EmojiParser.parseToUnicode(str);
+
+        // THEN
+        assertEquals("Let's test the *⃣ emoji and its other alias *⃣", result);
+    }
 }

@@ -10616,5 +10616,1779 @@
       "middle_finger"
     ],
     "tags": []
+  },
+  {
+    "emoji": "🙂",
+    "description": "slightly smiling face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "slightly_smiling"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤗",
+    "description": "hugging face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hugging",
+      "hug",
+      "hugs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤔",
+    "description": "thinking face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "thinking",
+      "think",
+      "thinker"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙄",
+    "description": "face with rolling eyes",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "eye_roll",
+      "rolling_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤐",
+    "description": "zipper-mouth face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "zipper_mouth",
+      "zip_it",
+      "sealed_lips",
+      "lips_sealed"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤓",
+    "description": "nerd face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "nerd",
+      "nerdy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☹",
+    "description": "white frowning face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "frowning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙁",
+    "description": "slightly frowning face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "slightly_frowning"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙃",
+    "description": "upside-down face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "upside_down",
+      "flipped_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤒",
+    "description": "face with thermometer",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "sick",
+      "ill",
+      "thermometer_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤕",
+    "description": "face with head bandage",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "injured",
+      "head_bandage",
+      "head_bandaged",
+      "bandaged"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤑",
+    "description": "money-mouth face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "money_mouth",
+      "money_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛑",
+    "description": "helmet with white crosse",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "helmet_white_cross"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕵",
+    "description": "sleuth or spy",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "detective",
+      "sleuth",
+      "private_eye",
+      "spy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗣",
+    "description": "speaking head in silhouette",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "speaking_head_in_silhouette"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕴",
+    "description": "man in business suit levitating",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hovering_man",
+      "levitating_man"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤘",
+    "description": "sign of the horns",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "horns_sign",
+      "rock_on",
+      "heavy_metal",
+      "devil_fingers"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖐",
+    "description": "raised hand with five fingers splayed",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "raised_hand_with_fingers_splayed",
+      "splayed_hand"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✍",
+    "description": "writing hand",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "writing",
+      "writing_hand"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👁",
+    "description": "eye",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "eye"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❣",
+    "description": "heavy heart exclamation mark ornament",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "exclamation_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "❣",
+    "description": "heavy heart exclamation mark ornament",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "exclamation_heart"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕳",
+    "description": "hole",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hole"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗯",
+    "description": "right anger bubble",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "right_anger_bubble",
+      "zig_zag_bubble"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕶",
+    "description": "dark sunglasses",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "sunglasses"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛍",
+    "description": "shopping bags",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "shopping_bags"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📿",
+    "description": "prayer beads",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "prayer_beads",
+      "dhikr_beads",
+      "rosary_beads"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☠",
+    "description": "skull and crossbones",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "skull_crossbones"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤖",
+    "description": "robot face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "robot_face",
+      "bot_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦁",
+    "description": "lion face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "lion_face",
+      "cute_lion",
+      "timid_lion"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦄",
+    "description": "unicorn face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "unicorn_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🐿",
+    "description": "chipmunk",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "chipmunk",
+      "squirrel"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦃",
+    "description": "turkey",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "turkey"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕊",
+    "description": "dove of peace, carrying an olive branch",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "dove",
+      "dove_peace"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦀",
+    "description": "red crab",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "crab",
+      "cancer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕷",
+    "description": "black spider with eight legs",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "spider"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕸",
+    "description": "spider web in orb form",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "spider_web",
+      "cobweb"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦂",
+    "description": "scorpion",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "scorpion"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏵",
+    "description": "rosette",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "rosette"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☘",
+    "description": "shamrock",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "shamrock",
+      "st_patrick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌶",
+    "description": "hot pepper",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hot_pepper",
+      "chili_pepper",
+      "spice",
+      "spicy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧀",
+    "description": "cheese wedge",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cheese"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌭",
+    "description": "hot dog",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hot_dog"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌮",
+    "description": "taco",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "taco"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌯",
+    "description": "burrito",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "burrito",
+      "wrap"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍿",
+    "description": "popcorn",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "popcorn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍾",
+    "description": "bottle with popping cork",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "champagne",
+      "sparkling_wine"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍽",
+    "description": "fork and knife with plate",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "fork_knife_plate"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏺",
+    "description": "amphora",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "amphora",
+      "jar",
+      "vase"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗺",
+    "description": "world map",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "world_map"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏔",
+    "description": "snow capped mountain",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "snow_capped_mountain",
+      "mont_fuji"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛰",
+    "description": "mountain",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "mountain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏕",
+    "description": "camping with tent and tree",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "camping",
+      "campsite",
+      "tent"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏖",
+    "description": "beach with umbrella",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "breach"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏜",
+    "description": "desert with cactus",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "desert"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏝",
+    "description": "desert island with palm tree",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "desert_island"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏞",
+    "description": "national park",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "national_park"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏟",
+    "description": "stadium",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "stadium"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏛",
+    "description": "classical building",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "classical_building"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏗",
+    "description": "building in construction with crane",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "building_construction",
+      "crane"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏘",
+    "description": "house buildings",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "house_buildings",
+      "multiple_houses"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏙",
+    "description": "cityscape",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cityscape"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏚",
+    "description": "derelict house",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "derelict_house",
+      "old_house",
+      "abandoned_house"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛐",
+    "description": "place of worship",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "worship_building",
+      "worship_place",
+      "religious_building",
+      "religious_place"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕋",
+    "description": "kaaba",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "kaaba",
+      "mecca"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕌",
+    "description": "mosque with domed roof and minaret",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "mosque",
+      "minaret",
+      "domed_roof"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕍",
+    "description": "synagogue with star of David",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "synagogue",
+      "temple",
+      "jewish"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖼",
+    "description": "frame with picture or painting",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "picture_frame",
+      "painting",
+      "gallery"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛢",
+    "description": "oil drum",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "oil_drum"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛣",
+    "description": "motorway",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "motorway",
+      "highway",
+      "road",
+      "interstate",
+      "freeway"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛤",
+    "description": "railway track",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "railway_track"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛳",
+    "description": "passenger ship",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "passenger_ship"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛴",
+    "description": "ferry",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "ferry"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛥",
+    "description": "motor boat",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "motor_boat"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛩",
+    "description": "small airplane",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "small_airplane"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛫",
+    "description": "airplane departure",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "airplane_departure",
+      "take_off"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛬",
+    "description": "airplane arriving",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "airplane_arriving",
+      "airplane_arrival",
+      "landing"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛰",
+    "description": "satellite",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "satellite"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛎",
+    "description": "bellhop bell",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "bellhop_bell"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛌",
+    "description": "sleeping accommodation",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "sleeping_accommodation"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛏",
+    "description": "bed or bedroom",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "bed",
+      "bedroom"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛋",
+    "description": "couch and lamp",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "couch_lamp",
+      "couch",
+      "sofa",
+      "lounge"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏱",
+    "description": "stopwatch",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "stopwatch"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏲",
+    "description": "timer clock",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "timer_clock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕰",
+    "description": "mantelpiece clock",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "mantelpiece_clock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌡",
+    "description": "thermometer",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "thermometer",
+      "hot_weather",
+      "temperature"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛈",
+    "description": "thunder cloud and rain",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "thunder_cloud_rain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌤",
+    "description": "white sun with small cloud",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "white_sun_small_cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌥",
+    "description": "white sun behind cloud",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "white_sun_behind_cloud"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌦",
+    "description": "white sun behind cloud with rain",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "white_sun_behind_cloud_rain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌧",
+    "description": "cloud with rain",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cloud_rain"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌨",
+    "description": "cloud with snow",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cloud_snow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌩",
+    "description": "cloud with lightning",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cloud_lightning"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌪",
+    "description": "cloud with tornado",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cloud_tornado"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌫",
+    "description": "fog",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "fog"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌬",
+    "description": "wind blowing face",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "wind_blowing_face",
+      "mother_nature",
+      "blowing_wind"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☂",
+    "description": "open umbrella",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "open_umbrella"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛱",
+    "description": "umbrella planted on the ground",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "planted_umbrella",
+      "umbrella_on_ground"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☃",
+    "description": "snowman with snow",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "snowman_with_snow",
+      "snowing_snowman"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☄",
+    "description": "comet",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "comet",
+      "light_beam",
+      "blue_beam"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕎",
+    "description": "menorah with nine branches",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "menorah",
+      "candelabrum",
+      "chanukiah"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎖",
+    "description": "military medal with ribbon",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "military_medal",
+      "military_decoration"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎗",
+    "description": "reminder ribbon",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "reminder_ribbon",
+      "awareness_ribbon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎞",
+    "description": "film frames",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "film_frames"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎟",
+    "description": "admission ticket",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "admission_ticket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏷",
+    "description": "label",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "label"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏌",
+    "description": "golfer swinging a golf club",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "golfer",
+      "golf_club"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛸",
+    "description": "single ice skate",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "ice_skate",
+      "ice_skating"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛷",
+    "description": "skier",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "skier"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛹",
+    "description": "person with ball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "person_with_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏋",
+    "description": "weight lifter",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "weight_lifter"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏎",
+    "description": "racing car",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "racing_car",
+      "formula_one",
+      "f1"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏍",
+    "description": "racing motorcycle",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "racing_motorcycle",
+      "motorcycle",
+      "motorbike"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏅",
+    "description": "sports medal",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "sports_medal",
+      "sports_decoration"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏏",
+    "description": "cricket bat and ball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "cricket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏐",
+    "description": "volleyball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "volleyball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏑",
+    "description": "field hockey stick and ball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "field_hockey"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏒",
+    "description": "ice hockey stick and puck",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "ice_hockey"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏓",
+    "description": "table tennis paddle and ball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "table_tennis",
+      "ping_pong"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏸",
+    "description": "badminton racket and shuttlecock",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "badminton"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕹",
+    "description": "joystick",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "joystick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏭",
+    "description": "black right-pointing double triangle with vertical bar",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "black_right_pointing_double_triangle_with_vertical_bar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏯",
+    "description": "black right-pointing triangle with double vertical bar",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "black_right_pointing_triangle_with_double_vertical_bar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏮",
+    "description": "black left-pointing double triangle with vertical bar",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "black_left_pointing_double_triangle_with_vertical_bar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏸",
+    "description": "double vertical bar",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "double_vertical_bar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏹",
+    "description": "black square for stop",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "black_square_for_stop"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⏺",
+    "description": "black circle for record",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "black_circle_for_record"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎙",
+    "description": "studio microphone",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "studio_microphone"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎚",
+    "description": "level slider",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "level_slider"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🎛",
+    "description": "control knobs",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "control_knobs"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "*⃣",
+    "description": "keycap asterisk",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "keycap_asterisk",
+      "star_keycap"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖥",
+    "description": "desktop computer",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "desktop_computer",
+      "pc_tower",
+      "imac"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖨",
+    "description": "printer",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "printer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⌨",
+    "description": "keyboard",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "keyboard"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖱",
+    "description": "three button mouse",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "computer_mouse",
+      "three_button_mouse"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖲",
+    "description": "trackball",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "trackball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📽",
+    "description": "film projector",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "film_projector"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📸",
+    "description": "camera with flash",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "camera_flash"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕯",
+    "description": "candle burning",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "candle"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗞",
+    "description": "newspaper rolled up for delivery",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "rolled_up_newspaper",
+      "newspaper_delivery"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗳",
+    "description": "ballot bow with ballot",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "ballot",
+      "ballot_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖋",
+    "description": "lower left fountain pen",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "lower_left_fountain_pen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖊",
+    "description": "lower left ballpoint pen",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "lower_left_ballpoint_pen"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖌",
+    "description": "lower left paintbrush",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "lower_left_paintbrush"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖍",
+    "description": "lower left crayon",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "lower_left_crayon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗂",
+    "description": "card index dividers",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "card_index_dividers"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗒",
+    "description": "spiral note pad",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "spiral_note_pad"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗓",
+    "description": "spiral calendar pad",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "spiral_calendar_pad"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖇",
+    "description": "multiple paperclips linked together",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "linked_paperclips"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗃",
+    "description": "card file box",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "card_file_box"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗄",
+    "description": "file cabinet",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "file_cabinet"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗑",
+    "description": "wastebasket",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "wastebasket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗝",
+    "description": "an ornate old key",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "old_key"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛏",
+    "description": "pick",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "pick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚒",
+    "description": "hammer and pick",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hammer_and_pick"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛠",
+    "description": "hammer and wrench",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "hammer_and_wrench"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚙",
+    "description": "gear",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "gear"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗜",
+    "description": "compression",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "compression"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚗",
+    "description": "alembic",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "alembic"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚖",
+    "description": "scales of justice",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "scales",
+      "scales_of_justice"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛓",
+    "description": "chains",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "chains"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗡",
+    "description": "dagger knife",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "dagger",
+      "dagger_knife",
+      "knife_weapon"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚔",
+    "description": "crossed swords",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "crossed_swords"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛡",
+    "description": "shield",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "shield"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏹",
+    "description": "bow and arrow",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "bow_and_arrow",
+      "bow_arrow",
+      "archery"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚰",
+    "description": "coffin",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "coffin",
+      "funeral",
+      "casket"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚱",
+    "description": "funeral urn",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "funeral_urn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏳",
+    "description": "waving white flag",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "waving_white_flag"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏴",
+    "description": "waving black flag",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "waving_black_flag"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚜",
+    "description": "fleur-de-lis",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "fleur_de_lis",
+      "scouts"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⚛",
+    "description": "atom symbol",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "atom",
+      "atom_symbol"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕉",
+    "description": "om symbol",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "om_symbol",
+      "pranava",
+      "aumkara",
+      "omkara"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✡",
+    "description": "star of David",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "star_of_david"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☸",
+    "description": "wheel of Dharma",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "wheel_of_dharma"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☯",
+    "description": "yin yang",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "yin_yang"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "✝",
+    "description": "latin cross",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "latin_cross",
+      "christian_cross"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☦",
+    "description": "orthodox cross",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "orthodox_cross"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "⛩",
+    "description": "shinto shrine",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "shinto_shrine",
+      "kami_no_michi"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☪",
+    "description": "star and crescent",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "star_and_crescent",
+      "star_crescent"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☮",
+    "description": "peace symbol",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "peace_symbol",
+      "peace_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☢",
+    "description": "radioactive symbol",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "radioactive",
+      "radioactive_symbol",
+      "radioactive_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "☣",
+    "description": "biohazard symbol",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "biohazard",
+      "biohazard_symbol",
+      "biohazard_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🗨",
+    "description": "left speech bubble",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "left_speech_bubble"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "👁‍🗨",
+    "description": "eye in speech bubble",
+    "supports_fitzpatrick": false,
+    "aliases": [
+      "eye_in_speech_bubble",
+      "i_am_a_witness"
+    ],
+    "tags": []
   }
 ]
