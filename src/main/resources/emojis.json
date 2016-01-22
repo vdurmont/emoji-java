@@ -1040,6 +1040,7 @@
   {
     "emoji": "👂",
     "description": "ear",
+    "supports_fitzpatrick": true,
     "aliases": [
       "ear"
     ],
@@ -1064,6 +1065,7 @@
   {
     "emoji": "👃",
     "description": "nose",
+    "supports_fitzpatrick": true,
     "aliases": [
       "nose"
     ],
