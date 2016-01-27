@@ -232,14 +232,22 @@ public class EmojiParser {
     public static String removeAllEmojis(String str) {
         // Remove all fitzpatrick modifiers
         for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-            str = str.replaceAll(fitzpatrick.unicode, "");
+            str = str.replaceAll(unicodeToRegex(fitzpatrick.unicode), "");
         }
         // Remove all emojis
         for (Emoji emoji : EmojiManager.getAll()) {
-            str = str.replaceAll(emoji.getUnicode(), "");
+            str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
         }
 
         return str;
+    }
+
+    private static String unicodeToRegex(String unicode) {
+        String regex = unicode;
+        if (regex.equals("*⃣")) { // star_keycap is an invalid regex :/
+            regex = "\\*⃣";
+        }
+        return regex;
     }
 
     /**
@@ -254,10 +262,10 @@ public class EmojiParser {
         for (Emoji emoji : emojisToRemove) {
             if (emoji.supportsFitzpatrick()) {
                 for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                    str = str.replaceAll(emoji.getUnicode(fitzpatrick), "");
+                    str = str.replaceAll(unicodeToRegex(emoji.getUnicode(fitzpatrick)), "");
                 }
             }
-            str = str.replaceAll(emoji.getUnicode(), "");
+            str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
         }
 
         return str;
@@ -276,10 +284,10 @@ public class EmojiParser {
             if (!emojisToKeep.contains(emoji)) {
                 if (emoji.supportsFitzpatrick()) {
                     for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                        str = str.replaceAll(emoji.getUnicode(fitzpatrick), "");
+                        str = str.replaceAll(unicodeToRegex(emoji.getUnicode(fitzpatrick)), "");
                     }
                 }
-                str = str.replaceAll(emoji.getUnicode(), "");
+                str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
             }
         }
 
