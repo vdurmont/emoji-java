@@ -1,7 +1,6 @@
 package com.vdurmont.emoji;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -150,6 +149,16 @@ public class Emoji {
      */
     public String getHtmlHexidecimal() {
         return this.htmlHex;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        return !(other == null || !(other instanceof Emoji)) && ((Emoji) other).getUnicode().equals(getUnicode());
+    }
+
+    @Override
+    public int hashCode() {
+        return unicode.hashCode();
     }
 
     /**
