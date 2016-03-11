@@ -21,15 +21,17 @@ public class EmojiTrie {
 
     /**
      * Checks if sequence of chars contain an emoji.
-     * @param emojiSequence Sequence of char that may contain emoji in full or partially.
-     * @return Returns
-     * Matches.EXACTLY if char sequence in its entirety is an emoji
-     * Matches.POSSIBLY if char sequence matches prefix of an emoji
-     * Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an emoji
+     * @param sequence Sequence of char that may contain emoji in full or partially.
+     * @return
+     * <li>Matches.EXACTLY if char sequence in its entirety is an emoji</li>
+     * <li>Matches.POSSIBLY if char sequence matches prefix of an emoji</li>
+     * <li>Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an emoji</li>
      */
-    public Matches isEmoji(char[] emojiSequence) {
+    public Matches isEmoji(char[] sequence) {
+        if(sequence == null) return Matches.POSSIBLY;
+
         Node tree = root;
-        for(char c: emojiSequence) {
+        for(char c: sequence) {
             if(! tree.hasChild(c)) {
                 return Matches.IMPOSSIBLE;
             }
