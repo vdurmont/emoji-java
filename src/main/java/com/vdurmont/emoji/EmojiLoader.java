@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Loads the emojis from a JSON database.
  *
@@ -41,9 +43,15 @@ public class EmojiLoader {
         return emojis;
     }
 
-    private static String inputStreamToString(InputStream stream) {
-        Scanner s = new Scanner(stream, "UTF-8").useDelimiter("\\A");
-        return s.hasNext() ? s.next() : "";
+    private static String inputStreamToString(InputStream stream) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        BufferedReader br = new BufferedReader(new InputStreamReader(stream));
+        String read;
+        while((read = br.readLine()) != null) {
+            sb.append(read);   
+        }
+        br.close();
+        return sb.toString();
     }
 
     protected static Emoji buildEmojiFromJSON(JSONObject json) throws UnsupportedEncodingException {
