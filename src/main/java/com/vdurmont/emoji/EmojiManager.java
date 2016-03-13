@@ -18,12 +18,14 @@ public class EmojiManager {
     private static final String PATH = "/emojis.json";
     private static final Map<String, Emoji> EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
     private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
+    private static final List<Emoji> ALL_EMOJIS;
     private static final EmojiTrie EMOJI_TRIE;
 
     static {
         try {
             InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
             List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
+            ALL_EMOJIS = emojis;
             for (Emoji emoji : emojis) {
                 for (String tag : emoji.getTags()) {
                     if (EMOJIS_BY_TAG.get(tag) == null) {
@@ -108,7 +110,7 @@ public class EmojiManager {
      * @return all the {@link com.vdurmont.emoji.Emoji}s
      */
     public static Collection<Emoji> getAll() {
-        return EMOJIS_BY_ALIAS.values();
+        return ALL_EMOJIS;
     }
 
     /**

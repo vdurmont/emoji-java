@@ -6,6 +6,7 @@ import org.junit.runners.JUnit4;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -117,5 +118,21 @@ public class EmojiManagerTest {
         // THEN
         // We know the number of distinct tags int the...!
         assertEquals(567, tags.size());
+    }
+
+    @Test
+    public void getAll_doesnt_return_duplicates() {
+        // GIVEN
+
+        // WHEN
+        Collection<Emoji> emojis = EmojiManager.getAll();
+
+        // THEN
+        Set<String> unicodes = new HashSet<String>();
+        for (Emoji emoji : emojis) {
+            assertFalse("Duplicate: " + emoji.getDescription(), unicodes.contains(emoji.getUnicode()));
+            unicodes.add(emoji.getUnicode());
+        }
+        assertEquals(unicodes.size(), emojis.size());
     }
 }

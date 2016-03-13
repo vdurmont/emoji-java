@@ -8578,7 +8578,7 @@
       "costa rica"
     ],
     "description": "regional indicator symbol letter c + regional indicator symbol letter r",
-    "emoji": "🇨🇰",
+    "emoji": "🇨🇷",
     "aliases": [
       "cr"
     ]
@@ -10821,15 +10821,6 @@
     "supports_fitzpatrick": false,
     "aliases": [
       "eye"
-    ],
-    "tags": []
-  },
-  {
-    "emoji": "❣",
-    "description": "heavy heart exclamation mark ornament",
-    "supports_fitzpatrick": false,
-    "aliases": [
-      "exclamation_heart"
     ],
     "tags": []
   },
