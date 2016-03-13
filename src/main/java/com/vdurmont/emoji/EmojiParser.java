@@ -1,6 +1,7 @@
 package com.vdurmont.emoji;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -12,6 +13,17 @@ import java.util.regex.Pattern;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiParser {
+    private static final Pattern ALIAS_CANDIDATE_PATTERN = Pattern.compile("(?<=:)\\+?(\\w|\\||\\-)+(?=:)");
+    private static final Pattern ALL_FITZPATRICK_CODES;
+
+    static {
+        String fitzpatrickRegexString = "";
+        for(Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
+            fitzpatrickRegexString += "|" + fitzpatrick.unicode;
+        }
+        ALL_FITZPATRICK_CODES = Pattern.compile("(?:" + fitzpatrickRegexString.substring(1) + ")");
+    }
+
     /**
      * No need for a constructor, all the methods are static.
      */
@@ -48,23 +60,32 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their alias.
      */
     public static String parseToAliases(String input, FitzpatrickAction fitzpatrickAction) {
-        String result = prepareParsing(input, fitzpatrickAction);
+        if(fitzpatrickAction == FitzpatrickAction.REMOVE) {
+            input = removeFitzpatrick(input);
+        }
 
-        for (Emoji emoji : EmojiManager.getAll()) {
-            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
-                if (emoji.supportsFitzpatrick()) {
-                    if (fitzpatrickAction == FitzpatrickAction.PARSE) {
-                        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                            String replacement = ":" + emoji.getAliases().get(0) + "|" + fitzpatrick.toString().toLowerCase() + ":";
-                            result = result.replace(emoji.getUnicode(fitzpatrick), replacement);
-                        }
-                    }
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(input.substring(prev, candidate.startIndex));
+
+            if(fitzpatrickAction == FitzpatrickAction.PARSE && candidate.emoji.supportsFitzpatrick()) {
+                if (candidate.fitzpatrick != null) {
+                    sb.append(":").append(candidate.emoji.getAliases().get(0)).append("|");
+                    sb.append(candidate.fitzpatrick.name().toLowerCase()).append(":");
+                    prev = candidate.getEndIndexWithFitzpatrick();
+                    continue;
                 }
             }
-            result = result.replace(emoji.getUnicode(), ":" + emoji.getAliases().get(0) + ":");
+
+            sb.append(":").append(candidate.emoji.getAliases().get(0)).append(":");
+            prev = candidate.endIndex;
         }
-        return result;
+
+        return sb.append(input.substring(prev)).toString();
     }
+
 
     /**
      * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.<br>
@@ -107,9 +128,8 @@ public class EmojiParser {
 
     protected static List<AliasCandidate> getAliasCandidates(String input) {
         List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
-        String regex = "(?<=:)\\+?(\\w|\\||\\-)+(?=:)";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(input);
+
+        Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
         matcher = matcher.useTransparentBounds(true);
         while (matcher.find()) {
             String match = matcher.group();
@@ -154,20 +174,19 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their html decimal representation.
      */
     public static String parseToHtmlDecimal(String input, FitzpatrickAction fitzpatrickAction) {
-        String result = prepareParsing(input, fitzpatrickAction);
-
-        for (Emoji emoji : EmojiManager.getAll()) {
-            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
-                if (emoji.supportsFitzpatrick()) {
-                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                        String search = fitzpatrickAction == FitzpatrickAction.PARSE ? emoji.getUnicode(fitzpatrick) : emoji.getUnicode();
-                        result = result.replace(search, emoji.getHtmlDecimal());
-                    }
-                }
-            }
-            result = result.replace(emoji.getUnicode(), emoji.getHtmlDecimal());
+        if(fitzpatrickAction != FitzpatrickAction.IGNORE) {
+            input = removeFitzpatrick(input);
         }
-        return result;
+
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(input.substring(prev, candidate.startIndex)).append(candidate.emoji.getHtmlDecimal());
+            prev = candidate.endIndex;
+        }
+
+        return sb.append(input.substring(prev)).toString();
     }
 
     /**
@@ -197,29 +216,23 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their html hex representation.
      */
     public static String parseToHtmlHexadecimal(String input, FitzpatrickAction fitzpatrickAction) {
-        String result = prepareParsing(input, fitzpatrickAction);
-
-        for (Emoji emoji : EmojiManager.getAll()) {
-            if (fitzpatrickAction != FitzpatrickAction.REMOVE) {
-                if (emoji.supportsFitzpatrick()) {
-                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                        String search = fitzpatrickAction == FitzpatrickAction.PARSE ? emoji.getUnicode(fitzpatrick) : emoji.getUnicode();
-                        result = result.replace(search, emoji.getHtmlHexidecimal());
-                    }
-                }
-            }
-            result = result.replace(emoji.getUnicode(), emoji.getHtmlHexidecimal());
+        if(fitzpatrickAction != FitzpatrickAction.IGNORE) {
+            input = removeFitzpatrick(input);
         }
-        return result;
+
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(input.substring(prev, candidate.startIndex)).append(candidate.emoji.getHtmlHexidecimal());
+            prev = candidate.endIndex;
+        }
+
+        return sb.append(input.substring(prev)).toString();
     }
 
-    private static String prepareParsing(String input, FitzpatrickAction fitzpatrickAction) {
-        if (fitzpatrickAction == FitzpatrickAction.REMOVE) {
-            for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                input = input.replace(fitzpatrick.unicode, "");
-            }
-        }
-        return input;
+    private static String removeFitzpatrick(String input) {
+        return ALL_FITZPATRICK_CODES.matcher(input).replaceAll("");
     }
 
     /**
@@ -231,24 +244,20 @@ public class EmojiParser {
      */
     public static String removeAllEmojis(String str) {
         // Remove all fitzpatrick modifiers
-        for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-            str = str.replaceAll(unicodeToRegex(fitzpatrick.unicode), "");
-        }
+       str = removeFitzpatrick(str);
+
         // Remove all emojis
-        for (Emoji emoji : EmojiManager.getAll()) {
-            str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(str.substring(prev, candidate.startIndex));
+            prev = candidate.endIndex;
         }
 
-        return str;
+        return sb.append(str.substring(prev)).toString();
     }
 
-    private static String unicodeToRegex(String unicode) {
-        String regex = unicode;
-        if (regex.equals("*⃣")) { // star_keycap is an invalid regex :/
-            regex = "\\*⃣";
-        }
-        return regex;
-    }
 
     /**
      * Removes a set of emojis from a String
@@ -259,16 +268,19 @@ public class EmojiParser {
      * @return the string without the emojis that were removed
      */
     public static String removeEmojis(String str, Collection<Emoji> emojisToRemove) {
-        for (Emoji emoji : emojisToRemove) {
-            if (emoji.supportsFitzpatrick()) {
-                for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                    str = str.replaceAll(unicodeToRegex(emoji.getUnicode(fitzpatrick)), "");
-                }
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(str.substring(prev, candidate.startIndex));
+            prev = candidate.getEndIndexWithFitzpatrick();
+
+            if (! emojisToRemove.contains(candidate.emoji)) {
+                sb.append(candidate.getEmojiUnicodeWithFitzpatrick());
             }
-            str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
         }
 
-        return str;
+        return sb.append(str.substring(prev)).toString();
     }
 
     /**
@@ -280,19 +292,92 @@ public class EmojiParser {
      * @return the string without the emojis that were removed
      */
     public static String removeAllEmojisExcept(String str, Collection<Emoji> emojisToKeep) {
-        for (Emoji emoji : EmojiManager.getAll()) {
-            if (!emojisToKeep.contains(emoji)) {
-                if (emoji.supportsFitzpatrick()) {
-                    for (Fitzpatrick fitzpatrick : Fitzpatrick.values()) {
-                        str = str.replaceAll(unicodeToRegex(emoji.getUnicode(fitzpatrick)), "");
-                    }
-                }
-                str = str.replaceAll(unicodeToRegex(emoji.getUnicode()), "");
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(str.substring(prev, candidate.startIndex));
+            prev = candidate.getEndIndexWithFitzpatrick();
+
+            if (emojisToKeep.contains(candidate.emoji)) {
+                sb.append(candidate.getEmojiUnicodeWithFitzpatrick());
             }
         }
 
-        return str;
+        return sb.append(str.substring(prev)).toString();
     }
+
+
+    /**
+     * Generates a list UnicodeCandidates found in input string. A UnicodeCandidate is created for every
+     * unicode emoticon found in input string, additionally if Fitzpatrick modifier follows the emoji, it
+     * is included in UnicodeCandidate. Finally, it contains start and end index of unicode emoji itself
+     * (WITHOUT Fitzpatrick modifier whether it is there or not!).
+     * @param input String to find all unicode emojis in
+     * @return List of UnicodeCandidates for each unicode emote in text
+     */
+    private static List<UnicodeCandidate> getUnicodeCandidates(String input) {
+        char[] inputCharArray = input.toCharArray();
+        List<UnicodeCandidate> candidates = new ArrayList<UnicodeCandidate>();
+        for(int i=0; i<input.length(); i++) {
+            int emojiEnd = getEmojiEndPos(inputCharArray, i);
+
+            if (emojiEnd != -1) {
+                String emojiString = input.substring(i, emojiEnd);
+                String fitzpatrickString = (emojiEnd+2 <= input.length()) ? input.substring(emojiEnd, emojiEnd+2) : null;
+                candidates.add(new UnicodeCandidate(emojiString, fitzpatrickString, i, emojiEnd));
+                i = emojiEnd;
+            }
+        }
+        return candidates;
+    }
+
+
+    /**
+     * Returns end index of a unicode emoji if it is found in text starting at index startPos, -1 if not found.
+     * This returns the longest matching emoji, for example, in "\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC66"
+     * it will find alias:family_man_woman_boy, NOT alias:man
+     */
+    private static int getEmojiEndPos(char[] text, int startPos) {
+        int best = -1;
+        for(int j=startPos+1; j<=text.length; j++) {
+            EmojiTrie.Matches status = EmojiManager.isEmoji(Arrays.copyOfRange(text, startPos, j));
+
+            if (status.exactMatch()) {
+                best = j;
+            } else if (status.impossibleMatch()) {
+                return best;
+            }
+        }
+
+        return best;
+    }
+
+
+
+    protected static class UnicodeCandidate {
+        public final Emoji emoji;
+        public final Fitzpatrick fitzpatrick;
+        public final int startIndex, endIndex;
+
+        private UnicodeCandidate(String emoji, String fitzpatrick, int startIndex, int endIndex) {
+            this.emoji = EmojiManager.getByUnicode(emoji);
+            this.fitzpatrick = Fitzpatrick.fitzpatrickFromUnicode(fitzpatrick);
+            this.startIndex = startIndex;
+            this.endIndex = endIndex;
+        }
+
+        public String getEmojiUnicodeWithFitzpatrick() {
+            if(emoji.supportsFitzpatrick()) return emoji.getUnicode(fitzpatrick);
+            return emoji.getUnicode();
+        }
+
+        public int getEndIndexWithFitzpatrick() {
+            if(fitzpatrick != null) return endIndex+2;
+            return endIndex;
+        }
+    }
+
 
     protected static class AliasCandidate {
         public final String fullString;
@@ -305,15 +390,7 @@ public class EmojiParser {
             if (fitzpatrickString == null) {
                 this.fitzpatrick = null;
             } else {
-                this.fitzpatrick = resolveFitzpatrick(fitzpatrickString);
-            }
-        }
-
-        private static Fitzpatrick resolveFitzpatrick(String fitzpatrickString) {
-            try {
-                return Fitzpatrick.valueOf(fitzpatrickString.toUpperCase());
-            } catch (IllegalArgumentException e) {
-                return null;
+                this.fitzpatrick = Fitzpatrick.fitzpatrickFromType(fitzpatrickString);
             }
         }
     }
