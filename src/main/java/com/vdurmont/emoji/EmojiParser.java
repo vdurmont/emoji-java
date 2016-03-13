@@ -244,7 +244,7 @@ public class EmojiParser {
      */
     public static String removeAllEmojis(String str) {
         // Remove all fitzpatrick modifiers
-       str = removeFitzpatrick(str);
+        str = removeFitzpatrick(str);
 
         // Remove all emojis
         int prev = 0;
@@ -275,7 +275,7 @@ public class EmojiParser {
             sb.append(str.substring(prev, candidate.startIndex));
             prev = candidate.getEndIndexWithFitzpatrick();
 
-            if (! emojisToRemove.contains(candidate.emoji)) {
+            if (!emojisToRemove.contains(candidate.emoji)) {
                 sb.append(candidate.getEmojiUnicodeWithFitzpatrick());
             }
         }

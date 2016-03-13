@@ -1,12 +1,14 @@
 package com.vdurmont.emoji;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EmojiTrie {
     private Node root = new Node();
 
     public EmojiTrie(Collection<Emoji> emojis) {
-        for(Emoji emoji: emojis) {
+        for (Emoji emoji : emojis) {
             Node tree = root;
             for (char c: emoji.getUnicode().toCharArray()) {
                 if (!tree.hasChild(c)) {
@@ -28,11 +30,13 @@ public class EmojiTrie {
      * <li>Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an emoji</li>
      */
     public Matches isEmoji(char[] sequence) {
-        if(sequence == null) return Matches.POSSIBLY;
+        if (sequence == null) {
+            return Matches.POSSIBLY;
+        }
 
         Node tree = root;
-        for(char c: sequence) {
-            if(! tree.hasChild(c)) {
+        for (char c : sequence) {
+            if (!tree.hasChild(c)) {
                 return Matches.IMPOSSIBLE;
             }
             tree = tree.getChild(c);
@@ -49,8 +53,8 @@ public class EmojiTrie {
      */
     public Emoji getEmoji(String unicode) {
         Node tree = root;
-        for(char c: unicode.toCharArray()) {
-            if(! tree.hasChild(c)) {
+        for (char c : unicode.toCharArray()) {
+            if (!tree.hasChild(c)) {
                 return null;
             }
             tree = tree.getChild(c);

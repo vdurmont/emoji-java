@@ -40,7 +40,7 @@ public enum Fitzpatrick {
 
 
     public static Fitzpatrick fitzpatrickFromUnicode(String unicode) {
-        for(Fitzpatrick v : values()) {
+        for (Fitzpatrick v : values()) {
             if (v.unicode.equals(unicode)) {
                 return v;
             }
