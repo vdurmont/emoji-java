@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.1.0
+
+- Add fitzpatrick support for 👃 ("nose") and 👂 ("ear")
+- Fix duplicated "sunglasses" alias
+- Performance improvements (using a Trie structure)
+- Parsing support for multiple emojis (such as "family_man_woman_boy")
+- Fix `EmojiManager.getAll()` that returned some duplicates
+- Use a BufferedReader to load the database
+
 ## v3.0.0
 
 Update the emoji database to support the additions of iOS 9.1
