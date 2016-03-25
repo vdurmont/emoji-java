@@ -147,8 +147,15 @@ public class Emoji {
      *
      * @return the HTML hexadecimal representation
      */
-    public String getHtmlHexidecimal() {
+    public String getHtmlHexadecimal() {
         return this.htmlHex;
+    }
+
+    /**
+     * @deprecated identical to {@link #getHtmlHexadecimal()} for backwards-compatibility. use that instead.
+     */
+    public String getHtmlHexidecimal() {
+        return getHtmlHexadecimal();
     }
 
     @Override

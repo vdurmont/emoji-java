@@ -1,5 +1,7 @@
 package com.vdurmont.emoji;
 
+import com.vdurmont.emoji.parsers.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -28,6 +30,58 @@ public class EmojiParser {
      * No need for a constructor, all the methods are static.
      */
     private EmojiParser() {}
+
+    /**
+     * Run an arbitrary processor on each unicode emoticon detected.
+     * @param input the string to process
+     * @param proc a UnicodeProcessor that handles the emoji
+     * @return the string with each emoji replaced by the output of the processor
+     */
+    public static String processUnicode(String input, UnicodeProcessor proc, FitzpatrickAction fitzpatrickAction) {
+        boolean stripFitzpatrick = proc.shouldRemoveFitzpatrick(fitzpatrickAction);
+        if(stripFitzpatrick) {
+            input = removeFitzpatrick(input);
+        }
+
+        int prev = 0;
+        StringBuilder sb = new StringBuilder();
+        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
+        for(UnicodeCandidate candidate : replacements) {
+            sb.append(input.substring(prev, candidate.startIndex));
+
+            String result = proc.apply(candidate, fitzpatrickAction);
+            if(result != null) {
+                sb.append(result);
+            }
+
+            prev = candidate.getEndIndexWithFitzpatrick();
+        }
+
+        return sb.append(input.substring(prev)).toString();
+    }
+
+    /**
+     * Run an arbitrary processor on each emoji alias detected
+     * @param input the corpus to process
+     * @param proc an AliasProcessor that handles each alias candidate that was identified
+     * @return the string with each alias replaced by the output of the processor.
+     */
+    public static String processAliases(String input, AliasProcessor proc) {
+        String result = input;
+        // Get all the potential aliases
+        List<AliasCandidate> candidates = getAliasCandidates(input);
+
+        // Replace the aliases by their unicode
+        for (AliasCandidate candidate : candidates) {
+            String replacement = proc.apply(candidate, EmojiManager.getForAlias(candidate.alias));
+
+            if(replacement != null) {
+                result = result.replace(":" + candidate.fullString + ":", replacement);
+            }
+        }
+
+        return result;
+    }
 
     /**
      * See {@link #parseToAliases(String, FitzpatrickAction)} with the action "PARSE"
@@ -60,32 +114,8 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their alias.
      */
     public static String parseToAliases(String input, FitzpatrickAction fitzpatrickAction) {
-        if(fitzpatrickAction == FitzpatrickAction.REMOVE) {
-            input = removeFitzpatrick(input);
-        }
-
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(input.substring(prev, candidate.startIndex));
-
-            if(fitzpatrickAction == FitzpatrickAction.PARSE && candidate.emoji.supportsFitzpatrick()) {
-                if (candidate.fitzpatrick != null) {
-                    sb.append(":").append(candidate.emoji.getAliases().get(0)).append("|");
-                    sb.append(candidate.fitzpatrick.name().toLowerCase()).append(":");
-                    prev = candidate.getEndIndexWithFitzpatrick();
-                    continue;
-                }
-            }
-
-            sb.append(":").append(candidate.emoji.getAliases().get(0)).append(":");
-            prev = candidate.endIndex;
-        }
-
-        return sb.append(input.substring(prev)).toString();
+        return processUnicode(input, UnicodeProcessors.TO_ALIAS, fitzpatrickAction);
     }
-
 
     /**
      * Replaces the emoji's aliases (between 2 ':') occurrences and the html representations by their unicode.<br>
@@ -99,52 +129,16 @@ public class EmojiParser {
      * @return the string with the aliases and html representations replaced by their unicode.
      */
     public static String parseToUnicode(String input) {
-        // Get all the potential aliases
-        List<AliasCandidate> candidates = getAliasCandidates(input);
-
-        // Replace the aliases by their unicode
-        String result = input;
-        for (AliasCandidate candidate : candidates) {
-            Emoji emoji = EmojiManager.getForAlias(candidate.alias);
-            if (emoji != null) {
-                if (emoji.supportsFitzpatrick() || (!emoji.supportsFitzpatrick() && candidate.fitzpatrick == null)) {
-                    String replacement = emoji.getUnicode();
-                    if (candidate.fitzpatrick != null) {
-                        replacement += candidate.fitzpatrick.unicode;
-                    }
-                    result = result.replace(":" + candidate.fullString + ":", replacement);
-                }
-            }
-        }
+        // Replace the aliases with their Unicode
+        String result = processAliases(input, AliasProcessors.TO_UNICODE);
 
         // Replace the html
         for (Emoji emoji : EmojiManager.getAll()) {
-            result = result.replace(emoji.getHtmlHexidecimal(), emoji.getUnicode());
-            result = result.replace(emoji.getHtmlDecimal(), emoji.getUnicode());
+            result = result.replaceAll(emoji.getHtmlHexadecimal(), emoji.getUnicode());
+            result = result.replaceAll(emoji.getHtmlDecimal(), emoji.getUnicode());
         }
 
         return result;
-    }
-
-    protected static List<AliasCandidate> getAliasCandidates(String input) {
-        List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
-
-        Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
-        matcher = matcher.useTransparentBounds(true);
-        while (matcher.find()) {
-            String match = matcher.group();
-            if (!match.contains("|")) {
-                candidates.add(new AliasCandidate(match, match, null));
-            } else {
-                String[] splitted = match.split("\\|");
-                if (splitted.length == 2 || splitted.length > 2) {
-                    candidates.add(new AliasCandidate(match, splitted[0], splitted[1]));
-                } else {
-                    candidates.add(new AliasCandidate(match, match, null));
-                }
-            }
-        }
-        return candidates;
     }
 
     /**
@@ -174,19 +168,7 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their html decimal representation.
      */
     public static String parseToHtmlDecimal(String input, FitzpatrickAction fitzpatrickAction) {
-        if(fitzpatrickAction != FitzpatrickAction.IGNORE) {
-            input = removeFitzpatrick(input);
-        }
-
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(input.substring(prev, candidate.startIndex)).append(candidate.emoji.getHtmlDecimal());
-            prev = candidate.endIndex;
-        }
-
-        return sb.append(input.substring(prev)).toString();
+        return processUnicode(input, UnicodeProcessors.TO_HTML_DEC, fitzpatrickAction);
     }
 
     /**
@@ -216,19 +198,7 @@ public class EmojiParser {
      * @return the string with the emojis replaced by their html hex representation.
      */
     public static String parseToHtmlHexadecimal(String input, FitzpatrickAction fitzpatrickAction) {
-        if(fitzpatrickAction != FitzpatrickAction.IGNORE) {
-            input = removeFitzpatrick(input);
-        }
-
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(input.substring(prev, candidate.startIndex)).append(candidate.emoji.getHtmlHexidecimal());
-            prev = candidate.endIndex;
-        }
-
-        return sb.append(input.substring(prev)).toString();
+        return processUnicode(input, UnicodeProcessors.TO_HTML_HEX, fitzpatrickAction);
     }
 
     private static String removeFitzpatrick(String input) {
@@ -243,19 +213,7 @@ public class EmojiParser {
      * @return the string without any emoji
      */
     public static String removeAllEmojis(String str) {
-        // Remove all fitzpatrick modifiers
-        str = removeFitzpatrick(str);
-
-        // Remove all emojis
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(str.substring(prev, candidate.startIndex));
-            prev = candidate.endIndex;
-        }
-
-        return sb.append(str.substring(prev)).toString();
+        return processUnicode(str, UnicodeProcessors.REMOVE_ALL_EMOJI, FitzpatrickAction.REMOVE);
     }
 
 
@@ -268,19 +226,7 @@ public class EmojiParser {
      * @return the string without the emojis that were removed
      */
     public static String removeEmojis(String str, Collection<Emoji> emojisToRemove) {
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(str.substring(prev, candidate.startIndex));
-            prev = candidate.getEndIndexWithFitzpatrick();
-
-            if (!emojisToRemove.contains(candidate.emoji)) {
-                sb.append(candidate.getEmojiUnicodeWithFitzpatrick());
-            }
-        }
-
-        return sb.append(str.substring(prev)).toString();
+        return processUnicode(str, UnicodeProcessors.removeOnly(emojisToRemove), FitzpatrickAction.PARSE);
     }
 
     /**
@@ -292,19 +238,7 @@ public class EmojiParser {
      * @return the string without the emojis that were removed
      */
     public static String removeAllEmojisExcept(String str, Collection<Emoji> emojisToKeep) {
-        int prev = 0;
-        StringBuilder sb = new StringBuilder();
-        List<UnicodeCandidate> replacements = getUnicodeCandidates(str);
-        for(UnicodeCandidate candidate : replacements) {
-            sb.append(str.substring(prev, candidate.startIndex));
-            prev = candidate.getEndIndexWithFitzpatrick();
-
-            if (emojisToKeep.contains(candidate.emoji)) {
-                sb.append(candidate.getEmojiUnicodeWithFitzpatrick());
-            }
-        }
-
-        return sb.append(str.substring(prev)).toString();
+        return processUnicode(str, UnicodeProcessors.removeAllExcept(emojisToKeep), FitzpatrickAction.PARSE);
     }
 
 
@@ -353,46 +287,25 @@ public class EmojiParser {
         return best;
     }
 
+    protected static List<AliasCandidate> getAliasCandidates(String input) {
+        List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
 
-
-    protected static class UnicodeCandidate {
-        public final Emoji emoji;
-        public final Fitzpatrick fitzpatrick;
-        public final int startIndex, endIndex;
-
-        private UnicodeCandidate(String emoji, String fitzpatrick, int startIndex, int endIndex) {
-            this.emoji = EmojiManager.getByUnicode(emoji);
-            this.fitzpatrick = Fitzpatrick.fitzpatrickFromUnicode(fitzpatrick);
-            this.startIndex = startIndex;
-            this.endIndex = endIndex;
-        }
-
-        public String getEmojiUnicodeWithFitzpatrick() {
-            if(emoji.supportsFitzpatrick()) return emoji.getUnicode(fitzpatrick);
-            return emoji.getUnicode();
-        }
-
-        public int getEndIndexWithFitzpatrick() {
-            if(fitzpatrick != null) return endIndex+2;
-            return endIndex;
-        }
-    }
-
-
-    protected static class AliasCandidate {
-        public final String fullString;
-        public final String alias;
-        public final Fitzpatrick fitzpatrick;
-
-        private AliasCandidate(String fullString, String alias, String fitzpatrickString) {
-            this.fullString = fullString;
-            this.alias = alias;
-            if (fitzpatrickString == null) {
-                this.fitzpatrick = null;
+        Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
+        matcher = matcher.useTransparentBounds(true);
+        while (matcher.find()) {
+            String match = matcher.group();
+            if (!match.contains("|")) {
+                candidates.add(new AliasCandidate(match, match, null));
             } else {
-                this.fitzpatrick = Fitzpatrick.fitzpatrickFromType(fitzpatrickString);
+                String[] splitted = match.split("\\|");
+                if (splitted.length == 2 || splitted.length > 2) {
+                    candidates.add(new AliasCandidate(match, splitted[0], splitted[1]));
+                } else {
+                    candidates.add(new AliasCandidate(match, match, null));
+                }
             }
         }
+        return candidates;
     }
 
     /**
