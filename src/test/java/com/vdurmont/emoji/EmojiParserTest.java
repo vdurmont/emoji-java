@@ -1,6 +1,6 @@
 package com.vdurmont.emoji;
 
-import com.vdurmont.emoji.EmojiParser.AliasCandidate;
+import com.vdurmont.emoji.parsers.AliasCandidate;
 import com.vdurmont.emoji.EmojiParser.FitzpatrickAction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
