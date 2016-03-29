@@ -87,6 +87,31 @@ public class EmojiParserTest {
     }
 
     @Test
+    public void parseToAliases_with_long_overlapping_emoji() {
+        // GIVEN
+        String str = "\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC66";
+
+        // WHEN
+        String result = EmojiParser.parseToAliases(str);
+
+        //With greedy parsing, this will give :man::woman::boy:
+        //THEN
+        assertEquals(":family_man_woman_boy:", result);
+    }
+
+    @Test
+    public void parseToAliases_continuous_non_overlapping_emojis() {
+        // GIVEN
+        String str = "\uD83D\uDC69\uD83D\uDC68\uD83D\uDC66";
+
+        // WHEN
+        String result = EmojiParser.parseToAliases(str);
+
+        //THEN
+        assertEquals(":woman::man::boy:", result);
+    }
+
+    @Test
     public void parseToHtmlDecimal_replaces_the_emojis_by_their_html_decimal_representation() {
         // GIVEN
         String str = "An 😀awesome 😃string with a few 😉emojis!";
