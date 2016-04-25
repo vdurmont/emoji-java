@@ -131,7 +131,7 @@ public class EmojiParser {
 
     // Replace the html
     for (Emoji emoji : EmojiManager.getAll()) {
-      result = result.replace(emoji.getHtmlHexidecimal(), emoji.getUnicode());
+      result = result.replace(emoji.getHtmlHexadecimal(), emoji.getUnicode());
       result = result.replace(emoji.getHtmlDecimal(), emoji.getUnicode());
     }
 
@@ -257,9 +257,9 @@ public class EmojiParser {
           default:
           case PARSE:
           case REMOVE:
-            return unicodeCandidate.getEmoji().getHtmlHexidecimal();
+            return unicodeCandidate.getEmoji().getHtmlHexadecimal();
           case IGNORE:
-            return unicodeCandidate.getEmoji().getHtmlHexidecimal() +
+            return unicodeCandidate.getEmoji().getHtmlHexadecimal() +
               unicodeCandidate.getFitzpatrickUnicode();
         }
       }
