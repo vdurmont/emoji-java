@@ -16,8 +16,10 @@ import java.util.Set;
  */
 public class EmojiManager {
   private static final String PATH = "/emojis.json";
-  private static final Map<String, Emoji> EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
-  private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
+  private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
+    new HashMap<String, Emoji>();
+  private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
+    new HashMap<String, Set<Emoji>>();
   private static final List<Emoji> ALL_EMOJIS;
   private static final EmojiTrie EMOJI_TRIE;
 
@@ -55,7 +57,8 @@ public class EmojiManager {
    *
    * @param tag the tag
    *
-   * @return the associated {@link com.vdurmont.emoji.Emoji}s, null if the tag is unknown
+   * @return the associated {@link com.vdurmont.emoji.Emoji}s, null if the tag
+   * is unknown
    */
   public static Set<Emoji> getForTag(String tag) {
     if (tag == null) {
@@ -69,7 +72,8 @@ public class EmojiManager {
    *
    * @param alias the alias
    *
-   * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the alias is unknown
+   * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the alias
+   * is unknown
    */
   public static Emoji getForAlias(String alias) {
     if (alias == null) {
@@ -95,7 +99,8 @@ public class EmojiManager {
    *
    * @param unicode the the unicode
    *
-   * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the unicode is unknown
+   * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the
+   * unicode is unknown
    */
   public static Emoji getByUnicode(String unicode) {
     if (unicode == null) {
@@ -121,16 +126,26 @@ public class EmojiManager {
    * @return true if the string is an emoji's unicode, false else
    */
   public static boolean isEmoji(String string) {
-    return string != null && EMOJI_TRIE.isEmoji(string.toCharArray()).exactMatch();
+    return string != null &&
+      EMOJI_TRIE.isEmoji(string.toCharArray()).exactMatch();
   }
 
   /**
    * Checks if sequence of chars contain an emoji.
-   * @param sequence Sequence of char that may contain emoji in full or partially.
+   * @param sequence Sequence of char that may contain emoji in full or
+   * partially.
+   *
    * @return
-   * &lt;li&gt;Matches.EXACTLY if char sequence in its entirety is an emoji&lt;/li&gt;
-   * &lt;li&gt;Matches.POSSIBLY if char sequence matches prefix of an emoji&lt;/li&gt;
-   * &lt;li&gt;Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an emoji&lt;/li&gt;
+   * &lt;li&gt;
+   *   Matches.EXACTLY if char sequence in its entirety is an emoji
+   * &lt;/li&gt;
+   * &lt;li&gt;
+   *   Matches.POSSIBLY if char sequence matches prefix of an emoji
+   * &lt;/li&gt;
+   * &lt;li&gt;
+   *   Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an
+   *   emoji
+   * &lt;/li&gt;
    */
   public static EmojiTrie.Matches isEmoji(char[] sequence) {
     return EMOJI_TRIE.isEmoji(sequence);

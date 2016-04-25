@@ -23,7 +23,8 @@ public class EmojiLoaderTest {
   @Test
   public void load_empty_database_returns_empty_list() throws IOException {
     // GIVEN
-    InputStream stream = new ByteArrayInputStream(new JSONArray().toString().getBytes("UTF-8"));
+    byte[] bytes = new JSONArray().toString().getBytes("UTF-8");
+    InputStream stream = new ByteArrayInputStream(bytes);
 
     // WHEN
     List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
@@ -48,7 +49,10 @@ public class EmojiLoaderTest {
     // THEN
     assertNotNull(emoji);
     assertEquals("😄", emoji.getUnicode());
-    assertEquals("smiling face with open mouth and smiling eyes", emoji.getDescription());
+    assertEquals(
+      "smiling face with open mouth and smiling eyes",
+      emoji.getDescription()
+    );
     assertEquals(1, emoji.getAliases().size());
     assertEquals("smile", emoji.getAliases().get(0));
     assertEquals(3, emoji.getTags().size());
@@ -58,7 +62,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_without_description_sets_a_null_description() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_without_description_sets_a_null_description()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"emoji\": \"😄\","
@@ -75,7 +80,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_without_unicode_returns_null() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_without_unicode_returns_null()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"aliases\": [\"smile\"],"
@@ -90,7 +96,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_computes_the_html_codes() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_computes_the_html_codes()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"emoji\": \"😄\","
@@ -110,7 +117,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_with_support_for_fitzpatrick_true() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_with_support_for_fitzpatrick_true()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"emoji\": \"\uD83D\uDC66\","
@@ -129,7 +137,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_with_support_for_fitzpatrick_false() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_with_support_for_fitzpatrick_false()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"emoji\": \"\uD83D\uDE15\","
@@ -148,7 +157,8 @@ public class EmojiLoaderTest {
   }
 
   @Test
-  public void buildEmojiFromJSON_without_support_for_fitzpatrick() throws UnsupportedEncodingException {
+  public void buildEmojiFromJSON_without_support_for_fitzpatrick()
+    throws UnsupportedEncodingException {
     // GIVEN
     JSONObject json = new JSONObject("{"
       + "\"emoji\": \"\uD83D\uDE15\","
