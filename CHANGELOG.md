@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.1
+
+- Add the ability to provide a custom `EmojiTransformer` that will enable developers to add their custom emoji replacement methods. Thanks @freva !
+
 ## v3.1.0
 
 - Add fitzpatrick support for 👃 ("nose") and 👂 ("ear")
