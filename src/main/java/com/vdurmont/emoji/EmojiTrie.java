@@ -62,7 +62,7 @@ public class EmojiTrie {
         return tree.getEmoji();
     }
 
-    enum Matches {
+    public enum Matches {
         EXACTLY, POSSIBLY, IMPOSSIBLE;
 
         public boolean exactMatch() {
