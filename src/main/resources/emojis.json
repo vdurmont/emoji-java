@@ -10313,6 +10313,17 @@
   {
     "tags": [
       "flag",
+      "st vincent grenadines"
+    ],
+    "description": "regional indicator symbol letter v + regional indicator symbol letter c",
+    "emoji": "🇻🇨",
+    "aliases": [
+      "vc"
+    ]
+  },
+  {
+    "tags": [
+      "flag",
       "vanuatu"
     ],
     "description": "regional indicator symbol letter v + regional indicator symbol letter u",
@@ -10376,6 +10387,293 @@
       "zw"
     ]
   },
+  {
+    "tags": [
+      "letter",
+      "a"
+    ],
+    "description": "regional indicator symbol letter a",
+    "emoji": "🇦",
+    "aliases": [
+      "regional_indicator_symbol_a"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "b"
+    ],
+    "description": "regional indicator symbol letter b",
+    "emoji": "🇧",
+    "aliases": [
+      "regional_indicator_symbol_b"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "c"
+    ],
+    "description": "regional indicator symbol letter c",
+    "emoji": "🇨",
+    "aliases": [
+      "regional_indicator_symbol_c"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "d"
+    ],
+    "description": "regional indicator symbol letter d",
+    "emoji": "🇩",
+    "aliases": [
+      "regional_indicator_symbol_d"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "e"
+    ],
+    "description": "regional indicator symbol letter e",
+    "emoji": "🇪",
+    "aliases": [
+      "regional_indicator_symbol_e"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "f"
+    ],
+    "description": "regional indicator symbol letter f",
+    "emoji": "🇫",
+    "aliases": [
+      "regional_indicator_symbol_f"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "g"
+    ],
+    "description": "regional indicator symbol letter g",
+    "emoji": "🇬",
+    "aliases": [
+      "regional_indicator_symbol_g"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "h"
+    ],
+    "description": "regional indicator symbol letter h",
+    "emoji": "🇭",
+    "aliases": [
+      "regional_indicator_symbol_h"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "i"
+    ],
+    "description": "regional indicator symbol letter i",
+    "emoji": "🇮",
+    "aliases": [
+      "regional_indicator_symbol_i"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "j"
+    ],
+    "description": "regional indicator symbol letter j",
+    "emoji": "🇯",
+    "aliases": [
+      "regional_indicator_symbol_j"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "k"
+    ],
+    "description": "regional indicator symbol letter k",
+    "emoji": "🇰",
+    "aliases": [
+      "regional_indicator_symbol_k"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "l"
+    ],
+    "description": "regional indicator symbol letter l",
+    "emoji": "🇱",
+    "aliases": [
+      "regional_indicator_symbol_l"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "m"
+    ],
+    "description": "regional indicator symbol letter m",
+    "emoji": "🇲",
+    "aliases": [
+      "regional_indicator_symbol_m"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "n"
+    ],
+    "description": "regional indicator symbol letter n",
+    "emoji": "🇳",
+    "aliases": [
+      "regional_indicator_symbol_n"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "o"
+    ],
+    "description": "regional indicator symbol letter o",
+    "emoji": "🇴",
+    "aliases": [
+      "regional_indicator_symbol_o"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "p"
+    ],
+    "description": "regional indicator symbol letter p",
+    "emoji": "🇵",
+    "aliases": [
+      "regional_indicator_symbol_p"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "q"
+    ],
+    "description": "regional indicator symbol letter q",
+    "emoji": "🇶",
+    "aliases": [
+      "regional_indicator_symbol_q"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "r"
+    ],
+    "description": "regional indicator symbol letter r",
+    "emoji": "🇷",
+    "aliases": [
+      "regional_indicator_symbol_r"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "s"
+    ],
+    "description": "regional indicator symbol letter s",
+    "emoji": "🇸",
+    "aliases": [
+      "regional_indicator_symbol_s"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "t"
+    ],
+    "description": "regional indicator symbol letter t",
+    "emoji": "🇹",
+    "aliases": [
+      "regional_indicator_symbol_t"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "u"
+    ],
+    "description": "regional indicator symbol letter u",
+    "emoji": "🇺",
+    "aliases": [
+      "regional_indicator_symbol_u"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "v"
+    ],
+    "description": "regional indicator symbol letter v",
+    "emoji": "🇻",
+    "aliases": [
+      "regional_indicator_symbol_v"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "w"
+    ],
+    "description": "regional indicator symbol letter w",
+    "emoji": "🇼",
+    "aliases": [
+      "regional_indicator_symbol_w"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "x"
+    ],
+    "description": "regional indicator symbol letter x",
+    "emoji": "🇽",
+    "aliases": [
+      "regional_indicator_symbol_x"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "y"
+    ],
+    "description": "regional indicator symbol letter y",
+    "emoji": "🇾",
+    "aliases": [
+      "regional_indicator_symbol_y"
+    ]
+  },
+  {
+    "tags": [
+      "letter",
+      "z"
+    ],
+    "description": "regional indicator symbol letter z",
+    "emoji": "🇿",
+    "aliases": [
+      "regional_indicator_symbol_z"
+    ]
+  },
+
   {
     "emoji": "👨‍👩‍👦",
     "description": "family (man, woman, boy)",
