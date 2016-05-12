@@ -1153,8 +1153,9 @@
     ]
   },
   {
-    "emoji": "✌️",
+    "emoji": "✌",
     "description": "victory hand",
+    "supports_fitzpatrick": true,
     "aliases": [
       "v"
     ],
