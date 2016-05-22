@@ -16,12 +16,6 @@ public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
     Pattern.compile("(?<=:)\\+?(\\w|\\||\\-)+(?=:)");
 
-
-  /**
-   * No need for a constructor, all the methods are static.
-   */
-  private EmojiParser() {}
-
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
    * "PARSE"
