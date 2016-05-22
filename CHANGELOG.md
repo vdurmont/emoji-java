@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.2
+
+- Additions and updates to the emoji database (victory hand now supports fitzpatrick, adds Saint Vincent Grenadines' flag, add the regional indicator symbols). Thanks Daniel!
+- Force the database to be loaded in UTF-8.
+- Enable the extension of the `EmojiParser` class.
+
 ## v3.1.1
 
 - Add the ability to provide a custom `EmojiTransformer` that will enable developers to add their custom emoji replacement methods. Thanks @freva !
