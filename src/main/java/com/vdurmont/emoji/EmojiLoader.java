@@ -49,7 +49,8 @@ public class EmojiLoader {
     InputStream stream
   ) throws IOException {
     StringBuilder sb = new StringBuilder();
-    BufferedReader br = new BufferedReader(new InputStreamReader(stream));
+    InputStreamReader isr = new InputStreamReader(stream, "UTF-8");
+    BufferedReader br = new BufferedReader(isr);
     String read;
     while((read = br.readLine()) != null) {
       sb.append(read);
