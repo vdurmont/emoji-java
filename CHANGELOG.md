@@ -1,8 +1,12 @@
 # Changelog
 
+## v3.1.3
+
+- Removed all variance selectors from the JSON database. Thanks @roberterdin !
+
 ## v3.1.2
 
-- Additions and updates to the emoji database (victory hand now supports fitzpatrick, adds Saint Vincent Grenadines' flag, add the regional indicator symbols). Thanks Daniel!
+- Additions and updates to the emoji database (victory hand now supports fitzpatrick, adds Saint Vincent Grenadines' flag, add the regional indicator symbols). Thanks @lologist !
 - Force the database to be loaded in UTF-8.
 - Enable the extension of the `EmojiParser` class.
 
