@@ -1263,7 +1263,7 @@
     ]
   },
   {
-    "emoji": "☝️",
+    "emoji": "☝",
     "description": "white up pointing index",
     "aliases": [
       "point_up"
@@ -1801,7 +1801,7 @@
     ]
   },
   {
-    "emoji": "❤️",
+    "emoji": "❤",
     "description": "heavy black heart",
     "aliases": [
       "heart"
@@ -2960,7 +2960,7 @@
     ]
   },
   {
-    "emoji": "☀️",
+    "emoji": "☀",
     "description": "black sun with rays",
     "aliases": [
       "sunny"
@@ -2981,7 +2981,7 @@
     ]
   },
   {
-    "emoji": "☁️",
+    "emoji": "☁",
     "description": "cloud",
     "aliases": [
       "cloud"
@@ -3012,7 +3012,7 @@
     ]
   },
   {
-    "emoji": "❄️",
+    "emoji": "❄",
     "description": "snowflake",
     "aliases": [
       "snowflake"
@@ -3380,7 +3380,7 @@
     ]
   },
   {
-    "emoji": "☎️",
+    "emoji": "☎",
     "description": "black telephone",
     "aliases": [
       "phone",
@@ -3947,7 +3947,7 @@
     ]
   },
   {
-    "emoji": "✉️",
+    "emoji": "✉",
     "description": "envelope",
     "aliases": [
       "email",
@@ -4181,7 +4181,7 @@
     ]
   },
   {
-    "emoji": "✂️",
+    "emoji": "✂",
     "description": "black scissors",
     "aliases": [
       "scissors"
@@ -4210,7 +4210,7 @@
     ]
   },
   {
-    "emoji": "✒️",
+    "emoji": "✒",
     "description": "black nib",
     "aliases": [
       "black_nib"
@@ -4219,7 +4219,7 @@
     ]
   },
   {
-    "emoji": "✏️",
+    "emoji": "✏",
     "description": "pencil",
     "aliases": [
       "pencil2"
@@ -4596,7 +4596,7 @@
     ]
   },
   {
-    "emoji": "⚾️",
+    "emoji": "⚾",
     "description": "baseball",
     "aliases": [
       "baseball"
@@ -5661,7 +5661,7 @@
     ]
   },
   {
-    "emoji": "✈️",
+    "emoji": "✈",
     "description": "airplane",
     "aliases": [
       "airplane"
@@ -6039,7 +6039,7 @@
     ]
   },
   {
-    "emoji": "⚠️",
+    "emoji": "⚠",
     "description": "warning sign",
     "aliases": [
       "warning"
@@ -6096,7 +6096,7 @@
     ]
   },
   {
-    "emoji": "♨️",
+    "emoji": "♨",
     "description": "hot springs",
     "aliases": [
       "hotsprings"
@@ -6154,7 +6154,7 @@
     ]
   },
   {
-    "emoji": "1️⃣",
+    "emoji": "1⃣",
     "description": "digit one + combining enclosing keycap",
     "aliases": [
       "one"
@@ -6163,7 +6163,7 @@
     ]
   },
   {
-    "emoji": "2️⃣",
+    "emoji": "2⃣",
     "description": "digit two + combining enclosing keycap",
     "aliases": [
       "two"
@@ -6172,7 +6172,7 @@
     ]
   },
   {
-    "emoji": "3️⃣",
+    "emoji": "3⃣",
     "description": "digit three + combining enclosing keycap",
     "aliases": [
       "three"
@@ -6181,7 +6181,7 @@
     ]
   },
   {
-    "emoji": "4️⃣",
+    "emoji": "4⃣",
     "description": "digit four + combining enclosing keycap",
     "aliases": [
       "four"
@@ -6190,7 +6190,7 @@
     ]
   },
   {
-    "emoji": "5️⃣",
+    "emoji": "5⃣",
     "description": "digit five + combining enclosing keycap",
     "aliases": [
       "five"
@@ -6199,7 +6199,7 @@
     ]
   },
   {
-    "emoji": "6️⃣",
+    "emoji": "6⃣",
     "description": "digit six + combining enclosing keycap",
     "aliases": [
       "six"
@@ -6208,7 +6208,7 @@
     ]
   },
   {
-    "emoji": "7️⃣",
+    "emoji": "7⃣",
     "description": "digit seven + combining enclosing keycap",
     "aliases": [
       "seven"
@@ -6217,7 +6217,7 @@
     ]
   },
   {
-    "emoji": "8️⃣",
+    "emoji": "8⃣",
     "description": "digit eight + combining enclosing keycap",
     "aliases": [
       "eight"
@@ -6226,7 +6226,7 @@
     ]
   },
   {
-    "emoji": "9️⃣",
+    "emoji": "9⃣",
     "description": "digit nine + combining enclosing keycap",
     "aliases": [
       "nine"
@@ -6235,7 +6235,7 @@
     ]
   },
   {
-    "emoji": "0️⃣",
+    "emoji": "0⃣",
     "description": "digit zero + combining enclosing keycap",
     "aliases": [
       "zero"
@@ -6263,7 +6263,7 @@
     ]
   },
   {
-    "emoji": "#️⃣",
+    "emoji": "#⃣",
     "description": "number sign + combining enclosing keycap",
     "aliases": [
       "hash"
@@ -6282,7 +6282,7 @@
     ]
   },
   {
-    "emoji": "⬆️",
+    "emoji": "⬆",
     "description": "upwards black arrow",
     "aliases": [
       "arrow_up"
@@ -6291,7 +6291,7 @@
     ]
   },
   {
-    "emoji": "⬇️",
+    "emoji": "⬇",
     "description": "downwards black arrow",
     "aliases": [
       "arrow_down"
@@ -6300,7 +6300,7 @@
     ]
   },
   {
-    "emoji": "⬅️",
+    "emoji": "⬅",
     "description": "leftwards black arrow",
     "aliases": [
       "arrow_left"
@@ -6309,7 +6309,7 @@
     ]
   },
   {
-    "emoji": "➡️",
+    "emoji": "➡",
     "description": "black rightwards arrow",
     "aliases": [
       "arrow_right"
@@ -6347,7 +6347,7 @@
     ]
   },
   {
-    "emoji": "↗️",
+    "emoji": "↗",
     "description": "north east arrow",
     "aliases": [
       "arrow_upper_right"
@@ -6356,7 +6356,7 @@
     ]
   },
   {
-    "emoji": "↖️",
+    "emoji": "↖",
     "description": "north west arrow",
     "aliases": [
       "arrow_upper_left"
@@ -6365,7 +6365,7 @@
     ]
   },
   {
-    "emoji": "↘️",
+    "emoji": "↘",
     "description": "south east arrow",
     "aliases": [
       "arrow_lower_right"
@@ -6374,7 +6374,7 @@
     ]
   },
   {
-    "emoji": "↙️",
+    "emoji": "↙",
     "description": "south west arrow",
     "aliases": [
       "arrow_lower_left"
@@ -6383,7 +6383,7 @@
     ]
   },
   {
-    "emoji": "↔️",
+    "emoji": "↔",
     "description": "left right arrow",
     "aliases": [
       "left_right_arrow"
@@ -6392,7 +6392,7 @@
     ]
   },
   {
-    "emoji": "↕️",
+    "emoji": "↕",
     "description": "up down arrow",
     "aliases": [
       "arrow_up_down"
@@ -6411,7 +6411,7 @@
     ]
   },
   {
-    "emoji": "◀️",
+    "emoji": "◀",
     "description": "black left-pointing triangle",
     "aliases": [
       "arrow_backward"
@@ -6420,7 +6420,7 @@
     ]
   },
   {
-    "emoji": "▶️",
+    "emoji": "▶",
     "description": "black right-pointing triangle",
     "aliases": [
       "arrow_forward"
@@ -6447,7 +6447,7 @@
     ]
   },
   {
-    "emoji": "↩️",
+    "emoji": "↩",
     "description": "leftwards arrow with hook",
     "aliases": [
       "leftwards_arrow_with_hook"
@@ -6457,7 +6457,7 @@
     ]
   },
   {
-    "emoji": "↪️",
+    "emoji": "↪",
     "description": "rightwards arrow with hook",
     "aliases": [
       "arrow_right_hook"
@@ -6466,7 +6466,7 @@
     ]
   },
   {
-    "emoji": "ℹ️",
+    "emoji": "ℹ",
     "description": "information source",
     "aliases": [
       "information_source"
@@ -6511,7 +6511,7 @@
     ]
   },
   {
-    "emoji": "⤵️",
+    "emoji": "⤵",
     "description": "arrow pointing rightwards then curving downwards",
     "aliases": [
       "arrow_heading_down"
@@ -6520,7 +6520,7 @@
     ]
   },
   {
-    "emoji": "⤴️",
+    "emoji": "⤴",
     "description": "arrow pointing rightwards then curving upwards",
     "aliases": [
       "arrow_heading_up"
@@ -6800,7 +6800,7 @@
     ]
   },
   {
-    "emoji": "🅿️",
+    "emoji": "🅿",
     "description": "negative squared latin capital letter p",
     "aliases": [
       "parking"
@@ -6828,7 +6828,7 @@
     ]
   },
   {
-    "emoji": "🈷️",
+    "emoji": "🈷",
     "description": "squared cjk unified ideograph-6708",
     "aliases": [
       "u6708"
@@ -6846,7 +6846,7 @@
     ]
   },
   {
-    "emoji": "🈂️",
+    "emoji": "🈂",
     "description": "squared katakana sa",
     "aliases": [
       "sa"
@@ -6855,7 +6855,7 @@
     ]
   },
   {
-    "emoji": "Ⓜ️",
+    "emoji": "Ⓜ",
     "description": "circled latin capital letter m",
     "aliases": [
       "m"
@@ -6910,7 +6910,7 @@
     ]
   },
   {
-    "emoji": "㊙️",
+    "emoji": "㊙",
     "description": "circled ideograph secret",
     "aliases": [
       "secret"
@@ -6919,7 +6919,7 @@
     ]
   },
   {
-    "emoji": "㊗️",
+    "emoji": "㊗",
     "description": "circled ideograph congratulation",
     "aliases": [
       "congratulations"
@@ -7041,7 +7041,7 @@
     ]
   },
   {
-    "emoji": "✳️",
+    "emoji": "✳",
     "description": "eight spoked asterisk",
     "aliases": [
       "eight_spoked_asterisk"
@@ -7050,7 +7050,7 @@
     ]
   },
   {
-    "emoji": "❇️",
+    "emoji": "❇",
     "description": "sparkle",
     "aliases": [
       "sparkle"
@@ -7077,7 +7077,7 @@
     ]
   },
   {
-    "emoji": "✴️",
+    "emoji": "✴",
     "description": "eight pointed black star",
     "aliases": [
       "eight_pointed_black_star"
@@ -7124,7 +7124,7 @@
     ]
   },
   {
-    "emoji": "🅰️",
+    "emoji": "🅰",
     "description": "negative squared latin capital letter a",
     "aliases": [
       "a"
@@ -7133,7 +7133,7 @@
     ]
   },
   {
-    "emoji": "🅱️",
+    "emoji": "🅱",
     "description": "negative squared latin capital letter b",
     "aliases": [
       "b"
@@ -7151,7 +7151,7 @@
     ]
   },
   {
-    "emoji": "🅾️",
+    "emoji": "🅾",
     "description": "negative squared latin capital letter o",
     "aliases": [
       "o2"
@@ -7178,7 +7178,7 @@
     ]
   },
   {
-    "emoji": "♻️",
+    "emoji": "♻",
     "description": "black universal recycling symbol",
     "aliases": [
       "recycle"
@@ -7351,7 +7351,7 @@
     ]
   },
   {
-    "emoji": "©️",
+    "emoji": "©",
     "description": "copyright sign",
     "aliases": [
       "copyright"
@@ -7360,7 +7360,7 @@
     ]
   },
   {
-    "emoji": "®️",
+    "emoji": "®",
     "description": "registered sign",
     "aliases": [
       "registered"
@@ -7369,7 +7369,7 @@
     ]
   },
   {
-    "emoji": "™️",
+    "emoji": "™",
     "description": "trade mark sign",
     "aliases": [
       "tm"
@@ -7388,7 +7388,7 @@
     ]
   },
   {
-    "emoji": "‼️",
+    "emoji": "‼",
     "description": "double exclamation mark",
     "aliases": [
       "bangbang"
@@ -7397,7 +7397,7 @@
     ]
   },
   {
-    "emoji": "⁉️",
+    "emoji": "⁉",
     "description": "exclamation question mark",
     "aliases": [
       "interrobang"
@@ -7724,7 +7724,7 @@
     ]
   },
   {
-    "emoji": "✖️",
+    "emoji": "✖",
     "description": "heavy multiplication x",
     "aliases": [
       "heavy_multiplication_x"
@@ -7760,7 +7760,7 @@
     ]
   },
   {
-    "emoji": "♠️",
+    "emoji": "♠",
     "description": "black spade suit",
     "aliases": [
       "spades"
@@ -7769,7 +7769,7 @@
     ]
   },
   {
-    "emoji": "♥️",
+    "emoji": "♥",
     "description": "black heart suit",
     "aliases": [
       "hearts"
@@ -7778,7 +7778,7 @@
     ]
   },
   {
-    "emoji": "♣️",
+    "emoji": "♣",
     "description": "black club suit",
     "aliases": [
       "clubs"
@@ -7787,7 +7787,7 @@
     ]
   },
   {
-    "emoji": "♦️",
+    "emoji": "♦",
     "description": "black diamond suit",
     "aliases": [
       "diamonds"
@@ -7816,7 +7816,7 @@
     ]
   },
   {
-    "emoji": "✔️",
+    "emoji": "✔",
     "description": "heavy check mark",
     "aliases": [
       "heavy_check_mark"
@@ -7825,7 +7825,7 @@
     ]
   },
   {
-    "emoji": "☑️",
+    "emoji": "☑",
     "description": "ballot box with check",
     "aliases": [
       "ballot_box_with_check"
@@ -7861,7 +7861,7 @@
     ]
   },
   {
-    "emoji": "〰️",
+    "emoji": "〰",
     "description": "wavy dash",
     "aliases": [
       "wavy_dash"
@@ -7870,7 +7870,7 @@
     ]
   },
   {
-    "emoji": "〽️",
+    "emoji": "〽",
     "description": "part alternation mark",
     "aliases": [
       "part_alternation_mark"
@@ -7888,7 +7888,7 @@
     ]
   },
   {
-    "emoji": "◼️",
+    "emoji": "◼",
     "description": "black medium square",
     "aliases": [
       "black_medium_square"
@@ -7897,7 +7897,7 @@
     ]
   },
   {
-    "emoji": "◻️",
+    "emoji": "◻",
     "description": "white medium square",
     "aliases": [
       "white_medium_square"
@@ -7924,7 +7924,7 @@
     ]
   },
   {
-    "emoji": "▪️",
+    "emoji": "▪",
     "description": "black small square",
     "aliases": [
       "black_small_square"
@@ -7933,7 +7933,7 @@
     ]
   },
   {
-    "emoji": "▫️",
+    "emoji": "▫",
     "description": "white small square",
     "aliases": [
       "white_small_square"
@@ -10850,7 +10850,7 @@
     ]
   },
   {
-    "emoji": "👩‍❤️‍👩",
+    "emoji": "👩‍❤‍👩",
     "description": "couple with heart (woman, woman)",
     "aliases": [
       "couple_with_heart_woman_woman"
@@ -10862,7 +10862,7 @@
     ]
   },
   {
-    "emoji": "👨‍❤️‍👨",
+    "emoji": "👨‍❤‍👨",
     "description": "couple with heart (man, man)",
     "aliases": [
       "couple_with_heart_man_man"
@@ -10874,7 +10874,7 @@
     ]
   },
   {
-    "emoji": "👩‍❤️‍💋‍👩",
+    "emoji": "👩‍❤‍💋‍👩",
     "description": "kiss (woman, woman)",
     "aliases": [
       "couplekiss_woman_woman"
@@ -10886,7 +10886,7 @@
     ]
   },
   {
-    "emoji": "👨‍❤️‍💋‍👨",
+    "emoji": "👨‍❤‍💋‍👨",
     "description": "kiss (man, man)",
     "aliases": [
       "couplekiss_man_man"
