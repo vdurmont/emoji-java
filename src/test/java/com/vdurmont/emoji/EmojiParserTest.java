@@ -422,7 +422,7 @@ public class EmojiParserTest {
 
   @Test
   public void test_with_a_new_flag() {
-    String input = "Cuba has a new flag! :cu:";
+    String input = "Cuba has a new flag! :flag-cu:";
     String expected = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
 
     assertEquals(expected, EmojiParser.parseToUnicode(input));
