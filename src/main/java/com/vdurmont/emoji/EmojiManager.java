@@ -1,13 +1,11 @@
 package com.vdurmont.emoji;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
+
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Holds the loaded emojis and provides search functions.
@@ -15,42 +13,73 @@ import java.util.Set;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
-  private static final String PATH = "/emojis.json";
-  private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
-    new HashMap<String, Emoji>();
-  private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
-    new HashMap<String, Set<Emoji>>();
-  private static final List<Emoji> ALL_EMOJIS;
-  private static final EmojiTrie EMOJI_TRIE;
+  private static final String DEFAULT_RESOURCE = "/emojis.json";
+  private final Map<String, Emoji> EMOJIS_BY_ALIAS;
+  private final Map<String, Set<Emoji>> EMOJIS_BY_TAG;
+  private final List<Emoji> ALL_EMOJIS;
+  private final EmojiTrie EMOJI_TRIE;
 
-  static {
+  /**
+   * Builds an emoji manager
+   */
+  public EmojiManager() {
+    EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
+    EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
+    ALL_EMOJIS = new ArrayList<Emoji>();
+    EMOJI_TRIE = new EmojiTrie();
+
+    loadEmojisFromResource(DEFAULT_RESOURCE);
+  }
+
+  /**
+   * Loads emojis from a resource
+   *
+   * @param resourcePath path to a resource file
+   */
+  private void loadEmojisFromResource(String resourcePath) {
+    ObjectMapper mapper = new ObjectMapper();
+    final CollectionType emojiList = mapper.getTypeFactory().constructCollectionType(List.class, Emoji.class);
+
     try {
-      InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
-      List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
-      ALL_EMOJIS = emojis;
-      for (Emoji emoji : emojis) {
-        for (String tag : emoji.getTags()) {
-          if (EMOJIS_BY_TAG.get(tag) == null) {
-            EMOJIS_BY_TAG.put(tag, new HashSet<Emoji>());
-          }
-          EMOJIS_BY_TAG.get(tag).add(emoji);
-        }
-        for (String alias : emoji.getAliases()) {
-          EMOJIS_BY_ALIAS.put(alias, emoji);
-        }
-      }
-
-      EMOJI_TRIE = new EmojiTrie(emojis);
-      stream.close();
+      InputStream stream = EmojiManager.class.getResourceAsStream(resourcePath);
+      List<Emoji> emojis = mapper.readValue(stream, emojiList);
+      addEmojis(emojis);
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
   }
 
   /**
-   * No need for a constructor, all the methods are static.
+   * Adds emojis to the list of known emojis
+   *
+   * @param emojis emojis
    */
-  private EmojiManager() {}
+  public void addEmojis(List<Emoji> emojis) {
+    for (Emoji emoji : emojis) {
+      addEmoji(emoji);
+    }
+  }
+
+  /**
+   * Adds an emoji to the manager
+   *
+   * @param emoji emoji to add
+   */
+  public void addEmoji(Emoji emoji) {
+    ALL_EMOJIS.add(emoji);
+
+    for (String tag : emoji.getTags()) {
+      if (EMOJIS_BY_TAG.get(tag) == null) {
+        EMOJIS_BY_TAG.put(tag, new HashSet<Emoji>());
+      }
+      EMOJIS_BY_TAG.get(tag).add(emoji);
+    }
+    for (String alias : emoji.getAliases()) {
+      EMOJIS_BY_ALIAS.put(alias, emoji);
+    }
+
+    EMOJI_TRIE.addEmoji(emoji);
+  }
 
   /**
    * Returns all the {@link com.vdurmont.emoji.Emoji}s for a given tag.
@@ -60,7 +89,7 @@ public class EmojiManager {
    * @return the associated {@link com.vdurmont.emoji.Emoji}s, null if the tag
    * is unknown
    */
-  public static Set<Emoji> getForTag(String tag) {
+  public Set<Emoji> getForTag(String tag) {
     if (tag == null) {
       return null;
     }
@@ -75,14 +104,14 @@ public class EmojiManager {
    * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the alias
    * is unknown
    */
-  public static Emoji getForAlias(String alias) {
+  public Emoji getForAlias(String alias) {
     if (alias == null) {
       return null;
     }
     return EMOJIS_BY_ALIAS.get(trimAlias(alias));
   }
 
-  private static String trimAlias(String alias) {
+  private String trimAlias(String alias) {
     String result = alias;
     if (result.startsWith(":")) {
       result = result.substring(1, result.length());
@@ -102,7 +131,7 @@ public class EmojiManager {
    * @return the associated {@link com.vdurmont.emoji.Emoji}, null if the
    * unicode is unknown
    */
-  public static Emoji getByUnicode(String unicode) {
+  public Emoji getByUnicode(String unicode) {
     if (unicode == null) {
       return null;
     }
@@ -114,7 +143,7 @@ public class EmojiManager {
    *
    * @return all the {@link com.vdurmont.emoji.Emoji}s
    */
-  public static Collection<Emoji> getAll() {
+  public Collection<Emoji> getAll() {
     return ALL_EMOJIS;
   }
 
@@ -125,7 +154,7 @@ public class EmojiManager {
    *
    * @return true if the string is an emoji's unicode, false else
    */
-  public static boolean isEmoji(String string) {
+  public boolean isEmoji(String string) {
     return string != null &&
       EMOJI_TRIE.isEmoji(string.toCharArray()).exactMatch();
   }
@@ -147,7 +176,7 @@ public class EmojiManager {
    *   emoji
    * &lt;/li&gt;
    */
-  public static EmojiTrie.Matches isEmoji(char[] sequence) {
+  public EmojiTrie.Matches isEmoji(char[] sequence) {
     return EMOJI_TRIE.isEmoji(sequence);
   }
 
@@ -156,7 +185,7 @@ public class EmojiManager {
    *
    * @return the tags
    */
-  public static Collection<String> getAllTags() {
+  public Collection<String> getAllTags() {
     return EMOJIS_BY_TAG.keySet();
   }
 }

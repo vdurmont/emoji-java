@@ -7,19 +7,38 @@ import java.util.Map;
 public class EmojiTrie {
   private Node root = new Node();
 
+  public EmojiTrie() {}
+
   public EmojiTrie(Collection<Emoji> emojis) {
+    addEmojis(emojis);
+  }
+
+  /**
+   * Adds a list of emoijis to the trie
+   *
+   * @param emojis emojis
+   */
+  public void addEmojis(Collection<Emoji> emojis) {
     for (Emoji emoji : emojis) {
-      Node tree = root;
-      for (char c: emoji.getUnicode().toCharArray()) {
-        if (!tree.hasChild(c)) {
-          tree.addChild(c);
-        }
-        tree = tree.getChild(c);
-      }
-      tree.setEmoji(emoji);
+      addEmoji(emoji);
     }
   }
 
+  /**
+   * Adds an emoiji to the trie
+   *
+   * @param emoji emoji
+   */
+  public void addEmoji(Emoji emoji) {
+    Node tree = root;
+    for (char c: emoji.getUnicode().toCharArray()) {
+      if (!tree.hasChild(c)) {
+        tree.addChild(c);
+      }
+      tree = tree.getChild(c);
+    }
+    tree.setEmoji(emoji);
+  }
 
   /**
    * Checks if sequence of chars contain an emoji.

@@ -20,7 +20,7 @@ public class EmojiParserTest {
     String str = "An 😀awesome 😃string with a few 😉emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str);
+    String result = new EmojiParser().parseToAliases(str);
 
     // THEN
     assertEquals(
@@ -35,7 +35,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str);
+    String result = new EmojiParser().parseToAliases(str);
 
     // THEN
     assertEquals(":boy|type_6:", result);
@@ -47,7 +47,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str, FitzpatrickAction.REMOVE);
+    String result = new EmojiParser().parseToAliases(str, FitzpatrickAction.REMOVE);
 
     // THEN
     assertEquals(":boy:", result);
@@ -59,7 +59,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str, FitzpatrickAction.REMOVE);
+    String result = new EmojiParser().parseToAliases(str, FitzpatrickAction.REMOVE);
 
     // THEN
     assertEquals(":boy:", result);
@@ -71,7 +71,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str, FitzpatrickAction.IGNORE);
+    String result = new EmojiParser().parseToAliases(str, FitzpatrickAction.IGNORE);
 
     // THEN
     assertEquals(":boy:\uD83C\uDFFF", result);
@@ -83,7 +83,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str, FitzpatrickAction.IGNORE);
+    String result = new EmojiParser().parseToAliases(str, FitzpatrickAction.IGNORE);
 
     // THEN
     assertEquals(":boy:", result);
@@ -95,7 +95,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC66";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str);
+    String result = new EmojiParser().parseToAliases(str);
 
     //With greedy parsing, this will give :man::woman::boy:
     //THEN
@@ -108,7 +108,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC69\uD83D\uDC68\uD83D\uDC66";
 
     // WHEN
-    String result = EmojiParser.parseToAliases(str);
+    String result = new EmojiParser().parseToAliases(str);
 
     //THEN
     assertEquals(":woman::man::boy:", result);
@@ -120,7 +120,7 @@ public class EmojiParserTest {
     String str = "An 😀awesome 😃string with a few 😉emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(str);
+    String result = new EmojiParser().parseToHtmlDecimal(str);
 
     // THEN
     assertEquals(
@@ -135,7 +135,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
+    String result = new EmojiParser().parseToHtmlDecimal(
       str,
       FitzpatrickAction.PARSE
     );
@@ -150,7 +150,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
+    String result = new EmojiParser().parseToHtmlDecimal(
       str,
       FitzpatrickAction.REMOVE
     );
@@ -165,7 +165,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
+    String result = new EmojiParser().parseToHtmlDecimal(
       str,
       FitzpatrickAction.IGNORE
     );
@@ -180,7 +180,7 @@ public class EmojiParserTest {
     String str = "An 😀awesome 😃string with a few 😉emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(str);
+    String result = new EmojiParser().parseToHtmlHexadecimal(str);
 
     // THEN
     assertEquals(
@@ -195,7 +195,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
+    String result = new EmojiParser().parseToHtmlHexadecimal(
       str,
       FitzpatrickAction.PARSE
     );
@@ -210,7 +210,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
+    String result = new EmojiParser().parseToHtmlHexadecimal(
       str,
       FitzpatrickAction.REMOVE
     );
@@ -225,7 +225,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
+    String result = new EmojiParser().parseToHtmlHexadecimal(
       str,
       FitzpatrickAction.IGNORE
     );
@@ -241,7 +241,7 @@ public class EmojiParserTest {
       "&#128516;with a few &#x1f609;emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals("An 😀awesome 😃string 😄with a few 😉emojis!", result);
@@ -254,7 +254,7 @@ public class EmojiParserTest {
       "&#128516;with a few :wink:emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals(
@@ -270,7 +270,7 @@ public class EmojiParserTest {
       "with a few :wink:emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals(
@@ -286,7 +286,7 @@ public class EmojiParserTest {
       "with a few :wink:emojis!";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals(
@@ -301,7 +301,7 @@ public class EmojiParserTest {
     String str = ":boy|type_6:";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals("\uD83D\uDC66\uD83C\uDFFF", result);
@@ -312,7 +312,7 @@ public class EmojiParserTest {
     // GIVEN
     String str = ":grinning|type_6:";
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals(str, result);
@@ -422,11 +422,11 @@ public class EmojiParserTest {
 
   @Test
   public void test_with_a_new_flag() {
-    String input = "Cuba has a new flag! :cu:";
+    String input = "Cuba has a new flag! :flag-cu:";
     String expected = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
 
-    assertEquals(expected, EmojiParser.parseToUnicode(input));
-    assertEquals(input, EmojiParser.parseToAliases(expected));
+    assertEquals(expected, new EmojiParser().parseToUnicode(input));
+    assertEquals(input, new EmojiParser().parseToAliases(expected));
   }
 
   @Test
@@ -436,7 +436,7 @@ public class EmojiParserTest {
       "a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
 
     // WHEN
-    String result = EmojiParser.removeAllEmojis(input);
+    String result = new EmojiParser().removeAllEmojis(input);
 
     // THEN
     String expected = "An awesome string with a few emojis!";
@@ -446,15 +446,16 @@ public class EmojiParserTest {
   @Test
   public void removeEmojis_only_removes_the_emojis_in_the_iterable_from_the_string() {
     // GIVEN
+    EmojiManager emojiManager = new EmojiManager();
     String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string" +
       "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
     List<Emoji> emojis = new ArrayList<Emoji>();
-    emojis.add(EmojiManager.getForAlias("smile"));
-    emojis.add(EmojiManager.getForAlias("+1"));
+    emojis.add(emojiManager.getForAlias("smile"));
+    emojis.add(emojiManager.getForAlias("+1"));
 
     // WHEN
-    String result = EmojiParser.removeEmojis(input, emojis);
+    String result = new EmojiParser().removeEmojis(input, emojis);
 
     // THEN
     String expected = "An\uD83D\uDE03 awesome string with" +
@@ -465,15 +466,16 @@ public class EmojiParserTest {
   @Test
   public void removeAllEmojisExcept_removes_all_the_emojis_from_the_string_except_those_in_the_iterable() {
     // GIVEN
+    EmojiManager emojiManager = new EmojiManager();
     String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string" +
       "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
     List<Emoji> emojis = new ArrayList<Emoji>();
-    emojis.add(EmojiManager.getForAlias("smile"));
-    emojis.add(EmojiManager.getForAlias("+1"));
+    emojis.add(emojiManager.getForAlias("smile"));
+    emojis.add(emojiManager.getForAlias("+1"));
 
     // WHEN
-    String result = EmojiParser.removeAllEmojisExcept(input, emojis);
+    String result = new EmojiParser().removeAllEmojisExcept(input, emojis);
 
     // THEN
     String expected = "An awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF " +
@@ -488,7 +490,7 @@ public class EmojiParserTest {
       "its other alias :star_keycap:";
 
     // WHEN
-    String result = EmojiParser.parseToUnicode(str);
+    String result = new EmojiParser().parseToUnicode(str);
 
     // THEN
     assertEquals("Let's test the *⃣ emoji and its other alias *⃣", result);

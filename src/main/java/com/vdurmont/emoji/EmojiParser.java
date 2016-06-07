@@ -15,6 +15,15 @@ import java.util.regex.Pattern;
 public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
     Pattern.compile("(?<=:)\\+?(\\w|\\||\\-)+(?=:)");
+  private final EmojiManager emojiManager;
+
+  public EmojiParser() {
+    this(new EmojiManager());
+  }
+
+  public EmojiParser(EmojiManager emojiManager) {
+    this.emojiManager = emojiManager;
+  }
 
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
@@ -24,7 +33,7 @@ public class EmojiParser {
    *
    * @return the string with the emojis replaced by their alias.
    */
-  public static String parseToAliases(String input) {
+  public String parseToAliases(String input) {
     return parseToAliases(input, FitzpatrickAction.PARSE);
   }
 
@@ -52,7 +61,7 @@ public class EmojiParser {
    *
    * @return the string with the emojis replaced by their alias.
    */
-  public static String parseToAliases(
+  public String parseToAliases(
     String input,
     final FitzpatrickAction fitzpatrickAction
   ) {
@@ -98,14 +107,14 @@ public class EmojiParser {
    * @return the string with the aliases and html representations replaced by
    * their unicode.
    */
-  public static String parseToUnicode(String input) {
+  public String parseToUnicode(String input) {
     // Get all the potential aliases
     List<AliasCandidate> candidates = getAliasCandidates(input);
 
     // Replace the aliases by their unicode
     String result = input;
     for (AliasCandidate candidate : candidates) {
-      Emoji emoji = EmojiManager.getForAlias(candidate.alias);
+      Emoji emoji = emojiManager.getForAlias(candidate.alias);
       if (emoji != null) {
         if (
           emoji.supportsFitzpatrick() ||
@@ -124,7 +133,7 @@ public class EmojiParser {
     }
 
     // Replace the html
-    for (Emoji emoji : EmojiManager.getAll()) {
+    for (Emoji emoji : emojiManager.getAll()) {
       result = result.replace(emoji.getHtmlHexadecimal(), emoji.getUnicode());
       result = result.replace(emoji.getHtmlDecimal(), emoji.getUnicode());
     }
@@ -162,7 +171,7 @@ public class EmojiParser {
    * @return the string with the emojis replaced by their html decimal
    * representation.
    */
-  public static String parseToHtmlDecimal(String input) {
+  public String parseToHtmlDecimal(String input) {
     return parseToHtmlDecimal(input, FitzpatrickAction.PARSE);
   }
 
@@ -186,7 +195,7 @@ public class EmojiParser {
    * @return the string with the emojis replaced by their html decimal
    * representation.
    */
-  public static String parseToHtmlDecimal(
+  public String parseToHtmlDecimal(
     String input,
     final FitzpatrickAction fitzpatrickAction
   ) {
@@ -216,7 +225,7 @@ public class EmojiParser {
    * @return the string with the emojis replaced by their html hex
    * representation.
    */
-  public static String parseToHtmlHexadecimal(String input) {
+  public String parseToHtmlHexadecimal(String input) {
     return parseToHtmlHexadecimal(input, FitzpatrickAction.PARSE);
   }
 
@@ -241,7 +250,7 @@ public class EmojiParser {
    * @return the string with the emojis replaced by their html hex
    * representation.
    */
-  public static String parseToHtmlHexadecimal(
+  public String parseToHtmlHexadecimal(
     String input,
     final FitzpatrickAction fitzpatrickAction
   ) {
@@ -269,7 +278,7 @@ public class EmojiParser {
    *
    * @return the string without any emoji
    */
-  public static String removeAllEmojis(String str) {
+  public String removeAllEmojis(String str) {
     EmojiTransformer emojiTransformer = new EmojiTransformer() {
       public String transform(UnicodeCandidate unicodeCandidate) {
         return "";
@@ -288,7 +297,7 @@ public class EmojiParser {
    *
    * @return the string without the emojis that were removed
    */
-  public static String removeEmojis(
+  public String removeEmojis(
     String str,
     final Collection<Emoji> emojisToRemove
   ) {
@@ -313,7 +322,7 @@ public class EmojiParser {
    *
    * @return the string without the emojis that were removed
    */
-  public static String removeAllEmojisExcept(
+  public String removeAllEmojisExcept(
     String str,
     final Collection<Emoji> emojisToKeep
   ) {
@@ -340,7 +349,7 @@ public class EmojiParser {
    *
    * @return input string with all emojis transformed
    */
-  public static String parseFromUnicode(
+  public String parseFromUnicode(
     String input,
     EmojiTransformer transformer
   ) {
@@ -369,14 +378,14 @@ public class EmojiParser {
    * @param input String to find all unicode emojis in
    * @return List of UnicodeCandidates for each unicode emote in text
    */
-  protected static List<UnicodeCandidate> getUnicodeCandidates(String input) {
+  protected List<UnicodeCandidate> getUnicodeCandidates(String input) {
     char[] inputCharArray = input.toCharArray();
     List<UnicodeCandidate> candidates = new ArrayList<UnicodeCandidate>();
     for (int i = 0; i < input.length(); i++) {
       int emojiEnd = getEmojiEndPos(inputCharArray, i);
 
       if (emojiEnd != -1) {
-        Emoji emoji = EmojiManager.getByUnicode(input.substring(i, emojiEnd));
+        Emoji emoji = emojiManager.getByUnicode(input.substring(i, emojiEnd));
         String fitzpatrickString = (emojiEnd + 2 <= input.length()) ?
           new String(inputCharArray, emojiEnd, 2) :
           null;
@@ -408,10 +417,10 @@ public class EmojiParser {
    * @return the end index of the unicode emoji starting at startPos. -1 if not
    * found
    */
-  protected static int getEmojiEndPos(char[] text, int startPos) {
+  protected int getEmojiEndPos(char[] text, int startPos) {
     int best = -1;
     for (int j = startPos + 1; j <= text.length; j++) {
-      EmojiTrie.Matches status = EmojiManager.isEmoji(Arrays.copyOfRange(
+      EmojiTrie.Matches status = emojiManager.isEmoji(Arrays.copyOfRange(
         text,
         startPos,
         j
