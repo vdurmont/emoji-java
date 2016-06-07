@@ -3,14 +3,9 @@ package com.vdurmont.emoji;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Loads the emojis from a JSON database.
@@ -45,9 +40,7 @@ public class EmojiLoader {
     return emojis;
   }
 
-  private static String inputStreamToString(
-    InputStream stream
-  ) throws IOException {
+  private static String inputStreamToString(InputStream stream) throws IOException {
     StringBuilder sb = new StringBuilder();
     InputStreamReader isr = new InputStreamReader(stream, "UTF-8");
     BufferedReader br = new BufferedReader(isr);
