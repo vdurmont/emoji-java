@@ -150,20 +150,19 @@ public class EmojiManagerTest {
   @Test
   public void addEmoji_adds_emoji() {
     // GIVEN
+    EmojiManager manager = new EmojiManager();
     Emoji emoji = new Emoji(
       "Test emoji",
       false,
       Collections.singletonList("testtesttest"),
       Collections.singletonList("testtesttest"),
-      new Byte("2"));
-
-    EmojiManager manager = new EmojiManager();
+      "2");
 
     // WHEN
     manager.addEmoji(emoji);
 
     // THEN
     assertEquals(emoji, manager.getForAlias(":testtesttest:"));
-    assertEquals(new HashSet<Emoji>(Arrays.asList(emoji)), manager.getForTag("testtesttest"));
+    assertEquals(new HashSet<>(Collections.singletonList(emoji)), manager.getForTag("testtesttest"));
   }
 }

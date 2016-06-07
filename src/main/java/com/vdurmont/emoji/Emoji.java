@@ -1,6 +1,8 @@
 package com.vdurmont.emoji;
 
-import java.io.UnsupportedEncodingException;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -27,40 +29,37 @@ public class Emoji {
    * @param supportsFitzpatrick Whether the emoji supports Fitzpatrick modifiers
    * @param aliases             the aliases for this emoji
    * @param tags                the tags associated with this emoji
-   * @param bytes               the bytes that represent the emoji
+   * @param unicode             the unicode string that represent the emoji
    */
-  protected Emoji(
-    String description,
-    boolean supportsFitzpatrick,
-    List<String> aliases,
-    List<String> tags,
-    byte... bytes
-  ) {
+  @JsonCreator
+  public Emoji(
+    @JsonProperty("description") String description,
+    @JsonProperty("supports_fitzpatrick") boolean supportsFitzpatrick,
+    @JsonProperty("aliases") List<String> aliases,
+    @JsonProperty("tags") List<String> tags,
+    @JsonProperty("emoji") String unicode) {
     this.description = description;
     this.supportsFitzpatrick = supportsFitzpatrick;
     this.aliases = Collections.unmodifiableList(aliases);
     this.tags = Collections.unmodifiableList(tags);
+    this.unicode = unicode;
+
+    int stringLength = getUnicode().length();
+    String[] pointCodes = new String[stringLength];
+    String[] pointCodesHex = new String[stringLength];
 
     int count = 0;
-    try {
-      this.unicode = new String(bytes, "UTF-8");
-      int stringLength = getUnicode().length();
-      String[] pointCodes = new String[stringLength];
-      String[] pointCodesHex = new String[stringLength];
+    for (int offset = 0; offset < stringLength; ) {
+      final int codePoint = getUnicode().codePointAt(offset);
 
-      for (int offset = 0; offset < stringLength; ) {
-        final int codePoint = getUnicode().codePointAt(offset);
+      pointCodes[count] = String.format("&#%d;", codePoint);
+      pointCodesHex[count++] = String.format("&#x%x;", codePoint);
 
-        pointCodes[count] = String.format("&#%d;", codePoint);
-        pointCodesHex[count++] = String.format("&#x%x;", codePoint);
-
-        offset += Character.charCount(codePoint);
-      }
-      this.htmlDec = stringJoin(pointCodes, count);
-      this.htmlHex = stringJoin(pointCodesHex, count);
-    } catch (UnsupportedEncodingException e) {
-      throw new RuntimeException(e);
+      offset += Character.charCount(codePoint);
     }
+
+    this.htmlDec = stringJoin(pointCodes, count);
+    this.htmlHex = stringJoin(pointCodesHex, count);
   }
 
   /**

@@ -1,5 +1,8 @@
 package com.vdurmont.emoji;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
@@ -10,6 +13,7 @@ import java.util.*;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
+  private static final String DEFAULT_RESOURCE = "/emojis.json";
   private final Map<String, Emoji> EMOJIS_BY_ALIAS;
   private final Map<String, Set<Emoji>> EMOJIS_BY_TAG;
   private final List<Emoji> ALL_EMOJIS;
@@ -17,38 +21,29 @@ public class EmojiManager {
 
   /**
    * Builds an emoji manager
-   *
-   * Loads emojis from ./emojis.json by default
    */
   public EmojiManager() {
-    this("/emojis.json");
-  }
-
-  /**
-   * Builds an emoji manager
-   *
-   * @param filepath path to emoji JSON file
-   */
-  public EmojiManager(String filepath) {
     EMOJIS_BY_ALIAS = new HashMap<String, Emoji>();
     EMOJIS_BY_TAG = new HashMap<String, Set<Emoji>>();
     ALL_EMOJIS = new ArrayList<Emoji>();
     EMOJI_TRIE = new EmojiTrie();
 
-    loadEmojis(filepath);
+    loadEmojisFromResource(DEFAULT_RESOURCE);
   }
 
   /**
-   * Loads emojis from a file
+   * Loads emojis from a resource
    *
-   * @param filepath path to emoji file
+   * @param resourcePath path to a resource file
    */
-  public void loadEmojis(String filepath) {
+  private void loadEmojisFromResource(String resourcePath) {
+    ObjectMapper mapper = new ObjectMapper();
+    final CollectionType emojiList = mapper.getTypeFactory().constructCollectionType(List.class, Emoji.class);
+
     try {
-      InputStream stream = EmojiLoader.class.getResourceAsStream(filepath);
-      List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
+      InputStream stream = EmojiManager.class.getResourceAsStream(resourcePath);
+      List<Emoji> emojis = mapper.readValue(stream, emojiList);
       addEmojis(emojis);
-      stream.close();
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
