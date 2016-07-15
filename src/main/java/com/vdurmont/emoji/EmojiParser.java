@@ -99,6 +99,24 @@ public class EmojiParser {
    * their unicode.
    */
   public static String parseToUnicode(String input) {
+      return parseToUnicode(input, false);
+  }
+
+  /**
+   * Replaces the emoji's aliases (between 2 ':') occurrences and the html
+   * representations by their unicode.<br>
+   * Examples:<br>
+   * <code>:smile:</code> will be replaced by <code>😄</code><br>
+   * <code>&amp;#128516;</code> will be replaced by <code>😄</code><br>
+   * <code>:boy|type_6:</code> will be replaced by <code>👦🏿</code>
+   *
+   * @param input the string to parse
+   * @param parseAsText force the client to render emojis as text
+   *
+   * @return the string with the aliases and html representations replaced by
+   * their unicode.
+   */
+  public static String parseToUnicode(String input, Boolean parseAsText) {
     // Get all the potential aliases
     List<AliasCandidate> candidates = getAliasCandidates(input);
 
@@ -115,6 +133,9 @@ public class EmojiParser {
           if (candidate.fitzpatrick != null) {
             replacement += candidate.fitzpatrick.unicode;
           }
+          if(parseAsText){
+              replacement += "\uFE0E";
+          }
           result = result.replace(
             ":" + candidate.fullString + ":",
             replacement
@@ -125,8 +146,9 @@ public class EmojiParser {
 
     // Replace the html
     for (Emoji emoji : EmojiManager.getAll()) {
-      result = result.replace(emoji.getHtmlHexadecimal(), emoji.getUnicode());
-      result = result.replace(emoji.getHtmlDecimal(), emoji.getUnicode());
+      String replacement = parseAsText ? emoji.getAsText() : emoji.getUnicode();
+      result = result.replace(emoji.getHtmlHexadecimal(), replacement);
+      result = result.replace(emoji.getHtmlDecimal(), replacement);
     }
 
     return result;

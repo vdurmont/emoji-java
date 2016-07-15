@@ -172,6 +172,23 @@ public class Emoji {
     return this.htmlHex;
   }
 
+  /**
+   * Returns the unicode representation of the emoji that may force the client to render this
+   * emoji as text.
+   *
+   * See http://mts.io/2015/04/21/unicode-symbol-render-text-emoji/ for details
+   *
+   * VARIATION SELECTOR-15 (U+FE0E) is a Nonspacing Mark that has the following property:
+   * This codepoint may change the appearance of the preceding character. If that is a symbol,
+   * dingbat or emoji, U+FE0E forces it to be rendered in a textual fashion as compared
+   * to a colorful image.
+   *
+   * @return unicode representation with appended U+FE0E
+   */
+  public String getAsText() {
+    return this.getUnicode() + "\uFE0E";
+  }
+
   @Override
   public boolean equals(Object other) {
     return !(other == null || !(other instanceof Emoji)) &&
