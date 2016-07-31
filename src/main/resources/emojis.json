@@ -7,6 +7,7 @@
          "grinning"
       ],
       "tags":[
+         "smile",
          "happy"
       ]
    },
@@ -29,7 +30,7 @@
          "joy"
       ],
       "tags":[
-
+         "tears"
       ]
    },
    {
@@ -52,6 +53,7 @@
          "smiley"
       ],
       "tags":[
+         "happy",
          "joy",
          "haha"
       ]
@@ -64,6 +66,7 @@
          "smile"
       ],
       "tags":[
+         "happy",
          "joy",
          "pleased"
       ]
@@ -76,7 +79,7 @@
          "sweat_smile"
       ],
       "tags":[
-
+         "hot"
       ]
    },
    {
@@ -88,6 +91,7 @@
          "satisfied"
       ],
       "tags":[
+         "happy",
          "haha"
       ]
    },
@@ -99,7 +103,7 @@
          "wink"
       ],
       "tags":[
-
+         "flirt"
       ]
    },
    {
@@ -110,7 +114,7 @@
          "blush"
       ],
       "tags":[
-
+         "proud"
       ]
    },
    {
@@ -121,6 +125,7 @@
          "yum"
       ],
       "tags":[
+         "tongue",
          "lick"
       ]
    },
@@ -132,7 +137,7 @@
          "sunglasses"
       ],
       "tags":[
-
+         "cool"
       ]
    },
    {
@@ -143,6 +148,7 @@
          "heart_eyes"
       ],
       "tags":[
+         "love",
          "crush"
       ]
    },
@@ -154,7 +160,7 @@
          "kissing_heart"
       ],
       "tags":[
-
+         "flirt"
       ]
    },
    {
@@ -198,6 +204,7 @@
          "relaxed"
       ],
       "tags":[
+         "blush",
          "pleased"
       ]
    },
@@ -246,7 +253,7 @@
          "neutral_face"
       ],
       "tags":[
-
+         "meh"
       ]
    },
    {
@@ -268,6 +275,7 @@
          "no_mouth"
       ],
       "tags":[
+         "mute",
          "silence"
       ]
    },
@@ -291,7 +299,7 @@
          "smirk"
       ],
       "tags":[
-
+         "smug"
       ]
    },
    {
@@ -302,7 +310,7 @@
          "persevere"
       ],
       "tags":[
-
+         "struggling"
       ]
    },
    {
@@ -313,6 +321,7 @@
          "disappointed_relieved"
       ],
       "tags":[
+         "phew",
          "sweat",
          "nervous"
       ]
@@ -325,6 +334,7 @@
          "open_mouth"
       ],
       "tags":[
+         "surprise",
          "impressed",
          "wow"
       ]
@@ -351,6 +361,7 @@
          "hushed"
       ],
       "tags":[
+         "silence",
          "speechless"
       ]
    },
@@ -362,7 +373,7 @@
          "sleepy"
       ],
       "tags":[
-
+         "tired"
       ]
    },
    {
@@ -373,6 +384,7 @@
          "tired_face"
       ],
       "tags":[
+         "upset",
          "whine"
       ]
    },
@@ -384,7 +396,7 @@
          "sleeping"
       ],
       "tags":[
-
+         "zzz"
       ]
    },
    {
@@ -395,7 +407,7 @@
          "relieved"
       ],
       "tags":[
-
+         "whew"
       ]
    },
    {
@@ -429,6 +441,7 @@
          "stuck_out_tongue_winking_eye"
       ],
       "tags":[
+         "prank",
          "silly"
       ]
    },
@@ -440,7 +453,7 @@
          "stuck_out_tongue_closed_eyes"
       ],
       "tags":[
-
+         "prank"
       ]
    },
    {
@@ -462,7 +475,7 @@
          "unamused"
       ],
       "tags":[
-
+         "meh"
       ]
    },
    {
@@ -530,6 +543,7 @@
          "astonished"
       ],
       "tags":[
+         "amazed",
          "gasp"
       ]
    },
@@ -574,7 +588,7 @@
          "disappointed"
       ],
       "tags":[
-
+         "sad"
       ]
    },
    {
@@ -585,7 +599,7 @@
          "worried"
       ],
       "tags":[
-
+         "nervous"
       ]
    },
    {
@@ -596,7 +610,7 @@
          "triumph"
       ],
       "tags":[
-
+         "smug"
       ]
    },
    {
@@ -607,6 +621,7 @@
          "cry"
       ],
       "tags":[
+         "sad",
          "tear"
       ]
    },
@@ -618,6 +633,7 @@
          "sob"
       ],
       "tags":[
+         "sad",
          "cry",
          "bawling"
       ]
@@ -641,7 +657,7 @@
          "anguished"
       ],
       "tags":[
-
+         "stunned"
       ]
    },
    {
@@ -652,6 +668,7 @@
          "fearful"
       ],
       "tags":[
+         "scared",
          "shocked",
          "oops"
       ]
@@ -664,7 +681,7 @@
          "weary"
       ],
       "tags":[
-
+         "tired"
       ]
    },
    {
@@ -686,7 +703,7 @@
          "cold_sweat"
       ],
       "tags":[
-
+         "nervous"
       ]
    },
    {
@@ -697,6 +714,7 @@
          "scream"
       ],
       "tags":[
+         "horror",
          "shocked"
       ]
    },
@@ -730,7 +748,7 @@
          "rage"
       ],
       "tags":[
-
+         "angry"
       ]
    },
    {
@@ -741,6 +759,7 @@
          "angry"
       ],
       "tags":[
+         "mad",
          "annoyed"
       ]
    },
@@ -752,7 +771,7 @@
          "innocent"
       ],
       "tags":[
-
+         "angel"
       ]
    },
    {
@@ -798,6 +817,7 @@
          "mask"
       ],
       "tags":[
+         "sick",
          "ill"
       ]
    },
@@ -858,6 +878,7 @@
          "smiling_imp"
       ],
       "tags":[
+         "devil",
          "evil",
          "horns"
       ]
@@ -870,6 +891,7 @@
          "imp"
       ],
       "tags":[
+         "angry",
          "devil",
          "evil",
          "horns"
@@ -883,7 +905,7 @@
          "japanese_ogre"
       ],
       "tags":[
-
+         "monster"
       ]
    },
    {
@@ -905,6 +927,7 @@
          "skull"
       ],
       "tags":[
+         "dead",
          "danger",
          "poison"
       ]
@@ -928,7 +951,7 @@
          "ghost"
       ],
       "tags":[
-
+         "halloween"
       ]
    },
    {
@@ -939,7 +962,7 @@
          "alien"
       ],
       "tags":[
-
+         "ufo"
       ]
    },
    {
@@ -950,6 +973,7 @@
          "space_invader"
       ],
       "tags":[
+         "game",
          "retro"
       ]
    },
@@ -975,7 +999,7 @@
          "shit"
       ],
       "tags":[
-
+         "crap"
       ]
    },
    {
@@ -1052,7 +1076,7 @@
          "scream_cat"
       ],
       "tags":[
-
+         "horror"
       ]
    },
    {
@@ -1063,6 +1087,7 @@
          "crying_cat_face"
       ],
       "tags":[
+         "sad",
          "tear"
       ]
    },
@@ -1085,6 +1110,7 @@
          "see_no_evil"
       ],
       "tags":[
+         "monkey",
          "blind",
          "ignore"
       ]
@@ -1097,6 +1123,7 @@
          "hear_no_evil"
       ],
       "tags":[
+         "monkey",
          "deaf"
       ]
    },
@@ -1108,6 +1135,7 @@
          "speak_no_evil"
       ],
       "tags":[
+         "monkey",
          "mute",
          "hush"
       ]
@@ -1120,7 +1148,7 @@
          "boy"
       ],
       "tags":[
-
+         "child"
       ]
    },
    {
@@ -1131,7 +1159,7 @@
          "girl"
       ],
       "tags":[
-
+         "child"
       ]
    },
    {
@@ -1142,6 +1170,7 @@
          "man"
       ],
       "tags":[
+         "mustache",
          "father",
          "dad"
       ]
@@ -1154,7 +1183,7 @@
          "woman"
       ],
       "tags":[
-
+         "girls"
       ]
    },
    {
@@ -1187,6 +1216,7 @@
          "baby"
       ],
       "tags":[
+         "child",
          "newborn"
       ]
    },
@@ -1209,7 +1239,7 @@
          "person_with_blond_hair"
       ],
       "tags":[
-
+         "boy"
       ]
    },
    {
@@ -1220,6 +1250,7 @@
          "cop"
       ],
       "tags":[
+         "police",
          "law"
       ]
    },
@@ -1253,7 +1284,7 @@
          "construction_worker"
       ],
       "tags":[
-
+         "helmet"
       ]
    },
    {
@@ -1264,6 +1295,7 @@
          "princess"
       ],
       "tags":[
+         "blonde",
          "crown",
          "royal"
       ]
@@ -1312,7 +1344,7 @@
          "santa"
       ],
       "tags":[
-
+         "christmas"
       ]
    },
    {
@@ -1334,6 +1366,7 @@
          "bride_with_veil"
       ],
       "tags":[
+         "marriage",
          "wedding"
       ]
    },
@@ -1356,7 +1389,7 @@
          "massage"
       ],
       "tags":[
-
+         "spa"
       ]
    },
    {
@@ -1367,7 +1400,7 @@
          "haircut"
       ],
       "tags":[
-
+         "beauty"
       ]
    },
    {
@@ -1378,7 +1411,7 @@
          "person_frowning"
       ],
       "tags":[
-
+         "sad"
       ]
    },
    {
@@ -1400,6 +1433,7 @@
          "no_good"
       ],
       "tags":[
+         "stop",
          "halt"
       ]
    },
@@ -1466,6 +1500,7 @@
          "bow"
       ],
       "tags":[
+         "respect",
          "thanks"
       ]
    },
@@ -1489,6 +1524,7 @@
          "running"
       ],
       "tags":[
+         "exercise",
          "workout",
          "marathon"
       ]
@@ -1501,7 +1537,7 @@
          "dancer"
       ],
       "tags":[
-
+         "dress"
       ]
    },
    {
@@ -1534,7 +1570,7 @@
          "dancers"
       ],
       "tags":[
-
+         "bunny"
       ]
    },
    {
@@ -1568,7 +1604,7 @@
          "bust_in_silhouette"
       ],
       "tags":[
-
+         "user"
       ]
    },
    {
@@ -1579,6 +1615,7 @@
          "busts_in_silhouette"
       ],
       "tags":[
+         "users",
          "group",
          "team"
       ]
@@ -1591,7 +1628,7 @@
          "couple"
       ],
       "tags":[
-
+         "date"
       ]
    },
    {
@@ -1602,6 +1639,7 @@
          "two_men_holding_hands"
       ],
       "tags":[
+         "couple",
          "date"
       ]
    },
@@ -1613,6 +1651,7 @@
          "two_women_holding_hands"
       ],
       "tags":[
+         "couple",
          "date"
       ]
    },
@@ -1646,6 +1685,7 @@
          "family"
       ],
       "tags":[
+         "home",
          "parents",
          "child"
       ]
@@ -1658,6 +1698,7 @@
          "family_man_woman_boy"
       ],
       "tags":[
+         "family",
          "man",
          "woman",
          "boy"
@@ -1671,6 +1712,7 @@
          "family_man_woman_girl"
       ],
       "tags":[
+         "family",
          "man",
          "woman",
          "girl"
@@ -1684,6 +1726,7 @@
          "family_man_woman_boy_boy"
       ],
       "tags":[
+         "family",
          "man",
          "woman",
          "boy"
@@ -1697,6 +1740,7 @@
          "family_man_woman_girl_girl"
       ],
       "tags":[
+         "family",
          "man",
          "woman",
          "girl"
@@ -1710,6 +1754,7 @@
          "family_man_man_boy"
       ],
       "tags":[
+         "family",
          "man",
          "boy"
       ]
@@ -1722,6 +1767,7 @@
          "family_man_man_girl"
       ],
       "tags":[
+         "family",
          "man",
          "girl"
       ]
@@ -1734,6 +1780,7 @@
          "family_man_man_girl_boy"
       ],
       "tags":[
+         "family",
          "man",
          "girl",
          "boy"
@@ -1747,6 +1794,7 @@
          "family_man_man_boy_boy"
       ],
       "tags":[
+         "family",
          "man",
          "boy"
       ]
@@ -1759,6 +1807,7 @@
          "family_man_man_girl_girl"
       ],
       "tags":[
+         "family",
          "man",
          "girl"
       ]
@@ -1771,6 +1820,7 @@
          "family_woman_woman_boy"
       ],
       "tags":[
+         "family",
          "woman",
          "boy"
       ]
@@ -1783,6 +1833,7 @@
          "family_woman_woman_girl"
       ],
       "tags":[
+         "family",
          "woman",
          "girl"
       ]
@@ -1795,6 +1846,7 @@
          "family_woman_woman_girl_boy"
       ],
       "tags":[
+         "family",
          "woman",
          "girl",
          "boy"
@@ -1808,6 +1860,7 @@
          "family_woman_woman_boy_boy"
       ],
       "tags":[
+         "family",
          "woman",
          "boy"
       ]
@@ -1820,6 +1873,7 @@
          "family_woman_woman_girl_girl"
       ],
       "tags":[
+         "family",
          "woman",
          "girl"
       ]
@@ -1832,6 +1886,7 @@
          "muscle"
       ],
       "tags":[
+         "flex",
          "bicep",
          "strong",
          "workout"
@@ -1922,6 +1977,7 @@
          "v"
       ],
       "tags":[
+         "victory",
          "peace"
       ]
    },
@@ -1944,6 +2000,7 @@
          "vulcan_salute"
       ],
       "tags":[
+         "vulcan",
          "salute"
       ]
    },
@@ -1992,7 +2049,7 @@
          "sparkles"
       ],
       "tags":[
-
+         "shiny"
       ]
    },
    {
@@ -2003,7 +2060,7 @@
          "fist"
       ],
       "tags":[
-
+         "power"
       ]
    },
    {
@@ -2015,6 +2072,7 @@
          "raised_hand"
       ],
       "tags":[
+         "highfive",
          "stop"
       ]
    },
@@ -2026,6 +2084,7 @@
          "partly_sunny"
       ],
       "tags":[
+         "weather",
          "cloud"
       ]
    },
@@ -2037,6 +2096,7 @@
          "snowman"
       ],
       "tags":[
+         "winter",
          "christmas"
       ]
    },
@@ -2048,7 +2108,7 @@
          "hourglass_flowing_sand"
       ],
       "tags":[
-
+         "time"
       ]
    },
    {
@@ -2059,7 +2119,7 @@
          "alarm_clock"
       ],
       "tags":[
-
+         "morning"
       ]
    },
    {
@@ -2070,7 +2130,7 @@
          "soccer"
       ],
       "tags":[
-
+         "sports"
       ]
    },
    {
@@ -2081,7 +2141,7 @@
          "baseball"
       ],
       "tags":[
-
+         "sports"
       ]
    },
    {
@@ -2114,7 +2174,7 @@
          "tent"
       ],
       "tags":[
-
+         "camping"
       ]
    },
    {
@@ -2203,7 +2263,7 @@
          "no_entry"
       ],
       "tags":[
-
+         "limit"
       ]
    },
    {
@@ -2270,7 +2330,7 @@
          "heavy_exclamation_mark"
       ],
       "tags":[
-
+         "bang"
       ]
    },
    {
@@ -2281,7 +2341,7 @@
          "question"
       ],
       "tags":[
-
+         "confused"
       ]
    },
    {
@@ -2593,6 +2653,7 @@
          "thumbsup"
       ],
       "tags":[
+         "approve",
          "ok"
       ]
    },
@@ -2605,6 +2666,7 @@
          "thumbsdown"
       ],
       "tags":[
+         "disapprove",
          "bury"
       ]
    },
@@ -2617,7 +2679,7 @@
          "punch"
       ],
       "tags":[
-
+         "attack"
       ]
    },
    {
@@ -2661,7 +2723,7 @@
          "wave"
       ],
       "tags":[
-
+         "goodbye"
       ]
    },
    {
@@ -2672,6 +2734,7 @@
          "clap"
       ],
       "tags":[
+         "praise",
          "applause"
       ]
    },
@@ -2706,7 +2769,7 @@
          "raised_hands"
       ],
       "tags":[
-
+         "hooray"
       ]
    },
    {
@@ -2717,6 +2780,7 @@
          "pray"
       ],
       "tags":[
+         "please",
          "hope",
          "wish"
       ]
@@ -2740,6 +2804,7 @@
          "nail_care"
       ],
       "tags":[
+         "beauty",
          "manicure"
       ]
    },
@@ -2751,6 +2816,7 @@
          "ear"
       ],
       "tags":[
+         "hear",
          "sound",
          "listen"
       ]
@@ -2763,7 +2829,7 @@
          "nose"
       ],
       "tags":[
-
+         "smell"
       ]
    },
    {
@@ -2774,6 +2840,7 @@
          "footprints"
       ],
       "tags":[
+         "feet",
          "tracks"
       ]
    },
@@ -2785,6 +2852,7 @@
          "eyes"
       ],
       "tags":[
+         "look",
          "see",
          "watch"
       ]
@@ -2820,7 +2888,7 @@
          "tongue"
       ],
       "tags":[
-
+         "taste"
       ]
    },
    {
@@ -2831,7 +2899,7 @@
          "lips"
       ],
       "tags":[
-
+         "kiss"
       ]
    },
    {
@@ -2842,7 +2910,7 @@
          "kiss"
       ],
       "tags":[
-
+         "lipstick"
       ]
    },
    {
@@ -2853,6 +2921,7 @@
          "cupid"
       ],
       "tags":[
+         "love",
          "heart"
       ]
    },
@@ -2864,7 +2933,7 @@
          "heart"
       ],
       "tags":[
-
+         "love"
       ]
    },
    {
@@ -2985,7 +3054,7 @@
          "gift_heart"
       ],
       "tags":[
-
+         "chocolates"
       ]
    },
    {
@@ -3029,6 +3098,7 @@
          "love_letter"
       ],
       "tags":[
+         "email",
          "envelope"
       ]
    },
@@ -3040,7 +3110,7 @@
          "zzz"
       ],
       "tags":[
-
+         "sleeping"
       ]
    },
    {
@@ -3051,7 +3121,7 @@
          "anger"
       ],
       "tags":[
-
+         "angry"
       ]
    },
    {
@@ -3062,7 +3132,7 @@
          "bomb"
       ],
       "tags":[
-
+         "boom"
       ]
    },
    {
@@ -3074,7 +3144,7 @@
          "collision"
       ],
       "tags":[
-
+         "explode"
       ]
    },
    {
@@ -3085,6 +3155,7 @@
          "sweat_drops"
       ],
       "tags":[
+         "water",
          "workout"
       ]
    },
@@ -3096,6 +3167,7 @@
          "dash"
       ],
       "tags":[
+         "wind",
          "blow",
          "fast"
       ]
@@ -3108,7 +3180,7 @@
          "dizzy"
       ],
       "tags":[
-
+         "star"
       ]
    },
    {
@@ -3119,7 +3191,7 @@
          "speech_balloon"
       ],
       "tags":[
-
+         "comment"
       ]
    },
    {
@@ -3153,7 +3225,7 @@
          "thought_balloon"
       ],
       "tags":[
-
+         "thinking"
       ]
    },
    {
@@ -3175,7 +3247,7 @@
          "eyeglasses"
       ],
       "tags":[
-
+         "glasses"
       ]
    },
    {
@@ -3197,6 +3269,7 @@
          "necktie"
       ],
       "tags":[
+         "shirt",
          "formal"
       ]
    },
@@ -3220,7 +3293,7 @@
          "jeans"
       ],
       "tags":[
-
+         "pants"
       ]
    },
    {
@@ -3253,7 +3326,7 @@
          "bikini"
       ],
       "tags":[
-
+         "beach"
       ]
    },
    {
@@ -3286,7 +3359,7 @@
          "handbag"
       ],
       "tags":[
-
+         "bag"
       ]
    },
    {
@@ -3297,7 +3370,7 @@
          "pouch"
       ],
       "tags":[
-
+         "bag"
       ]
    },
    {
@@ -3342,6 +3415,7 @@
          "athletic_shoe"
       ],
       "tags":[
+         "sneaker",
          "sport",
          "running"
       ]
@@ -3354,7 +3428,7 @@
          "high_heel"
       ],
       "tags":[
-
+         "shoe"
       ]
    },
    {
@@ -3365,7 +3439,7 @@
          "sandal"
       ],
       "tags":[
-
+         "shoe"
       ]
    },
    {
@@ -3387,6 +3461,7 @@
          "crown"
       ],
       "tags":[
+         "king",
          "queen",
          "royal"
       ]
@@ -3410,6 +3485,7 @@
          "tophat"
       ],
       "tags":[
+         "hat",
          "classy"
       ]
    },
@@ -3421,6 +3497,7 @@
          "mortar_board"
       ],
       "tags":[
+         "education",
          "college",
          "university",
          "graduation"
@@ -3447,7 +3524,7 @@
          "lipstick"
       ],
       "tags":[
-
+         "makeup"
       ]
    },
    {
@@ -3458,6 +3535,7 @@
          "ring"
       ],
       "tags":[
+         "wedding",
          "marriage",
          "engaged"
       ]
@@ -3470,7 +3548,7 @@
          "gem"
       ],
       "tags":[
-
+         "diamond"
       ]
    },
    {
@@ -3514,7 +3592,7 @@
          "dog"
       ],
       "tags":[
-
+         "pet"
       ]
    },
    {
@@ -3536,7 +3614,7 @@
          "poodle"
       ],
       "tags":[
-
+         "dog"
       ]
    },
    {
@@ -3569,7 +3647,7 @@
          "cat"
       ],
       "tags":[
-
+         "pet"
       ]
    },
    {
@@ -3648,7 +3726,7 @@
          "racehorse"
       ],
       "tags":[
-
+         "speed"
       ]
    },
    {
@@ -3802,7 +3880,7 @@
          "dromedary_camel"
       ],
       "tags":[
-
+         "desert"
       ]
    },
    {
@@ -3879,7 +3957,7 @@
          "hamster"
       ],
       "tags":[
-
+         "pet"
       ]
    },
    {
@@ -3890,7 +3968,7 @@
          "rabbit"
       ],
       "tags":[
-
+         "bunny"
       ]
    },
    {
@@ -4135,7 +4213,7 @@
          "turtle"
       ],
       "tags":[
-
+         "slow"
       ]
    },
    {
@@ -4190,7 +4268,7 @@
          "whale"
       ],
       "tags":[
-
+         "sea"
       ]
    },
    {
@@ -4279,6 +4357,7 @@
          "shell"
       ],
       "tags":[
+         "sea",
          "beach"
       ]
    },
@@ -4335,7 +4414,7 @@
          "snail"
       ],
       "tags":[
-
+         "slow"
       ]
    },
    {
@@ -4380,7 +4459,7 @@
          "beetle"
       ],
       "tags":[
-
+         "bug"
       ]
    },
    {
@@ -4425,7 +4504,7 @@
          "bouquet"
       ],
       "tags":[
-
+         "flowers"
       ]
    },
    {
@@ -4436,6 +4515,7 @@
          "cherry_blossom"
       ],
       "tags":[
+         "flower",
          "spring"
       ]
    },
@@ -4469,7 +4549,7 @@
          "rose"
       ],
       "tags":[
-
+         "flower"
       ]
    },
    {
@@ -4524,7 +4604,7 @@
          "tulip"
       ],
       "tags":[
-
+         "flower"
       ]
    },
    {
@@ -4535,7 +4615,7 @@
          "seedling"
       ],
       "tags":[
-
+         "plant"
       ]
    },
    {
@@ -4546,7 +4626,7 @@
          "evergreen_tree"
       ],
       "tags":[
-
+         "wood"
       ]
    },
    {
@@ -4557,7 +4637,7 @@
          "deciduous_tree"
       ],
       "tags":[
-
+         "wood"
       ]
    },
    {
@@ -4624,7 +4704,7 @@
          "four_leaf_clover"
       ],
       "tags":[
-
+         "luck"
       ]
    },
    {
@@ -4635,7 +4715,7 @@
          "maple_leaf"
       ],
       "tags":[
-
+         "canada"
       ]
    },
    {
@@ -4646,7 +4726,7 @@
          "fallen_leaf"
       ],
       "tags":[
-
+         "autumn"
       ]
    },
    {
@@ -4657,7 +4737,7 @@
          "leaves"
       ],
       "tags":[
-
+         "leaf"
       ]
    },
    {
@@ -4723,7 +4803,7 @@
          "banana"
       ],
       "tags":[
-
+         "fruit"
       ]
    },
    {
@@ -4756,7 +4836,7 @@
          "green_apple"
       ],
       "tags":[
-
+         "fruit"
       ]
    },
    {
@@ -4789,7 +4869,7 @@
          "cherries"
       ],
       "tags":[
-
+         "fruit"
       ]
    },
    {
@@ -4800,7 +4880,7 @@
          "strawberry"
       ],
       "tags":[
-
+         "fruit"
       ]
    },
    {
@@ -4844,7 +4924,7 @@
          "eggplant"
       ],
       "tags":[
-
+         "aubergine"
       ]
    },
    {
@@ -4946,7 +5026,7 @@
          "bread"
       ],
       "tags":[
-
+         "toast"
       ]
    },
    {
@@ -5012,6 +5092,7 @@
          "poultry_leg"
       ],
       "tags":[
+         "meat",
          "chicken"
       ]
    },
@@ -5034,7 +5115,7 @@
          "hamburger"
       ],
       "tags":[
-
+         "burger"
       ]
    },
    {
@@ -5123,7 +5204,7 @@
          "egg"
       ],
       "tags":[
-
+         "breakfast"
       ]
    },
    {
@@ -5233,7 +5314,7 @@
          "ramen"
       ],
       "tags":[
-
+         "noodle"
       ]
    },
    {
@@ -5244,7 +5325,7 @@
          "spaghetti"
       ],
       "tags":[
-
+         "pasta"
       ]
    },
    {
@@ -5288,7 +5369,7 @@
          "fried_shrimp"
       ],
       "tags":[
-
+         "tempura"
       ]
    },
    {
@@ -5376,7 +5457,7 @@
          "birthday"
       ],
       "tags":[
-
+         "party"
       ]
    },
    {
@@ -5387,7 +5468,7 @@
          "cake"
       ],
       "tags":[
-
+         "dessert"
       ]
    },
    {
@@ -5409,7 +5490,7 @@
          "candy"
       ],
       "tags":[
-
+         "sweet"
       ]
    },
    {
@@ -5453,7 +5534,7 @@
          "baby_bottle"
       ],
       "tags":[
-
+         "milk"
       ]
    },
    {
@@ -5475,6 +5556,7 @@
          "coffee"
       ],
       "tags":[
+         "cafe",
          "espresso"
       ]
    },
@@ -5486,6 +5568,7 @@
          "tea"
       ],
       "tags":[
+         "green",
          "breakfast"
       ]
    },
@@ -5531,7 +5614,7 @@
          "cocktail"
       ],
       "tags":[
-
+         "drink"
       ]
    },
    {
@@ -5542,6 +5625,7 @@
          "tropical_drink"
       ],
       "tags":[
+         "summer",
          "vacation"
       ]
    },
@@ -5553,7 +5637,7 @@
          "beer"
       ],
       "tags":[
-
+         "drink"
       ]
    },
    {
@@ -5564,7 +5648,7 @@
          "beers"
       ],
       "tags":[
-
+         "drinks"
       ]
    },
    {
@@ -5608,7 +5692,7 @@
          "fork_and_knife"
       ],
       "tags":[
-
+         "cutlery"
       ]
    },
    {
@@ -5631,6 +5715,7 @@
          "knife"
       ],
       "tags":[
+         "cut",
          "chop"
       ]
    },
@@ -5655,6 +5740,7 @@
          "earth_africa"
       ],
       "tags":[
+         "globe",
          "world",
          "international"
       ]
@@ -5667,6 +5753,7 @@
          "earth_americas"
       ],
       "tags":[
+         "globe",
          "world",
          "international"
       ]
@@ -5679,6 +5766,7 @@
          "earth_asia"
       ],
       "tags":[
+         "globe",
          "world",
          "international"
       ]
@@ -5691,6 +5779,7 @@
          "globe_with_meridians"
       ],
       "tags":[
+         "world",
          "global",
          "international"
       ]
@@ -6051,7 +6140,7 @@
          "wedding"
       ],
       "tags":[
-
+         "marriage"
       ]
    },
    {
@@ -6122,7 +6211,7 @@
          "foggy"
       ],
       "tags":[
-
+         "karl"
       ]
    },
    {
@@ -6276,6 +6365,7 @@
          "performing_arts"
       ],
       "tags":[
+         "theater",
          "drama"
       ]
    },
@@ -6300,6 +6390,7 @@
          "art"
       ],
       "tags":[
+         "design",
          "paint"
       ]
    },
@@ -6322,7 +6413,7 @@
          "steam_locomotive"
       ],
       "tags":[
-
+         "train"
       ]
    },
    {
@@ -6344,7 +6435,7 @@
          "bullettrain_side"
       ],
       "tags":[
-
+         "train"
       ]
    },
    {
@@ -6355,7 +6446,7 @@
          "bullettrain_front"
       ],
       "tags":[
-
+         "train"
       ]
    },
    {
@@ -6642,7 +6733,7 @@
          "bike"
       ],
       "tags":[
-
+         "bicycle"
       ]
    },
    {
@@ -6679,6 +6770,7 @@
          "rotating_light"
       ],
       "tags":[
+         "911",
          "emergency"
       ]
    },
@@ -6701,7 +6793,7 @@
          "vertical_traffic_light"
       ],
       "tags":[
-
+         "semaphore"
       ]
    },
    {
@@ -6712,7 +6804,7 @@
          "construction"
       ],
       "tags":[
-
+         "wip"
       ]
    },
    {
@@ -6756,7 +6848,7 @@
          "anchor"
       ],
       "tags":[
-
+         "ship"
       ]
    },
    {
@@ -6789,7 +6881,7 @@
          "speedboat"
       ],
       "tags":[
-
+         "ship"
       ]
    },
    {
@@ -6833,7 +6925,7 @@
          "airplane"
       ],
       "tags":[
-
+         "flight"
       ]
    },
    {
@@ -6935,6 +7027,7 @@
          "rocket"
       ],
       "tags":[
+         "ship",
          "launch"
       ]
    },
@@ -7016,7 +7109,7 @@
          "toilet"
       ],
       "tags":[
-
+         "wc"
       ]
    },
    {
@@ -7027,7 +7120,7 @@
          "shower"
       ],
       "tags":[
-
+         "bath"
       ]
    },
    {
@@ -7038,7 +7131,7 @@
          "bath"
       ],
       "tags":[
-
+         "shower"
       ]
    },
    {
@@ -7060,7 +7153,7 @@
          "hourglass"
       ],
       "tags":[
-
+         "time"
       ]
    },
    {
@@ -7071,7 +7164,7 @@
          "watch"
       ],
       "tags":[
-
+         "time"
       ]
    },
    {
@@ -7446,7 +7539,7 @@
          "crescent_moon"
       ],
       "tags":[
-
+         "night"
       ]
    },
    {
@@ -7503,7 +7596,7 @@
          "sunny"
       ],
       "tags":[
-
+         "weather"
       ]
    },
    {
@@ -7525,7 +7618,7 @@
          "sun_with_face"
       ],
       "tags":[
-
+         "summer"
       ]
    },
    {
@@ -7681,7 +7774,7 @@
          "cyclone"
       ],
       "tags":[
-
+         "swirl"
       ]
    },
    {
@@ -7692,7 +7785,7 @@
          "rainbow"
       ],
       "tags":[
-
+         "pride"
       ]
    },
    {
@@ -7703,6 +7796,7 @@
          "closed_umbrella"
       ],
       "tags":[
+         "weather",
          "rain"
       ]
    },
@@ -7725,6 +7819,7 @@
          "umbrella"
       ],
       "tags":[
+         "rain",
          "weather"
       ]
    },
@@ -7736,6 +7831,7 @@
          "zap"
       ],
       "tags":[
+         "lightning",
          "thunder"
       ]
    },
@@ -7747,6 +7843,7 @@
          "snowflake"
       ],
       "tags":[
+         "winter",
          "cold",
          "weather"
       ]
@@ -7784,7 +7881,7 @@
          "fire"
       ],
       "tags":[
-
+         "burn"
       ]
    },
    {
@@ -7795,7 +7892,7 @@
          "droplet"
       ],
       "tags":[
-
+         "water"
       ]
    },
    {
@@ -7806,7 +7903,7 @@
          "ocean"
       ],
       "tags":[
-
+         "sea"
       ]
    },
    {
@@ -7817,7 +7914,7 @@
          "jack_o_lantern"
       ],
       "tags":[
-
+         "halloween"
       ]
    },
    {
@@ -7839,6 +7936,7 @@
          "fireworks"
       ],
       "tags":[
+         "festival",
          "celebration"
       ]
    },
@@ -7861,6 +7959,7 @@
          "balloon"
       ],
       "tags":[
+         "party",
          "birthday"
       ]
    },
@@ -7872,7 +7971,7 @@
          "tada"
       ],
       "tags":[
-
+         "party"
       ]
    },
    {
@@ -7971,6 +8070,7 @@
          "gift"
       ],
       "tags":[
+         "present",
          "birthday",
          "christmas"
       ]
@@ -8029,6 +8129,7 @@
          "trophy"
       ],
       "tags":[
+         "award",
          "contest",
          "winner"
       ]
@@ -8086,7 +8187,7 @@
          "basketball"
       ],
       "tags":[
-
+         "sports"
       ]
    },
    {
@@ -8108,7 +8209,7 @@
          "football"
       ],
       "tags":[
-
+         "sports"
       ]
    },
    {
@@ -8130,7 +8231,7 @@
          "tennis"
       ],
       "tags":[
-
+         "sports"
       ]
    },
    {
@@ -8141,6 +8242,7 @@
          "8ball"
       ],
       "tags":[
+         "pool",
          "billiards"
       ]
    },
@@ -8264,7 +8366,7 @@
          "running_shirt_with_sash"
       ],
       "tags":[
-
+         "marathon"
       ]
    },
    {
@@ -8466,7 +8568,7 @@
          "dart"
       ],
       "tags":[
-
+         "target"
       ]
    },
    {
@@ -8477,6 +8579,7 @@
          "video_game"
       ],
       "tags":[
+         "play",
          "controller",
          "console"
       ]
@@ -8500,6 +8603,7 @@
          "game_die"
       ],
       "tags":[
+         "dice",
          "gambling"
       ]
    },
@@ -8588,6 +8692,7 @@
          "mute"
       ],
       "tags":[
+         "sound",
          "volume"
       ]
    },
@@ -8610,7 +8715,7 @@
          "sound"
       ],
       "tags":[
-
+         "volume"
       ]
    },
    {
@@ -8621,7 +8726,7 @@
          "loud_sound"
       ],
       "tags":[
-
+         "volume"
       ]
    },
    {
@@ -8632,7 +8737,7 @@
          "loudspeaker"
       ],
       "tags":[
-
+         "announcement"
       ]
    },
    {
@@ -8665,6 +8770,7 @@
          "bell"
       ],
       "tags":[
+         "sound",
          "notification"
       ]
    },
@@ -8676,6 +8782,7 @@
          "no_bell"
       ],
       "tags":[
+         "volume",
          "off"
       ]
    },
@@ -8709,7 +8816,7 @@
          "notes"
       ],
       "tags":[
-
+         "music"
       ]
    },
    {
@@ -8753,7 +8860,7 @@
          "microphone"
       ],
       "tags":[
-
+         "sing"
       ]
    },
    {
@@ -8764,6 +8871,7 @@
          "headphones"
       ],
       "tags":[
+         "music",
          "earphones"
       ]
    },
@@ -8775,7 +8883,7 @@
          "radio"
       ],
       "tags":[
-
+         "podcast"
       ]
    },
    {
@@ -8797,7 +8905,7 @@
          "guitar"
       ],
       "tags":[
-
+         "rock"
       ]
    },
    {
@@ -8808,7 +8916,7 @@
          "musical_keyboard"
       ],
       "tags":[
-
+         "piano"
       ]
    },
    {
@@ -8852,6 +8960,7 @@
          "iphone"
       ],
       "tags":[
+         "smartphone",
          "mobile"
       ]
    },
@@ -8863,6 +8972,7 @@
          "calling"
       ],
       "tags":[
+         "call",
          "incoming"
       ]
    },
@@ -8886,6 +8996,7 @@
          "telephone_receiver"
       ],
       "tags":[
+         "phone",
          "call"
       ]
    },
@@ -8919,7 +9030,7 @@
          "battery"
       ],
       "tags":[
-
+         "power"
       ]
    },
    {
@@ -8941,6 +9052,7 @@
          "computer"
       ],
       "tags":[
+         "desktop",
          "screen"
       ]
    },
@@ -9021,7 +9133,7 @@
          "floppy_disk"
       ],
       "tags":[
-
+         "save"
       ]
    },
    {
@@ -9054,6 +9166,7 @@
          "movie_camera"
       ],
       "tags":[
+         "film",
          "video"
       ]
    },
@@ -9087,7 +9200,7 @@
          "clapper"
       ],
       "tags":[
-
+         "film"
       ]
    },
    {
@@ -9109,7 +9222,7 @@
          "camera"
       ],
       "tags":[
-
+         "photo"
       ]
    },
    {
@@ -9153,6 +9266,7 @@
          "mag"
       ],
       "tags":[
+         "search",
          "zoom"
       ]
    },
@@ -9175,6 +9289,7 @@
          "microscope"
       ],
       "tags":[
+         "science",
          "laboratory",
          "investigate"
       ]
@@ -9198,7 +9313,7 @@
          "satellite"
       ],
       "tags":[
-
+         "signal"
       ]
    },
    {
@@ -9220,6 +9335,7 @@
          "bulb"
       ],
       "tags":[
+         "idea",
          "light"
       ]
    },
@@ -9321,7 +9437,7 @@
          "books"
       ],
       "tags":[
-
+         "library"
       ]
    },
    {
@@ -9365,7 +9481,7 @@
          "scroll"
       ],
       "tags":[
-
+         "document"
       ]
    },
    {
@@ -9376,7 +9492,7 @@
          "page_facing_up"
       ],
       "tags":[
-
+         "document"
       ]
    },
    {
@@ -9387,7 +9503,7 @@
          "newspaper"
       ],
       "tags":[
-
+         "press"
       ]
    },
    {
@@ -9443,6 +9559,7 @@
          "moneybag"
       ],
       "tags":[
+         "dollar",
          "cream"
       ]
    },
@@ -9465,7 +9582,7 @@
          "dollar"
       ],
       "tags":[
-
+         "money"
       ]
    },
    {
@@ -9498,7 +9615,7 @@
          "money_with_wings"
       ],
       "tags":[
-
+         "dollar"
       ]
    },
    {
@@ -9509,7 +9626,7 @@
          "credit_card"
       ],
       "tags":[
-
+         "subscription"
       ]
    },
    {
@@ -9554,7 +9671,7 @@
          "envelope"
       ],
       "tags":[
-
+         "letter"
       ]
    },
    {
@@ -9620,7 +9737,7 @@
          "package"
       ],
       "tags":[
-
+         "shipping"
       ]
    },
    {
@@ -9765,6 +9882,7 @@
          "pencil"
       ],
       "tags":[
+         "document",
          "note"
       ]
    },
@@ -9776,7 +9894,7 @@
          "briefcase"
       ],
       "tags":[
-
+         "business"
       ]
    },
    {
@@ -9787,7 +9905,7 @@
          "file_folder"
       ],
       "tags":[
-
+         "directory"
       ]
    },
    {
@@ -9820,6 +9938,7 @@
          "date"
       ],
       "tags":[
+         "calendar",
          "schedule"
       ]
    },
@@ -9831,7 +9950,7 @@
          "calendar"
       ],
       "tags":[
-
+         "schedule"
       ]
    },
    {
@@ -9875,6 +9994,7 @@
          "chart_with_upwards_trend"
       ],
       "tags":[
+         "graph",
          "metrics"
       ]
    },
@@ -9886,6 +10006,7 @@
          "chart_with_downwards_trend"
       ],
       "tags":[
+         "graph",
          "metrics"
       ]
    },
@@ -9897,6 +10018,7 @@
          "bar_chart"
       ],
       "tags":[
+         "stats",
          "metrics"
       ]
    },
@@ -9919,7 +10041,7 @@
          "pushpin"
       ],
       "tags":[
-
+         "location"
       ]
    },
    {
@@ -9930,7 +10052,7 @@
          "round_pushpin"
       ],
       "tags":[
-
+         "location"
       ]
    },
    {
@@ -9985,7 +10107,7 @@
          "scissors"
       ],
       "tags":[
-
+         "cut"
       ]
    },
    {
@@ -10029,6 +10151,7 @@
          "lock"
       ],
       "tags":[
+         "security",
          "private"
       ]
    },
@@ -10040,7 +10163,7 @@
          "unlock"
       ],
       "tags":[
-
+         "security"
       ]
    },
    {
@@ -10062,7 +10185,7 @@
          "closed_lock_with_key"
       ],
       "tags":[
-
+         "security"
       ]
    },
    {
@@ -10073,6 +10196,7 @@
          "key"
       ],
       "tags":[
+         "lock",
          "password"
       ]
    },
@@ -10095,7 +10219,7 @@
          "hammer"
       ],
       "tags":[
-
+         "tool"
       ]
    },
    {
@@ -10152,6 +10276,7 @@
          "gun"
       ],
       "tags":[
+         "shoot",
          "weapon"
       ]
    },
@@ -10187,7 +10312,7 @@
          "wrench"
       ],
       "tags":[
-
+         "tool"
       ]
    },
    {
@@ -10265,6 +10390,7 @@
          "syringe"
       ],
       "tags":[
+         "health",
          "hospital",
          "needle"
       ]
@@ -10277,6 +10403,7 @@
          "pill"
       ],
       "tags":[
+         "health",
          "medicine"
       ]
    },
@@ -10288,7 +10415,7 @@
          "smoking"
       ],
       "tags":[
-
+         "cigarette"
       ]
    },
    {
@@ -10323,7 +10450,7 @@
          "moyai"
       ],
       "tags":[
-
+         "stone"
       ]
    },
    {
@@ -10345,7 +10472,7 @@
          "crystal_ball"
       ],
       "tags":[
-
+         "fortune"
       ]
    },
    {
@@ -10400,7 +10527,7 @@
          "wheelchair"
       ],
       "tags":[
-
+         "accessibility"
       ]
    },
    {
@@ -10433,7 +10560,7 @@
          "restroom"
       ],
       "tags":[
-
+         "toilet"
       ]
    },
    {
@@ -10455,6 +10582,7 @@
          "wc"
       ],
       "tags":[
+         "toilet",
          "restroom"
       ]
    },
@@ -10488,7 +10616,7 @@
          "baggage_claim"
       ],
       "tags":[
-
+         "airport"
       ]
    },
    {
@@ -10510,7 +10638,7 @@
          "warning"
       ],
       "tags":[
-
+         "wip"
       ]
    },
    {
@@ -10532,6 +10660,7 @@
          "no_entry_sign"
       ],
       "tags":[
+         "block",
          "forbidden"
       ]
    },
@@ -10756,7 +10885,7 @@
          "leftwards_arrow_with_hook"
       ],
       "tags":[
-
+         "return"
       ]
    },
    {
@@ -10811,7 +10940,7 @@
          "arrows_counterclockwise"
       ],
       "tags":[
-
+         "sync"
       ]
    },
    {
@@ -11021,6 +11150,7 @@
          "recycle"
       ],
       "tags":[
+         "environment",
          "green"
       ]
    },
@@ -11209,7 +11339,7 @@
          "tm"
       ],
       "tags":[
-
+         "trademark"
       ]
    },
    {
@@ -11352,7 +11482,7 @@
          "twisted_rightwards_arrows"
       ],
       "tags":[
-
+         "shuffle"
       ]
    },
    {
@@ -11363,7 +11493,7 @@
          "repeat"
       ],
       "tags":[
-
+         "loop"
       ]
    },
    {
@@ -11429,6 +11559,7 @@
          "cinema"
       ],
       "tags":[
+         "film",
          "movie"
       ]
    },
@@ -11462,7 +11593,7 @@
          "signal_strength"
       ],
       "tags":[
-
+         "wifi"
       ]
    },
    {
@@ -11484,6 +11615,7 @@
          "mobile_phone_off"
       ],
       "tags":[
+         "mute",
          "off"
       ]
    },
@@ -11518,6 +11650,7 @@
          "100"
       ],
       "tags":[
+         "score",
          "perfect"
       ]
    },
@@ -11529,7 +11662,7 @@
          "capital_abcd"
       ],
       "tags":[
-
+         "letters"
       ]
    },
    {
@@ -11551,7 +11684,7 @@
          "1234"
       ],
       "tags":[
-
+         "numbers"
       ]
    },
    {
@@ -11573,7 +11706,7 @@
          "abc"
       ],
       "tags":[
-
+         "alphabet"
       ]
    },
    {
@@ -11683,7 +11816,7 @@
          "new"
       ],
       "tags":[
-
+         "fresh"
       ]
    },
    {
@@ -11716,7 +11849,7 @@
          "ok"
       ],
       "tags":[
-
+         "yes"
       ]
    },
    {
@@ -11738,6 +11871,7 @@
          "sos"
       ],
       "tags":[
+         "help",
          "emergency"
       ]
    },
@@ -12200,6 +12334,7 @@
          "checkered_flag"
       ],
       "tags":[
+         "milestone",
          "finish"
       ]
    },
@@ -12255,6 +12390,7 @@
          "ad"
       ],
       "tags":[
+         "flag",
          "andorra"
       ]
    },
@@ -12266,6 +12402,7 @@
          "ae"
       ],
       "tags":[
+         "flag",
          "united arab emirates"
       ]
    },
@@ -12277,6 +12414,7 @@
          "af"
       ],
       "tags":[
+         "flag",
          "afghanistan"
       ]
    },
@@ -12288,6 +12426,7 @@
          "ag"
       ],
       "tags":[
+         "flag",
          "antigua and barbuda"
       ]
    },
@@ -12299,6 +12438,7 @@
          "ai"
       ],
       "tags":[
+         "flag",
          "anguilla"
       ]
    },
@@ -12310,6 +12450,7 @@
          "al"
       ],
       "tags":[
+         "flag",
          "albania"
       ]
    },
@@ -12321,6 +12462,7 @@
          "am"
       ],
       "tags":[
+         "flag",
          "armenia"
       ]
    },
@@ -12332,6 +12474,7 @@
          "ao"
       ],
       "tags":[
+         "flag",
          "angola"
       ]
    },
@@ -12343,6 +12486,7 @@
          "ar"
       ],
       "tags":[
+         "flag",
          "argentina"
       ]
    },
@@ -12354,6 +12498,7 @@
          "as"
       ],
       "tags":[
+         "flag",
          "american samoa"
       ]
    },
@@ -12365,6 +12510,7 @@
          "at"
       ],
       "tags":[
+         "flag",
          "austria"
       ]
    },
@@ -12376,6 +12522,7 @@
          "au"
       ],
       "tags":[
+         "flag",
          "australia"
       ]
    },
@@ -12387,6 +12534,7 @@
          "aw"
       ],
       "tags":[
+         "flag",
          "aruba"
       ]
    },
@@ -12398,6 +12546,7 @@
          "az"
       ],
       "tags":[
+         "flag",
          "azerbaijan"
       ]
    },
@@ -12409,6 +12558,7 @@
          "ba"
       ],
       "tags":[
+         "flag",
          "bosnia and herzegovina"
       ]
    },
@@ -12420,6 +12570,7 @@
          "bb"
       ],
       "tags":[
+         "flag",
          "barbados"
       ]
    },
@@ -12431,6 +12582,7 @@
          "bd"
       ],
       "tags":[
+         "flag",
          "bangladesh"
       ]
    },
@@ -12442,6 +12594,7 @@
          "be"
       ],
       "tags":[
+         "flag",
          "belgium"
       ]
    },
@@ -12453,6 +12606,7 @@
          "bf"
       ],
       "tags":[
+         "flag",
          "burkina faso"
       ]
    },
@@ -12464,6 +12618,7 @@
          "bg"
       ],
       "tags":[
+         "flag",
          "bulgaria"
       ]
    },
@@ -12475,6 +12630,7 @@
          "bh"
       ],
       "tags":[
+         "flag",
          "bahrain"
       ]
    },
@@ -12486,6 +12642,7 @@
          "bi"
       ],
       "tags":[
+         "flag",
          "burundi"
       ]
    },
@@ -12497,6 +12654,7 @@
          "bj"
       ],
       "tags":[
+         "flag",
          "benin"
       ]
    },
@@ -12508,6 +12666,7 @@
          "bm"
       ],
       "tags":[
+         "flag",
          "bermuda"
       ]
    },
@@ -12519,6 +12678,7 @@
          "bn"
       ],
       "tags":[
+         "flag",
          "brunei darussalam"
       ]
    },
@@ -12530,6 +12690,7 @@
          "bo"
       ],
       "tags":[
+         "flag",
          "bolivia"
       ]
    },
@@ -12541,6 +12702,7 @@
          "br"
       ],
       "tags":[
+         "flag",
          "brazil"
       ]
    },
@@ -12552,6 +12714,7 @@
          "bs"
       ],
       "tags":[
+         "flag",
          "bahamas"
       ]
    },
@@ -12563,6 +12726,7 @@
          "bt"
       ],
       "tags":[
+         "flag",
          "bhutan"
       ]
    },
@@ -12574,6 +12738,7 @@
          "bw"
       ],
       "tags":[
+         "flag",
          "botswana"
       ]
    },
@@ -12585,6 +12750,7 @@
          "by"
       ],
       "tags":[
+         "flag",
          "belarus"
       ]
    },
@@ -12596,6 +12762,7 @@
          "bz"
       ],
       "tags":[
+         "flag",
          "belize"
       ]
    },
@@ -12607,6 +12774,7 @@
          "ca"
       ],
       "tags":[
+         "flag",
          "canada"
       ]
    },
@@ -12618,6 +12786,7 @@
          "cd"
       ],
       "tags":[
+         "flag",
          "democratic republic of the congo"
       ]
    },
@@ -12629,6 +12798,7 @@
          "cf"
       ],
       "tags":[
+         "flag",
          "central african republic"
       ]
    },
@@ -12640,6 +12810,7 @@
          "cg"
       ],
       "tags":[
+         "flag",
          "republic of the congo"
       ]
    },
@@ -12651,6 +12822,7 @@
          "ch"
       ],
       "tags":[
+         "flag",
          "switzerland"
       ]
    },
@@ -12662,6 +12834,7 @@
          "ci"
       ],
       "tags":[
+         "flag",
          "ivory coast"
       ]
    },
@@ -12673,6 +12846,7 @@
          "ck"
       ],
       "tags":[
+         "flag",
          "cook islands"
       ]
    },
@@ -12684,6 +12858,7 @@
          "cl"
       ],
       "tags":[
+         "flag",
          "chile"
       ]
    },
@@ -12695,6 +12870,7 @@
          "cm"
       ],
       "tags":[
+         "flag",
          "cameroon"
       ]
    },
@@ -12706,6 +12882,7 @@
          "cn"
       ],
       "tags":[
+         "flag",
          "china"
       ]
    },
@@ -12717,6 +12894,7 @@
          "co"
       ],
       "tags":[
+         "flag",
          "colombia"
       ]
    },
@@ -12728,6 +12906,7 @@
          "cr"
       ],
       "tags":[
+         "flag",
          "costa rica"
       ]
    },
@@ -12739,6 +12918,7 @@
          "cu"
       ],
       "tags":[
+         "flag",
          "cuba"
       ]
    },
@@ -12750,6 +12930,7 @@
          "cv"
       ],
       "tags":[
+         "flag",
          "cape verde"
       ]
    },
@@ -12761,6 +12942,7 @@
          "cw"
       ],
       "tags":[
+         "flag",
          "curacao"
       ]
    },
@@ -12772,6 +12954,7 @@
          "cy"
       ],
       "tags":[
+         "flag",
          "cyprus"
       ]
    },
@@ -12783,6 +12966,7 @@
          "cz"
       ],
       "tags":[
+         "flag",
          "czech republic"
       ]
    },
@@ -12794,6 +12978,7 @@
          "de"
       ],
       "tags":[
+         "flag",
          "germany"
       ]
    },
@@ -12805,6 +12990,7 @@
          "dj"
       ],
       "tags":[
+         "flag",
          "djibouti"
       ]
    },
@@ -12816,6 +13002,7 @@
          "dk"
       ],
       "tags":[
+         "flag",
          "denmark"
       ]
    },
@@ -12827,6 +13014,7 @@
          "dm"
       ],
       "tags":[
+         "flag",
          "dominica"
       ]
    },
@@ -12838,6 +13026,7 @@
          "do"
       ],
       "tags":[
+         "flag",
          "dominican republic"
       ]
    },
@@ -12849,6 +13038,7 @@
          "dz"
       ],
       "tags":[
+         "flag",
          "algeria"
       ]
    },
@@ -12860,6 +13050,7 @@
          "ec"
       ],
       "tags":[
+         "flag",
          "ecuador"
       ]
    },
@@ -12871,6 +13062,7 @@
          "ee"
       ],
       "tags":[
+         "flag",
          "estonia"
       ]
    },
@@ -12882,6 +13074,7 @@
          "eg"
       ],
       "tags":[
+         "flag",
          "egypt"
       ]
    },
@@ -12893,6 +13086,7 @@
          "er"
       ],
       "tags":[
+         "flag",
          "eritrea"
       ]
    },
@@ -12904,6 +13098,7 @@
          "es"
       ],
       "tags":[
+         "flag",
          "spain"
       ]
    },
@@ -12915,6 +13110,7 @@
          "et"
       ],
       "tags":[
+         "flag",
          "ethiopia"
       ]
    },
@@ -12926,6 +13122,7 @@
          "fi"
       ],
       "tags":[
+         "flag",
          "finland"
       ]
    },
@@ -12937,6 +13134,7 @@
          "fj"
       ],
       "tags":[
+         "flag",
          "fiji"
       ]
    },
@@ -12948,6 +13146,7 @@
          "fo"
       ],
       "tags":[
+         "flag",
          "faroe islands"
       ]
    },
@@ -12959,6 +13158,7 @@
          "fr"
       ],
       "tags":[
+         "flag",
          "france"
       ]
    },
@@ -12970,6 +13170,7 @@
          "ga"
       ],
       "tags":[
+         "flag",
          "gabon"
       ]
    },
@@ -12981,6 +13182,7 @@
          "gb"
       ],
       "tags":[
+         "flag",
          "united kingdom"
       ]
    },
@@ -12992,6 +13194,7 @@
          "gd"
       ],
       "tags":[
+         "flag",
          "grenada"
       ]
    },
@@ -13003,6 +13206,7 @@
          "ge"
       ],
       "tags":[
+         "flag",
          "georgia"
       ]
    },
@@ -13014,6 +13218,7 @@
          "gf"
       ],
       "tags":[
+         "flag",
          "french guiana"
       ]
    },
@@ -13025,6 +13230,7 @@
          "gh"
       ],
       "tags":[
+         "flag",
          "ghana"
       ]
    },
@@ -13036,6 +13242,7 @@
          "gi"
       ],
       "tags":[
+         "flag",
          "gibraltar"
       ]
    },
@@ -13047,6 +13254,7 @@
          "gm"
       ],
       "tags":[
+         "flag",
          "gambia"
       ]
    },
@@ -13058,6 +13266,7 @@
          "gn"
       ],
       "tags":[
+         "flag",
          "guinea"
       ]
    },
@@ -13069,6 +13278,7 @@
          "gp"
       ],
       "tags":[
+         "flag",
          "guadeloupe"
       ]
    },
@@ -13080,6 +13290,7 @@
          "gq"
       ],
       "tags":[
+         "flag",
          "equatorial guinea"
       ]
    },
@@ -13091,6 +13302,7 @@
          "gr"
       ],
       "tags":[
+         "flag",
          "greece"
       ]
    },
@@ -13102,6 +13314,7 @@
          "gt"
       ],
       "tags":[
+         "flag",
          "guatemala"
       ]
    },
@@ -13113,6 +13326,7 @@
          "gu"
       ],
       "tags":[
+         "flag",
          "guam"
       ]
    },
@@ -13124,6 +13338,7 @@
          "gw"
       ],
       "tags":[
+         "flag",
          "guinea-bissau"
       ]
    },
@@ -13135,6 +13350,7 @@
          "gy"
       ],
       "tags":[
+         "flag",
          "guyana"
       ]
    },
@@ -13146,6 +13362,7 @@
          "hk"
       ],
       "tags":[
+         "flag",
          "hong kong"
       ]
    },
@@ -13157,6 +13374,7 @@
          "hn"
       ],
       "tags":[
+         "flag",
          "honduras"
       ]
    },
@@ -13168,6 +13386,7 @@
          "hr"
       ],
       "tags":[
+         "flag",
          "croatia"
       ]
    },
@@ -13179,6 +13398,7 @@
          "ht"
       ],
       "tags":[
+         "flag",
          "haiti"
       ]
    },
@@ -13190,6 +13410,7 @@
          "hu"
       ],
       "tags":[
+         "flag",
          "hungary"
       ]
    },
@@ -13201,6 +13422,7 @@
          "id"
       ],
       "tags":[
+         "flag",
          "indonesia"
       ]
    },
@@ -13212,6 +13434,7 @@
          "ie"
       ],
       "tags":[
+         "flag",
          "ireland"
       ]
    },
@@ -13223,6 +13446,7 @@
          "il"
       ],
       "tags":[
+         "flag",
          "israel"
       ]
    },
@@ -13234,6 +13458,7 @@
          "in"
       ],
       "tags":[
+         "flag",
          "india"
       ]
    },
@@ -13245,6 +13470,7 @@
          "iq"
       ],
       "tags":[
+         "flag",
          "iraq"
       ]
    },
@@ -13256,6 +13482,7 @@
          "ir"
       ],
       "tags":[
+         "flag",
          "iran"
       ]
    },
@@ -13267,6 +13494,7 @@
          "is"
       ],
       "tags":[
+         "flag",
          "iceland"
       ]
    },
@@ -13278,6 +13506,7 @@
          "it"
       ],
       "tags":[
+         "flag",
          "italy"
       ]
    },
@@ -13289,6 +13518,7 @@
          "jm"
       ],
       "tags":[
+         "flag",
          "jamaica"
       ]
    },
@@ -13300,6 +13530,7 @@
          "jo"
       ],
       "tags":[
+         "flag",
          "jordan"
       ]
    },
@@ -13311,6 +13542,7 @@
          "jp"
       ],
       "tags":[
+         "flag",
          "japan"
       ]
    },
@@ -13322,6 +13554,7 @@
          "ke"
       ],
       "tags":[
+         "flag",
          "kenya"
       ]
    },
@@ -13333,6 +13566,7 @@
          "kg"
       ],
       "tags":[
+         "flag",
          "kyrgyzstan"
       ]
    },
@@ -13344,6 +13578,7 @@
          "kh"
       ],
       "tags":[
+         "flag",
          "cambodia"
       ]
    },
@@ -13355,6 +13590,7 @@
          "ki"
       ],
       "tags":[
+         "flag",
          "kiribati"
       ]
    },
@@ -13366,6 +13602,7 @@
          "km"
       ],
       "tags":[
+         "flag",
          "comoros"
       ]
    },
@@ -13377,6 +13614,7 @@
          "kp"
       ],
       "tags":[
+         "flag",
          "north korea"
       ]
    },
@@ -13388,6 +13626,7 @@
          "kr"
       ],
       "tags":[
+         "flag",
          "south korea"
       ]
    },
@@ -13399,6 +13638,7 @@
          "kw"
       ],
       "tags":[
+         "flag",
          "kuwait"
       ]
    },
@@ -13410,6 +13650,7 @@
          "ky"
       ],
       "tags":[
+         "flag",
          "cayman islands"
       ]
    },
@@ -13421,6 +13662,7 @@
          "kz"
       ],
       "tags":[
+         "flag",
          "kazakhstan"
       ]
    },
@@ -13432,6 +13674,7 @@
          "la"
       ],
       "tags":[
+         "flag",
          "laos"
       ]
    },
@@ -13443,6 +13686,7 @@
          "lb"
       ],
       "tags":[
+         "flag",
          "lebanon"
       ]
    },
@@ -13454,6 +13698,7 @@
          "li"
       ],
       "tags":[
+         "flag",
          "liechtenstein"
       ]
    },
@@ -13465,6 +13710,7 @@
          "lk"
       ],
       "tags":[
+         "flag",
          "sri lanka"
       ]
    },
@@ -13476,6 +13722,7 @@
          "lr"
       ],
       "tags":[
+         "flag",
          "liberia"
       ]
    },
@@ -13487,6 +13734,7 @@
          "ls"
       ],
       "tags":[
+         "flag",
          "lesotho"
       ]
    },
@@ -13498,6 +13746,7 @@
          "lt"
       ],
       "tags":[
+         "flag",
          "lithuania"
       ]
    },
@@ -13509,6 +13758,7 @@
          "lu"
       ],
       "tags":[
+         "flag",
          "luxembourg"
       ]
    },
@@ -13520,6 +13770,7 @@
          "lv"
       ],
       "tags":[
+         "flag",
          "latvia"
       ]
    },
@@ -13531,6 +13782,7 @@
          "ly"
       ],
       "tags":[
+         "flag",
          "libya"
       ]
    },
@@ -13542,6 +13794,7 @@
          "ma"
       ],
       "tags":[
+         "flag",
          "morocco"
       ]
    },
@@ -13553,6 +13806,7 @@
          "md"
       ],
       "tags":[
+         "flag",
          "moldova"
       ]
    },
@@ -13564,6 +13818,7 @@
          "me"
       ],
       "tags":[
+         "flag",
          "montenegro"
       ]
    },
@@ -13575,6 +13830,7 @@
          "mg"
       ],
       "tags":[
+         "flag",
          "madagascar"
       ]
    },
@@ -13586,6 +13842,7 @@
          "mk"
       ],
       "tags":[
+         "flag",
          "macedonia"
       ]
    },
@@ -13597,6 +13854,7 @@
          "ml"
       ],
       "tags":[
+         "flag",
          "mali"
       ]
    },
@@ -13608,6 +13866,7 @@
          "mm"
       ],
       "tags":[
+         "flag",
          "myanmar"
       ]
    },
@@ -13619,6 +13878,7 @@
          "mn"
       ],
       "tags":[
+         "flag",
          "mongolia"
       ]
    },
@@ -13630,6 +13890,7 @@
          "mo"
       ],
       "tags":[
+         "flag",
          "macau"
       ]
    },
@@ -13641,6 +13902,7 @@
          "mp"
       ],
       "tags":[
+         "flag",
          "northern mariana islands"
       ]
    },
@@ -13652,6 +13914,7 @@
          "mq"
       ],
       "tags":[
+         "flag",
          "martinique"
       ]
    },
@@ -13663,6 +13926,7 @@
          "mr"
       ],
       "tags":[
+         "flag",
          "mauritania"
       ]
    },
@@ -13674,6 +13938,7 @@
          "ms"
       ],
       "tags":[
+         "flag",
          "montserrat"
       ]
    },
@@ -13685,6 +13950,7 @@
          "mt"
       ],
       "tags":[
+         "flag",
          "malta"
       ]
    },
@@ -13696,6 +13962,7 @@
          "mv"
       ],
       "tags":[
+         "flag",
          "maldives"
       ]
    },
@@ -13707,6 +13974,7 @@
          "mw"
       ],
       "tags":[
+         "flag",
          "malawi"
       ]
    },
@@ -13718,6 +13986,7 @@
          "mx"
       ],
       "tags":[
+         "flag",
          "mexico"
       ]
    },
@@ -13729,6 +13998,7 @@
          "my"
       ],
       "tags":[
+         "flag",
          "malaysia"
       ]
    },
@@ -13740,6 +14010,7 @@
          "mz"
       ],
       "tags":[
+         "flag",
          "mozambique"
       ]
    },
@@ -13751,6 +14022,7 @@
          "na"
       ],
       "tags":[
+         "flag",
          "namibia"
       ]
    },
@@ -13762,6 +14034,7 @@
          "nc"
       ],
       "tags":[
+         "flag",
          "new caledonia"
       ]
    },
@@ -13773,6 +14046,7 @@
          "ne"
       ],
       "tags":[
+         "flag",
          "niger"
       ]
    },
@@ -13784,6 +14058,7 @@
          "ng"
       ],
       "tags":[
+         "flag",
          "nigeria"
       ]
    },
@@ -13795,6 +14070,7 @@
          "ni"
       ],
       "tags":[
+         "flag",
          "nicaragua"
       ]
    },
@@ -13806,6 +14082,7 @@
          "nl"
       ],
       "tags":[
+         "flag",
          "netherlands"
       ]
    },
@@ -13817,6 +14094,7 @@
          "no"
       ],
       "tags":[
+         "flag",
          "norway"
       ]
    },
@@ -13828,6 +14106,7 @@
          "np"
       ],
       "tags":[
+         "flag",
          "nepal"
       ]
    },
@@ -13839,6 +14118,7 @@
          "nu"
       ],
       "tags":[
+         "flag",
          "niue"
       ]
    },
@@ -13850,6 +14130,7 @@
          "nz"
       ],
       "tags":[
+         "flag",
          "new zealand"
       ]
    },
@@ -13861,6 +14142,7 @@
          "om"
       ],
       "tags":[
+         "flag",
          "oman"
       ]
    },
@@ -13872,6 +14154,7 @@
          "pa"
       ],
       "tags":[
+         "flag",
          "panama"
       ]
    },
@@ -13883,6 +14166,7 @@
          "pe"
       ],
       "tags":[
+         "flag",
          "peru"
       ]
    },
@@ -13894,6 +14178,7 @@
          "pg"
       ],
       "tags":[
+         "flag",
          "papua new guinea"
       ]
    },
@@ -13905,6 +14190,7 @@
          "ph"
       ],
       "tags":[
+         "flag",
          "philippines"
       ]
    },
@@ -13916,6 +14202,7 @@
          "pk"
       ],
       "tags":[
+         "flag",
          "pakistan"
       ]
    },
@@ -13927,6 +14214,7 @@
          "pl"
       ],
       "tags":[
+         "flag",
          "poland"
       ]
    },
@@ -13938,6 +14226,7 @@
          "pr"
       ],
       "tags":[
+         "flag",
          "puerto rico"
       ]
    },
@@ -13949,6 +14238,7 @@
          "ps"
       ],
       "tags":[
+         "flag",
          "palestine"
       ]
    },
@@ -13960,6 +14250,7 @@
          "pt"
       ],
       "tags":[
+         "flag",
          "portugal"
       ]
    },
@@ -13971,6 +14262,7 @@
          "pw"
       ],
       "tags":[
+         "flag",
          "palau"
       ]
    },
@@ -13982,6 +14274,7 @@
          "py"
       ],
       "tags":[
+         "flag",
          "paraguay"
       ]
    },
@@ -13993,6 +14286,7 @@
          "qa"
       ],
       "tags":[
+         "flag",
          "qatar"
       ]
    },
@@ -14004,6 +14298,7 @@
          "re"
       ],
       "tags":[
+         "flag",
          "reunion"
       ]
    },
@@ -14015,6 +14310,7 @@
          "ro"
       ],
       "tags":[
+         "flag",
          "romania"
       ]
    },
@@ -14026,6 +14322,7 @@
          "rs"
       ],
       "tags":[
+         "flag",
          "serbia"
       ]
    },
@@ -14037,6 +14334,7 @@
          "ru"
       ],
       "tags":[
+         "flag",
          "russia"
       ]
    },
@@ -14048,6 +14346,7 @@
          "rw"
       ],
       "tags":[
+         "flag",
          "rwanda"
       ]
    },
@@ -14059,6 +14358,7 @@
          "sa"
       ],
       "tags":[
+         "flag",
          "saudi arabia"
       ]
    },
@@ -14070,6 +14370,7 @@
          "sb"
       ],
       "tags":[
+         "flag",
          "solomon islands"
       ]
    },
@@ -14081,6 +14382,7 @@
          "sc"
       ],
       "tags":[
+         "flag",
          "seychelles"
       ]
    },
@@ -14092,6 +14394,7 @@
          "sd"
       ],
       "tags":[
+         "flag",
          "sudan"
       ]
    },
@@ -14103,6 +14406,7 @@
          "se"
       ],
       "tags":[
+         "flag",
          "sweden"
       ]
    },
@@ -14114,6 +14418,7 @@
          "sg"
       ],
       "tags":[
+         "flag",
          "singapore"
       ]
    },
@@ -14125,6 +14430,7 @@
          "si"
       ],
       "tags":[
+         "flag",
          "slovenia"
       ]
    },
@@ -14136,6 +14442,7 @@
          "sk"
       ],
       "tags":[
+         "flag",
          "slovakia"
       ]
    },
@@ -14147,6 +14454,7 @@
          "sl"
       ],
       "tags":[
+         "flag",
          "sierra leone"
       ]
    },
@@ -14158,6 +14466,7 @@
          "sm"
       ],
       "tags":[
+         "flag",
          "san marino"
       ]
    },
@@ -14169,6 +14478,7 @@
          "sn"
       ],
       "tags":[
+         "flag",
          "senegal"
       ]
    },
@@ -14180,6 +14490,7 @@
          "so"
       ],
       "tags":[
+         "flag",
          "somalia"
       ]
    },
@@ -14191,6 +14502,7 @@
          "sr"
       ],
       "tags":[
+         "flag",
          "suriname"
       ]
    },
@@ -14202,6 +14514,7 @@
          "ss"
       ],
       "tags":[
+         "flag",
          "south sudan"
       ]
    },
@@ -14213,6 +14526,7 @@
          "st"
       ],
       "tags":[
+         "flag",
          "sao tome and principe"
       ]
    },
@@ -14224,6 +14538,7 @@
          "sv"
       ],
       "tags":[
+         "flag",
          "el salvador"
       ]
    },
@@ -14235,6 +14550,7 @@
          "sy"
       ],
       "tags":[
+         "flag",
          "syria"
       ]
    },
@@ -14246,6 +14562,7 @@
          "sz"
       ],
       "tags":[
+         "flag",
          "swaziland"
       ]
    },
@@ -14257,6 +14574,7 @@
          "tc"
       ],
       "tags":[
+         "flag",
          "turks and caicos islands"
       ]
    },
@@ -14268,6 +14586,7 @@
          "tf"
       ],
       "tags":[
+         "flag",
          "french southern territories"
       ]
    },
@@ -14279,6 +14598,7 @@
          "tg"
       ],
       "tags":[
+         "flag",
          "togo"
       ]
    },
@@ -14290,6 +14610,7 @@
          "th"
       ],
       "tags":[
+         "flag",
          "thailand"
       ]
    },
@@ -14301,6 +14622,7 @@
          "tj"
       ],
       "tags":[
+         "flag",
          "tajikistan"
       ]
    },
@@ -14312,6 +14634,7 @@
          "tl"
       ],
       "tags":[
+         "flag",
          "east timor"
       ]
    },
@@ -14323,6 +14646,7 @@
          "tm"
       ],
       "tags":[
+         "flag",
          "turkmenistan"
       ]
    },
@@ -14334,6 +14658,7 @@
          "tn"
       ],
       "tags":[
+         "flag",
          "tunisia"
       ]
    },
@@ -14345,6 +14670,7 @@
          "to"
       ],
       "tags":[
+         "flag",
          "tonga"
       ]
    },
@@ -14356,6 +14682,7 @@
          "tr"
       ],
       "tags":[
+         "flag",
          "turkey"
       ]
    },
@@ -14367,6 +14694,7 @@
          "tt"
       ],
       "tags":[
+         "flag",
          "trinidad and tobago"
       ]
    },
@@ -14378,6 +14706,7 @@
          "tv"
       ],
       "tags":[
+         "flag",
          "tuvalu"
       ]
    },
@@ -14389,6 +14718,7 @@
          "tz"
       ],
       "tags":[
+         "flag",
          "tanzania"
       ]
    },
@@ -14400,6 +14730,7 @@
          "ua"
       ],
       "tags":[
+         "flag",
          "ukraine"
       ]
    },
@@ -14411,6 +14742,7 @@
          "ug"
       ],
       "tags":[
+         "flag",
          "uganda"
       ]
    },
@@ -14422,6 +14754,7 @@
          "us"
       ],
       "tags":[
+         "flag",
          "united states of america"
       ]
    },
@@ -14433,6 +14766,7 @@
          "uy"
       ],
       "tags":[
+         "flag",
          "uruguay"
       ]
    },
@@ -14444,6 +14778,7 @@
          "uz"
       ],
       "tags":[
+         "flag",
          "uzbekistan"
       ]
    },
@@ -14455,6 +14790,7 @@
          "vc"
       ],
       "tags":[
+         "flag",
          "st vincent grenadines"
       ]
    },
@@ -14466,6 +14802,7 @@
          "ve"
       ],
       "tags":[
+         "flag",
          "venezuela"
       ]
    },
@@ -14477,6 +14814,7 @@
          "vg"
       ],
       "tags":[
+         "flag",
          "british virgin islands"
       ]
    },
@@ -14488,6 +14826,7 @@
          "vi"
       ],
       "tags":[
+         "flag",
          "us virgin islands"
       ]
    },
@@ -14499,6 +14838,7 @@
          "vn"
       ],
       "tags":[
+         "flag",
          "vietnam"
       ]
    },
@@ -14510,6 +14850,7 @@
          "vu"
       ],
       "tags":[
+         "flag",
          "vanuatu"
       ]
    },
@@ -14521,6 +14862,7 @@
          "ws"
       ],
       "tags":[
+         "flag",
          "samoa"
       ]
    },
@@ -14532,6 +14874,7 @@
          "ye"
       ],
       "tags":[
+         "flag",
          "yemen"
       ]
    },
@@ -14543,6 +14886,7 @@
          "za"
       ],
       "tags":[
+         "flag",
          "south africa"
       ]
    },
@@ -14554,6 +14898,7 @@
          "zm"
       ],
       "tags":[
+         "flag",
          "zambia"
       ]
    },
@@ -14565,6 +14910,7 @@
          "zw"
       ],
       "tags":[
+         "flag",
          "zimbabwe"
       ]
    },
@@ -14686,7 +15032,7 @@
          "hash"
       ],
       "tags":[
-
+         "number"
       ]
    },
    {
@@ -14697,6 +15043,7 @@
          "regional_indicator_symbol_a"
       ],
       "tags":[
+         "letter",
          "a"
       ]
    },
@@ -14708,6 +15055,7 @@
          "regional_indicator_symbol_b"
       ],
       "tags":[
+         "letter",
          "b"
       ]
    },
@@ -14719,6 +15067,7 @@
          "regional_indicator_symbol_c"
       ],
       "tags":[
+         "letter",
          "c"
       ]
    },
@@ -14730,6 +15079,7 @@
          "regional_indicator_symbol_d"
       ],
       "tags":[
+         "letter",
          "d"
       ]
    },
@@ -14741,6 +15091,7 @@
          "regional_indicator_symbol_e"
       ],
       "tags":[
+         "letter",
          "e"
       ]
    },
@@ -14752,6 +15103,7 @@
          "regional_indicator_symbol_f"
       ],
       "tags":[
+         "letter",
          "f"
       ]
    },
@@ -14763,6 +15115,7 @@
          "regional_indicator_symbol_g"
       ],
       "tags":[
+         "letter",
          "g"
       ]
    },
@@ -14774,6 +15127,7 @@
          "regional_indicator_symbol_h"
       ],
       "tags":[
+         "letter",
          "h"
       ]
    },
@@ -14785,6 +15139,7 @@
          "regional_indicator_symbol_i"
       ],
       "tags":[
+         "letter",
          "i"
       ]
    },
@@ -14796,6 +15151,7 @@
          "regional_indicator_symbol_j"
       ],
       "tags":[
+         "letter",
          "j"
       ]
    },
@@ -14807,6 +15163,7 @@
          "regional_indicator_symbol_k"
       ],
       "tags":[
+         "letter",
          "k"
       ]
    },
@@ -14818,6 +15175,7 @@
          "regional_indicator_symbol_l"
       ],
       "tags":[
+         "letter",
          "l"
       ]
    },
@@ -14829,6 +15187,7 @@
          "regional_indicator_symbol_m"
       ],
       "tags":[
+         "letter",
          "m"
       ]
    },
@@ -14840,6 +15199,7 @@
          "regional_indicator_symbol_n"
       ],
       "tags":[
+         "letter",
          "n"
       ]
    },
@@ -14851,6 +15211,7 @@
          "regional_indicator_symbol_o"
       ],
       "tags":[
+         "letter",
          "o"
       ]
    },
@@ -14862,6 +15223,7 @@
          "regional_indicator_symbol_p"
       ],
       "tags":[
+         "letter",
          "p"
       ]
    },
@@ -14873,6 +15235,7 @@
          "regional_indicator_symbol_q"
       ],
       "tags":[
+         "letter",
          "q"
       ]
    },
@@ -14884,6 +15247,7 @@
          "regional_indicator_symbol_r"
       ],
       "tags":[
+         "letter",
          "r"
       ]
    },
@@ -14895,6 +15259,7 @@
          "regional_indicator_symbol_s"
       ],
       "tags":[
+         "letter",
          "s"
       ]
    },
@@ -14906,6 +15271,7 @@
          "regional_indicator_symbol_t"
       ],
       "tags":[
+         "letter",
          "t"
       ]
    },
@@ -14917,6 +15283,7 @@
          "regional_indicator_symbol_u"
       ],
       "tags":[
+         "letter",
          "u"
       ]
    },
@@ -14928,6 +15295,7 @@
          "regional_indicator_symbol_v"
       ],
       "tags":[
+         "letter",
          "v"
       ]
    },
@@ -14939,6 +15307,7 @@
          "regional_indicator_symbol_w"
       ],
       "tags":[
+         "letter",
          "w"
       ]
    },
@@ -14950,6 +15319,7 @@
          "regional_indicator_symbol_x"
       ],
       "tags":[
+         "letter",
          "x"
       ]
    },
@@ -14961,6 +15331,7 @@
          "regional_indicator_symbol_y"
       ],
       "tags":[
+         "letter",
          "y"
       ]
    },
@@ -14972,6 +15343,7 @@
          "regional_indicator_symbol_z"
       ],
       "tags":[
+         "letter",
          "z"
       ]
    },
@@ -14983,6 +15355,7 @@
          "couple_with_heart_woman_woman"
       ],
       "tags":[
+         "couple",
          "heart",
          "woman"
       ]
@@ -14995,6 +15368,7 @@
          "couple_with_heart_man_man"
       ],
       "tags":[
+         "couple",
          "heart",
          "man"
       ]
@@ -15007,6 +15381,7 @@
          "couplekiss_woman_woman"
       ],
       "tags":[
+         "couple",
          "kiss",
          "woman"
       ]
@@ -15019,6 +15394,7 @@
          "couplekiss_man_man"
       ],
       "tags":[
+         "couple",
          "kiss",
          "man"
       ]
