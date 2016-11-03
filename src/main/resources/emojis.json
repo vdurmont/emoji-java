@@ -10923,7 +10923,8 @@
     "description": "slightly smiling face",
     "supports_fitzpatrick": false,
     "aliases": [
-      "slightly_smiling"
+      "slightly_smiling",
+      "slight_smile"
     ],
     "tags": []
   },
