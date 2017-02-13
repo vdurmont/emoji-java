@@ -3451,7 +3451,7 @@
     "emoji": "📡",
     "description": "satellite antenna",
     "aliases": [
-      "satellite"
+      "satellite_antenna"
     ],
     "tags": [
       "signal"
@@ -5055,7 +5055,7 @@
     "emoji": "🍳",
     "description": "cooking",
     "aliases": [
-      "egg"
+      "cooking"
     ],
     "tags": [
       "breakfast"
@@ -8533,7 +8533,7 @@
     "description": "regional indicator symbol letter c + regional indicator symbol letter l",
     "emoji": "🇨🇱",
     "aliases": [
-      "cl"
+      "cl_flag"
     ]
   },
   {
@@ -8577,7 +8577,7 @@
     "description": "regional indicator symbol letter c + regional indicator symbol letter d",
     "emoji": "🇨🇩",
     "aliases": [
-      "cd"
+      "cd_flag"
     ]
   },
   {
@@ -9083,7 +9083,7 @@
     "description": "regional indicator symbol letter i + regional indicator symbol letter d",
     "emoji": "🇮🇩",
     "aliases": [
-      "id"
+      "id_flag"
     ]
   },
   {
@@ -9897,7 +9897,7 @@
     "description": "regional indicator symbol letter s + regional indicator symbol letter a",
     "emoji": "🇸🇦",
     "aliases": [
-      "sa"
+      "sa_flag"
     ]
   },
   {
@@ -10227,7 +10227,7 @@
     "description": "regional indicator symbol letter t + regional indicator symbol letter m",
     "emoji": "🇹🇲",
     "aliases": [
-      "tm"
+      "tm_flag"
     ]
   },
   {
@@ -10249,7 +10249,7 @@
     "description": "regional indicator symbol letter t + regional indicator symbol letter v",
     "emoji": "🇹🇻",
     "aliases": [
-      "tv"
+      "tv_flag"
     ]
   },
   {
@@ -11283,8 +11283,7 @@
     "description": "red crab",
     "supports_fitzpatrick": false,
     "aliases": [
-      "crab",
-      "cancer"
+      "crab"
     ],
     "tags": []
   },
@@ -11457,8 +11456,7 @@
     "supports_fitzpatrick": false,
     "aliases": [
       "camping",
-      "campsite",
-      "tent"
+      "campsite"
     ],
     "tags": []
   },

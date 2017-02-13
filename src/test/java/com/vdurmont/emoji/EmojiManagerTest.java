@@ -5,8 +5,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -186,5 +188,26 @@ public class EmojiManagerTest {
       unicodes.add(emoji.getUnicode());
     }
     assertEquals(unicodes.size(), emojis.size());
+  }
+
+  @Test
+  public void no_duplicate_alias() {
+    // GIVEN
+
+    // WHEN
+    Collection<Emoji> emojis = EmojiManager.getAll();
+
+    // THEN
+    Set<String> aliases = new HashSet<String>();
+    Set<String> duplicates = new HashSet<String>();
+    for (Emoji emoji : emojis) {
+      for (String alias : emoji.getAliases()) {
+        if (aliases.contains(alias)) {
+          duplicates.add(alias);
+        }
+        aliases.add(alias);
+      }
+    }
+    assertEquals("Duplicates: " + duplicates, duplicates.size(), 0);
   }
 }
