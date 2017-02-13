@@ -1472,6 +1472,7 @@
   {
     "emoji": "💅",
     "description": "nail polish",
+    "supports_fitzpatrick": true,
     "aliases": [
       "nail_care"
     ],
