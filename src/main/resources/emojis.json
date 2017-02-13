@@ -1265,6 +1265,7 @@
   {
     "emoji": "☝",
     "description": "white up pointing index",
+    "supports_fitzpatrick": true,
     "aliases": [
       "point_up"
     ],
@@ -1517,8 +1518,35 @@
   {
     "emoji": "🙇",
     "description": "person bowing deeply",
+    "supports_fitzpatrick": true,
     "aliases": [
       "bow"
+    ],
+    "tags": [
+      "respect",
+      "thanks"
+    ]
+  },
+  {
+    "emoji": "🙇‍♀️",
+    "description": "woman bowing deeply",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_bow",
+      "female_bow"
+    ],
+    "tags": [
+      "respect",
+      "thanks"
+    ]
+  },
+  {
+    "emoji": "🙇‍♂️",
+    "description": "man bowing deeply",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_bow",
+      "male_bow"
     ],
     "tags": [
       "respect",
