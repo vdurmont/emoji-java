@@ -505,4 +505,16 @@ public class EmojiParserTest {
     // THEN
     assertEquals("Nigeria is :ng:, NG is :squared_ng:", result);
   }
+
+  @Test
+  public void parseToAliases_couplekiss_woman_woman() {
+    // GIVEN
+    String str = "👩‍❤️‍💋‍👩";
+
+    // WHEN
+    String result = EmojiParser.parseToAliases(str);
+
+    // THEN
+    assertEquals(":couplekiss_woman_woman:", result);
+  }
 }
