@@ -493,4 +493,16 @@ public class EmojiParserTest {
     // THEN
     assertEquals("Let's test the *⃣ emoji and its other alias *⃣", result);
   }
+
+  @Test
+  public void parseToAliases_NG_and_nigeria() {
+    // GIVEN
+    String str = "Nigeria is 🇳🇬, NG is 🆖";
+
+    // WHEN
+    String result = EmojiParser.parseToAliases(str);
+
+    // THEN
+    assertEquals("Nigeria is :ng:, NG is :squared_ng:", result);
+  }
 }
