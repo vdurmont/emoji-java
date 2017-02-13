@@ -131,6 +131,17 @@ public class EmojiManager {
   }
 
   /**
+   * Tests if a given String only contains emojis.
+   *
+   * @param string the string to test
+   *
+   * @return true if the string only contains emojis, false else
+   */
+  public static boolean isOnlyEmojis(String string) {
+    return string != null && EmojiParser.removeAllEmojis(string).isEmpty();
+  }
+
+  /**
    * Checks if sequence of chars contain an emoji.
    * @param sequence Sequence of char that may contain emoji in full or
    * partially.

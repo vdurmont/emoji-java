@@ -122,6 +122,42 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void isOnlyEmojis_for_an_emoji_returns_true() {
+    // GIVEN
+    String str = "😀";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isOnlyEmojis(str);
+
+    // THEN
+    assertTrue(isEmoji);
+  }
+
+  @Test
+  public void isOnlyEmojis_for_emojis_returns_true() {
+    // GIVEN
+    String str = "😀😀😀";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isOnlyEmojis(str);
+
+    // THEN
+    assertTrue(isEmoji);
+  }
+
+  @Test
+  public void isOnlyEmojis_for_random_string_returns_false() {
+    // GIVEN
+    String str = "😀a";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isOnlyEmojis(str);
+
+    // THEN
+    assertFalse(isEmoji);
+  }
+
+  @Test
   public void getAllTags_returns_the_tags() {
     // GIVEN
 
