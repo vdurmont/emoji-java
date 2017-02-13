@@ -15,7 +15,7 @@
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>3.1.3</version>
+  <version>3.2.0</version>
 </dependency>
 ```
 
@@ -23,14 +23,14 @@ You can also download the project, build it with `mvn clean install` and add the
 
 ##### Via Gradle:
 ```gradle
-compile 'com.vdurmont:emoji-java:3.1.3'
+compile 'com.vdurmont:emoji-java:3.2.0'
 ```
 
 ##### Via Direct Download:
 
 * Use [releases](https://github.com/vdurmont/emoji-java/releases) tab to download the jar directly.
 * Download JSON-java dependency from http://mvnrepository.com/artifact/org.json/json.
- 
+
 ## How to use it?
 
 

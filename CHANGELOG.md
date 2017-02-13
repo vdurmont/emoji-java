@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.2.0
+
+- Fixed Poland flag (thanks @Sheigutn)
+- Improvements to the smile emojis (thanks @miquelbeltran)
+- Add a bunch of emojis from Apple iOS 10.2 release
+- Fix some missing fitzpatrick modifiers
+- Add an `EmojiManager.isOnlyEmojis()` method
+
 ## v3.1.3
 
 - Removed all variance selectors from the JSON database. Thanks @roberterdin !
