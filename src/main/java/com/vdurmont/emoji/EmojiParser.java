@@ -357,6 +357,15 @@ public class EmojiParser {
     return sb.append(input.substring(prev)).toString();
   }
 
+  public static String[] extractEmojis(String input) {
+    List<UnicodeCandidate> emojis = getUnicodeCandidates(input);
+    List<String> result = new ArrayList<String>();
+    for (UnicodeCandidate emoji : emojis) {
+      result.add(emoji.getEmoji().getUnicode());
+    }
+    return result.toArray(new String[] { });
+  }
+
 
   /**
    * Generates a list UnicodeCandidates found in input string. A
