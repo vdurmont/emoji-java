@@ -524,12 +524,12 @@ public class EmojiParserTest {
     String str = "An 😀awesome 😃string with a few 😉emojis!";
 
     // WHEN
-    String[] result = EmojiParser.extractEmojis(str);
+    List<String> result = EmojiParser.extractEmojis(str);
 
     // THEN
-    assertEquals("😀", result[0]);
-    assertEquals("😃", result[1]);
-    assertEquals("😉", result[2]);
+    assertEquals("😀", result.get(0));
+    assertEquals("😃", result.get(1));
+    assertEquals("😉", result.get(2));
 
   }
 }
