@@ -4747,6 +4747,7 @@
   {
     "emoji": "🏂",
     "description": "snowboarder",
+    "supports_fitzpatrick": true,
     "aliases": [
       "snowboarder"
     ],
@@ -5662,6 +5663,7 @@
   {
     "emoji": "🚣",
     "description": "rowboat",
+    "supports_fitzpatrick": true,
     "aliases": [
       "rowboat"
     ],
@@ -11084,7 +11086,7 @@
   {
     "emoji": "🕵",
     "description": "sleuth or spy",
-    "supports_fitzpatrick": false,
+    "supports_fitzpatrick": true,
     "aliases": [
       "detective",
       "sleuth",
@@ -11718,7 +11720,7 @@
   {
     "emoji": "🛌",
     "description": "sleeping accommodation",
-    "supports_fitzpatrick": false,
+    "supports_fitzpatrick": true,
     "aliases": [
       "sleeping_accommodation"
     ],
@@ -12030,7 +12032,7 @@
   {
     "emoji": "⛹",
     "description": "person with ball",
-    "supports_fitzpatrick": false,
+    "supports_fitzpatrick": true,
     "aliases": [
       "person_with_ball"
     ],
@@ -12039,7 +12041,7 @@
   {
     "emoji": "🏋",
     "description": "weight lifter",
-    "supports_fitzpatrick": false,
+    "supports_fitzpatrick": true,
     "aliases": [
       "weight_lifter"
     ],
