@@ -100,6 +100,18 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void isEmoji_with_fitzpatric_modifier_returns_true() {
+    // GIVEN
+    String emoji = "\uD83E\uDD30\uD83C\uDFFB";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isEmoji(emoji);
+
+    // THEN
+    assertTrue(isEmoji);
+  }
+
+  @Test
   public void isEmoji_for_a_non_emoji_returns_false() {
     // GIVEN
     String str = "test";
