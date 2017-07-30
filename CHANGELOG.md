@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.3.0
+
+- Add `family_man_woman_girl_boy` emoji (thanks @freva)
+- Fix `EmojiManager.isEmoji` to support fitzpatrick modifiers (thanks @freva)
+- Fixed several emojis that had the wrong `support_fitzpatrick` flag (thanks @Tapchicoma)
+- Add some tests to avoid duplicate aliases
+- Fixed several duplicated aliases in the emoji DB
+
 ## v3.2.0
 
 - Fixed Poland flag (thanks @Sheigutn)
