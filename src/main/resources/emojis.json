@@ -10759,6 +10759,20 @@
     ]
   },
   {
+    "emoji": "👨‍👩‍👧‍👦",
+    "description": "family (man, woman, girl, boy)",
+    "aliases": [
+      "family_man_woman_girl_boy"
+    ],
+    "tags": [
+      "family",
+      "man",
+      "woman",
+      "girl",
+      "boy"
+    ]
+  },
+  {
     "emoji": "👩‍👩‍👦",
     "description": "family (woman, woman, boy)",
     "aliases": [
