@@ -126,8 +126,12 @@ public class EmojiManager {
    * @return true if the string is an emoji's unicode, false else
    */
   public static boolean isEmoji(String string) {
-    return string != null &&
-      EMOJI_TRIE.isEmoji(string.toCharArray()).exactMatch();
+    if (string == null) return false;
+
+    EmojiParser.UnicodeCandidate unicodeCandidate = EmojiParser.getNextUnicodeCandidate(string.toCharArray(), 0);
+    return unicodeCandidate != null &&
+            unicodeCandidate.getEmojiStartIndex() == 0 &&
+            unicodeCandidate.getFitzpatrickEndIndex() == string.length();
   }
 
   /**

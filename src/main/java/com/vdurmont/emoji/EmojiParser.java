@@ -381,25 +381,39 @@ public class EmojiParser {
   protected static List<UnicodeCandidate> getUnicodeCandidates(String input) {
     char[] inputCharArray = input.toCharArray();
     List<UnicodeCandidate> candidates = new ArrayList<UnicodeCandidate>();
-    for (int i = 0; i < input.length(); i++) {
-      int emojiEnd = getEmojiEndPos(inputCharArray, i);
-
-      if (emojiEnd != -1) {
-        Emoji emoji = EmojiManager.getByUnicode(input.substring(i, emojiEnd));
-        String fitzpatrickString = (emojiEnd + 2 <= input.length()) ?
-          new String(inputCharArray, emojiEnd, 2) :
-          null;
-        UnicodeCandidate candidate = new UnicodeCandidate(
-          emoji,
-          fitzpatrickString,
-          i
-        );
-        candidates.add(candidate);
-        i = candidate.getFitzpatrickEndIndex() - 1;
-      }
+    UnicodeCandidate next;
+    for (int i = 0; (next = getNextUnicodeCandidate(inputCharArray, i)) != null; i = next.getFitzpatrickEndIndex()) {
+      candidates.add(next);
     }
 
     return candidates;
+  }
+
+  /**
+   * Finds the next UnicodeCandidate after a given starting index
+   *
+   * @param chars char array to find UnicodeCandidate in
+   * @param start starting index for search
+   * @return the next UnicodeCandidate or null if no UnicodeCandidate is found after start index
+   */
+  protected static UnicodeCandidate getNextUnicodeCandidate(char[] chars, int start) {
+    for (int i = start; i < chars.length; i++) {
+      int emojiEnd = getEmojiEndPos(chars, i);
+
+      if (emojiEnd != -1) {
+        Emoji emoji = EmojiManager.getByUnicode(new String(chars, i, emojiEnd - i));
+        String fitzpatrickString = (emojiEnd + 2 <= chars.length) ?
+                new String(chars, emojiEnd, 2) :
+                null;
+        return new UnicodeCandidate(
+                emoji,
+                fitzpatrickString,
+                i
+        );
+      }
+    }
+
+    return null;
   }
 
 
