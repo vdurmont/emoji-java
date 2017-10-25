@@ -1039,6 +1039,15 @@
     ]
   },
   {
+    "emojiChar": "☆",
+    "emoji": "\xE2\x98\x86",
+    "description": "star3",
+    "aliases": [
+      "star3"
+    ],
+    "tags": []
+  },
+  {
     "emojiChar": "💥",
     "emoji": "\uD83D\uDCA5",
     "description": "collision symbol",
