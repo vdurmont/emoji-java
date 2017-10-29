@@ -1,5 +1,12 @@
 # Changelog
 
+## v4.0.0
+
+- Add "source code" strings to emoji json database
+- Fix some missing/out-of-order code points (thanks @BillyGalbreath)
+- Upgrade `org.json:json` dependency (thanks @PhotonQyv)
+- Update README with new emojis (thanks @jtobard)
+
 ## v3.3.0
 
 - Add `family_man_woman_girl_boy` emoji (thanks @freva)

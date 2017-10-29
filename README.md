@@ -15,7 +15,7 @@
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>3.3.0</version>
+  <version>4.0.0</version>
 </dependency>
 ```
 
@@ -23,7 +23,7 @@ You can also download the project, build it with `mvn clean install` and add the
 
 ##### Via Gradle:
 ```gradle
-compile 'com.vdurmont:emoji-java:3.3.0'
+compile 'com.vdurmont:emoji-java:4.0.0'
 ```
 
 ##### Via Direct Download:
