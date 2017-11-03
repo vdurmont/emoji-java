@@ -39,8 +39,8 @@ public class EmojiParserTest {
 
     // THEN
     assertEquals(
-            "An :)awesome :)string with a few :)emojis!",
-            result
+      "An :)awesome :)string with a few :)emojis!",
+      result
     );
   }
 
