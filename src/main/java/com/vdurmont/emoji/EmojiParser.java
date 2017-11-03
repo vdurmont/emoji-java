@@ -84,6 +84,23 @@ public class EmojiParser {
     return parseFromUnicode(input, emojiTransformer);
   }
 
+  /**
+   * Replace all emojis with character
+   *
+   * @param str the string to process
+   * @param chr the character to be replaced
+   * @return the string with replaced character
+   */
+  public static String replaceAllEmojis(String str, final String chr) {
+    EmojiParser.EmojiTransformer emojiTransformer = new EmojiParser.EmojiTransformer() {
+      public String transform(EmojiParser.UnicodeCandidate unicodeCandidate) {
+        return chr;
+      }
+    };
+
+    return parseFromUnicode(str, emojiTransformer);
+  }
+
 
   /**
    * Replaces the emoji's aliases (between 2 ':') occurrences and the html
