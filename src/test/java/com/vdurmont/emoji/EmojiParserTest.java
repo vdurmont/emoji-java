@@ -30,6 +30,22 @@ public class EmojiParserTest {
   }
 
   @Test
+  public void replaceAllEmojis_replace_the_emojis_by_string() throws Exception {
+    // GIVEN
+    String str = "An 😀awesome 😃string with a few 😉emojis!";
+
+    // WHEN
+    String result = EmojiParser.replaceAllEmojis(str, ":)");
+
+    // THEN
+    assertEquals(
+      "An :)awesome :)string with a few :)emojis!",
+      result
+    );
+  }
+
+
+  @Test
   public void parseToAliases_REPLACE_with_a_fitzpatrick_modifier() {
     // GIVEN
     String str = "\uD83D\uDC66\uD83C\uDFFF";
