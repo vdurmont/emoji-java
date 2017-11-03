@@ -30,7 +30,7 @@ public class EmojiParserTest {
   }
 
   @Test
-  public void replaceAllEmojis_replace_the_emojis_by_character() throws Exception {
+  public void replaceAllEmojis_replace_the_emojis_by_string() throws Exception {
     // GIVEN
     String str = "An 😀awesome 😃string with a few 😉emojis!";
 

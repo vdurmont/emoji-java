@@ -88,13 +88,13 @@ public class EmojiParser {
    * Replace all emojis with character
    *
    * @param str the string to process
-   * @param chr the character to be replaced
+   * @param replacementString replacement the string that will replace all the emojis
    * @return the string with replaced character
    */
-  public static String replaceAllEmojis(String str, final String chr) {
+  public static String replaceAllEmojis(String str, final String replacementString) {
     EmojiParser.EmojiTransformer emojiTransformer = new EmojiParser.EmojiTransformer() {
       public String transform(EmojiParser.UnicodeCandidate unicodeCandidate) {
-        return chr;
+        return replacementString;
       }
     };
 
