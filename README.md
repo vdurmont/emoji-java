@@ -193,6 +193,12 @@ System.out.println(EmojiParser.removeEmojis(str, collection));
 // "An 😀awesome 😃string with a few emojis!"
 ```
 
+#### Extract Emojis from a string
+
+You can search a string of mixed emoji/non-emoji characters and have all of the emoji characters returned as a Collection.
+
+* `EmojiParser#extractEmojis(String)`: returns all emojis as a Collection.  This will include duplicates if emojis are present more than once.
+
 ## Credits
 
 **emoji-java** originally used the data provided by the [github/gemoji project](https://github.com/github/gemoji). It is still based on it but has evolved since.
