@@ -15,7 +15,8 @@ import java.util.Set;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
-  private static final String PATH = "/emojis.json";
+  private static final String PATH_PROPERTY = "com.vdurmont.emoji.EmojiManager.PATH";
+  private static final String DEFAULT_PATH = "/emojis.json";
   private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
     new HashMap<String, Emoji>();
   private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
@@ -25,7 +26,14 @@ public class EmojiManager {
 
   static {
     try {
-      InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
+      final String actualPath;
+      final String pathByParameter = System.getProperty(PATH_PROPERTY);
+      if(pathByParameter != null) {
+        actualPath = pathByParameter;
+      } else {
+        actualPath = DEFAULT_PATH;
+      }
+      InputStream stream = EmojiLoader.class.getResourceAsStream(actualPath);
       List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
       ALL_EMOJIS = emojis;
       for (Emoji emoji : emojis) {
