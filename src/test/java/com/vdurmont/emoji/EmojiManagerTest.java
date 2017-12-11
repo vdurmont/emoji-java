@@ -225,8 +225,10 @@ public class EmojiManagerTest {
   @Test
   public void overriden_path() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
     EmojiManager.getForAlias("smile");
-    final String property = "com.vdurmont.emoji.EmojiManager.PATH";
-    System.setProperty(property, "/emojis-test-override.json");
+    final String PATH = "com.vdurmont.emoji.EmojiManager.PATH";
+    System.setProperty(PATH, "/emojis-test-override.json");
+    final String SET = "com.vdurmont.emoji.EmojiManager.SET";
+    System.setProperty(SET, EmojiSet.CUSTOM.name());
 
     JarClassLoader classLoader = new JarClassLoader();
     classLoader.add(EmojiManager.class.getProtectionDomain().getCodeSource().getLocation());
@@ -240,6 +242,7 @@ public class EmojiManagerTest {
     assertEquals("smile", ((List<String>)m_getAliases.invoke(emojiOk)).get(0));
     assertNull(emojiNull);
 
-    System.clearProperty(property);
+    System.clearProperty(PATH);
+    System.clearProperty(SET);
   }
 }
