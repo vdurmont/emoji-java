@@ -1,6 +1,8 @@
-# The following is the emoji mapping based on [unicodey](https://unicodey.com/emoji-data/table.htm)
+### The following is the emoji mapping based on [unicodey](https://unicodey.com/emoji-data/table.htm)
 
-To enable this emoji set please start the Java with the system property `com.vdurmont.emoji.EmojiManager.SET=UNICODEY`
+This set is provided as an alternative to match the one used in projects like https://github.com/iamcal/emoji-data
+
+To enable this emoji set please start your application with the system property `com.vdurmont.emoji.EmojiManager.SET=UNICODEY`
 
 | Emoji | Aliases | Emoji | Aliases |
 | :---: | ------- | :---: | ------- |
