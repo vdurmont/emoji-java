@@ -12,13 +12,16 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <emoji-java-artifact>emoji-java</emoji-java-artifact>
+        <exec.mainClass>com.vdurmont.emoji.TableGenerator</exec.mainClass>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.vdurmont</groupId>
-            <artifactId>emoji-java</artifactId>
+            <artifactId>${emoji-java-artifact}</artifactId>
             <version>4.0.0</version>
         </dependency>
     </dependencies>
+    
 </project>
