@@ -27,7 +27,7 @@ public class EmojiManager {
 
   static {
     try {
-      final EmojiSet emojiSet =getEmojiSet();
+      final EmojiSet emojiSet = getEmojiSet();
       final String actualPath = getEmojiFilePath(emojiSet);
       InputStream stream = EmojiLoader.class.getResourceAsStream(actualPath);
       List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
