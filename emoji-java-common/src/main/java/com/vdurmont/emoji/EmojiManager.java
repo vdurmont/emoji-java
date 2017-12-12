@@ -15,7 +15,9 @@ import java.util.Set;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class EmojiManager {
-  private static final String PATH = "/emojis.json";
+  private static final String PATH_PROPERTY = "com.vdurmont.emoji.EmojiManager.PATH";
+  private static final String SET_PROPERTY = "com.vdurmont.emoji.EmojiManager.SET";
+  private static final String DEFAULT_PATH = "/emojis.json";
   private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
     new HashMap<String, Emoji>();
   private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
@@ -25,7 +27,9 @@ public class EmojiManager {
 
   static {
     try {
-      InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
+      final EmojiSet emojiSet = getEmojiSet();
+      final String actualPath = getEmojiFilePath(emojiSet);
+      InputStream stream = EmojiLoader.class.getResourceAsStream(actualPath);
       List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
       ALL_EMOJIS = emojis;
       for (Emoji emoji : emojis) {
@@ -46,6 +50,39 @@ public class EmojiManager {
       throw new RuntimeException(e);
     }
   }
+
+  private static EmojiSet getEmojiSet() {
+    final String setByParameter = System.getProperty(SET_PROPERTY);
+    try {
+      return EmojiSet.valueOf(setByParameter);
+    } catch (IllegalArgumentException ex) {
+      return EmojiSet.EMOJI_JAVA;
+    } catch (NullPointerException ex) {
+      return EmojiSet.EMOJI_JAVA;
+    }
+  }
+
+  private static String getEmojiFilePath(EmojiSet emojiSet) {
+    switch (emojiSet) {
+      case CUSTOM:
+        final String pathByParameter = System.getProperty(PATH_PROPERTY);
+        if (pathByParameter != null) {
+          return pathByParameter;
+        } else {
+          return DEFAULT_PATH;
+        }
+
+      case UNICODEY:
+        return "/emojis-unicodey.json";
+
+      default:
+      case EMOJI_JAVA:
+        return "/emojis.json";
+
+    }
+
+  }
+
 
   /**
    * No need for a constructor, all the methods are static.

@@ -7,20 +7,29 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>emoji-table-generator</name>
+    <name>emoji-unicodey-importer</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <emoji-java-artifact>emoji-java</emoji-java-artifact>
-        <exec.mainClass>com.vdurmont.emoji.TableGenerator</exec.mainClass>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.vdurmont</groupId>
-            <artifactId>${emoji-java-artifact}</artifactId>
+            <artifactId>emoji-java</artifactId>
             <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <!-- We need gson since org.json escapes some unicode chars when rendering the json -->
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.0</version>
         </dependency>
     </dependencies>
     

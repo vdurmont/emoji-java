@@ -3,9 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.vdurmont</groupId>
-    <artifactId>emoji-java</artifactId>
+    <artifactId>emoji-java-root</artifactId>
     <version>4.0.0</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>emoji-java-common</module>
+        <module>emoji-java</module>
+        <module>emoji-java-unicodey</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>emoji-java</name>
     <url>https://github.com/vdurmont/emoji-java</url>
@@ -38,12 +43,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20170516</version>
-        </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

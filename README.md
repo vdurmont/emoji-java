@@ -203,9 +203,11 @@ You can search a string of mixed emoji/non-emoji characters and have all of the 
 
 **emoji-java** originally used the data provided by the [github/gemoji project](https://github.com/github/gemoji). It is still based on it but has evolved since.
 
+You can also use an alternative emoji set based on the list at [unicodey](https://unicodey.com/emoji-data/table.htm). To enable this alternative set follow the instructions [here](./UNICODEY_TABLE.md).
+
 ## Available Emojis
 
-Here is a table of the available emojis and their aliases.
+Here is a table of the default available emojis and their aliases.
 
 | Emoji | Aliases | Emoji | Aliases |
 | :---: | ------- | :---: | ------- |

@@ -3,18 +3,17 @@ package com.vdurmont.emoji;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.xeustechnologies.jcl.JarClassLoader;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
 public class EmojiManagerTest {
@@ -221,5 +220,29 @@ public class EmojiManagerTest {
       }
     }
     assertEquals("Duplicates: " + duplicates, duplicates.size(), 0);
+  }
+
+  @Test
+  public void overriden_path() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+    EmojiManager.getForAlias("smile");
+    final String PATH = "com.vdurmont.emoji.EmojiManager.PATH";
+    System.setProperty(PATH, "/emojis-test-override.json");
+    final String SET = "com.vdurmont.emoji.EmojiManager.SET";
+    System.setProperty(SET, EmojiSet.CUSTOM.name());
+
+    JarClassLoader classLoader = new JarClassLoader();
+    classLoader.add(EmojiManager.class.getProtectionDomain().getCodeSource().getLocation());
+    Class clazz = classLoader.loadClass(EmojiManager.class.getName());
+
+    Method m_getForAlias = clazz.getMethod("getForAlias", String.class);
+    Object emojiOk = m_getForAlias.invoke(null, "smile");
+    Object emojiNull = m_getForAlias.invoke(null, "hug");
+
+    Method m_getAliases = emojiOk.getClass().getMethod("getAliases");
+    assertEquals("smile", ((List<String>)m_getAliases.invoke(emojiOk)).get(0));
+    assertNull(emojiNull);
+
+    System.clearProperty(PATH);
+    System.clearProperty(SET);
   }
 }
