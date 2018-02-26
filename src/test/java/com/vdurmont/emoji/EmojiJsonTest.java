@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.*;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -47,12 +48,12 @@ public class EmojiJsonTest {
 
     @Ignore("1665 emoji still has not been added")
     @Test
-    public void checkEmojiExisting() throws Exception {
+    public void checkEmojiExisting() {
         assertTrue("Asserting for emoji: " + emoji, EmojiManager.isEmoji(emoji));
     }
 
     @Test
-    public void checkEmojiFitzpatricFlag() throws Exception {
+    public void checkEmojiFitzpatricFlag() {
         final int len = emoji.toCharArray().length;
         boolean shouldContainFitzpatric = false;
         int codepoint;
@@ -109,5 +110,14 @@ public class EmojiJsonTest {
             return Integer.parseInt(emojiCodepointAsString, 16);
         }
 
+    }
+
+    @Test
+    public void checkInverseParse() {
+        assertEquals(emoji, EmojiParser.parseToUnicode(EmojiParser.parseToHtmlDecimal(emoji, EmojiParser.FitzpatrickAction.IGNORE)));
+
+        assertEquals(emoji, EmojiParser.parseToUnicode(EmojiParser.parseToHtmlHexadecimal(emoji, EmojiParser.FitzpatrickAction.IGNORE)));
+
+        assertEquals(emoji, EmojiParser.parseToUnicode(EmojiParser.parseToAliases(emoji, EmojiParser.FitzpatrickAction.IGNORE)));
     }
 }

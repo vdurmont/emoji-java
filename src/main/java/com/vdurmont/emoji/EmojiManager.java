@@ -3,6 +3,8 @@ package com.vdurmont.emoji;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -41,6 +43,11 @@ public class EmojiManager {
       }
 
       EMOJI_TRIE = new EmojiTrie(emojis);
+      Collections.sort(ALL_EMOJIS, new Comparator<Emoji>() {
+        public int compare(Emoji e1, Emoji e2) {
+          return e2.getUnicode().length() - e1.getUnicode().length();
+        }
+      });
       stream.close();
     } catch (IOException e) {
       throw new RuntimeException(e);
