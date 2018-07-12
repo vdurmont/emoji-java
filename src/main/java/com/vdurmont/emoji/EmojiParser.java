@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
     Pattern.compile("\\S*?((?<=:)\\+?(\\w|\\||\\-)+(?=:))\\w*");
+  private static final Pattern URL_PATTERN = Pattern.compile("(https?:\\/\\/|www\\.)\\S+");
 
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
@@ -117,7 +118,7 @@ public class EmojiParser {
   public static String parseToUnicode(String input) {
     return parseToUnicode(input,false);
   }
-  
+
   /**
    * {@link #parseToUnicode(String)}
    *
@@ -171,8 +172,7 @@ public class EmojiParser {
     while (matcher.find()) {
       String fullWord = matcher.group();
       //Do not render emojis inside URLs
-      if (shouldIgnoreUrls && (fullWord.startsWith("http://") || fullWord.startsWith("https://") || fullWord.startsWith(
-          "www."))) {
+      if (shouldIgnoreUrls && URL_PATTERN.matcher(fullWord).matches()) {
         continue;
       }
       String match = matcher.group(1);
