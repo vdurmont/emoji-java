@@ -314,14 +314,14 @@ public class EmojiParserTest {
   @Test
   public void parseToUnicode_with_link_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "hello :smiley:. The link is https://link_with_emoji_alias_:smiley:";
+    String str = "hello :smiley:. The link is https://www.aaa.com/link_with_emoji_alias_:smiley:";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str, true);
 
     // THEN
     assertEquals(
-        "hello 😃. The link is https://link_with_emoji_alias_:smiley:",
+        "hello 😃. The link is https://www.aaa.com/link_with_emoji_alias_:smiley:",
         result
     );
 

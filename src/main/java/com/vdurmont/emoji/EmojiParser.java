@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
     Pattern.compile("\\S*?((?<=:)\\+?(\\w|\\||\\-)+(?=:))\\w*");
-  private static final Pattern URL_PATTERN = Pattern.compile("(https?:\\/\\/|www\\.)\\S+");
+  private static final Pattern URL_PATTERN = Pattern.compile("(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]\\.[^\\s]{2,})");
 
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
