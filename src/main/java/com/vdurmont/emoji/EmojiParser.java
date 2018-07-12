@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
  */
 public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
-    Pattern.compile("(?<=:)\\+?(\\w|\\||\\-)+(?=:)");
+    Pattern.compile("\\S*?((?<=:)\\+?(\\w|\\||\\-)+(?=:))\\w*");
 
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
@@ -101,7 +101,6 @@ public class EmojiParser {
     return parseFromUnicode(str, emojiTransformer);
   }
 
-
   /**
    * Replaces the emoji's aliases (between 2 ':') occurrences and the html
    * representations by their unicode.<br>
@@ -116,8 +115,21 @@ public class EmojiParser {
    * their unicode.
    */
   public static String parseToUnicode(String input) {
+    return parseToUnicode(input,false);
+  }
+  
+  /**
+   * {@link #parseToUnicode(String)}
+   *
+   * @param input the string to parse
+   * @param shouldIgnoreUrls should emojis inside Urls be ignored
+   *
+   * @return the string with the aliases and html representations replaced by
+   * their unicode. It will ignore emojis inside urls depending on shouldIgnoreUrls flag
+   */
+  public static String parseToUnicode(String input, boolean shouldIgnoreUrls) {
     // Get all the potential aliases
-    List<AliasCandidate> candidates = getAliasCandidates(input);
+    List<AliasCandidate> candidates = getAliasCandidates(input, shouldIgnoreUrls);
 
     // Replace the aliases by their unicode
     String result = input;
@@ -132,8 +144,8 @@ public class EmojiParser {
           if (candidate.fitzpatrick != null) {
             replacement += candidate.fitzpatrick.unicode;
           }
-          result = result.replace(
-            ":" + candidate.fullString + ":",
+          result = result.replaceFirst(
+            Pattern.quote(":" + candidate.fullString + ":"),
             replacement
           );
         }
@@ -148,14 +160,22 @@ public class EmojiParser {
 
     return result;
   }
-
   protected static List<AliasCandidate> getAliasCandidates(String input) {
+    return getAliasCandidates(input,false);
+  }
+  protected static List<AliasCandidate> getAliasCandidates(String input, boolean shouldIgnoreUrls) {
     List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
 
     Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
     matcher = matcher.useTransparentBounds(true);
     while (matcher.find()) {
-      String match = matcher.group();
+      String fullWord = matcher.group();
+      //Do not render emojis inside URLs
+      if (shouldIgnoreUrls && (fullWord.startsWith("http://") || fullWord.startsWith("https://") || fullWord.startsWith(
+          "www."))) {
+        continue;
+      }
+      String match = matcher.group(1);
       if (!match.contains("|")) {
         candidates.add(new AliasCandidate(match, match, null));
       } else {
