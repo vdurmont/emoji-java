@@ -3,6 +3,7 @@ package com.vdurmont.emoji;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -145,10 +146,7 @@ public class EmojiParser {
           if (candidate.fitzpatrick != null) {
             replacement += candidate.fitzpatrick.unicode;
           }
-          result = result.replaceFirst(
-            Pattern.quote(":" + candidate.fullString + ":"),
-            replacement
-          );
+          result = replaceFirstFrom(result, candidate.position, Pattern.quote(":" + candidate.fullString + ":"), replacement);
         }
       }
     }
@@ -165,28 +163,38 @@ public class EmojiParser {
     return getAliasCandidates(input,false);
   }
   protected static List<AliasCandidate> getAliasCandidates(String input, boolean shouldIgnoreUrls) {
-    List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
+    List<String> words = Arrays.asList(input.split("\\s"));
 
-    Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
-    matcher = matcher.useTransparentBounds(true);
-    while (matcher.find()) {
-      String fullWord = matcher.group();
-      //Do not render emojis inside URLs
-      if (shouldIgnoreUrls && URL_PATTERN.matcher(fullWord).matches()) {
-        continue;
-      }
-      String match = matcher.group(1);
-      if (!match.contains("|")) {
-        candidates.add(new AliasCandidate(match, match, null));
-      } else {
-        String[] splitted = match.split("\\|");
-        if (splitted.length == 2 || splitted.length > 2) {
-          candidates.add(new AliasCandidate(match, splitted[0], splitted[1]));
+    List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
+    int position;
+    int nextPosition = 0;
+    for(String word : words) {
+      Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(word);
+      matcher = matcher.useTransparentBounds(true);
+
+      while (matcher.find()) {
+        String fullWord = matcher.group();
+        position = input.indexOf(fullWord, nextPosition);
+        nextPosition = position + fullWord.length();
+        //Do not render emojis inside URLs
+        if (shouldIgnoreUrls && URL_PATTERN.matcher(word).matches()) {
+          continue;
+        }
+        String match = matcher.group(1);
+        if (!match.contains("|")) {
+          candidates.add(new AliasCandidate(match, match, null, position));
         } else {
-          candidates.add(new AliasCandidate(match, match, null));
+          String[] splitted = match.split("\\|");
+          if (splitted.length == 2 || splitted.length > 2) {
+            candidates.add(new AliasCandidate(match, splitted[0], splitted[1], position));
+          } else {
+            candidates.add(new AliasCandidate(match, match, null, position));
+          }
         }
       }
     }
+
+    Collections.reverse(candidates);
     return candidates;
   }
 
@@ -427,6 +435,23 @@ public class EmojiParser {
   }
 
   /**
+   * Replace util with start position
+   *
+   * @param str original string
+   * @param from start positon
+   * @param regex
+   * @param replacement
+   * @return
+   */
+  private static String replaceFirstFrom(String str, int from, String regex, String replacement)
+  {
+    String prefix = str.substring(0, from);
+    String rest = str.substring(from);
+    rest = rest.replaceFirst(regex, replacement);
+    return prefix+rest;
+  }
+
+  /**
    * Finds the next UnicodeCandidate after a given starting index
    *
    * @param chars char array to find UnicodeCandidate in
@@ -537,12 +562,15 @@ public class EmojiParser {
     public final String fullString;
     public final String alias;
     public final Fitzpatrick fitzpatrick;
+    public final int position;
 
     private AliasCandidate(
       String fullString,
       String alias,
-      String fitzpatrickString
+      String fitzpatrickString,
+      int position
     ) {
+      this.position = position;
       this.fullString = fullString;
       this.alias = alias;
       if (fitzpatrickString == null) {
