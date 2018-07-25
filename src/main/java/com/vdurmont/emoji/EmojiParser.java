@@ -399,8 +399,27 @@ public class EmojiParser {
     char[] inputCharArray = input.toCharArray();
     List<UnicodeCandidate> candidates = new ArrayList<UnicodeCandidate>();
     UnicodeCandidate next;
-    for (int i = 0; (next = getNextUnicodeCandidate(inputCharArray, i)) != null; i = next.getFitzpatrickEndIndex()) {
+    for (int i = 0; (next = getNextUnicodeCandidate(inputCharArray, i)) != null;) {
       candidates.add(next);
+      i = next.getFitzpatrickEndIndex();
+
+      // check for a zero-width joiner immediately following the candidate in order to catch Apple's encoding; if found,
+      // try to parse additional emoji chars and fuse it with 'next'
+      if (i < inputCharArray.length && inputCharArray[i] == '\u200d') {
+        UnicodeCandidate addendum = getNextUnicodeCandidate(inputCharArray, i);
+        if (addendum == null || addendum.startIndex != i+1) {
+          continue;
+        }
+
+        Emoji fusedEmoji = EmojiManager.getByUnicode(next.emoji.getUnicode() + '\u200d' + addendum.emoji.getUnicode());
+        if (fusedEmoji == null) {
+          continue;
+        }
+
+        UnicodeCandidate fused = new UnicodeCandidate(fusedEmoji, next.getFitzpatrickUnicode(), next.startIndex);
+        candidates.set(candidates.size() - 1, fused);
+        i = addendum.getFitzpatrickEndIndex();
+      }
     }
 
     return candidates;
