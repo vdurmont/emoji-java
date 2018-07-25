@@ -449,7 +449,7 @@ public class EmojiParserTest {
   public void removeAllEmojis_removes_all_the_emojis_from_the_string() {
     // GIVEN
     String input = "An 😀awesome 😃string 😄with " +
-      "a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
+      "a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!👩‍🚀🏿👩🏿‍🚀";
 
     // WHEN
     String result = EmojiParser.removeAllEmojis(input);
