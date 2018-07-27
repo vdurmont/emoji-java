@@ -67,7 +67,7 @@ public class EmojiManagerTest {
 
     // THEN
     assertEquals(
-      "smiling face with open mouth and smiling eyes",
+      "grinning face with smiling eyes",
       emoji.getDescription()
     );
   }
@@ -82,7 +82,7 @@ public class EmojiManagerTest {
 
     // THEN
     assertEquals(
-      "smiling face with open mouth and smiling eyes",
+      "grinning face with smiling eyes",
       emoji.getDescription()
     );
   }
