@@ -9282,6 +9282,18 @@
     ]
   },
   {
+    "emojiChar": "🇪🇺",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter u",
+    "aliases": [
+      "eu"
+    ],
+    "tags": [
+      "flag",
+      "european union"
+    ]
+  },
+  {
     "emojiChar": "🇩🇪",
     "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
     "description": "regional indicator symbol letter d + regional indicator symbol letter e",

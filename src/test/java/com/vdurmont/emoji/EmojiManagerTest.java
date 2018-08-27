@@ -48,6 +48,20 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void getForTag_returns_the_eu_emoji_for_same_tag() throws IOException {
+    // GIVEN
+
+    // WHEN
+    Set<Emoji> emojis = EmojiManager.getForTag("european union");
+
+    // THEN
+    assertEquals(1, emojis.size());
+    assertTrue(TestTools.containsEmojis(
+            emojis,
+            "eu"));
+  }
+
+  @Test
   public void getForAlias_with_unknown_alias_returns_null() throws IOException {
     // GIVEN
 
@@ -180,7 +194,7 @@ public class EmojiManagerTest {
 
     // THEN
     // We know the number of distinct tags int the...!
-    assertEquals(594, tags.size());
+    assertEquals(595, tags.size());
   }
 
   @Test
