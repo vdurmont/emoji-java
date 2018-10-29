@@ -3376,7 +3376,8 @@
     "emoji": "\uD83C\uDF83",
     "description": "jack-o-lantern",
     "aliases": [
-      "jack_o_lantern"
+      "jack_o_lantern",
+      "pumpkin"
     ],
     "tags": [
       "halloween"
