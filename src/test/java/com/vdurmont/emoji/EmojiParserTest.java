@@ -335,6 +335,19 @@ public class EmojiParserTest {
   }
 
   @Test
+  public void parseToUnicode_with_as_text_set_to_true() {
+    // GIVEN
+    String str = ":boy:";
+
+    // WHEN
+    String result = EmojiParser.parseToUnicode(str, true);
+    String expected = "\uD83D\uDC66\uFE0E";
+
+    // THEN
+    assertEquals(expected, result);
+  }
+
+  @Test
   public void getAliasCanditates_with_one_alias() {
     // GIVEN
     String str = "test :candidate: test";
