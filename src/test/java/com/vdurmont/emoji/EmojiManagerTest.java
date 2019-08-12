@@ -56,9 +56,7 @@ public class EmojiManagerTest {
 
     // THEN
     assertEquals(1, emojis.size());
-    assertTrue(TestTools.containsEmojis(
-            emojis,
-            "eu"));
+    assertTrue(TestTools.containsEmojis(emojis, "eu"));
   }
 
   @Test
@@ -194,7 +192,7 @@ public class EmojiManagerTest {
 
     // THEN
     // We know the number of distinct tags int the...!
-    assertEquals(604, tags.size());
+    assertEquals(605, tags.size());
   }
 
   @Test
