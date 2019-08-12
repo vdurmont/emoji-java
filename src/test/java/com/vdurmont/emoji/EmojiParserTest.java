@@ -548,4 +548,16 @@ public class EmojiParserTest {
     assertEquals("😉", result.get(2));
 
   }
+
+  @Test
+  public void parseToAliases_with_first_medal() {
+    // GIVEN
+    String str = "🥇";
+
+    // WHEN
+    String result = EmojiParser.parseToAliases(str);
+
+    // THEN
+    assertEquals(":first_place_medal:", result);
+  }
 }
