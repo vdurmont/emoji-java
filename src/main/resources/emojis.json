@@ -15413,5 +15413,767 @@
       "billed_hat"
     ],
     "tags": []
+  },
+  {
+    "emojiChar": "🥰",
+    "emoji": "\uD83E\uDD70",
+    "description": "smiling face with hearts",
+    "aliases": [
+      "smiling_face_with_hearts",
+      "in_love_face",
+      "smiling_face_with_smiling_eyes_and_three_hearts"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥵",
+    "emoji": "\uD83E\uDD75",
+    "description": "hot face",
+    "aliases": [
+      "hot_face",
+      "overheated_face"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥶",
+    "emoji": "\uD83E\uDD76",
+    "description": "cold face",
+    "aliases": [
+      "cold_face",
+      "freezing_face"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥴",
+    "emoji": "\uD83E\uDD74",
+    "description": "woozy face",
+    "aliases": [
+      "woozy_face",
+      "drunk_face",
+      "face_with_uneven_eyes_and_wavy_mouth"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥳",
+    "emoji": "\uD83E\uDD73",
+    "description": "partying face",
+    "aliases": [
+      "partying_face",
+      "party_face",
+      "face_with_party_horn_and_party_hat"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥺",
+    "emoji": "\uD83E\uDD7A",
+    "description": "pleading face",
+    "aliases": [
+      "pleading_face",
+      "face_with_pleading_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦵",
+    "emoji": "\uD83E\uDDB5",
+    "description": "leg",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "leg"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦶",
+    "emoji": "\uD83E\uDDB6",
+    "description": "foot",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "foot"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦷",
+    "emoji": "\uD83E\uDDB7",
+    "description": "tooth",
+    "aliases": [
+      "tooth"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦴",
+    "emoji": "\uD83E\uDDB4",
+    "description": "bone",
+    "aliases": [
+      "bone"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👨‍🦰",
+    "emoji": "\uD83D\uDC68\u200D\uD83E\uDDB0",
+    "description": "man: red hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_with_red_hair",
+      "man_redhead",
+      "man_ginger"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👩‍🦰",
+    "emoji": "\uD83D\uDC69\u200D\uD83E\uDDB0",
+    "description": "woman: red hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_with_red_hair",
+      "woman_redhead",
+      "woman_ginger"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👨‍🦱",
+    "emoji": "\uD83D\uDC68\u200D\uD83E\uDDB1",
+    "description": "man: curly hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_with_curly_hair"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👩‍🦱",
+    "emoji": "\uD83D\uDC69\u200D\uD83E\uDDB1",
+    "description": "woman: curly hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_with_curly_hair"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👨‍🦳",
+    "emoji": "\uD83D\uDC68\u200D\uD83E\uDDB3",
+    "description": "man: white hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_with_white_hair",
+      "man_with_gray_hair",
+      "man_with_grey_hair"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👩‍🦳",
+    "emoji": "\uD83D\uDC69\u200D\uD83E\uDDB3",
+    "description": "woman: white hair",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_with_white_hair",
+      "woman_with_gray_hair",
+      "woman_with_grey_hair"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👨‍🦲",
+    "emoji": "\uD83D\uDC68\u200D\uD83E\uDDB2",
+    "description": "man: bald",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_with_no_hair",
+      "bald_man"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "👩‍🦲",
+    "emoji": "\uD83D\uDC69\u200D\uD83E\uDDB2",
+    "description": "woman: bald",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_with_no_hair",
+      "bald_woman"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦸",
+    "emoji": "\uD83E\uDDB8",
+    "description": "superhero",
+    "supports_fitzpatrick": true,
+    "supports_gender": true,
+    "aliases": [
+      "superhero"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦸‍♂️",
+    "emoji": "\uD83E\uDDB8\u200D\u2642\uFE0F",
+    "description": "man superhero",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_superhero"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦸‍♀️",
+    "emoji": "\uD83E\uDDB8\u200D\u2640\uFE0F",
+    "description": "woman superhero",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_superhero"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦹",
+    "emoji": "\uD83E\uDDB9",
+    "description": "supervillain",
+    "supports_fitzpatrick": true,
+    "supports_gender": true,
+    "aliases": [
+      "supervillain"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦹‍♂️",
+    "emoji": "\uD83E\uDDB9\u200D\u2642\uFE0F",
+    "description": "man_supervillain",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "man_supervillain"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦹‍♀️",
+    "emoji": "\uD83E\uDDB9\u200D\u2640\uFE0F",
+    "description": "woman_supervillain",
+    "supports_fitzpatrick": true,
+    "aliases": [
+      "woman_supervillain"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦝",
+    "emoji": "\uD83E\uDD9D",
+    "description": "raccoon",
+    "aliases": [
+      "raccoon"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦙",
+    "emoji": "\uD83E\uDD99",
+    "description": "llama",
+    "aliases": [
+      "llama",
+      "alpaca"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦛",
+    "emoji": "\uD83E\uDD9B",
+    "description": "hippopotamus",
+    "aliases": [
+      "hippo",
+      "hippopotamus"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦘",
+    "emoji": "\uD83E\uDD98",
+    "description": "kangaroo",
+    "aliases": [
+      "roo",
+      "kangaroo"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦡",
+    "emoji": "\uD83E\uDDA1",
+    "description": "badger",
+    "aliases": [
+      "badger"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦢",
+    "emoji": "\uD83E\uDDA2",
+    "description": "swan",
+    "aliases": [
+      "swan"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦚",
+    "emoji": "\uD83E\uDD9A",
+    "description": "peacock",
+    "aliases": [
+      "peacock"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦜",
+    "emoji": "\uD83E\uDD9C",
+    "description": "parrot",
+    "aliases": [
+      "parrot"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦟",
+    "emoji": "\uD83E\uDD9F",
+    "description": "mosquito",
+    "aliases": [
+      "mosquito"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦠",
+    "emoji": "\uD83E\uDDA0",
+    "description": "microbe",
+    "aliases": [
+      "microbe"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥭",
+    "emoji": "\uD83E\uDD6D",
+    "description": "mango",
+    "aliases": [
+      "mango"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥬",
+    "emoji": "\uD83E\uDD6C",
+    "description": "leafy green",
+    "aliases": [
+      "leafy_green",
+      "bok_choy",
+      "chinese_cabbage",
+      "cos_lettuce",
+      "romaine_lettuce",
+      "leafy_greens"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥯",
+    "emoji": "\uD83E\uDD6F",
+    "description": "bagel",
+    "aliases": [
+      "bagel"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧂",
+    "emoji": "\uD83E\uDDC2",
+    "description": "salt shaker",
+    "aliases": [
+      "salt_shaker",
+      "salt"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥮",
+    "emoji": "\uD83E\uDD6E",
+    "description": "moon cake",
+    "aliases": [
+      "moon_cake",
+      "mooncake"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🦞",
+    "emoji": "\uD83E\uDD9E",
+    "description": "lobster",
+    "aliases": [
+      "lobster"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧁",
+    "emoji": "\uD83E\uDDC1",
+    "description": "cupcake",
+    "aliases": [
+      "cupcake",
+      "fairy_cake"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧭",
+    "emoji": "\uD83E\uDDED",
+    "description": "compass",
+    "aliases": [
+      "compass"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧱",
+    "emoji": "\uD83E\uDDF1",
+    "description": "brick",
+    "aliases": [
+      "brick",
+      "bricks"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🛹",
+    "emoji": "\uD83D\uDEF9",
+    "description": "skateboard",
+    "aliases": [
+      "skateboard"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧳",
+    "emoji": "\uD83E\uDDF3",
+    "description": "luggage",
+    "aliases": [
+      "lugagge",
+      "suitcase"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧨",
+    "emoji": "\uD83E\uDDE8",
+    "description": "firecracker",
+    "aliases": [
+      "firecracker",
+      "dynamite"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧧",
+    "emoji": "\uD83E\uDDE7",
+    "description": "red gift envelope",
+    "aliases": [
+      "red_envelope",
+      "red_gift_envelope",
+      "ang_pao",
+      "hongbao",
+      "lai_see",
+      "red_packet"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥎",
+    "emoji": "\uD83E\uDD4E",
+    "description": "softball",
+    "aliases": [
+      "softball"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥏",
+    "emoji": "\uD83E\uDD4F",
+    "description": "flying disc",
+    "aliases": [
+      "flying_disc"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥍",
+    "emoji": "\uD83E\uDD4D",
+    "description": "lacrosse stick and ball",
+    "aliases": [
+      "lacrosse",
+      "lacrosse_stick_and_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧿",
+    "emoji": "\uD83E\uDDFF",
+    "description": "nazar amulet",
+    "aliases": [
+      "nazar_amulet",
+      "evil_eye_talisman",
+      "nazar_boncugu"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧩",
+    "emoji": "\uD83E\uDDE9",
+    "description": "jigsaw puzzle piece",
+    "aliases": [
+      "jigsaw",
+      "puzzle_piece",
+      "jigsaw_puzzle_piece"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧸",
+    "emoji": "\uD83E\uDDF8",
+    "description": "teddy bear",
+    "aliases": [
+      "teddy_bear"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "♟️",
+    "emoji": "\u265F\uFE0F",
+    "description": "black chess pawn",
+    "aliases": [
+      "black_chess_pawn",
+      "chess_pawn"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧵",
+    "emoji": "\uD83E\uDDF5",
+    "description": "spool of thread",
+    "aliases": [
+      "spool_of_thread",
+      "thread"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧶",
+    "emoji": "\uD83E\uDDF6",
+    "description": "ball of yarn",
+    "aliases": [
+      "ball_of_yarn",
+      "yarn"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥽",
+    "emoji": "\uD83E\uDD7D",
+    "description": "goggles",
+    "aliases": [
+      "goggles"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥼",
+    "emoji": "\uD83E\uDD7C",
+    "description": "lab coat",
+    "aliases": [
+      "lab_coat"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥾",
+    "emoji": "\uD83E\uDD7E",
+    "description": "hiking boot",
+    "aliases": [
+      "hiking_boot"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🥿",
+    "emoji": "\uD83E\uDD7F",
+    "description": "flat shoe",
+    "aliases": [
+      "flat_shoe"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧮",
+    "emoji": "\uD83E\uDDEE",
+    "description": "abacus",
+    "aliases": [
+      "abacus"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧾",
+    "emoji": "\uD83E\uDDFE",
+    "description": "receipt",
+    "aliases": [
+      "receipt"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧰",
+    "emoji": "\uD83E\uDDF0",
+    "description": "toolbox",
+    "aliases": [
+      "toolbox"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧲",
+    "emoji": "\uD83E\uDDF2",
+    "description": "magnet",
+    "aliases": [
+      "magnet"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧪",
+    "emoji": "\uD83E\uDDEA",
+    "description": "test tube",
+    "aliases": [
+      "test_tube"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧫",
+    "emoji": "\uD83E\uDDEB",
+    "description": "petri dish",
+    "aliases": [
+      "petri_dish"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧬",
+    "emoji": "\uD83E\uDDEC",
+    "description": "dna",
+    "aliases": [
+      "dna",
+      "dna_double_helix"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧴",
+    "emoji": "\uD83E\uDDF4",
+    "description": "lotion bottle",
+    "aliases": [
+      "lotion_bottle"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧷",
+    "emoji": "\uD83E\uDDF7",
+    "description": "safety pin",
+    "aliases": [
+      "safety_pin"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧹",
+    "emoji": "\uD83E\uDDF9",
+    "description": "broom",
+    "aliases": [
+      "broom"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧺",
+    "emoji": "\uD83E\uDDFA",
+    "description": "basket",
+    "aliases": [
+      "basket"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧻",
+    "emoji": "\uD83E\uDDFB",
+    "description": "roll of paper",
+    "aliases": [
+      "roll_of_paper",
+      "toilet_paper"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧼",
+    "emoji": "\uD83E\uDDFC",
+    "description": "bar of soap",
+    "aliases": [
+      "bar_of_soap",
+      "soap"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧽",
+    "emoji": "\uD83E\uDDFD",
+    "description": "sponge",
+    "aliases": [
+      "sponge"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🧯",
+    "emoji": "\uD83E\uDDEF",
+    "description": "fire extinguisher",
+    "aliases": [
+      "fire_extinguisher"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "♾️",
+    "emoji": "\u267E\uFE0F",
+    "description": "infinity",
+    "aliases": [
+      "infinity",
+      "permanent_paper_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "♾🏴‍☠️",
+    "emoji": "\u267E\uD83C\uDFF4\u200D\u2620\uFE0F",
+    "description": "pirate flag",
+    "aliases": [
+      "pirate_flag",
+      "jolly_roger"
+    ],
+    "tags": []
   }
 ]

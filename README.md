@@ -946,3 +946,42 @@ Here is a table of the available emojis and their aliases.
 | 🥌 | curling_stone | 🧣 | scarf |
 | 🧤 | gloves | 🧥 | coat |
 | 🧦 | socks | 🧢 | billed_cap, baseball_cap, billed_hat |
+| 🥰 | smiling_face_with_hearts, in_love_face, smiling_face_with_smiling_eyes_and_three_hearts | 🥵 | hot_face, overheated_face |
+| 🥶 | cold_face, freezing_face | 🥴 | woozy_face, drunk_face, face_with_uneven_eyes_and_wavy_mouth |
+| 🥳 | partying_face, party_face, face_with_party_horn_and_party_hat | 🥺 | pleading_face, face_with_pleading_eyes |
+| 🦵 | leg | 🦶 | foot |
+| 🦷 | tooth | 🦴 | bone |
+| 👨‍🦰 | man_with_red_hair, man_redhead, man_ginger | 👩‍🦰 | woman_with_red_hair, woman_redhead, woman_ginger |
+| 👨‍🦱 | man_with_curly_hair | 👩‍🦱 | woman_with_curly_hair |
+| 👨‍🦳 | man_with_white_hair, man_with_gray_hair, man_with_grey_hair | 👩‍🦳 | woman_with_white_hair, woman_with_gray_hair, woman_with_grey_hair |
+| 👨‍🦲 | man_with_no_hair, bald_man | 👩‍🦲 | woman_with_no_hair, bald_woman |
+| 🦸 | superhero | 🦸‍♂️ | man_superhero |
+| 🦸‍♀️ | woman_superhero | 🦹 | supervillain |
+| 🦹‍♂️ | man_supervillain | 🦹‍♀️ | woman_supervillain |
+| 🦝 | raccoon | 🦙 | llama, alpaca |
+| 🦛 | hippo, hippopotamus | 🦘 | roo, kangaroo |
+| 🦡 | badger | 🦢 | swan |
+| 🦚 | peacock | 🦜 | parrot |
+| 🦟 | mosquito | 🦠 | microbe |
+| 🥭 | mango | 🥬 | leafy_green, bok_choy, chinese_cabbage, cos_lettuce, romaine_lettuce, leafy_greens |
+| 🥯 | bagel | 🧂 | salt_shaker, salt |
+| 🥮 | moon_cake, mooncake | 🦞 | lobster |
+| 🧁 | cupcake, fairy_cake | 🧭 | compass |
+| 🧱 | brick, bricks | 🛹 | skateboard |
+| 🧳 | lugagge, suitcase | 🧨 | firecracker, dynamite |
+| 🧧 | red_envelope, red_gift_envelope, ang_pao, hongbao, lai_see, red_packet | 🥎 | softball |
+| 🥏 | flying_disc | 🥍 | lacrosse, lacrosse_stick_and_ball |
+| 🧿 | nazar_amulet, evil_eye_talisman, nazar_boncugu | 🧩 | jigsaw, puzzle_piece, jigsaw_puzzle_piece |
+| 🧸 | teddy_bear | ♟️ | black_chess_pawn, chess_pawn |
+| 🧵 | spool_of_thread, thread | 🧶 | ball_of_yarn, yarn |
+| 🥽 | goggles | 🥼 | lab_coat |
+| 🥾 | hiking_boot | 🥿 | flat_shoe |
+| 🧮 | abacus | 🧾 | receipt |
+| 🧰 | toolbox | 🧲 | magnet |
+| 🧪 | test_tube | 🧫 | petri_dish |
+| 🧬 | dna, dna_double_helix | 🧴 | lotion_bottle |
+| 🧷 | safety_pin | 🧹 | broom |
+| 🧺 | basket | 🧻 | roll_of_paper, toilet_paper |
+| 🧼 | bar_of_soap, soap | 🧽 | sponge |
+| 🧯 | fire_extinguisher | ♾️ | infinity, permanent_paper_sign |
+| ♾🏴‍☠️ | pirate_flag, jolly_roger |
