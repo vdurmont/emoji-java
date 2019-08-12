@@ -753,9 +753,9 @@ Here is a table of the available emojis and their aliases.
 | 👩‍👩‍👦‍👦 | family_woman_woman_boy_boy | 👩‍👩‍👧‍👧 | family_woman_woman_girl_girl |
 | 👨‍👨‍👦 | family_man_man_boy | 👨‍👨‍👧 | family_man_man_girl |
 | 👨‍👨‍👧‍👦 | family_man_man_girl_boy | 👨‍👨‍👦‍👦 | family_man_man_boy_boy |
-| 👨‍👨‍👧‍👧 | family_man_man_girl_girl | 👩‍❤‍👩 | couple_with_heart_woman_woman |
-| 👨‍❤‍👨 | couple_with_heart_man_man | 👩‍❤️‍💋‍👩 | couplekiss_woman_woman |
-| ‍👨❤️💋‍👨 | couplekiss_man_man | 🖖 | vulcan_salute |
+| 👨‍👨‍👧‍👧 | family_man_man_girl_girl | 👩‍❤️‍👩 | couple_with_heart_woman_woman |
+| 👨‍❤️‍👨 | couple_with_heart_man_man | 👩‍❤️‍💋‍👩 | couplekiss_woman_woman |
+| 👨‍❤️‍💋‍👨 | couplekiss_man_man | 🖖 | vulcan_salute |
 | 🖕 | middle_finger | 🙂 | slightly_smiling, slight_smile |
 | 🤗 | hugging, hug, hugs | 🤔 | thinking, think, thinker |
 | 🙄 | eye_roll, rolling_eyes | 🤐 | zipper_mouth, zip_it, sealed_lips, lips_sealed |
@@ -809,12 +809,12 @@ Here is a table of the available emojis and their aliases.
 | 🕎 | menorah, candelabrum, chanukiah | 🎖 | military_medal, military_decoration |
 | 🎗 | reminder_ribbon, awareness_ribbon | 🎞 | film_frames |
 | 🎟 | admission_ticket | 🏷 | label |
-| 🏌 | golfer, golf_club | 🏌♂️ | man_golfer, male_golfer, man_golfing, male_golfing |
-| 🏌‍♀️ | woman_golfer, female_golfer, woman_golfing, female_golfing | ⛸ | ice_skate, ice_skating |
+| 🏌 | golfer, golf_club | 🏌️‍♂️ | man_golfer, male_golfer, man_golfing, male_golfing |
+| 🏌️‍♀️ | woman_golfer, female_golfer, woman_golfing, female_golfing | ⛸ | ice_skate, ice_skating |
 | ⛷ | skier | ⛹ | person_with_ball |
 | 🏋 | weight_lifter | 🏎 | racing_car, formula_one, f1 |
 | 🏍 | racing_motorcycle, motorcycle, motorbike | 🏅 | sports_medal, sports_decoration |
-| 🏏 | cricket | 🏐 | volleyball |
+| 🏏 | cricket_bat_and_ball, cricket_game | 🏐 | volleyball |
 | 🏑 | field_hockey | 🏒 | ice_hockey |
 | 🏓 | table_tennis, ping_pong | 🏸 | badminton |
 | 🕹 | joystick | ⏭ | black_right_pointing_double_triangle_with_vertical_bar |
@@ -906,5 +906,43 @@ Here is a table of the available emojis and their aliases.
 | 👨‍🚀 | male_astronaut, man_astronaut | 👩‍🚀 | female_astronaut, woman_astronaut |
 | 👨‍🚒 | male_firefighter, man_firefighter | 👩‍🚒 | female_firefighter, woman_firefighter |
 | 🤦‍♀️ | female_facepalm, woman_facepalm | 🤷‍♂️ | male_shrug, man_shrug |
-| 🤷‍♀️ | female_shrug, woman_shrug | ⚕️ | medical_symbol, staff_of_aesculapius |
+| 🤷‍♀️ | female_shrug, woman_shrug | ⚕ | medical_symbol, staff_of_aesculapius |
 | 👨‍⚖️ | man_judge, male_judge | 👩‍⚖️ | woman_judge, female_judge |
+| 🤩 | star_struck, excited, star_eyes, starry_eyed, wow_face, face_with_starry_eyes, grinning_face_with_star_eyes | 🤪 | zany_face, crazy_eyes, wild, goofy_face, grinning_face_with_one_large_and_one_small_eye |
+| 🤭 | face_with_hand_over_mouth, blushing_face_with_hand_over_mouth, smiling_face_with_smiling_eyes_and_hand_covering_mouth | 🤫 | shushing_face, hush, quiet, shh, face_with_finger_covering_closed_lips |
+| 🤨 | face_with_raised_eyebrow, colbert, the_rock, face_with_one_eyebrow_raised | 🤮 | face_vomiting, spew, throwing_up, vomit, vomiting_face, face_with_open_mouth_vomiting |
+| 🤯 | exploding_head, mind_blown, shocked_face_with_exploding_head | 🧐 | face_with_monocle |
+| 🤬 | face_with_symbols_on_mouth, cursing, cussing, grawlix, swearing, face_with_symbols_over_mouth, serious_face_with_symbols_covering_mouth | 🧡 | orange_heart |
+| 🤟 | love_you_gesture, i_love_you_hand_sign | 🤲 | palms_up_together, dua, palms_together_facing_up |
+| 🧠 | brain | 🧒 | child, gender_neutral_child |
+| 🧑 | person, gender_neutral_adult, gender_neutral_person | 🧔 | beard, bearded_man, bearded_person, man_with_beard, person_with_beard |
+| 🧓 | older_person, gender_neutral_older_person, older_adult, gender_neutral_older_adult | 🧕 | person_with_headscarf, woman_with_headscarf, hijab |
+| 🤱 | breastfeeding | 🧙 | mage, gender_neutral_mage |
+| 🧙‍♂️ | man_mage, wizard, sorcerer | 🧙‍♀️ | woman_mage, witch, sorceress |
+| 🧚 | fairy, gender_neutral_fairy | 🧚‍♂️ | man_fairy |
+| 🧚‍♀️ | woman_fairy | 🧛 | vampire, gender_neutral_vampire |
+| 🧛‍♂️ | man_vampire, dracula | 🧛‍♀️ | woman_vampire |
+| 🧜 | merperson, gender_neutral_merperson | 🧜‍♂️ | merman, merboy, man_merperson |
+| 🧜‍♀️ | mermaid, mergirl, woman_merperson | 🧝 | elf, gender_neutral_elf |
+| 🧝‍♂️ | man_elf, legolas | 🧝‍♀️ | woman_elf |
+| 🧞 | genie, gender_neutral_genie, djinni, jinni | 🧞‍♂️ | man_genie |
+| 🧞‍♀️ | woman_genie | 🧟 | zombie, gender_neutral_zombie |
+| 🧟‍♂️ | man_zombie | 🧟‍♀️ | woman_zombie |
+| 🧖 | person_in_steamy_room, sauna | 🧖‍♂️ | man_in_steamy_room, man_in_sauna |
+| 🧖‍♀️ | woman_in_steamy_room, woman_in_sauna | 🧗 | person_climbing, climber, rock_climbing |
+| 🧗‍♂️ | man_climbing, man_climber, man_rock_climbing | 🧗‍♀️ | woman_climbing, woman_climber, woman_rock_climbing |
+| 🧘 | person_in_lotus_position, yoga, meditation | 🧘‍♂️ | man_in_lotus_position, man_yoga, man_meditation |
+| 🧘‍♀️ | woman_in_lotus_position, woman_yoga, woman_meditation | 🦓 | zebra_face, zebra |
+| 🦒 | giraffe_face, giraffe | 🦔 | hedgehog |
+| 🦕 | sauropod, brontosaurus, diplodocus, dinosaur | 🦖 | trex, t_rex, tyrannosaurus_rex |
+| 🦗 | cricket | 🥥 | coconut, cocoanut |
+| 🥦 | broccoli | 🥨 | pretzel |
+| 🥩 | cut_of_meat, meat, steak | 🥪 | sandwich |
+| 🥣 | bowl_with_spoon, cereal_bowl | 🥫 | canned_food, tin_can, can_of_food, tinned_food |
+| 🥟 | dumpling, jiaozi, gyoza, pierogi, empanada, xiaolongbao | 🥠 | fortune_cookie |
+| 🥡 | takeout_box, chinese_food_box, oyster_pail | 🥧 | pie |
+| 🥤 | cup_with_straw, milkshake, smoothie, soda_pop, soft_drink, to_go_cup | 🥢 | chopsticks |
+| 🛸 | flying_saucer, ufo, unidentified_flying_object | 🛷 | sled |
+| 🥌 | curling_stone | 🧣 | scarf |
+| 🧤 | gloves | 🧥 | coat |
+| 🧦 | socks | 🧢 | billed_cap, baseball_cap, billed_hat |
