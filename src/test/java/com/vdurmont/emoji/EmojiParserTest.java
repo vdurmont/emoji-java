@@ -312,6 +312,22 @@ public class EmojiParserTest {
   }
 
   @Test
+  public void parseToUnicode_with_link_replaces_the_alias_by_the_emoji() {
+    // GIVEN
+    String str = ":smiley: The link is https://www.aaa.com/link_with_emoji_alias_:smiley:__:smiley: hello :smiley:.";
+
+    // WHEN
+    String result = EmojiParser.parseToUnicode(str, true);
+
+    // THEN
+    assertEquals(
+        "😃 The link is https://www.aaa.com/link_with_emoji_alias_:smiley:__:smiley: hello 😃.",
+        result
+    );
+
+  }
+
+  @Test
   public void parseToUnicode_with_a_fitzpatrick_modifier() {
     // GIVEN
     String str = ":boy|type_6:";
@@ -400,9 +416,9 @@ public class EmojiParserTest {
 
     // THEN
     assertEquals(2, candidates.size());
-    assertEquals("candi", candidates.get(0).alias);
+    assertEquals("candi", candidates.get(1).alias);
     assertNull(candidates.get(0).fitzpatrick);
-    assertEquals("candidate", candidates.get(1).alias);
+    assertEquals("candidate", candidates.get(0).alias);
     assertNull(candidates.get(1).fitzpatrick);
   }
 
@@ -416,9 +432,9 @@ public class EmojiParserTest {
 
     // THEN
     assertEquals(2, candidates.size());
-    assertEquals("candi", candidates.get(0).alias);
+    assertEquals("candi", candidates.get(1).alias);
     assertNull(candidates.get(0).fitzpatrick);
-    assertEquals("candidate", candidates.get(1).alias);
+    assertEquals("candidate", candidates.get(0).alias);
     assertNull(candidates.get(1).fitzpatrick);
   }
 

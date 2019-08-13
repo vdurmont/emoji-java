@@ -3,6 +3,7 @@ package com.vdurmont.emoji;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,7 +15,8 @@ import java.util.regex.Pattern;
  */
 public class EmojiParser {
   private static final Pattern ALIAS_CANDIDATE_PATTERN =
-    Pattern.compile("(?<=:)\\+?(\\w|\\||\\-)+(?=:)");
+    Pattern.compile("\\S*?((?<=:)\\+?(\\w|\\||\\-)+(?=:))\\w*");
+  private static final Pattern URL_PATTERN = Pattern.compile("(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]\\.[^\\s]{2,})");
 
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
@@ -101,7 +103,6 @@ public class EmojiParser {
     return parseFromUnicode(str, emojiTransformer);
   }
 
-
   /**
    * Replaces the emoji's aliases (between 2 ':') occurrences and the html
    * representations by their unicode.<br>
@@ -116,8 +117,21 @@ public class EmojiParser {
    * their unicode.
    */
   public static String parseToUnicode(String input) {
+    return parseToUnicode(input,false);
+  }
+
+  /**
+   * {@link #parseToUnicode(String)}
+   *
+   * @param input the string to parse
+   * @param shouldIgnoreUrls should emojis inside Urls be ignored
+   *
+   * @return the string with the aliases and html representations replaced by
+   * their unicode. It will ignore emojis inside urls depending on shouldIgnoreUrls flag
+   */
+  public static String parseToUnicode(String input, boolean shouldIgnoreUrls) {
     // Get all the potential aliases
-    List<AliasCandidate> candidates = getAliasCandidates(input);
+    List<AliasCandidate> candidates = getAliasCandidates(input, shouldIgnoreUrls);
 
     // Replace the aliases by their unicode
     String result = input;
@@ -132,10 +146,7 @@ public class EmojiParser {
           if (candidate.fitzpatrick != null) {
             replacement += candidate.fitzpatrick.unicode;
           }
-          result = result.replace(
-            ":" + candidate.fullString + ":",
-            replacement
-          );
+          result = replaceFirstFrom(result, candidate.position, Pattern.quote(":" + candidate.fullString + ":"), replacement);
         }
       }
     }
@@ -148,25 +159,42 @@ public class EmojiParser {
 
     return result;
   }
-
   protected static List<AliasCandidate> getAliasCandidates(String input) {
-    List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
+    return getAliasCandidates(input,false);
+  }
+  protected static List<AliasCandidate> getAliasCandidates(String input, boolean shouldIgnoreUrls) {
+    List<String> words = Arrays.asList(input.split("\\s"));
 
-    Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(input);
-    matcher = matcher.useTransparentBounds(true);
-    while (matcher.find()) {
-      String match = matcher.group();
-      if (!match.contains("|")) {
-        candidates.add(new AliasCandidate(match, match, null));
-      } else {
-        String[] splitted = match.split("\\|");
-        if (splitted.length == 2 || splitted.length > 2) {
-          candidates.add(new AliasCandidate(match, splitted[0], splitted[1]));
+    List<AliasCandidate> candidates = new ArrayList<AliasCandidate>();
+    int position;
+    int nextPosition = 0;
+    for(String word : words) {
+      Matcher matcher = ALIAS_CANDIDATE_PATTERN.matcher(word);
+      matcher = matcher.useTransparentBounds(true);
+
+      while (matcher.find()) {
+        String fullWord = matcher.group();
+        position = input.indexOf(fullWord, nextPosition);
+        nextPosition = position + fullWord.length();
+        //Do not render emojis inside URLs
+        if (shouldIgnoreUrls && URL_PATTERN.matcher(word).matches()) {
+          continue;
+        }
+        String match = matcher.group(1);
+        if (!match.contains("|")) {
+          candidates.add(new AliasCandidate(match, match, null, position));
         } else {
-          candidates.add(new AliasCandidate(match, match, null));
+          String[] splitted = match.split("\\|");
+          if (splitted.length == 2 || splitted.length > 2) {
+            candidates.add(new AliasCandidate(match, splitted[0], splitted[1], position));
+          } else {
+            candidates.add(new AliasCandidate(match, match, null, position));
+          }
         }
       }
     }
+
+    Collections.reverse(candidates);
     return candidates;
   }
 
@@ -407,6 +435,23 @@ public class EmojiParser {
   }
 
   /**
+   * Replace util with start position
+   *
+   * @param str original string
+   * @param from start positon
+   * @param regex
+   * @param replacement
+   * @return
+   */
+  private static String replaceFirstFrom(String str, int from, String regex, String replacement)
+  {
+    String prefix = str.substring(0, from);
+    String rest = str.substring(from);
+    rest = rest.replaceFirst(regex, replacement);
+    return prefix+rest;
+  }
+
+  /**
    * Finds the next UnicodeCandidate after a given starting index
    *
    * @param chars char array to find UnicodeCandidate in
@@ -517,12 +562,15 @@ public class EmojiParser {
     public final String fullString;
     public final String alias;
     public final Fitzpatrick fitzpatrick;
+    public final int position;
 
     private AliasCandidate(
       String fullString,
       String alias,
-      String fitzpatrickString
+      String fitzpatrickString,
+      int position
     ) {
+      this.position = position;
       this.fullString = fullString;
       this.alias = alias;
       if (fitzpatrickString == null) {
