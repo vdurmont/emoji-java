@@ -5,16 +5,16 @@
 
 const fs = require('fs');
 const path = './src/main/resources/emojis.json';
-const path2 = './src/main/resources/emojis2.json';
 const f = fs.readFileSync(path, 'utf8');
 const json = JSON.parse(f);
 
 const newJson = json.reduce((acc, e) => {
   acc.push({
-    emojiChar: e.emoji,
-    emoji: convertCharStr2jEsc(e.emoji, ''),
+    emojiChar: e.emojiChar,
+    emoji: convertCharStr2jEsc(e.emojiChar, ''),
     description: e.description,
     supports_fitzpatrick: e.supports_fitzpatrick || undefined,
+    supports_gender: e.supports_gender || undefined,
     aliases: e.aliases,
     tags: e.tags,
   });
@@ -22,7 +22,7 @@ const newJson = json.reduce((acc, e) => {
 }, []);
 
 const newFile = JSON.stringify(newJson, (key, value) => value, 2);
-fs.writeFileSync(path2, newFile);
+fs.writeFileSync(path, newFile);
 
 
 
