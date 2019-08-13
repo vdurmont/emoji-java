@@ -1,5 +1,3162 @@
 [
   {
+    "emojiChar": "🇦🇨",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDE8",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter c",
+    "aliases": [
+      "ac"
+    ],
+    "tags": [
+      "flag",
+      "ascension island"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇩",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDE9",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter d",
+    "aliases": [
+      "ad"
+    ],
+    "tags": [
+      "flag",
+      "andorra"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇪",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDEA",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter e",
+    "aliases": [
+      "ae"
+    ],
+    "tags": [
+      "flag",
+      "united arab emirates"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇫",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDEB",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter f",
+    "aliases": [
+      "af"
+    ],
+    "tags": [
+      "flag",
+      "afghanistan"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇬",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDEC",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter g",
+    "aliases": [
+      "ag"
+    ],
+    "tags": [
+      "flag",
+      "antigua and barbuda"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇮",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDEE",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter i",
+    "aliases": [
+      "ai"
+    ],
+    "tags": [
+      "flag",
+      "anguilla"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇱",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF1",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter l",
+    "aliases": [
+      "al"
+    ],
+    "tags": [
+      "flag",
+      "albania"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇲",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF2",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter m",
+    "aliases": [
+      "am"
+    ],
+    "tags": [
+      "flag",
+      "armenia"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇴",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF4",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter o",
+    "aliases": [
+      "ao"
+    ],
+    "tags": [
+      "flag",
+      "angola"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇶",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF6",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter q",
+    "aliases": [
+      "aq"
+    ],
+    "tags": [
+      "flag",
+      "antarctica"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇷",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF7",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter r",
+    "aliases": [
+      "ar"
+    ],
+    "tags": [
+      "flag",
+      "argentina"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇸",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF8",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter s",
+    "aliases": [
+      "as"
+    ],
+    "tags": [
+      "flag",
+      "american samoa"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇹",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDF9",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter t",
+    "aliases": [
+      "at"
+    ],
+    "tags": [
+      "flag",
+      "austria"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇺",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDFA",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter u",
+    "aliases": [
+      "au"
+    ],
+    "tags": [
+      "flag",
+      "australia"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇼",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDFC",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter w",
+    "aliases": [
+      "aw"
+    ],
+    "tags": [
+      "flag",
+      "aruba"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇽",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDFD",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter x",
+    "aliases": [
+      "ax"
+    ],
+    "tags": [
+      "flag",
+      "aland islands"
+    ]
+  },
+  {
+    "emojiChar": "🇦🇿",
+    "emoji": "\uD83C\uDDE6\uD83C\uDDFF",
+    "description": "regional indicator symbol letter a + regional indicator symbol letter z",
+    "aliases": [
+      "az"
+    ],
+    "tags": [
+      "flag",
+      "azerbaijan"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇦",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDE6",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter a",
+    "aliases": [
+      "ba"
+    ],
+    "tags": [
+      "flag",
+      "bosnia and herzegovina"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇧",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDE7",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter b",
+    "aliases": [
+      "bb"
+    ],
+    "tags": [
+      "flag",
+      "barbados"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇩",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDE9",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter d",
+    "aliases": [
+      "bd"
+    ],
+    "tags": [
+      "flag",
+      "bangladesh"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇪",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDEA",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter e",
+    "aliases": [
+      "be"
+    ],
+    "tags": [
+      "flag",
+      "belgium"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇫",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDEB",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter f",
+    "aliases": [
+      "bf"
+    ],
+    "tags": [
+      "flag",
+      "burkina faso"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇬",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDEC",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter g",
+    "aliases": [
+      "bg"
+    ],
+    "tags": [
+      "flag",
+      "bulgaria"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇭",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDED",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter h",
+    "aliases": [
+      "bh"
+    ],
+    "tags": [
+      "flag",
+      "bahrain"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇮",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDEE",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter i",
+    "aliases": [
+      "bi"
+    ],
+    "tags": [
+      "flag",
+      "burundi"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇯",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDEF",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter j",
+    "aliases": [
+      "bj"
+    ],
+    "tags": [
+      "flag",
+      "benin"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇱",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF1",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter l",
+    "aliases": [
+      "bl"
+    ],
+    "tags": [
+      "flag",
+      "st. barthelemy"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇲",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF2",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter m",
+    "aliases": [
+      "bm"
+    ],
+    "tags": [
+      "flag",
+      "bermuda"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇳",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF3",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter n",
+    "aliases": [
+      "bn"
+    ],
+    "tags": [
+      "flag",
+      "brunei darussalam"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇴",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF4",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter o",
+    "aliases": [
+      "bo"
+    ],
+    "tags": [
+      "flag",
+      "bolivia"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇶",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF6",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter q",
+    "aliases": [
+      "bq"
+    ],
+    "tags": [
+      "flag",
+      "caribbean netherlands",
+      "bonaire"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇷",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF7",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter r",
+    "aliases": [
+      "br"
+    ],
+    "tags": [
+      "flag",
+      "brazil"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇸",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF8",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter s",
+    "aliases": [
+      "bs"
+    ],
+    "tags": [
+      "flag",
+      "bahamas"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇹",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDF9",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter t",
+    "aliases": [
+      "bt"
+    ],
+    "tags": [
+      "flag",
+      "bhutan"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇻",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDFB",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter v",
+    "aliases": [
+      "bv"
+    ],
+    "tags": [
+      "flag",
+      "bouvet island"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇼",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDFC",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter w",
+    "aliases": [
+      "bw"
+    ],
+    "tags": [
+      "flag",
+      "botswana"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇾",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDFE",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter y",
+    "aliases": [
+      "by"
+    ],
+    "tags": [
+      "flag",
+      "belarus"
+    ]
+  },
+  {
+    "emojiChar": "🇧🇿",
+    "emoji": "\uD83C\uDDE7\uD83C\uDDFF",
+    "description": "regional indicator symbol letter b + regional indicator symbol letter z",
+    "aliases": [
+      "bz"
+    ],
+    "tags": [
+      "flag",
+      "belize"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇦",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDE6",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter a",
+    "aliases": [
+      "ca"
+    ],
+    "tags": [
+      "flag",
+      "canada"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇨",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDE8",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter c",
+    "aliases": [
+      "cc"
+    ],
+    "tags": [
+      "flag",
+      "cocos (keeling) islands"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇩",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDE9",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter d",
+    "aliases": [
+      "cd_flag"
+    ],
+    "tags": [
+      "flag",
+      "democratic republic of the congo"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇫",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDEB",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter f",
+    "aliases": [
+      "cf"
+    ],
+    "tags": [
+      "flag",
+      "central african republic"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇬",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDEC",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter g",
+    "aliases": [
+      "cg"
+    ],
+    "tags": [
+      "flag",
+      "republic of the congo"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇭",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDED",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter h",
+    "aliases": [
+      "ch"
+    ],
+    "tags": [
+      "flag",
+      "switzerland"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇮",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDEE",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter i",
+    "aliases": [
+      "ci"
+    ],
+    "tags": [
+      "flag",
+      "ivory coast"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇰",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF0",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter k",
+    "aliases": [
+      "ck"
+    ],
+    "tags": [
+      "flag",
+      "cook islands"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇱",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF1",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter l",
+    "aliases": [
+      "cl_flag"
+    ],
+    "tags": [
+      "flag",
+      "chile"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇲",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF2",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter m",
+    "aliases": [
+      "cm"
+    ],
+    "tags": [
+      "flag",
+      "cameroon"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇳",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF3",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter n",
+    "aliases": [
+      "cn"
+    ],
+    "tags": [
+      "flag",
+      "china"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇴",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF4",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter o",
+    "aliases": [
+      "co"
+    ],
+    "tags": [
+      "flag",
+      "colombia"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇵",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF5",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter p",
+    "aliases": [
+      "cp"
+    ],
+    "tags": [
+      "flag",
+      "clipperton island"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇷",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDF7",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter r",
+    "aliases": [
+      "cr"
+    ],
+    "tags": [
+      "flag",
+      "costa rica"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇺",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFA",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter u",
+    "aliases": [
+      "cu"
+    ],
+    "tags": [
+      "flag",
+      "cuba"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇻",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFB",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter v",
+    "aliases": [
+      "cv"
+    ],
+    "tags": [
+      "flag",
+      "cape verde"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇼",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFC",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter w",
+    "aliases": [
+      "cw"
+    ],
+    "tags": [
+      "flag",
+      "curacao"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇽",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFD",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter x",
+    "aliases": [
+      "cx"
+    ],
+    "tags": [
+      "flag",
+      "christmas island"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇾",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFE",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter y",
+    "aliases": [
+      "cy"
+    ],
+    "tags": [
+      "flag",
+      "cyprus"
+    ]
+  },
+  {
+    "emojiChar": "🇨🇿",
+    "emoji": "\uD83C\uDDE8\uD83C\uDDFF",
+    "description": "regional indicator symbol letter c + regional indicator symbol letter z",
+    "aliases": [
+      "cz"
+    ],
+    "tags": [
+      "flag",
+      "czech republic"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇪",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter e",
+    "aliases": [
+      "de"
+    ],
+    "tags": [
+      "flag",
+      "germany"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇬",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDEC",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter g",
+    "aliases": [
+      "dg"
+    ],
+    "tags": [
+      "flag",
+      "diego garcia"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇯",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDEF",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter j",
+    "aliases": [
+      "dj"
+    ],
+    "tags": [
+      "flag",
+      "djibouti"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇰",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDF0",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter k",
+    "aliases": [
+      "dk"
+    ],
+    "tags": [
+      "flag",
+      "denmark"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇲",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDF2",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter m",
+    "aliases": [
+      "dm"
+    ],
+    "tags": [
+      "flag",
+      "dominica"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇴",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDF4",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter o",
+    "aliases": [
+      "do"
+    ],
+    "tags": [
+      "flag",
+      "dominican republic"
+    ]
+  },
+  {
+    "emojiChar": "🇩🇿",
+    "emoji": "\uD83C\uDDE9\uD83C\uDDFF",
+    "description": "regional indicator symbol letter d + regional indicator symbol letter z",
+    "aliases": [
+      "dz"
+    ],
+    "tags": [
+      "flag",
+      "algeria"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇦",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDE6",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter a",
+    "aliases": [
+      "ea"
+    ],
+    "tags": [
+      "flag",
+      "ceuta & melilla"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇨",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDE8",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter c",
+    "aliases": [
+      "ec"
+    ],
+    "tags": [
+      "flag",
+      "ecuador"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇪",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDEA",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter e",
+    "aliases": [
+      "ee"
+    ],
+    "tags": [
+      "flag",
+      "estonia"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇬",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDEC",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter g",
+    "aliases": [
+      "eg"
+    ],
+    "tags": [
+      "flag",
+      "egypt"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇭",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDED",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter h",
+    "aliases": [
+      "eh"
+    ],
+    "tags": [
+      "flag",
+      "western sahara"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇷",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDF7",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter r",
+    "aliases": [
+      "er"
+    ],
+    "tags": [
+      "flag",
+      "eritrea"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇸",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter s",
+    "aliases": [
+      "es"
+    ],
+    "tags": [
+      "flag",
+      "spain"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇹",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDF9",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter t",
+    "aliases": [
+      "et"
+    ],
+    "tags": [
+      "flag",
+      "ethiopia"
+    ]
+  },
+  {
+    "emojiChar": "🇪🇺",
+    "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
+    "description": "regional indicator symbol letter e + regional indicator symbol letter u",
+    "aliases": [
+      "eu"
+    ],
+    "tags": [
+      "flag",
+      "european union"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇮",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDEE",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter i",
+    "aliases": [
+      "fi"
+    ],
+    "tags": [
+      "flag",
+      "finland"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇯",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDEF",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter j",
+    "aliases": [
+      "fj"
+    ],
+    "tags": [
+      "flag",
+      "fiji"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇰",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDF0",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter k",
+    "aliases": [
+      "fk"
+    ],
+    "tags": [
+      "flag",
+      "falkland islands"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇲",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDF2",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter m",
+    "aliases": [
+      "fm"
+    ],
+    "tags": [
+      "flag",
+      "micronesia"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇴",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDF4",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter o",
+    "aliases": [
+      "fo"
+    ],
+    "tags": [
+      "flag",
+      "faroe islands"
+    ]
+  },
+  {
+    "emojiChar": "🇫🇷",
+    "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+    "description": "regional indicator symbol letter f + regional indicator symbol letter r",
+    "aliases": [
+      "fr"
+    ],
+    "tags": [
+      "flag",
+      "france"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇦",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDE6",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter a",
+    "aliases": [
+      "ga"
+    ],
+    "tags": [
+      "flag",
+      "gabon"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇧",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter b",
+    "aliases": [
+      "gb"
+    ],
+    "tags": [
+      "flag",
+      "united kingdom"
+    ]
+  },
+  {
+    "emojiChar": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "emoji": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F",
+    "description": "waving black flag + regional indicator symbol letter g + regional indicator symbol letter b + regional indicator symbol letter e + regional indicator symbol letter n + regional indicator symbol letter g + cancel tag",
+    "aliases": [
+      "gbeng"
+    ],
+    "tags": [
+      "flag",
+      "england"
+    ]
+  },
+  {
+    "emojiChar": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "emoji": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC73\uDB40\uDC63\uDB40\uDC74\uDB40\uDC7F",
+    "description": "waving black flag + regional indicator symbol letter g + regional indicator symbol letter b + regional indicator symbol letter s + regional indicator symbol letter c + regional indicator symbol letter t + cancel tag",
+    "aliases": [
+      "gbsct"
+    ],
+    "tags": [
+      "flag",
+      "scotland"
+    ]
+  },
+  {
+    "emojiChar": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "emoji": "\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC77\uDB40\uDC6C\uDB40\uDC73\uDB40\uDC7F",
+    "description": "waving black flag + regional indicator symbol letter g + regional indicator symbol letter b + regional indicator symbol letter w + regional indicator symbol letter l + regional indicator symbol letter s + cancel tag",
+    "aliases": [
+      "gbwls"
+    ],
+    "tags": [
+      "flag",
+      "wales"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇩",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDE9",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter d",
+    "aliases": [
+      "gd"
+    ],
+    "tags": [
+      "flag",
+      "grenada"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇪",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDEA",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter e",
+    "aliases": [
+      "ge"
+    ],
+    "tags": [
+      "flag",
+      "georgia"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇫",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDEB",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter f",
+    "aliases": [
+      "gf"
+    ],
+    "tags": [
+      "flag",
+      "french guiana"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇬",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDEC",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter g",
+    "aliases": [
+      "gg"
+    ],
+    "tags": [
+      "flag",
+      "guernsey"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇭",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDED",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter h",
+    "aliases": [
+      "gh"
+    ],
+    "tags": [
+      "flag",
+      "ghana"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇮",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDEE",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter i",
+    "aliases": [
+      "gi"
+    ],
+    "tags": [
+      "flag",
+      "gibraltar"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇱",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF1",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter l",
+    "aliases": [
+      "gl"
+    ],
+    "tags": [
+      "flag",
+      "greenland"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇲",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF2",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter m",
+    "aliases": [
+      "gm"
+    ],
+    "tags": [
+      "flag",
+      "gambia"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇳",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF3",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter n",
+    "aliases": [
+      "gn"
+    ],
+    "tags": [
+      "flag",
+      "guinea"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇵",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF5",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter p",
+    "aliases": [
+      "gp"
+    ],
+    "tags": [
+      "flag",
+      "guadeloupe"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇶",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF6",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter q",
+    "aliases": [
+      "gq"
+    ],
+    "tags": [
+      "flag",
+      "equatorial guinea"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇷",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF7",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter r",
+    "aliases": [
+      "gr"
+    ],
+    "tags": [
+      "flag",
+      "greece"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇸",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF8",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter s",
+    "aliases": [
+      "gs"
+    ],
+    "tags": [
+      "flag",
+      "south georgia & south sandwich islands"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇹",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDF9",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter t",
+    "aliases": [
+      "gt"
+    ],
+    "tags": [
+      "flag",
+      "guatemala"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇺",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDFA",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter u",
+    "aliases": [
+      "gu"
+    ],
+    "tags": [
+      "flag",
+      "guam"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇼",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDFC",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter w",
+    "aliases": [
+      "gw"
+    ],
+    "tags": [
+      "flag",
+      "guinea-bissau"
+    ]
+  },
+  {
+    "emojiChar": "🇬🇾",
+    "emoji": "\uD83C\uDDEC\uD83C\uDDFE",
+    "description": "regional indicator symbol letter g + regional indicator symbol letter y",
+    "aliases": [
+      "gy"
+    ],
+    "tags": [
+      "flag",
+      "guyana"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇰",
+    "emoji": "\uD83C\uDDED\uD83C\uDDF0",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter k",
+    "aliases": [
+      "hk"
+    ],
+    "tags": [
+      "flag",
+      "hong kong"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇲",
+    "emoji": "\uD83C\uDDED\uD83C\uDDF2",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter m",
+    "aliases": [
+      "hm"
+    ],
+    "tags": [
+      "flag",
+      "heard & mcdonald islands"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇳",
+    "emoji": "\uD83C\uDDED\uD83C\uDDF3",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter n",
+    "aliases": [
+      "hn"
+    ],
+    "tags": [
+      "flag",
+      "honduras"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇷",
+    "emoji": "\uD83C\uDDED\uD83C\uDDF7",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter r",
+    "aliases": [
+      "hr"
+    ],
+    "tags": [
+      "flag",
+      "croatia"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇹",
+    "emoji": "\uD83C\uDDED\uD83C\uDDF9",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter t",
+    "aliases": [
+      "ht"
+    ],
+    "tags": [
+      "flag",
+      "haiti"
+    ]
+  },
+  {
+    "emojiChar": "🇭🇺",
+    "emoji": "\uD83C\uDDED\uD83C\uDDFA",
+    "description": "regional indicator symbol letter h + regional indicator symbol letter u",
+    "aliases": [
+      "hu"
+    ],
+    "tags": [
+      "flag",
+      "hungary"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇨",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDE8",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter c",
+    "aliases": [
+      "ic"
+    ],
+    "tags": [
+      "flag",
+      "canary islands"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇩",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDE9",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter d",
+    "aliases": [
+      "id_flag"
+    ],
+    "tags": [
+      "flag",
+      "indonesia"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇪",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDEA",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter e",
+    "aliases": [
+      "ie"
+    ],
+    "tags": [
+      "flag",
+      "ireland"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇱",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter l",
+    "aliases": [
+      "il"
+    ],
+    "tags": [
+      "flag",
+      "israel"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇲",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF2",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter m",
+    "aliases": [
+      "im"
+    ],
+    "tags": [
+      "flag",
+      "isle of mann"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇳",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF3",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter n",
+    "aliases": [
+      "in"
+    ],
+    "tags": [
+      "flag",
+      "india"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇴",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF4",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter o",
+    "aliases": [
+      "io"
+    ],
+    "tags": [
+      "flag",
+      "british indian ocean territory"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇶",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF6",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter q",
+    "aliases": [
+      "iq"
+    ],
+    "tags": [
+      "flag",
+      "iraq"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇷",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF7",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter r",
+    "aliases": [
+      "ir"
+    ],
+    "tags": [
+      "flag",
+      "iran"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇸",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF8",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter s",
+    "aliases": [
+      "is"
+    ],
+    "tags": [
+      "flag",
+      "iceland"
+    ]
+  },
+  {
+    "emojiChar": "🇮🇹",
+    "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
+    "description": "regional indicator symbol letter i + regional indicator symbol letter t",
+    "aliases": [
+      "it"
+    ],
+    "tags": [
+      "flag",
+      "italy"
+    ]
+  },
+  {
+    "emojiChar": "🇯🇪",
+    "emoji": "\uD83C\uDDEF\uD83C\uDDEA",
+    "description": "regional indicator symbol letter j + regional indicator symbol letter e",
+    "aliases": [
+      "je"
+    ],
+    "tags": [
+      "flag",
+      "jersey"
+    ]
+  },
+  {
+    "emojiChar": "🇯🇲",
+    "emoji": "\uD83C\uDDEF\uD83C\uDDF2",
+    "description": "regional indicator symbol letter j + regional indicator symbol letter m",
+    "aliases": [
+      "jm"
+    ],
+    "tags": [
+      "flag",
+      "jamaica"
+    ]
+  },
+  {
+    "emojiChar": "🇯🇴",
+    "emoji": "\uD83C\uDDEF\uD83C\uDDF4",
+    "description": "regional indicator symbol letter j + regional indicator symbol letter o",
+    "aliases": [
+      "jo"
+    ],
+    "tags": [
+      "flag",
+      "jordan"
+    ]
+  },
+  {
+    "emojiChar": "🇯🇵",
+    "emoji": "\uD83C\uDDEF\uD83C\uDDF5",
+    "description": "regional indicator symbol letter j + regional indicator symbol letter p",
+    "aliases": [
+      "jp"
+    ],
+    "tags": [
+      "flag",
+      "japan"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇪",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDEA",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter e",
+    "aliases": [
+      "ke"
+    ],
+    "tags": [
+      "flag",
+      "kenya"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇬",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDEC",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter g",
+    "aliases": [
+      "kg"
+    ],
+    "tags": [
+      "flag",
+      "kyrgyzstan"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇭",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDED",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter h",
+    "aliases": [
+      "kh"
+    ],
+    "tags": [
+      "flag",
+      "cambodia"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇮",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDEE",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter i",
+    "aliases": [
+      "ki"
+    ],
+    "tags": [
+      "flag",
+      "kiribati"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇲",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDF2",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter m",
+    "aliases": [
+      "km"
+    ],
+    "tags": [
+      "flag",
+      "comoros"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇳",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDF3",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter n",
+    "aliases": [
+      "kn"
+    ],
+    "tags": [
+      "flag",
+      "st. kitts & nevis"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇵",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDF5",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter p",
+    "aliases": [
+      "kp"
+    ],
+    "tags": [
+      "flag",
+      "north korea"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇷",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDF7",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter r",
+    "aliases": [
+      "kr"
+    ],
+    "tags": [
+      "flag",
+      "south korea"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇼",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDFC",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter w",
+    "aliases": [
+      "kw"
+    ],
+    "tags": [
+      "flag",
+      "kuwait"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇾",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDFE",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter y",
+    "aliases": [
+      "ky"
+    ],
+    "tags": [
+      "flag",
+      "cayman islands"
+    ]
+  },
+  {
+    "emojiChar": "🇰🇿",
+    "emoji": "\uD83C\uDDF0\uD83C\uDDFF",
+    "description": "regional indicator symbol letter k + regional indicator symbol letter z",
+    "aliases": [
+      "kz"
+    ],
+    "tags": [
+      "flag",
+      "kazakhstan"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇦",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDE6",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter a",
+    "aliases": [
+      "la"
+    ],
+    "tags": [
+      "flag",
+      "laos"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇧",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDE7",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter b",
+    "aliases": [
+      "lb"
+    ],
+    "tags": [
+      "flag",
+      "lebanon"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇨",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDE8",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter c",
+    "aliases": [
+      "lc"
+    ],
+    "tags": [
+      "flag",
+      "st. lucia"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇮",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDEE",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter i",
+    "aliases": [
+      "li"
+    ],
+    "tags": [
+      "flag",
+      "liechtenstein"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇰",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDF0",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter k",
+    "aliases": [
+      "lk"
+    ],
+    "tags": [
+      "flag",
+      "sri lanka"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇷",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDF7",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter r",
+    "aliases": [
+      "lr"
+    ],
+    "tags": [
+      "flag",
+      "liberia"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇸",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDF8",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter s",
+    "aliases": [
+      "ls"
+    ],
+    "tags": [
+      "flag",
+      "lesotho"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇹",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter t",
+    "aliases": [
+      "lt"
+    ],
+    "tags": [
+      "flag",
+      "lithuania"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇺",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDFA",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter u",
+    "aliases": [
+      "lu"
+    ],
+    "tags": [
+      "flag",
+      "luxembourg"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇻",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDFB",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter v",
+    "aliases": [
+      "lv"
+    ],
+    "tags": [
+      "flag",
+      "latvia"
+    ]
+  },
+  {
+    "emojiChar": "🇱🇾",
+    "emoji": "\uD83C\uDDF1\uD83C\uDDFE",
+    "description": "regional indicator symbol letter l + regional indicator symbol letter y",
+    "aliases": [
+      "ly"
+    ],
+    "tags": [
+      "flag",
+      "libya"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇦",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDE6",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter a",
+    "aliases": [
+      "ma"
+    ],
+    "tags": [
+      "flag",
+      "morocco"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇨",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDE8",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter c",
+    "aliases": [
+      "mc"
+    ],
+    "tags": [
+      "flag",
+      "monaco"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇩",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDE9",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter d",
+    "aliases": [
+      "md"
+    ],
+    "tags": [
+      "flag",
+      "moldova"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇪",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDEA",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter e",
+    "aliases": [
+      "me"
+    ],
+    "tags": [
+      "flag",
+      "montenegro"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇫",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDEB",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter f",
+    "aliases": [
+      "mf"
+    ],
+    "tags": [
+      "flag",
+      "st. martin"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇬",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDEC",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter g",
+    "aliases": [
+      "mg"
+    ],
+    "tags": [
+      "flag",
+      "madagascar"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇭",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDED",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter h",
+    "aliases": [
+      "mh"
+    ],
+    "tags": [
+      "flag",
+      "marshall islands"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇰",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF0",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter k",
+    "aliases": [
+      "mk"
+    ],
+    "tags": [
+      "flag",
+      "macedonia"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇱",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF1",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter l",
+    "aliases": [
+      "ml"
+    ],
+    "tags": [
+      "flag",
+      "mali"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇲",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF2",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter m",
+    "aliases": [
+      "mm"
+    ],
+    "tags": [
+      "flag",
+      "myanmar"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇳",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF3",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter n",
+    "aliases": [
+      "mn"
+    ],
+    "tags": [
+      "flag",
+      "mongolia"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇴",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF4",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter o",
+    "aliases": [
+      "mo"
+    ],
+    "tags": [
+      "flag",
+      "macau"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇵",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF5",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter p",
+    "aliases": [
+      "mp"
+    ],
+    "tags": [
+      "flag",
+      "northern mariana islands"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇶",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF6",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter q",
+    "aliases": [
+      "mq"
+    ],
+    "tags": [
+      "flag",
+      "martinique"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇷",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF7",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter r",
+    "aliases": [
+      "mr"
+    ],
+    "tags": [
+      "flag",
+      "mauritania"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇸",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF8",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter s",
+    "aliases": [
+      "ms"
+    ],
+    "tags": [
+      "flag",
+      "montserrat"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇹",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDF9",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter t",
+    "aliases": [
+      "mt"
+    ],
+    "tags": [
+      "flag",
+      "malta"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇺",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFA",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter u",
+    "aliases": [
+      "mu"
+    ],
+    "tags": [
+      "flag",
+      "mauritius"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇻",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFB",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter v",
+    "aliases": [
+      "mv"
+    ],
+    "tags": [
+      "flag",
+      "maldives"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇼",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFC",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter w",
+    "aliases": [
+      "mw"
+    ],
+    "tags": [
+      "flag",
+      "malawi"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇽",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFD",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter x",
+    "aliases": [
+      "mx"
+    ],
+    "tags": [
+      "flag",
+      "mexico"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇾",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFE",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter y",
+    "aliases": [
+      "my"
+    ],
+    "tags": [
+      "flag",
+      "malaysia"
+    ]
+  },
+  {
+    "emojiChar": "🇲🇿",
+    "emoji": "\uD83C\uDDF2\uD83C\uDDFF",
+    "description": "regional indicator symbol letter m + regional indicator symbol letter z",
+    "aliases": [
+      "mz"
+    ],
+    "tags": [
+      "flag",
+      "mozambique"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇦",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDE6",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter a",
+    "aliases": [
+      "na"
+    ],
+    "tags": [
+      "flag",
+      "namibia"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇨",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDE8",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter c",
+    "aliases": [
+      "nc"
+    ],
+    "tags": [
+      "flag",
+      "new caledonia"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇪",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDEA",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter e",
+    "aliases": [
+      "ne"
+    ],
+    "tags": [
+      "flag",
+      "niger"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇫",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDEB",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter f",
+    "aliases": [
+      "nf"
+    ],
+    "tags": [
+      "flag",
+      "norfolk island"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇬",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDEC",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter g",
+    "aliases": [
+      "ng"
+    ],
+    "tags": [
+      "flag",
+      "nigeria"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇮",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDEE",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter i",
+    "aliases": [
+      "ni"
+    ],
+    "tags": [
+      "flag",
+      "nicaragua"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇱",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDF1",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter l",
+    "aliases": [
+      "nl"
+    ],
+    "tags": [
+      "flag",
+      "netherlands"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇴",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDF4",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter o",
+    "aliases": [
+      "no"
+    ],
+    "tags": [
+      "flag",
+      "norway"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇵",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDF5",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter p",
+    "aliases": [
+      "np"
+    ],
+    "tags": [
+      "flag",
+      "nepal"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇷",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDF7",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter r",
+    "aliases": [
+      "nr"
+    ],
+    "tags": [
+      "flag",
+      "nauru"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇺",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDFA",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter u",
+    "aliases": [
+      "nu"
+    ],
+    "tags": [
+      "flag",
+      "niue"
+    ]
+  },
+  {
+    "emojiChar": "🇳🇿",
+    "emoji": "\uD83C\uDDF3\uD83C\uDDFF",
+    "description": "regional indicator symbol letter n + regional indicator symbol letter z",
+    "aliases": [
+      "nz"
+    ],
+    "tags": [
+      "flag",
+      "new zealand"
+    ]
+  },
+  {
+    "emojiChar": "🇴🇲",
+    "emoji": "\uD83C\uDDF4\uD83C\uDDF2",
+    "description": "regional indicator symbol letter o + regional indicator symbol letter m",
+    "aliases": [
+      "om"
+    ],
+    "tags": [
+      "flag",
+      "oman"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇦",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDE6",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter a",
+    "aliases": [
+      "pa"
+    ],
+    "tags": [
+      "flag",
+      "panama"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇪",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDEA",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter e",
+    "aliases": [
+      "pe"
+    ],
+    "tags": [
+      "flag",
+      "peru"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇫",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDEB",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter f",
+    "aliases": [
+      "pf"
+    ],
+    "tags": [
+      "flag",
+      "french polynesia"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇬",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDEC",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter g",
+    "aliases": [
+      "pg"
+    ],
+    "tags": [
+      "flag",
+      "papua new guinea"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇭",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDED",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter h",
+    "aliases": [
+      "ph"
+    ],
+    "tags": [
+      "flag",
+      "philippines"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇰",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF0",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter k",
+    "aliases": [
+      "pk"
+    ],
+    "tags": [
+      "flag",
+      "pakistan"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇱",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF1",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter l",
+    "aliases": [
+      "pl"
+    ],
+    "tags": [
+      "flag",
+      "poland"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇲",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF2",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter m",
+    "aliases": [
+      "pm"
+    ],
+    "tags": [
+      "flag",
+      "st. pierre & miquelon"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇳",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF3",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter n",
+    "aliases": [
+      "pn"
+    ],
+    "tags": [
+      "flag",
+      "pitcairn islands"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇷",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF7",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter r",
+    "aliases": [
+      "pr"
+    ],
+    "tags": [
+      "flag",
+      "puerto rico"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇸",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF8",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter s",
+    "aliases": [
+      "ps"
+    ],
+    "tags": [
+      "flag",
+      "palestine"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇹",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter t",
+    "aliases": [
+      "pt"
+    ],
+    "tags": [
+      "flag",
+      "portugal"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇼",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDFC",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter w",
+    "aliases": [
+      "pw"
+    ],
+    "tags": [
+      "flag",
+      "palau"
+    ]
+  },
+  {
+    "emojiChar": "🇵🇾",
+    "emoji": "\uD83C\uDDF5\uD83C\uDDFE",
+    "description": "regional indicator symbol letter p + regional indicator symbol letter y",
+    "aliases": [
+      "py"
+    ],
+    "tags": [
+      "flag",
+      "paraguay"
+    ]
+  },
+  {
+    "emojiChar": "🇶🇦",
+    "emoji": "\uD83C\uDDF6\uD83C\uDDE6",
+    "description": "regional indicator symbol letter q + regional indicator symbol letter a",
+    "aliases": [
+      "qa"
+    ],
+    "tags": [
+      "flag",
+      "qatar"
+    ]
+  },
+  {
+    "emojiChar": "🏳️‍🌈",
+    "emoji": "\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08",
+    "description": "rainbow flag",
+    "aliases": [
+      "rainbow_flag",
+      "pride_flag"
+    ],
+    "tags": [
+      "flag"
+    ]
+  },
+  {
+    "emojiChar": "🇷🇪",
+    "emoji": "\uD83C\uDDF7\uD83C\uDDEA",
+    "description": "regional indicator symbol letter r + regional indicator symbol letter e",
+    "aliases": [
+      "re"
+    ],
+    "tags": [
+      "flag",
+      "reunion"
+    ]
+  },
+  {
+    "emojiChar": "🇷🇴",
+    "emoji": "\uD83C\uDDF7\uD83C\uDDF4",
+    "description": "regional indicator symbol letter r + regional indicator symbol letter o",
+    "aliases": [
+      "ro"
+    ],
+    "tags": [
+      "flag",
+      "romania"
+    ]
+  },
+  {
+    "emojiChar": "🇷🇸",
+    "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
+    "description": "regional indicator symbol letter r + regional indicator symbol letter s",
+    "aliases": [
+      "rs"
+    ],
+    "tags": [
+      "flag",
+      "serbia"
+    ]
+  },
+  {
+    "emojiChar": "🇷🇺",
+    "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
+    "description": "regional indicator symbol letter r + regional indicator symbol letter u",
+    "aliases": [
+      "ru"
+    ],
+    "tags": [
+      "flag",
+      "russia"
+    ]
+  },
+  {
+    "emojiChar": "🇷🇼",
+    "emoji": "\uD83C\uDDF7\uD83C\uDDFC",
+    "description": "regional indicator symbol letter r + regional indicator symbol letter w",
+    "aliases": [
+      "rw"
+    ],
+    "tags": [
+      "flag",
+      "rwanda"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇦",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDE6",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter a",
+    "aliases": [
+      "sa_flag"
+    ],
+    "tags": [
+      "flag",
+      "saudi arabia"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇧",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDE7",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter b",
+    "aliases": [
+      "sb"
+    ],
+    "tags": [
+      "flag",
+      "solomon islands"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇨",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDE8",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter c",
+    "aliases": [
+      "sc"
+    ],
+    "tags": [
+      "flag",
+      "seychelles"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇩",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDE9",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter d",
+    "aliases": [
+      "sd"
+    ],
+    "tags": [
+      "flag",
+      "sudan"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇪",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDEA",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter e",
+    "aliases": [
+      "se"
+    ],
+    "tags": [
+      "flag",
+      "sweden"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇬",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDEC",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter g",
+    "aliases": [
+      "sg"
+    ],
+    "tags": [
+      "flag",
+      "singapore"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇭",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDED",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter h",
+    "aliases": [
+      "sh"
+    ],
+    "tags": [
+      "flag",
+      "st. helena"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇮",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDEE",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter i",
+    "aliases": [
+      "si"
+    ],
+    "tags": [
+      "flag",
+      "slovenia"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇯",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDEF",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter j",
+    "aliases": [
+      "sj"
+    ],
+    "tags": [
+      "flag",
+      "svalbard & jan mayen"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇰",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF0",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter k",
+    "aliases": [
+      "sk"
+    ],
+    "tags": [
+      "flag",
+      "slovakia"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇱",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF1",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter l",
+    "aliases": [
+      "sl"
+    ],
+    "tags": [
+      "flag",
+      "sierra leone"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇲",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF2",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter m",
+    "aliases": [
+      "sm"
+    ],
+    "tags": [
+      "flag",
+      "san marino"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇳",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF3",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter n",
+    "aliases": [
+      "sn"
+    ],
+    "tags": [
+      "flag",
+      "senegal"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇴",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF4",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter o",
+    "aliases": [
+      "so"
+    ],
+    "tags": [
+      "flag",
+      "somalia"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇷",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF7",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter r",
+    "aliases": [
+      "sr"
+    ],
+    "tags": [
+      "flag",
+      "suriname"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇸",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF8",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter s",
+    "aliases": [
+      "ss"
+    ],
+    "tags": [
+      "flag",
+      "south sudan"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇹",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDF9",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter t",
+    "aliases": [
+      "st"
+    ],
+    "tags": [
+      "flag",
+      "sao tome and principe"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇻",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDFB",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter v",
+    "aliases": [
+      "sv"
+    ],
+    "tags": [
+      "flag",
+      "el salvador"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇽",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDFD",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter x",
+    "aliases": [
+      "sx"
+    ],
+    "tags": [
+      "flag",
+      "sint maarten"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇾",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDFE",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter y",
+    "aliases": [
+      "sy"
+    ],
+    "tags": [
+      "flag",
+      "syria"
+    ]
+  },
+  {
+    "emojiChar": "🇸🇿",
+    "emoji": "\uD83C\uDDF8\uD83C\uDDFF",
+    "description": "regional indicator symbol letter s + regional indicator symbol letter z",
+    "aliases": [
+      "sz"
+    ],
+    "tags": [
+      "flag",
+      "swaziland"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇦",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDE6",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter a",
+    "aliases": [
+      "ta"
+    ],
+    "tags": [
+      "flag",
+      "tristan da cunha"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇨",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDE8",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter c",
+    "aliases": [
+      "tc"
+    ],
+    "tags": [
+      "flag",
+      "turks and caicos islands"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇩",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDE9",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter d",
+    "aliases": [
+      "td"
+    ],
+    "tags": [
+      "flag",
+      "chad"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇫",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDEB",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter f",
+    "aliases": [
+      "tf"
+    ],
+    "tags": [
+      "flag",
+      "french southern territories"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇬",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDEC",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter g",
+    "aliases": [
+      "tg"
+    ],
+    "tags": [
+      "flag",
+      "togo"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇭",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter h",
+    "aliases": [
+      "th"
+    ],
+    "tags": [
+      "flag",
+      "thailand"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇯",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDEF",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter j",
+    "aliases": [
+      "tj"
+    ],
+    "tags": [
+      "flag",
+      "tajikistan"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇰",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF0",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter k",
+    "aliases": [
+      "tk"
+    ],
+    "tags": [
+      "flag",
+      "tokelau"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇱",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF1",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter l",
+    "aliases": [
+      "tl"
+    ],
+    "tags": [
+      "flag",
+      "east timor"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇲",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF2",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter m",
+    "aliases": [
+      "tm_flag"
+    ],
+    "tags": [
+      "flag",
+      "turkmenistan"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇳",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF3",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter n",
+    "aliases": [
+      "tn"
+    ],
+    "tags": [
+      "flag",
+      "tunisia"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇴",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF4",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter o",
+    "aliases": [
+      "to"
+    ],
+    "tags": [
+      "flag",
+      "tonga"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇷",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF7",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter r",
+    "aliases": [
+      "tr"
+    ],
+    "tags": [
+      "flag",
+      "turkey"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇹",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDF9",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter t",
+    "aliases": [
+      "tt"
+    ],
+    "tags": [
+      "flag",
+      "trinidad and tobago"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇻",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDFB",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter v",
+    "aliases": [
+      "tv_flag"
+    ],
+    "tags": [
+      "flag",
+      "tuvalu"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇼",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter w",
+    "aliases": [
+      "tw"
+    ],
+    "tags": [
+      "flag",
+      "taiwan"
+    ]
+  },
+  {
+    "emojiChar": "🇹🇿",
+    "emoji": "\uD83C\uDDF9\uD83C\uDDFF",
+    "description": "regional indicator symbol letter t + regional indicator symbol letter z",
+    "aliases": [
+      "tz"
+    ],
+    "tags": [
+      "flag",
+      "tanzania"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇦",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter a",
+    "aliases": [
+      "ua"
+    ],
+    "tags": [
+      "flag",
+      "ukraine"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇬",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDEC",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter g",
+    "aliases": [
+      "ug"
+    ],
+    "tags": [
+      "flag",
+      "uganda"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇲",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDF2",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter m",
+    "aliases": [
+      "um"
+    ],
+    "tags": [
+      "flag",
+      "u.s. outlying islands"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇳",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDF3",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter n",
+    "aliases": [
+      "un"
+    ],
+    "tags": [
+      "flag",
+      "united nations"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇸",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDF8",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter s",
+    "aliases": [
+      "us"
+    ],
+    "tags": [
+      "flag",
+      "united states of america"
+    ]
+  },
+  {
+    "emojiChar": "🏴󠁵󠁳󠁴󠁸󠁿",
+    "emoji": "\uD83C\uDFF4\uDB40\uDC75\uDB40\uDC73\uDB40\uDC74\uDB40\uDC78\uDB40\uDC7F",
+    "description": "waving black flag + regional indicator symbol letter u + regional indicator symbol letter s + regional indicator symbol letter t + regional indicator symbol letter x + cancel tag",
+    "aliases": [
+      "ustx"
+    ],
+    "tags": [
+      "flag",
+      "texas"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇾",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDFE",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter y",
+    "aliases": [
+      "uy"
+    ],
+    "tags": [
+      "flag",
+      "uruguay"
+    ]
+  },
+  {
+    "emojiChar": "🇺🇿",
+    "emoji": "\uD83C\uDDFA\uD83C\uDDFF",
+    "description": "regional indicator symbol letter u + regional indicator symbol letter z",
+    "aliases": [
+      "uz"
+    ],
+    "tags": [
+      "flag",
+      "uzbekistan"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇦",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDE6",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter a",
+    "aliases": [
+      "va"
+    ],
+    "tags": [
+      "flag",
+      "vatican city"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇨",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDE8",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter c",
+    "aliases": [
+      "vc"
+    ],
+    "tags": [
+      "flag",
+      "st vincent grenadines"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇪",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDEA",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter e",
+    "aliases": [
+      "ve"
+    ],
+    "tags": [
+      "flag",
+      "venezuela"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇬",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDEC",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter g",
+    "aliases": [
+      "vg"
+    ],
+    "tags": [
+      "flag",
+      "british virgin islands"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇮",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDEE",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter i",
+    "aliases": [
+      "vi"
+    ],
+    "tags": [
+      "flag",
+      "us virgin islands"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇳",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDF3",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter n",
+    "aliases": [
+      "vn"
+    ],
+    "tags": [
+      "flag",
+      "vietnam"
+    ]
+  },
+  {
+    "emojiChar": "🇻🇺",
+    "emoji": "\uD83C\uDDFB\uD83C\uDDFA",
+    "description": "regional indicator symbol letter v + regional indicator symbol letter u",
+    "aliases": [
+      "vu"
+    ],
+    "tags": [
+      "flag",
+      "vanuatu"
+    ]
+  },
+  {
+    "emojiChar": "🇼🇫",
+    "emoji": "\uD83C\uDDFC\uD83C\uDDEB",
+    "description": "regional indicator symbol letter w + regional indicator symbol letter f",
+    "aliases": [
+      "wf"
+    ],
+    "tags": [
+      "flag",
+      "wallis & futuna"
+    ]
+  },
+  {
+    "emojiChar": "🇼🇸",
+    "emoji": "\uD83C\uDDFC\uD83C\uDDF8",
+    "description": "regional indicator symbol letter w + regional indicator symbol letter s",
+    "aliases": [
+      "ws"
+    ],
+    "tags": [
+      "flag",
+      "samoa"
+    ]
+  },
+  {
+    "emojiChar": "🇽🇰",
+    "emoji": "\uD83C\uDDFD\uD83C\uDDF0",
+    "description": "regional indicator symbol letter x + regional indicator symbol letter k",
+    "aliases": [
+      "xk"
+    ],
+    "tags": [
+      "flag",
+      "kosovo"
+    ]
+  },
+  {
+    "emojiChar": "🇾🇪",
+    "emoji": "\uD83C\uDDFE\uD83C\uDDEA",
+    "description": "regional indicator symbol letter y + regional indicator symbol letter e",
+    "aliases": [
+      "ye"
+    ],
+    "tags": [
+      "flag",
+      "yemen"
+    ]
+  },
+  {
+    "emojiChar": "🇾🇹",
+    "emoji": "\uD83C\uDDFE\uD83C\uDDF9",
+    "description": "regional indicator symbol letter y + regional indicator symbol letter t",
+    "aliases": [
+      "yt"
+    ],
+    "tags": [
+      "flag",
+      "mayotte"
+    ]
+  },
+  {
+    "emojiChar": "🇿🇦",
+    "emoji": "\uD83C\uDDFF\uD83C\uDDE6",
+    "description": "regional indicator symbol letter z + regional indicator symbol letter a",
+    "aliases": [
+      "za"
+    ],
+    "tags": [
+      "flag",
+      "south africa"
+    ]
+  },
+  {
+    "emojiChar": "🇿🇲",
+    "emoji": "\uD83C\uDDFF\uD83C\uDDF2",
+    "description": "regional indicator symbol letter z + regional indicator symbol letter m",
+    "aliases": [
+      "zm"
+    ],
+    "tags": [
+      "flag",
+      "zambia"
+    ]
+  },
+  {
+    "emojiChar": "🇿🇼",
+    "emoji": "\uD83C\uDDFF\uD83C\uDDFC",
+    "description": "regional indicator symbol letter z + regional indicator symbol letter w",
+    "aliases": [
+      "zw"
+    ],
+    "tags": [
+      "flag",
+      "zimbabwe"
+    ]
+  },
+  {
     "emojiChar": "😄",
     "emoji": "\uD83D\uDE04",
     "description": "smiling face with open mouth and smiling eyes",
@@ -8416,2550 +11573,6 @@
       "small_blue_diamond"
     ],
     "tags": []
-  },
-  {
-    "emojiChar": "🇦🇫",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDEB",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter f",
-    "aliases": [
-      "af"
-    ],
-    "tags": [
-      "flag",
-      "afghanistan"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇱",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF1",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter l",
-    "aliases": [
-      "al"
-    ],
-    "tags": [
-      "flag",
-      "albania"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇿",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDFF",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter z",
-    "aliases": [
-      "dz"
-    ],
-    "tags": [
-      "flag",
-      "algeria"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇸",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF8",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter s",
-    "aliases": [
-      "as"
-    ],
-    "tags": [
-      "flag",
-      "american samoa"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇩",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDE9",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter d",
-    "aliases": [
-      "ad"
-    ],
-    "tags": [
-      "flag",
-      "andorra"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇴",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF4",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter o",
-    "aliases": [
-      "ao"
-    ],
-    "tags": [
-      "flag",
-      "angola"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇮",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDEE",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter i",
-    "aliases": [
-      "ai"
-    ],
-    "tags": [
-      "flag",
-      "anguilla"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇬",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDEC",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter g",
-    "aliases": [
-      "ag"
-    ],
-    "tags": [
-      "flag",
-      "antigua and barbuda"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇷",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF7",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter r",
-    "aliases": [
-      "ar"
-    ],
-    "tags": [
-      "flag",
-      "argentina"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇲",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF2",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter m",
-    "aliases": [
-      "am"
-    ],
-    "tags": [
-      "flag",
-      "armenia"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇼",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDFC",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter w",
-    "aliases": [
-      "aw"
-    ],
-    "tags": [
-      "flag",
-      "aruba"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇺",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDFA",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter u",
-    "aliases": [
-      "au"
-    ],
-    "tags": [
-      "flag",
-      "australia"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇹",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDF9",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter t",
-    "aliases": [
-      "at"
-    ],
-    "tags": [
-      "flag",
-      "austria"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇿",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDFF",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter z",
-    "aliases": [
-      "az"
-    ],
-    "tags": [
-      "flag",
-      "azerbaijan"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇸",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF8",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter s",
-    "aliases": [
-      "bs"
-    ],
-    "tags": [
-      "flag",
-      "bahamas"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇭",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDED",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter h",
-    "aliases": [
-      "bh"
-    ],
-    "tags": [
-      "flag",
-      "bahrain"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇩",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDE9",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter d",
-    "aliases": [
-      "bd"
-    ],
-    "tags": [
-      "flag",
-      "bangladesh"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇧",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDE7",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter b",
-    "aliases": [
-      "bb"
-    ],
-    "tags": [
-      "flag",
-      "barbados"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇾",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDFE",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter y",
-    "aliases": [
-      "by"
-    ],
-    "tags": [
-      "flag",
-      "belarus"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇪",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDEA",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter e",
-    "aliases": [
-      "be"
-    ],
-    "tags": [
-      "flag",
-      "belgium"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇿",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDFF",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter z",
-    "aliases": [
-      "bz"
-    ],
-    "tags": [
-      "flag",
-      "belize"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇯",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDEF",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter j",
-    "aliases": [
-      "bj"
-    ],
-    "tags": [
-      "flag",
-      "benin"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇲",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF2",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter m",
-    "aliases": [
-      "bm"
-    ],
-    "tags": [
-      "flag",
-      "bermuda"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇹",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF9",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter t",
-    "aliases": [
-      "bt"
-    ],
-    "tags": [
-      "flag",
-      "bhutan"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇴",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF4",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter o",
-    "aliases": [
-      "bo"
-    ],
-    "tags": [
-      "flag",
-      "bolivia"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇦",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDE6",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter a",
-    "aliases": [
-      "ba"
-    ],
-    "tags": [
-      "flag",
-      "bosnia and herzegovina"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇼",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDFC",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter w",
-    "aliases": [
-      "bw"
-    ],
-    "tags": [
-      "flag",
-      "botswana"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇷",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF7",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter r",
-    "aliases": [
-      "br"
-    ],
-    "tags": [
-      "flag",
-      "brazil"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇬",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDEC",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter g",
-    "aliases": [
-      "vg"
-    ],
-    "tags": [
-      "flag",
-      "british virgin islands"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇳",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDF3",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter n",
-    "aliases": [
-      "bn"
-    ],
-    "tags": [
-      "flag",
-      "brunei darussalam"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇬",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDEC",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter g",
-    "aliases": [
-      "bg"
-    ],
-    "tags": [
-      "flag",
-      "bulgaria"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇫",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDEB",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter f",
-    "aliases": [
-      "bf"
-    ],
-    "tags": [
-      "flag",
-      "burkina faso"
-    ]
-  },
-  {
-    "emojiChar": "🇧🇮",
-    "emoji": "\uD83C\uDDE7\uD83C\uDDEE",
-    "description": "regional indicator symbol letter b + regional indicator symbol letter i",
-    "aliases": [
-      "bi"
-    ],
-    "tags": [
-      "flag",
-      "burundi"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇭",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDED",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter h",
-    "aliases": [
-      "kh"
-    ],
-    "tags": [
-      "flag",
-      "cambodia"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇲",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF2",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter m",
-    "aliases": [
-      "cm"
-    ],
-    "tags": [
-      "flag",
-      "cameroon"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇦",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDE6",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter a",
-    "aliases": [
-      "ca"
-    ],
-    "tags": [
-      "flag",
-      "canada"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇻",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDFB",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter v",
-    "aliases": [
-      "cv"
-    ],
-    "tags": [
-      "flag",
-      "cape verde"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇾",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDFE",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter y",
-    "aliases": [
-      "ky"
-    ],
-    "tags": [
-      "flag",
-      "cayman islands"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇫",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDEB",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter f",
-    "aliases": [
-      "cf"
-    ],
-    "tags": [
-      "flag",
-      "central african republic"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇱",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF1",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter l",
-    "aliases": [
-      "cl_flag"
-    ],
-    "tags": [
-      "flag",
-      "chile"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇳",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF3",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter n",
-    "aliases": [
-      "cn"
-    ],
-    "tags": [
-      "flag",
-      "china"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇴",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF4",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter o",
-    "aliases": [
-      "co"
-    ],
-    "tags": [
-      "flag",
-      "colombia"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇲",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDF2",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter m",
-    "aliases": [
-      "km"
-    ],
-    "tags": [
-      "flag",
-      "comoros"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇩",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDE9",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter d",
-    "aliases": [
-      "cd_flag"
-    ],
-    "tags": [
-      "flag",
-      "democratic republic of the congo"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇬",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDEC",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter g",
-    "aliases": [
-      "cg"
-    ],
-    "tags": [
-      "flag",
-      "republic of the congo"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇰",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF0",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter k",
-    "aliases": [
-      "ck"
-    ],
-    "tags": [
-      "flag",
-      "cook islands"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇷",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDF7",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter r",
-    "aliases": [
-      "cr"
-    ],
-    "tags": [
-      "flag",
-      "costa rica"
-    ]
-  },
-  {
-    "emojiChar": "🇭🇷",
-    "emoji": "\uD83C\uDDED\uD83C\uDDF7",
-    "description": "regional indicator symbol letter h + regional indicator symbol letter r",
-    "aliases": [
-      "hr"
-    ],
-    "tags": [
-      "flag",
-      "croatia"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇺",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDFA",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter u",
-    "aliases": [
-      "cu"
-    ],
-    "tags": [
-      "flag",
-      "cuba"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇼",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDFC",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter w",
-    "aliases": [
-      "cw"
-    ],
-    "tags": [
-      "flag",
-      "curacao"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇾",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDFE",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter y",
-    "aliases": [
-      "cy"
-    ],
-    "tags": [
-      "flag",
-      "cyprus"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇿",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDFF",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter z",
-    "aliases": [
-      "cz"
-    ],
-    "tags": [
-      "flag",
-      "czech republic"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇰",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDF0",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter k",
-    "aliases": [
-      "dk"
-    ],
-    "tags": [
-      "flag",
-      "denmark"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇯",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDEF",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter j",
-    "aliases": [
-      "dj"
-    ],
-    "tags": [
-      "flag",
-      "djibouti"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇲",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDF2",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter m",
-    "aliases": [
-      "dm"
-    ],
-    "tags": [
-      "flag",
-      "dominica"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇴",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDF4",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter o",
-    "aliases": [
-      "do"
-    ],
-    "tags": [
-      "flag",
-      "dominican republic"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇨",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDE8",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter c",
-    "aliases": [
-      "ec"
-    ],
-    "tags": [
-      "flag",
-      "ecuador"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇬",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDEC",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter g",
-    "aliases": [
-      "eg"
-    ],
-    "tags": [
-      "flag",
-      "egypt"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇻",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDFB",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter v",
-    "aliases": [
-      "sv"
-    ],
-    "tags": [
-      "flag",
-      "el salvador"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇶",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF6",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter q",
-    "aliases": [
-      "gq"
-    ],
-    "tags": [
-      "flag",
-      "equatorial guinea"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇷",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDF7",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter r",
-    "aliases": [
-      "er"
-    ],
-    "tags": [
-      "flag",
-      "eritrea"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇪",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDEA",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter e",
-    "aliases": [
-      "ee"
-    ],
-    "tags": [
-      "flag",
-      "estonia"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇹",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDF9",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter t",
-    "aliases": [
-      "et"
-    ],
-    "tags": [
-      "flag",
-      "ethiopia"
-    ]
-  },
-  {
-    "emojiChar": "🇫🇴",
-    "emoji": "\uD83C\uDDEB\uD83C\uDDF4",
-    "description": "regional indicator symbol letter f + regional indicator symbol letter o",
-    "aliases": [
-      "fo"
-    ],
-    "tags": [
-      "flag",
-      "faroe islands"
-    ]
-  },
-  {
-    "emojiChar": "🇫🇯",
-    "emoji": "\uD83C\uDDEB\uD83C\uDDEF",
-    "description": "regional indicator symbol letter f + regional indicator symbol letter j",
-    "aliases": [
-      "fj"
-    ],
-    "tags": [
-      "flag",
-      "fiji"
-    ]
-  },
-  {
-    "emojiChar": "🇫🇮",
-    "emoji": "\uD83C\uDDEB\uD83C\uDDEE",
-    "description": "regional indicator symbol letter f + regional indicator symbol letter i",
-    "aliases": [
-      "fi"
-    ],
-    "tags": [
-      "flag",
-      "finland"
-    ]
-  },
-  {
-    "emojiChar": "🇫🇷",
-    "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
-    "description": "regional indicator symbol letter f + regional indicator symbol letter r",
-    "aliases": [
-      "fr"
-    ],
-    "tags": [
-      "flag",
-      "france"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇫",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDEB",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter f",
-    "aliases": [
-      "gf"
-    ],
-    "tags": [
-      "flag",
-      "french guiana"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇫",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDEB",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter f",
-    "aliases": [
-      "tf"
-    ],
-    "tags": [
-      "flag",
-      "french southern territories"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇦",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDE6",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter a",
-    "aliases": [
-      "ga"
-    ],
-    "tags": [
-      "flag",
-      "gabon"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇲",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF2",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter m",
-    "aliases": [
-      "gm"
-    ],
-    "tags": [
-      "flag",
-      "gambia"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇪",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDEA",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter e",
-    "aliases": [
-      "ge"
-    ],
-    "tags": [
-      "flag",
-      "georgia"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇺",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDFA",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter u",
-    "aliases": [
-      "eu"
-    ],
-    "tags": [
-      "flag",
-      "european union"
-    ]
-  },
-  {
-    "emojiChar": "🇩🇪",
-    "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
-    "description": "regional indicator symbol letter d + regional indicator symbol letter e",
-    "aliases": [
-      "de"
-    ],
-    "tags": [
-      "flag",
-      "germany"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇭",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDED",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter h",
-    "aliases": [
-      "gh"
-    ],
-    "tags": [
-      "flag",
-      "ghana"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇮",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDEE",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter i",
-    "aliases": [
-      "gi"
-    ],
-    "tags": [
-      "flag",
-      "gibraltar"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇷",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF7",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter r",
-    "aliases": [
-      "gr"
-    ],
-    "tags": [
-      "flag",
-      "greece"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇩",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDE9",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter d",
-    "aliases": [
-      "gd"
-    ],
-    "tags": [
-      "flag",
-      "grenada"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇵",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF5",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter p",
-    "aliases": [
-      "gp"
-    ],
-    "tags": [
-      "flag",
-      "guadeloupe"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇺",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDFA",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter u",
-    "aliases": [
-      "gu"
-    ],
-    "tags": [
-      "flag",
-      "guam"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇹",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF9",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter t",
-    "aliases": [
-      "gt"
-    ],
-    "tags": [
-      "flag",
-      "guatemala"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇳",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDF3",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter n",
-    "aliases": [
-      "gn"
-    ],
-    "tags": [
-      "flag",
-      "guinea"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇼",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDFC",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter w",
-    "aliases": [
-      "gw"
-    ],
-    "tags": [
-      "flag",
-      "guinea-bissau"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇾",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDFE",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter y",
-    "aliases": [
-      "gy"
-    ],
-    "tags": [
-      "flag",
-      "guyana"
-    ]
-  },
-  {
-    "emojiChar": "🇭🇹",
-    "emoji": "\uD83C\uDDED\uD83C\uDDF9",
-    "description": "regional indicator symbol letter h + regional indicator symbol letter t",
-    "aliases": [
-      "ht"
-    ],
-    "tags": [
-      "flag",
-      "haiti"
-    ]
-  },
-  {
-    "emojiChar": "🇭🇳",
-    "emoji": "\uD83C\uDDED\uD83C\uDDF3",
-    "description": "regional indicator symbol letter h + regional indicator symbol letter n",
-    "aliases": [
-      "hn"
-    ],
-    "tags": [
-      "flag",
-      "honduras"
-    ]
-  },
-  {
-    "emojiChar": "🇭🇰",
-    "emoji": "\uD83C\uDDED\uD83C\uDDF0",
-    "description": "regional indicator symbol letter h + regional indicator symbol letter k",
-    "aliases": [
-      "hk"
-    ],
-    "tags": [
-      "flag",
-      "hong kong"
-    ]
-  },
-  {
-    "emojiChar": "🇭🇺",
-    "emoji": "\uD83C\uDDED\uD83C\uDDFA",
-    "description": "regional indicator symbol letter h + regional indicator symbol letter u",
-    "aliases": [
-      "hu"
-    ],
-    "tags": [
-      "flag",
-      "hungary"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇸",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF8",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter s",
-    "aliases": [
-      "is"
-    ],
-    "tags": [
-      "flag",
-      "iceland"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇳",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF3",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter n",
-    "aliases": [
-      "in"
-    ],
-    "tags": [
-      "flag",
-      "india"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇩",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDE9",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter d",
-    "aliases": [
-      "id_flag"
-    ],
-    "tags": [
-      "flag",
-      "indonesia"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇷",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF7",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter r",
-    "aliases": [
-      "ir"
-    ],
-    "tags": [
-      "flag",
-      "iran"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇶",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF6",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter q",
-    "aliases": [
-      "iq"
-    ],
-    "tags": [
-      "flag",
-      "iraq"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇪",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDEA",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter e",
-    "aliases": [
-      "ie"
-    ],
-    "tags": [
-      "flag",
-      "ireland"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇱",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter l",
-    "aliases": [
-      "il"
-    ],
-    "tags": [
-      "flag",
-      "israel"
-    ]
-  },
-  {
-    "emojiChar": "🇮🇹",
-    "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
-    "description": "regional indicator symbol letter i + regional indicator symbol letter t",
-    "aliases": [
-      "it"
-    ],
-    "tags": [
-      "flag",
-      "italy"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇮",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDEE",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter i",
-    "aliases": [
-      "ci"
-    ],
-    "tags": [
-      "flag",
-      "ivory coast"
-    ]
-  },
-  {
-    "emojiChar": "🇯🇲",
-    "emoji": "\uD83C\uDDEF\uD83C\uDDF2",
-    "description": "regional indicator symbol letter j + regional indicator symbol letter m",
-    "aliases": [
-      "jm"
-    ],
-    "tags": [
-      "flag",
-      "jamaica"
-    ]
-  },
-  {
-    "emojiChar": "🇯🇵",
-    "emoji": "\uD83C\uDDEF\uD83C\uDDF5",
-    "description": "regional indicator symbol letter j + regional indicator symbol letter p",
-    "aliases": [
-      "jp"
-    ],
-    "tags": [
-      "flag",
-      "japan"
-    ]
-  },
-  {
-    "emojiChar": "🇯🇴",
-    "emoji": "\uD83C\uDDEF\uD83C\uDDF4",
-    "description": "regional indicator symbol letter j + regional indicator symbol letter o",
-    "aliases": [
-      "jo"
-    ],
-    "tags": [
-      "flag",
-      "jordan"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇿",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDFF",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter z",
-    "aliases": [
-      "kz"
-    ],
-    "tags": [
-      "flag",
-      "kazakhstan"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇪",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDEA",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter e",
-    "aliases": [
-      "ke"
-    ],
-    "tags": [
-      "flag",
-      "kenya"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇮",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDEE",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter i",
-    "aliases": [
-      "ki"
-    ],
-    "tags": [
-      "flag",
-      "kiribati"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇼",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDFC",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter w",
-    "aliases": [
-      "kw"
-    ],
-    "tags": [
-      "flag",
-      "kuwait"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇬",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDEC",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter g",
-    "aliases": [
-      "kg"
-    ],
-    "tags": [
-      "flag",
-      "kyrgyzstan"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇦",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDE6",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter a",
-    "aliases": [
-      "la"
-    ],
-    "tags": [
-      "flag",
-      "laos"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇻",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDFB",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter v",
-    "aliases": [
-      "lv"
-    ],
-    "tags": [
-      "flag",
-      "latvia"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇧",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDE7",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter b",
-    "aliases": [
-      "lb"
-    ],
-    "tags": [
-      "flag",
-      "lebanon"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇸",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDF8",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter s",
-    "aliases": [
-      "ls"
-    ],
-    "tags": [
-      "flag",
-      "lesotho"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇷",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDF7",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter r",
-    "aliases": [
-      "lr"
-    ],
-    "tags": [
-      "flag",
-      "liberia"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇾",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDFE",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter y",
-    "aliases": [
-      "ly"
-    ],
-    "tags": [
-      "flag",
-      "libya"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇮",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDEE",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter i",
-    "aliases": [
-      "li"
-    ],
-    "tags": [
-      "flag",
-      "liechtenstein"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇹",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter t",
-    "aliases": [
-      "lt"
-    ],
-    "tags": [
-      "flag",
-      "lithuania"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇺",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDFA",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter u",
-    "aliases": [
-      "lu"
-    ],
-    "tags": [
-      "flag",
-      "luxembourg"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇴",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF4",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter o",
-    "aliases": [
-      "mo"
-    ],
-    "tags": [
-      "flag",
-      "macau"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇰",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF0",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter k",
-    "aliases": [
-      "mk"
-    ],
-    "tags": [
-      "flag",
-      "macedonia"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇬",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDEC",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter g",
-    "aliases": [
-      "mg"
-    ],
-    "tags": [
-      "flag",
-      "madagascar"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇼",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDFC",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter w",
-    "aliases": [
-      "mw"
-    ],
-    "tags": [
-      "flag",
-      "malawi"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇾",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDFE",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter y",
-    "aliases": [
-      "my"
-    ],
-    "tags": [
-      "flag",
-      "malaysia"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇻",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDFB",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter v",
-    "aliases": [
-      "mv"
-    ],
-    "tags": [
-      "flag",
-      "maldives"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇱",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF1",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter l",
-    "aliases": [
-      "ml"
-    ],
-    "tags": [
-      "flag",
-      "mali"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇹",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF9",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter t",
-    "aliases": [
-      "mt"
-    ],
-    "tags": [
-      "flag",
-      "malta"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇶",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF6",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter q",
-    "aliases": [
-      "mq"
-    ],
-    "tags": [
-      "flag",
-      "martinique"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇷",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF7",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter r",
-    "aliases": [
-      "mr"
-    ],
-    "tags": [
-      "flag",
-      "mauritania"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇽",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDFD",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter x",
-    "aliases": [
-      "mx"
-    ],
-    "tags": [
-      "flag",
-      "mexico"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇩",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDE9",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter d",
-    "aliases": [
-      "md"
-    ],
-    "tags": [
-      "flag",
-      "moldova"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇳",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF3",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter n",
-    "aliases": [
-      "mn"
-    ],
-    "tags": [
-      "flag",
-      "mongolia"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇪",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDEA",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter e",
-    "aliases": [
-      "me"
-    ],
-    "tags": [
-      "flag",
-      "montenegro"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇸",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF8",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter s",
-    "aliases": [
-      "ms"
-    ],
-    "tags": [
-      "flag",
-      "montserrat"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇦",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDE6",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter a",
-    "aliases": [
-      "ma"
-    ],
-    "tags": [
-      "flag",
-      "morocco"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇿",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDFF",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter z",
-    "aliases": [
-      "mz"
-    ],
-    "tags": [
-      "flag",
-      "mozambique"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇲",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF2",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter m",
-    "aliases": [
-      "mm"
-    ],
-    "tags": [
-      "flag",
-      "myanmar"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇦",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDE6",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter a",
-    "aliases": [
-      "na"
-    ],
-    "tags": [
-      "flag",
-      "namibia"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇵",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDF5",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter p",
-    "aliases": [
-      "np"
-    ],
-    "tags": [
-      "flag",
-      "nepal"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇱",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDF1",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter l",
-    "aliases": [
-      "nl"
-    ],
-    "tags": [
-      "flag",
-      "netherlands"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇨",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDE8",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter c",
-    "aliases": [
-      "nc"
-    ],
-    "tags": [
-      "flag",
-      "new caledonia"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇿",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDFF",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter z",
-    "aliases": [
-      "nz"
-    ],
-    "tags": [
-      "flag",
-      "new zealand"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇮",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDEE",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter i",
-    "aliases": [
-      "ni"
-    ],
-    "tags": [
-      "flag",
-      "nicaragua"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇪",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDEA",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter e",
-    "aliases": [
-      "ne"
-    ],
-    "tags": [
-      "flag",
-      "niger"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇬",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDEC",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter g",
-    "aliases": [
-      "ng"
-    ],
-    "tags": [
-      "flag",
-      "nigeria"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇺",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDFA",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter u",
-    "aliases": [
-      "nu"
-    ],
-    "tags": [
-      "flag",
-      "niue"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇵",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDF5",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter p",
-    "aliases": [
-      "kp"
-    ],
-    "tags": [
-      "flag",
-      "north korea"
-    ]
-  },
-  {
-    "emojiChar": "🇲🇵",
-    "emoji": "\uD83C\uDDF2\uD83C\uDDF5",
-    "description": "regional indicator symbol letter m + regional indicator symbol letter p",
-    "aliases": [
-      "mp"
-    ],
-    "tags": [
-      "flag",
-      "northern mariana islands"
-    ]
-  },
-  {
-    "emojiChar": "🇳🇴",
-    "emoji": "\uD83C\uDDF3\uD83C\uDDF4",
-    "description": "regional indicator symbol letter n + regional indicator symbol letter o",
-    "aliases": [
-      "no"
-    ],
-    "tags": [
-      "flag",
-      "norway"
-    ]
-  },
-  {
-    "emojiChar": "🇴🇲",
-    "emoji": "\uD83C\uDDF4\uD83C\uDDF2",
-    "description": "regional indicator symbol letter o + regional indicator symbol letter m",
-    "aliases": [
-      "om"
-    ],
-    "tags": [
-      "flag",
-      "oman"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇰",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDF0",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter k",
-    "aliases": [
-      "pk"
-    ],
-    "tags": [
-      "flag",
-      "pakistan"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇼",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDFC",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter w",
-    "aliases": [
-      "pw"
-    ],
-    "tags": [
-      "flag",
-      "palau"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇸",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDF8",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter s",
-    "aliases": [
-      "ps"
-    ],
-    "tags": [
-      "flag",
-      "palestine"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇦",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDE6",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter a",
-    "aliases": [
-      "pa"
-    ],
-    "tags": [
-      "flag",
-      "panama"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇬",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDEC",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter g",
-    "aliases": [
-      "pg"
-    ],
-    "tags": [
-      "flag",
-      "papua new guinea"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇾",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDFE",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter y",
-    "aliases": [
-      "py"
-    ],
-    "tags": [
-      "flag",
-      "paraguay"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇪",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDEA",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter e",
-    "aliases": [
-      "pe"
-    ],
-    "tags": [
-      "flag",
-      "peru"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇭",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDED",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter h",
-    "aliases": [
-      "ph"
-    ],
-    "tags": [
-      "flag",
-      "philippines"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇱",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDF1",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter l",
-    "aliases": [
-      "pl"
-    ],
-    "tags": [
-      "flag",
-      "poland"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇹",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter t",
-    "aliases": [
-      "pt"
-    ],
-    "tags": [
-      "flag",
-      "portugal"
-    ]
-  },
-  {
-    "emojiChar": "🇵🇷",
-    "emoji": "\uD83C\uDDF5\uD83C\uDDF7",
-    "description": "regional indicator symbol letter p + regional indicator symbol letter r",
-    "aliases": [
-      "pr"
-    ],
-    "tags": [
-      "flag",
-      "puerto rico"
-    ]
-  },
-  {
-    "emojiChar": "🇶🇦",
-    "emoji": "\uD83C\uDDF6\uD83C\uDDE6",
-    "description": "regional indicator symbol letter q + regional indicator symbol letter a",
-    "aliases": [
-      "qa"
-    ],
-    "tags": [
-      "flag",
-      "qatar"
-    ]
-  },
-  {
-    "emojiChar": "🇷🇪",
-    "emoji": "\uD83C\uDDF7\uD83C\uDDEA",
-    "description": "regional indicator symbol letter r + regional indicator symbol letter e",
-    "aliases": [
-      "re"
-    ],
-    "tags": [
-      "flag",
-      "reunion"
-    ]
-  },
-  {
-    "emojiChar": "🇷🇴",
-    "emoji": "\uD83C\uDDF7\uD83C\uDDF4",
-    "description": "regional indicator symbol letter r + regional indicator symbol letter o",
-    "aliases": [
-      "ro"
-    ],
-    "tags": [
-      "flag",
-      "romania"
-    ]
-  },
-  {
-    "emojiChar": "🇷🇺",
-    "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
-    "description": "regional indicator symbol letter r + regional indicator symbol letter u",
-    "aliases": [
-      "ru"
-    ],
-    "tags": [
-      "flag",
-      "russia"
-    ]
-  },
-  {
-    "emojiChar": "🇷🇼",
-    "emoji": "\uD83C\uDDF7\uD83C\uDDFC",
-    "description": "regional indicator symbol letter r + regional indicator symbol letter w",
-    "aliases": [
-      "rw"
-    ],
-    "tags": [
-      "flag",
-      "rwanda"
-    ]
-  },
-  {
-    "emojiChar": "🇼🇸",
-    "emoji": "\uD83C\uDDFC\uD83C\uDDF8",
-    "description": "regional indicator symbol letter w + regional indicator symbol letter s",
-    "aliases": [
-      "ws"
-    ],
-    "tags": [
-      "flag",
-      "samoa"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇲",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF2",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter m",
-    "aliases": [
-      "sm"
-    ],
-    "tags": [
-      "flag",
-      "san marino"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇹",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF9",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter t",
-    "aliases": [
-      "st"
-    ],
-    "tags": [
-      "flag",
-      "sao tome and principe"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇦",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDE6",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter a",
-    "aliases": [
-      "sa_flag"
-    ],
-    "tags": [
-      "flag",
-      "saudi arabia"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇳",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF3",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter n",
-    "aliases": [
-      "sn"
-    ],
-    "tags": [
-      "flag",
-      "senegal"
-    ]
-  },
-  {
-    "emojiChar": "🇷🇸",
-    "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
-    "description": "regional indicator symbol letter r + regional indicator symbol letter s",
-    "aliases": [
-      "rs"
-    ],
-    "tags": [
-      "flag",
-      "serbia"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇨",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDE8",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter c",
-    "aliases": [
-      "sc"
-    ],
-    "tags": [
-      "flag",
-      "seychelles"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇱",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF1",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter l",
-    "aliases": [
-      "sl"
-    ],
-    "tags": [
-      "flag",
-      "sierra leone"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇬",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDEC",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter g",
-    "aliases": [
-      "sg"
-    ],
-    "tags": [
-      "flag",
-      "singapore"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇰",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF0",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter k",
-    "aliases": [
-      "sk"
-    ],
-    "tags": [
-      "flag",
-      "slovakia"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇮",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDEE",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter i",
-    "aliases": [
-      "si"
-    ],
-    "tags": [
-      "flag",
-      "slovenia"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇧",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDE7",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter b",
-    "aliases": [
-      "sb"
-    ],
-    "tags": [
-      "flag",
-      "solomon islands"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇴",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF4",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter o",
-    "aliases": [
-      "so"
-    ],
-    "tags": [
-      "flag",
-      "somalia"
-    ]
-  },
-  {
-    "emojiChar": "🇿🇦",
-    "emoji": "\uD83C\uDDFF\uD83C\uDDE6",
-    "description": "regional indicator symbol letter z + regional indicator symbol letter a",
-    "aliases": [
-      "za"
-    ],
-    "tags": [
-      "flag",
-      "south africa"
-    ]
-  },
-  {
-    "emojiChar": "🇰🇷",
-    "emoji": "\uD83C\uDDF0\uD83C\uDDF7",
-    "description": "regional indicator symbol letter k + regional indicator symbol letter r",
-    "aliases": [
-      "kr"
-    ],
-    "tags": [
-      "flag",
-      "south korea"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇸",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF8",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter s",
-    "aliases": [
-      "ss"
-    ],
-    "tags": [
-      "flag",
-      "south sudan"
-    ]
-  },
-  {
-    "emojiChar": "🇪🇸",
-    "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
-    "description": "regional indicator symbol letter e + regional indicator symbol letter s",
-    "aliases": [
-      "es"
-    ],
-    "tags": [
-      "flag",
-      "spain"
-    ]
-  },
-  {
-    "emojiChar": "🇱🇰",
-    "emoji": "\uD83C\uDDF1\uD83C\uDDF0",
-    "description": "regional indicator symbol letter l + regional indicator symbol letter k",
-    "aliases": [
-      "lk"
-    ],
-    "tags": [
-      "flag",
-      "sri lanka"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇩",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDE9",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter d",
-    "aliases": [
-      "sd"
-    ],
-    "tags": [
-      "flag",
-      "sudan"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇷",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDF7",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter r",
-    "aliases": [
-      "sr"
-    ],
-    "tags": [
-      "flag",
-      "suriname"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇿",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDFF",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter z",
-    "aliases": [
-      "sz"
-    ],
-    "tags": [
-      "flag",
-      "swaziland"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇪",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDEA",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter e",
-    "aliases": [
-      "se"
-    ],
-    "tags": [
-      "flag",
-      "sweden"
-    ]
-  },
-  {
-    "emojiChar": "🇨🇭",
-    "emoji": "\uD83C\uDDE8\uD83C\uDDED",
-    "description": "regional indicator symbol letter c + regional indicator symbol letter h",
-    "aliases": [
-      "ch"
-    ],
-    "tags": [
-      "flag",
-      "switzerland"
-    ]
-  },
-  {
-    "emojiChar": "🇸🇾",
-    "emoji": "\uD83C\uDDF8\uD83C\uDDFE",
-    "description": "regional indicator symbol letter s + regional indicator symbol letter y",
-    "aliases": [
-      "sy"
-    ],
-    "tags": [
-      "flag",
-      "syria"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇯",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDEF",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter j",
-    "aliases": [
-      "tj"
-    ],
-    "tags": [
-      "flag",
-      "tajikistan"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇿",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDFF",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter z",
-    "aliases": [
-      "tz"
-    ],
-    "tags": [
-      "flag",
-      "tanzania"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇭",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDED",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter h",
-    "aliases": [
-      "th"
-    ],
-    "tags": [
-      "flag",
-      "thailand"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇱",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF1",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter l",
-    "aliases": [
-      "tl"
-    ],
-    "tags": [
-      "flag",
-      "east timor"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇬",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDEC",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter g",
-    "aliases": [
-      "tg"
-    ],
-    "tags": [
-      "flag",
-      "togo"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇴",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF4",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter o",
-    "aliases": [
-      "to"
-    ],
-    "tags": [
-      "flag",
-      "tonga"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇹",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF9",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter t",
-    "aliases": [
-      "tt"
-    ],
-    "tags": [
-      "flag",
-      "trinidad and tobago"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇳",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF3",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter n",
-    "aliases": [
-      "tn"
-    ],
-    "tags": [
-      "flag",
-      "tunisia"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇷",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF7",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter r",
-    "aliases": [
-      "tr"
-    ],
-    "tags": [
-      "flag",
-      "turkey"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇲",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDF2",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter m",
-    "aliases": [
-      "tm_flag"
-    ],
-    "tags": [
-      "flag",
-      "turkmenistan"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇨",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDE8",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter c",
-    "aliases": [
-      "tc"
-    ],
-    "tags": [
-      "flag",
-      "turks and caicos islands"
-    ]
-  },
-  {
-    "emojiChar": "🇹🇻",
-    "emoji": "\uD83C\uDDF9\uD83C\uDDFB",
-    "description": "regional indicator symbol letter t + regional indicator symbol letter v",
-    "aliases": [
-      "tv_flag"
-    ],
-    "tags": [
-      "flag",
-      "tuvalu"
-    ]
-  },
-  {
-    "emojiChar": "🇺🇬",
-    "emoji": "\uD83C\uDDFA\uD83C\uDDEC",
-    "description": "regional indicator symbol letter u + regional indicator symbol letter g",
-    "aliases": [
-      "ug"
-    ],
-    "tags": [
-      "flag",
-      "uganda"
-    ]
-  },
-  {
-    "emojiChar": "🇺🇦",
-    "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
-    "description": "regional indicator symbol letter u + regional indicator symbol letter a",
-    "aliases": [
-      "ua"
-    ],
-    "tags": [
-      "flag",
-      "ukraine"
-    ]
-  },
-  {
-    "emojiChar": "🇦🇪",
-    "emoji": "\uD83C\uDDE6\uD83C\uDDEA",
-    "description": "regional indicator symbol letter a + regional indicator symbol letter e",
-    "aliases": [
-      "ae"
-    ],
-    "tags": [
-      "flag",
-      "united arab emirates"
-    ]
-  },
-  {
-    "emojiChar": "🇬🇧",
-    "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
-    "description": "regional indicator symbol letter g + regional indicator symbol letter b",
-    "aliases": [
-      "gb"
-    ],
-    "tags": [
-      "flag",
-      "united kingdom"
-    ]
-  },
-  {
-    "emojiChar": "🇺🇾",
-    "emoji": "\uD83C\uDDFA\uD83C\uDDFE",
-    "description": "regional indicator symbol letter u + regional indicator symbol letter y",
-    "aliases": [
-      "uy"
-    ],
-    "tags": [
-      "flag",
-      "uruguay"
-    ]
-  },
-  {
-    "emojiChar": "🇺🇸",
-    "emoji": "\uD83C\uDDFA\uD83C\uDDF8",
-    "description": "regional indicator symbol letter u + regional indicator symbol letter s",
-    "aliases": [
-      "us"
-    ],
-    "tags": [
-      "flag",
-      "united states of america"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇮",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDEE",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter i",
-    "aliases": [
-      "vi"
-    ],
-    "tags": [
-      "flag",
-      "us virgin islands"
-    ]
-  },
-  {
-    "emojiChar": "🇺🇿",
-    "emoji": "\uD83C\uDDFA\uD83C\uDDFF",
-    "description": "regional indicator symbol letter u + regional indicator symbol letter z",
-    "aliases": [
-      "uz"
-    ],
-    "tags": [
-      "flag",
-      "uzbekistan"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇨",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDE8",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter c",
-    "aliases": [
-      "vc"
-    ],
-    "tags": [
-      "flag",
-      "st vincent grenadines"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇺",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDFA",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter u",
-    "aliases": [
-      "vu"
-    ],
-    "tags": [
-      "flag",
-      "vanuatu"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇪",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDEA",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter e",
-    "aliases": [
-      "ve"
-    ],
-    "tags": [
-      "flag",
-      "venezuela"
-    ]
-  },
-  {
-    "emojiChar": "🇻🇳",
-    "emoji": "\uD83C\uDDFB\uD83C\uDDF3",
-    "description": "regional indicator symbol letter v + regional indicator symbol letter n",
-    "aliases": [
-      "vn"
-    ],
-    "tags": [
-      "flag",
-      "vietnam"
-    ]
-  },
-  {
-    "emojiChar": "🇾🇪",
-    "emoji": "\uD83C\uDDFE\uD83C\uDDEA",
-    "description": "regional indicator symbol letter y + regional indicator symbol letter e",
-    "aliases": [
-      "ye"
-    ],
-    "tags": [
-      "flag",
-      "yemen"
-    ]
-  },
-  {
-    "emojiChar": "🇿🇲",
-    "emoji": "\uD83C\uDDFF\uD83C\uDDF2",
-    "description": "regional indicator symbol letter z + regional indicator symbol letter m",
-    "aliases": [
-      "zm"
-    ],
-    "tags": [
-      "flag",
-      "zambia"
-    ]
-  },
-  {
-    "emojiChar": "🇿🇼",
-    "emoji": "\uD83C\uDDFF\uD83C\uDDFC",
-    "description": "regional indicator symbol letter z + regional indicator symbol letter w",
-    "aliases": [
-      "zw"
-    ],
-    "tags": [
-      "flag",
-      "zimbabwe"
-    ]
   },
   {
     "emojiChar": "🇦",
