@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.0.0
+
+- Fix the HTML to Unicode parser to always parse the longer emojis (thanks @freva)
+- Add alias for "pumpkin" (thanks @sullis)
+- Add a lot of missing flag emojis (thanks @ankitkariryaa)
+- Support for all emojis from Unicode 11.0
+- Support for all emojis from Unicode 10.0
+- Add a `EmojiParser.replaceAllEmojis` function (thanks @cbedoy)
+
 ## v4.0.0
 
 - Add "source code" strings to emoji json database
