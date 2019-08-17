@@ -83,21 +83,17 @@ public class EmojiManager {
    * is unknown
    */
   public static Emoji getForAlias(String alias) {
-    if (alias == null) {
+    if (alias == null || alias.isEmpty()) {
       return null;
     }
     return EMOJIS_BY_ALIAS.get(trimAlias(alias));
   }
 
   private static String trimAlias(String alias) {
-    String result = alias;
-    if (result.startsWith(":")) {
-      result = result.substring(1, result.length());
-    }
-    if (result.endsWith(":")) {
-      result = result.substring(0, result.length() - 1);
-    }
-    return result;
+    int len = alias.length();
+    return alias.substring(
+            alias.charAt(0) == ':' ? 1 : 0,
+            alias.charAt(len - 1) == ':' ? len - 1 : len);
   }
 
 
