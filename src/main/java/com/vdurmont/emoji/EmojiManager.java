@@ -23,7 +23,7 @@ public class EmojiManager {
   private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
     new HashMap<String, Set<Emoji>>();
   private static final List<Emoji> ALL_EMOJIS;
-  private static final EmojiTrie EMOJI_TRIE;
+  static final EmojiTrie EMOJI_TRIE;
 
   static {
     try {
