@@ -1,7 +1,6 @@
 package com.vdurmont.emoji;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -456,11 +455,7 @@ public class EmojiParser {
   protected static int getEmojiEndPos(char[] text, int startPos) {
     int best = -1;
     for (int j = startPos + 1; j <= text.length; j++) {
-      EmojiTrie.Matches status = EmojiManager.isEmoji(Arrays.copyOfRange(
-        text,
-        startPos,
-        j
-      ));
+      EmojiTrie.Matches status = EmojiManager.EMOJI_TRIE.isEmoji(text, startPos, j);
 
       if (status.exactMatch()) {
         best = j;
