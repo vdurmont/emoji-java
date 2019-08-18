@@ -142,6 +142,19 @@ public class EmojiManager {
   }
 
   /**
+   * Tests if a given String contains an emoji.
+   *
+   * @param string the string to test
+   *
+   * @return true if the string contains an emoji's unicode, false otherwise
+   */
+  public static boolean containsEmoji(String string) {
+    if (string == null) return false;
+
+    return EmojiParser.getNextUnicodeCandidate(string.toCharArray(), 0) != null;
+  }
+
+  /**
    * Tests if a given String only contains emojis.
    *
    * @param string the string to test

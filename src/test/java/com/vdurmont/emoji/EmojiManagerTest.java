@@ -144,6 +144,42 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void containsEmoji_with_fitzpatric_modifier_returns_true() {
+    // GIVEN
+    String emoji = "\uD83E\uDD30\uD83C\uDFFB";
+
+    // WHEN
+    boolean containsEmoji = EmojiManager.containsEmoji(emoji);
+
+    // THEN
+    assertTrue(containsEmoji);
+  }
+
+  @Test
+  public void containsEmoji_for_a_non_emoji_returns_false() {
+    // GIVEN
+    String str = "test";
+
+    // WHEN
+    boolean containsEmoji = EmojiManager.containsEmoji(str);
+
+    // THEN
+    assertFalse(containsEmoji);
+  }
+
+  @Test
+  public void containsEmoji_for_an_emoji_and_other_chars_returns_true() {
+    // GIVEN
+    String str = "😀 test";
+
+    // WHEN
+    boolean containsEmoji = EmojiManager.containsEmoji(str);
+
+    // THEN
+    assertTrue(containsEmoji);
+  }
+
+  @Test
   public void isOnlyEmojis_for_an_emoji_returns_true() {
     // GIVEN
     String str = "😀";
