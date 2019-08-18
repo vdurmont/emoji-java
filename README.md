@@ -43,6 +43,7 @@ The `EmojiManager` provides several static methods to search through the emojis 
 * `getForAlias` returns the emoji for an alias
 * `getAll` returns all the emojis
 * `isEmoji` checks if a string is an emoji
+* `containsEmoji` checks if a string contains any emoji
 
 You can also query the metadata:
 
