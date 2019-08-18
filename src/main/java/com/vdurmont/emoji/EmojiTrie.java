@@ -5,12 +5,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EmojiTrie {
-  private Node root = new Node();
+  private final Node root = new Node();
+  final int maxDepth;
 
   public EmojiTrie(Collection<Emoji> emojis) {
+    int maxDepth = 0;
     for (Emoji emoji : emojis) {
       Node tree = root;
-      for (char c: emoji.getUnicode().toCharArray()) {
+      char[] chars = emoji.getUnicode().toCharArray();
+      maxDepth = Math.max(maxDepth, chars.length);
+      for (char c: chars) {
         if (!tree.hasChild(c)) {
           tree.addChild(c);
         }
@@ -18,6 +22,7 @@ public class EmojiTrie {
       }
       tree.setEmoji(emoji);
     }
+    this.maxDepth = maxDepth;
   }
 
 

@@ -113,42 +113,22 @@ public class EmojiParser {
   public static String parseToUnicode(String input) {
     StringBuilder sb = new StringBuilder(input.length());
 
-    int last = 0;
-    for (; last + 2 < input.length(); last++) {
-      boolean matched = false;
+    for (int last = 0; last < input.length(); last++) {
       AliasCandidate alias = getAliasAt(input, last);
+      if (alias == null) {
+          alias = getHtmlEncodedEmojiAt(input, last);
+      }
+
       if (alias != null) {
-        matched = true;
         sb.append(alias.emoji.getUnicode());
         last = alias.endIndex;
 
         if (alias.fitzpatrick != null) {
           sb.append(alias.fitzpatrick.unicode);
         }
-      } else if (input.charAt(last) == '&' && input.charAt(last + 1) == '#') {
-        // Possible HTML encoded emoji
-        for (Emoji emoji : EmojiManager.getAll()) {
-          if (input.regionMatches(last, emoji.getHtmlHexadecimal(), 0, emoji.getHtmlHexadecimal().length())) {
-            sb.append(emoji.getUnicode());
-            last += emoji.getHtmlHexadecimal().length() - 1;
-            matched = true;
-            break;
-          } else if (input.regionMatches(last, emoji.getHtmlDecimal(), 0, emoji.getHtmlDecimal().length())) {
-            sb.append(emoji.getUnicode());
-            last += emoji.getHtmlDecimal().length() - 1;
-            matched = true;
-            break;
-          }
-        }
-      }
-
-      if (!matched) {
+      } else {
         sb.append(input.charAt(last));
       }
-    }
-
-    if (last < input.length()) {
-      sb.append(input, last, input.length());
     }
 
     return sb.toString();
@@ -156,7 +136,7 @@ public class EmojiParser {
 
   /** Finds the alias in the given string starting at the given point, null otherwise */
   protected static AliasCandidate getAliasAt(String input, int start) {
-    if (input.charAt(start) != ':') return null; // Aliases start with :
+    if (input.length() < start + 2 || input.charAt(start) != ':') return null; // Aliases start with :
     int aliasEnd = input.indexOf(':', start + 2);  // Alias must be at least 1 char in length
     if (aliasEnd == -1) return null; // No alias end found
 
@@ -172,6 +152,44 @@ public class EmojiParser {
     Emoji emoji = EmojiManager.getForAlias(input.substring(start, aliasEnd));
     if (emoji == null) return null; // Not a valid alias
     return new AliasCandidate(emoji, null, start, aliasEnd);
+  }
+
+  /** Finds the HTML encoded emoji in the given string starting at the given point, null otherwise */
+  protected static AliasCandidate getHtmlEncodedEmojiAt(String input, int start) {
+    if (input.length() < start + 4 || input.charAt(start) != '&' || input.charAt(start + 1) != '#') return null;
+
+    Emoji longestEmoji = null;
+    int longestCodePointEnd = -1;
+    char[] chars = new char[EmojiManager.EMOJI_TRIE.maxDepth];
+    int charsIndex = 0;
+    int codePointStart = start;
+    do {
+      int codePointEnd = input.indexOf(';', codePointStart + 3);  // Code point must be at least 1 char in length
+      if (codePointEnd == -1) break;
+
+      try {
+        int radix = input.charAt(codePointStart + 2) == 'x' ? 16 : 10;
+        int codePoint = Integer.parseInt(input.substring(codePointStart + 2 + radix / 16, codePointEnd), radix);
+        charsIndex += Character.toChars(codePoint, chars, charsIndex);
+      } catch (NumberFormatException e) {
+        break;
+      } catch (IllegalArgumentException e) {
+        break;
+      }
+      Emoji foundEmoji = EmojiManager.EMOJI_TRIE.getEmoji(chars, 0, charsIndex);
+      if (foundEmoji != null) {
+        longestEmoji = foundEmoji;
+        longestCodePointEnd = codePointEnd;
+      }
+      codePointStart = codePointEnd + 1;
+    } while (input.length() > codePointStart + 4 &&
+            input.charAt(codePointStart) == '&' &&
+            input.charAt(codePointStart + 1) == '#' &&
+            charsIndex < chars.length &&
+            !EmojiManager.EMOJI_TRIE.isEmoji(chars, 0, charsIndex).impossibleMatch());
+
+    if (longestEmoji == null) return null;
+    return new AliasCandidate(longestEmoji, null, start, longestCodePointEnd);
   }
 
   /**
