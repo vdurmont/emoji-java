@@ -4,11 +4,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -19,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 @RunWith(JUnit4.class)
 public class EmojiManagerTest {
   @Test
-  public void getForTag_with_unknown_tag_returns_null() throws IOException {
+  public void getForTag_with_unknown_tag_returns_null() {
     // GIVEN
 
     // WHEN
@@ -30,7 +27,7 @@ public class EmojiManagerTest {
   }
 
   @Test
-  public void getForTag_returns_the_emojis_for_the_tag() throws IOException {
+  public void getForTag_returns_the_emojis_for_the_tag() {
     // GIVEN
 
     // WHEN
@@ -48,7 +45,7 @@ public class EmojiManagerTest {
   }
 
   @Test
-  public void getForTag_returns_the_eu_emoji_for_same_tag() throws IOException {
+  public void getForTag_returns_the_eu_emoji_for_same_tag() {
     // GIVEN
 
     // WHEN
@@ -60,7 +57,7 @@ public class EmojiManagerTest {
   }
 
   @Test
-  public void getForAlias_with_unknown_alias_returns_null() throws IOException {
+  public void getForAlias_with_unknown_alias_returns_null() {
     // GIVEN
 
     // WHEN
@@ -71,7 +68,7 @@ public class EmojiManagerTest {
   }
 
   @Test
-  public void getForAlias_returns_the_emoji_for_the_alias() throws IOException {
+  public void getForAlias_returns_the_emoji_for_the_alias() {
     // GIVEN
 
     // WHEN
@@ -85,8 +82,7 @@ public class EmojiManagerTest {
   }
 
   @Test
-  public void getForAlias_with_colons_returns_the_emoji_for_the_alias()
-    throws IOException {
+  public void getForAlias_with_colons_returns_the_emoji_for_the_alias() {
     // GIVEN
 
     // WHEN
