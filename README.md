@@ -16,7 +16,7 @@ _The missing emoji library for java._
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>5.0.0</version>
+  <version>5.1.0</version>
 </dependency>
 ```
 
@@ -25,7 +25,7 @@ You can also download the project, build it with `mvn clean install` and add the
 ##### Via Gradle:
 
 ```gradle
-compile 'com.vdurmont:emoji-java:5.0.0'
+compile 'com.vdurmont:emoji-java:5.1.0'
 ```
 
 ##### Via Direct Download:

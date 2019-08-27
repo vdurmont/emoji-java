@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.1.0
+
+- Many performance improvements to the parsing of the emojis (thanks @freva)
+- Add a `containsEmoji` function (thanks @freva!)
+
 ## v5.0.0
 
 - Fix the HTML to Unicode parser to always parse the longer emojis (thanks @freva)
@@ -69,11 +74,11 @@ Rollback dependency org.json:json to 20140107 to keep the compatibility with Jav
 
 ## v2.1.0
 
-* Add methods:
-  * `EmojiParser#removeAllEmojis(String)`
-  * `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`
-  * `EmojiParser#removeEmojis(String, Collection<Emoji>)`
-* Upgrade dependency org.json:json
+- Add methods:
+  - `EmojiParser#removeAllEmojis(String)`
+  - `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`
+  - `EmojiParser#removeEmojis(String, Collection<Emoji>)`
+- Upgrade dependency org.json:json
 
 ## v2.0.1
 
@@ -81,14 +86,14 @@ Bug fix on the :-1: emoji
 
 ## v2.0.0
 
-* Update of the emoji database
-  * Add 14 new family emojis (man_man_boy, woman_woman_girl, etc.)
-  * Add 4 new couple emojis
-  * Add the "vulcan_salute" and "middle_finger" emojis
-  * Add 198 flags
-* Addition of the support for the diversity emojis (Fitzpatrick modifiers)
-* Removal of the deprecated methods `Emoji#getHtml` and `EmojiParser#parseToHtml`
-* Improvements in the javadoc
+- Update of the emoji database
+  - Add 14 new family emojis (man_man_boy, woman_woman_girl, etc.)
+  - Add 4 new couple emojis
+  - Add the "vulcan_salute" and "middle_finger" emojis
+  - Add 198 flags
+- Addition of the support for the diversity emojis (Fitzpatrick modifiers)
+- Removal of the deprecated methods `Emoji#getHtml` and `EmojiParser#parseToHtml`
+- Improvements in the javadoc
 
 ## v1.1.1
 
@@ -96,13 +101,13 @@ Closing the stream used to read the emoji database in `EmojiManager.java`
 
 ## v1.1.0
 
-* Update of the emoji database
-* Adding support for HTML hexadecimal:
-  * `Emoji#getHtmlHexadecimal`
-  * `EmojiParser#parseToHtmlHexadecimal`
-* The old HTML support is now HTML decimal:
-  * Deprecating `Emoji#getHtml` (replaced by `Emoji#getHtmlDecimal`)
-  * Deprecating `EmojiParser#parseToHtml` (replaced by `EmojiParser#parseToHtmlDecimal`)
+- Update of the emoji database
+- Adding support for HTML hexadecimal:
+  - `Emoji#getHtmlHexadecimal`
+  - `EmojiParser#parseToHtmlHexadecimal`
+- The old HTML support is now HTML decimal:
+  - Deprecating `Emoji#getHtml` (replaced by `Emoji#getHtmlDecimal`)
+  - Deprecating `EmojiParser#parseToHtml` (replaced by `EmojiParser#parseToHtmlDecimal`)
 
 ## v1.0.1
 
