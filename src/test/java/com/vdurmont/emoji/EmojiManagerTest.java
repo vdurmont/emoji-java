@@ -266,4 +266,12 @@ public class EmojiManagerTest {
     }
     assertEquals("Duplicates: " + duplicates, duplicates.size(), 0);
   }
+
+  @Test
+  public void getByUnicode_returns_correct_emoji() {
+    String wavingHand = "\uD83D\uDC4B";
+    Emoji e = EmojiManager.getByUnicode(wavingHand);
+    assertEquals(wavingHand, e.getUnicode());
+    assertEquals("waving hand sign", e.getDescription());
+  }
 }
