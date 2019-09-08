@@ -400,7 +400,11 @@ public class EmojiParser {
     List<UnicodeCandidate> emojis = getUnicodeCandidates(input);
     List<String> result = new ArrayList<String>();
     for (UnicodeCandidate emoji : emojis) {
-      result.add(emoji.getEmoji().getUnicode());
+      if (emoji.getEmoji().supportsFitzpatrick() && emoji.hasFitzpatrick()) {
+        result.add(emoji.getEmoji().getUnicode(emoji.getFitzpatrick()));
+      } else {
+        result.add(emoji.getEmoji().getUnicode());
+      }
     }
     return result;
   }
