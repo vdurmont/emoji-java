@@ -517,6 +517,29 @@ public class EmojiParserTest {
   }
 
   @Test
+  public void extractEmojis_withFitzpatrickModifiers() {
+    // GIVEN
+    final String surfer = EmojiManager.getForAlias("surfer").getUnicode();
+    final String surfer3 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_3);
+    final String surfer4 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_4);
+    final String surfer5 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_5);
+    final String surfer6 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_6);
+    final String surfers = surfer + " " + surfer3 + " " + surfer4 + " " + surfer5 + " " + surfer6;
+
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+
+    // THEN
+    assertEquals(5, result.size());
+    assertEquals(surfer, result.get(0));
+    assertEquals(surfer3, result.get(1));
+    assertEquals(surfer4, result.get(2));
+    assertEquals(surfer5, result.get(3));
+    assertEquals(surfer6, result.get(4));
+
+  }
+
+  @Test
   public void parseToAliases_with_first_medal() {
     // GIVEN
     String str = "🥇";
