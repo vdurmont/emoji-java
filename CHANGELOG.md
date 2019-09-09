@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.1.1
+
+- Bugfix: respect fitzpatrick modifier when extracting emojis (thanks @sullis)
+
 ## v5.1.0
 
 - Many performance improvements to the parsing of the emojis (thanks @freva)

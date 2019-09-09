@@ -16,7 +16,7 @@ _The missing emoji library for java._
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>5.1.0</version>
+  <version>5.1.1</version>
 </dependency>
 ```
 
@@ -25,13 +25,13 @@ You can also download the project, build it with `mvn clean install` and add the
 ##### Via Gradle:
 
 ```gradle
-compile 'com.vdurmont:emoji-java:5.1.0'
+compile 'com.vdurmont:emoji-java:5.1.1'
 ```
 
 ##### Via Direct Download:
 
--   Use [releases](https://github.com/vdurmont/emoji-java/releases) tab to download the jar directly.
--   Download JSON-java dependency from http://mvnrepository.com/artifact/org.json/json.
+- Use [releases](https://github.com/vdurmont/emoji-java/releases) tab to download the jar directly.
+- Download JSON-java dependency from http://mvnrepository.com/artifact/org.json/json.
 
 ## How to use it?
 
@@ -39,32 +39,32 @@ compile 'com.vdurmont:emoji-java:5.1.0'
 
 The `EmojiManager` provides several static methods to search through the emojis database:
 
--   `getForTag` returns all the emojis for a given tag
--   `getForAlias` returns the emoji for an alias
--   `getAll` returns all the emojis
--   `isEmoji` checks if a string is an emoji
--   `containsEmoji` checks if a string contains any emoji
+- `getForTag` returns all the emojis for a given tag
+- `getForAlias` returns the emoji for an alias
+- `getAll` returns all the emojis
+- `isEmoji` checks if a string is an emoji
+- `containsEmoji` checks if a string contains any emoji
 
 You can also query the metadata:
 
--   `getAllTags` returns the available tags
+- `getAllTags` returns the available tags
 
 Or get everything:
 
--   `getAll` returns all the emojis
+- `getAll` returns all the emojis
 
 ### Emoji model
 
 An `Emoji` is a POJO (plain old java object), which provides the following methods:
 
--   `getUnicode` returns the unicode representation of the emoji
--   `getUnicode(Fitzpatrick)` returns the unicode representation of the emoji with the provided Fitzpatrick modifier. If the emoji doesn't support the Fitzpatrick modifiers, this method will throw an `UnsupportedOperationException`. If the provided Fitzpatrick is null, this method will return the unicode of the emoji.
--   `getDescription` returns the (optional) description of the emoji
--   `getAliases` returns a list of aliases for this emoji
--   `getTags` returns a list of tags for this emoji
--   `getHtmlDecimal` returns an html decimal representation of the emoji
--   `getHtmlHexadecimal` returns an html decimal representation of the emoji
--   `supportsFitzpatrick` returns true if the emoji supports the Fitzpatrick modifiers, else false
+- `getUnicode` returns the unicode representation of the emoji
+- `getUnicode(Fitzpatrick)` returns the unicode representation of the emoji with the provided Fitzpatrick modifier. If the emoji doesn't support the Fitzpatrick modifiers, this method will throw an `UnsupportedOperationException`. If the provided Fitzpatrick is null, this method will return the unicode of the emoji.
+- `getDescription` returns the (optional) description of the emoji
+- `getAliases` returns a list of aliases for this emoji
+- `getTags` returns a list of tags for this emoji
+- `getHtmlDecimal` returns an html decimal representation of the emoji
+- `getHtmlHexadecimal` returns an html decimal representation of the emoji
+- `supportsFitzpatrick` returns true if the emoji supports the Fitzpatrick modifiers, else false
 
 ### Fitzpatrick modifiers
 
@@ -173,9 +173,9 @@ The same applies for the methods `EmojiParser#parseToHtmlHexadecimal(String)` an
 
 You can easily remove emojis from a string using one of the following methods:
 
--   `EmojiParser#removeAllEmojis(String)`: removes all the emojis from the String
--   `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`: removes all the emojis from the String, except the ones in the Collection
--   `EmojiParser#removeEmojis(String, Collection<Emoji>)`: removes the emojis in the Collection from the String
+- `EmojiParser#removeAllEmojis(String)`: removes all the emojis from the String
+- `EmojiParser#removeAllEmojisExcept(String, Collection<Emoji>)`: removes all the emojis from the String, except the ones in the Collection
+- `EmojiParser#removeEmojis(String, Collection<Emoji>)`: removes the emojis in the Collection from the String
 
 For example:
 
@@ -198,7 +198,7 @@ System.out.println(EmojiParser.removeEmojis(str, collection));
 
 You can search a string of mixed emoji/non-emoji characters and have all of the emoji characters returned as a Collection.
 
--   `EmojiParser#extractEmojis(String)`: returns all emojis as a Collection. This will include duplicates if emojis are present more than once.
+- `EmojiParser#extractEmojis(String)`: returns all emojis as a Collection. This will include duplicates if emojis are present more than once.
 
 ## Credits
 
