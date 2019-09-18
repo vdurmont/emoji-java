@@ -2,6 +2,15 @@
 
 *This is intended as a reminder for @vdurmont to deploy this library to maven central.*
 
+## zshrc
+
+Add this, it help:
+```
+# Needed for gpg when releasing stuff on maven central
+# https://github.com/keybase/keybase-issues/issues/2798
+export GPG_TTY=$(tty)
+```
+
 ## GPG signing
 
 Import your gpg key: `gpg --import path/to/my/private/key.asc`
