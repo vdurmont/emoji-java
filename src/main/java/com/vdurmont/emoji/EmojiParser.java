@@ -11,6 +11,12 @@ import java.util.List;
  */
 public class EmojiParser {
 
+  private static final EmojiTransformer REMOVE_TRANSFORMER = new EmojiTransformer() {
+    public String transform(UnicodeCandidate unicodeCandidate) {
+      return "";
+    }
+  };
+
   /**
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
    * "PARSE"
@@ -309,13 +315,7 @@ public class EmojiParser {
    * @return the string without any emoji
    */
   public static String removeAllEmojis(String str) {
-    EmojiTransformer emojiTransformer = new EmojiTransformer() {
-      public String transform(UnicodeCandidate unicodeCandidate) {
-        return "";
-      }
-    };
-
-    return parseFromUnicode(str, emojiTransformer);
+    return parseFromUnicode(str, REMOVE_TRANSFORMER);
   }
 
 
