@@ -15,6 +15,21 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(JUnit4.class)
 public class EmojiParserTest {
+
+  final int FIRST_ITEM = 0;
+  final int SECOND_ITEM = 1;
+  final int THIRD_ITEM = 2;
+  final int FOURTH_ITEM = 3;
+  final int FIFTH_ITEM = 4;
+
+  final String surfer0 = EmojiManager.getForAlias("surfer").getUnicode();
+  final String surferFitzpatrickType3 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_3);
+  final String surferFitzpatrickType4 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_4);
+  final String surferFitzpatrickType5 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_5);
+  final String surferFitzpatrickType6 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_6);
+  final int NUM_EXTRACTED_EMOJIS = 5;
+  final String strWithThreeHappyFaceEmojis = "An 😀awesome 😃string with a few 😉emojis!";
+
   @Test
   public void parseToAliases_replaces_the_emojis_by_one_of_their_aliases() {
     // GIVEN
@@ -24,10 +39,7 @@ public class EmojiParserTest {
     String result = EmojiParser.parseToAliases(str);
 
     // THEN
-    assertEquals(
-      "An :grinning:awesome :smiley:string with a few :wink:emojis!",
-      result
-    );
+    assertEquals("An :grinning:awesome :smiley:string with a few :wink:emojis!", result);
   }
 
   @Test
@@ -39,12 +51,8 @@ public class EmojiParserTest {
     String result = EmojiParser.replaceAllEmojis(str, ":)");
 
     // THEN
-    assertEquals(
-      "An :)awesome :)string with a few :)emojis!",
-      result
-    );
+    assertEquals("An :)awesome :)string with a few :)emojis!", result);
   }
-
 
   @Test
   public void parseToAliases_REPLACE_with_a_fitzpatrick_modifier() {
@@ -114,8 +122,8 @@ public class EmojiParserTest {
     // WHEN
     String result = EmojiParser.parseToAliases(str);
 
-    //With greedy parsing, this will give :man::woman::boy:
-    //THEN
+    // With greedy parsing, this will give :man::woman::boy:
+    // THEN
     assertEquals(":family_man_woman_boy:", result);
   }
 
@@ -127,7 +135,7 @@ public class EmojiParserTest {
     // WHEN
     String result = EmojiParser.parseToAliases(str);
 
-    //THEN
+    // THEN
     assertEquals(":woman::man::boy:", result);
   }
 
@@ -140,10 +148,7 @@ public class EmojiParserTest {
     String result = EmojiParser.parseToHtmlDecimal(str);
 
     // THEN
-    assertEquals(
-      "An &#128512;awesome &#128515;string with a few &#128521;emojis!",
-      result
-    );
+    assertEquals("An &#128512;awesome &#128515;string with a few &#128521;emojis!", result);
   }
 
   @Test
@@ -152,10 +157,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
-      str,
-      FitzpatrickAction.PARSE
-    );
+    String result = EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.PARSE);
 
     // THEN
     assertEquals("&#128102;", result);
@@ -167,10 +169,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
-      str,
-      FitzpatrickAction.REMOVE
-    );
+    String result = EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.REMOVE);
 
     // THEN
     assertEquals("&#128102;", result);
@@ -182,10 +181,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlDecimal(
-      str,
-      FitzpatrickAction.IGNORE
-    );
+    String result = EmojiParser.parseToHtmlDecimal(str, FitzpatrickAction.IGNORE);
 
     // THEN
     assertEquals("&#128102;\uD83C\uDFFF", result);
@@ -200,10 +196,7 @@ public class EmojiParserTest {
     String result = EmojiParser.parseToHtmlHexadecimal(str);
 
     // THEN
-    assertEquals(
-      "An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!",
-      result
-    );
+    assertEquals("An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!", result);
   }
 
   @Test
@@ -212,10 +205,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
-      str,
-      FitzpatrickAction.PARSE
-    );
+    String result = EmojiParser.parseToHtmlHexadecimal(str, FitzpatrickAction.PARSE);
 
     // THEN
     assertEquals("&#x1f466;", result);
@@ -227,10 +217,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
-      str,
-      FitzpatrickAction.REMOVE
-    );
+    String result = EmojiParser.parseToHtmlHexadecimal(str, FitzpatrickAction.REMOVE);
 
     // THEN
     assertEquals("&#x1f466;", result);
@@ -242,10 +229,7 @@ public class EmojiParserTest {
     String str = "\uD83D\uDC66\uD83C\uDFFF";
 
     // WHEN
-    String result = EmojiParser.parseToHtmlHexadecimal(
-      str,
-      FitzpatrickAction.IGNORE
-    );
+    String result = EmojiParser.parseToHtmlHexadecimal(str, FitzpatrickAction.IGNORE);
 
     // THEN
     assertEquals("&#x1f466;\uD83C\uDFFF", result);
@@ -254,8 +238,7 @@ public class EmojiParserTest {
   @Test
   public void parseToUnicode_replaces_the_aliases_and_the_html_by_their_emoji() {
     // GIVEN
-    String str = "An :grinning:awesome :smiley:string " +
-      "&#128516;with a few &#x1f609;emojis!";
+    String str = "An :grinning:awesome :smiley:string " + "&#128516;with a few &#x1f609;emojis!";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
@@ -267,49 +250,37 @@ public class EmojiParserTest {
   @Test
   public void parseToUnicode_with_the_thumbsup_emoji_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "An :+1:awesome :smiley:string " +
-      "&#128516;with a few :wink:emojis!";
+    String str = "An :+1:awesome :smiley:string " + "&#128516;with a few :wink:emojis!";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
 
     // THEN
-    assertEquals(
-      "An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!",
-      result
-    );
+    assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
   }
 
   @Test
   public void parseToUnicode_with_the_thumbsdown_emoji_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "An :-1:awesome :smiley:string &#128516;" +
-      "with a few :wink:emojis!";
+    String str = "An :-1:awesome :smiley:string &#128516;" + "with a few :wink:emojis!";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
 
     // THEN
-    assertEquals(
-      "An \uD83D\uDC4Eawesome 😃string 😄with a few 😉emojis!",
-      result
-    );
+    assertEquals("An \uD83D\uDC4Eawesome 😃string 😄with a few 😉emojis!", result);
   }
 
   @Test
   public void parseToUnicode_with_the_thumbsup_emoji_in_hex_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "An :+1:awesome :smiley:string &#x1f604;" +
-      "with a few :wink:emojis!";
+    String str = "An :+1:awesome :smiley:string &#x1f604;" + "with a few :wink:emojis!";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
 
     // THEN
-    assertEquals(
-      "An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!",
-      result
-    );
+    assertEquals("An \uD83D\uDC4Dawesome 😃string 😄with a few 😉emojis!", result);
   }
 
   @Test
@@ -336,91 +307,135 @@ public class EmojiParserTest {
   }
 
   @Test
-  public void getAliasAt_with_one_alias() {
+  public void givenOneAliasBoy_whenParse_thenConfirmAliasBoy() {
     // GIVEN
     String str = "test :boy: test";
-
     // WHEN
     AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
-
     // THEN
     assertTrue(candidate.emoji.getAliases().contains("boy"));
+  }
+
+  @Test
+  public void givenOneAliasBoy_whenParse_thenFitzpatrickIsNull() {
+    // GIVEN
+    String str = "test :boy: test";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
+    // THEN
     assertNull(candidate.fitzpatrick);
   }
 
   @Test
-  public void getAliasAt_with_one_alias_an_another_colon_after() {
+  public void givenOneAliasBoyAndAColonAfter_whenParse_thenConfirmAliasBoy() {
     // GIVEN
     String str = "test :boy: test:";
-
     // WHEN
     AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
-
     // THEN
     assertTrue(candidate.emoji.getAliases().contains("boy"));
+  }
+
+  @Test
+  public void givenOneAliasBoyAndAColonAfter_whenParse_thenFitzpatrickIsNull() {
+    // GIVEN
+    String str = "test :boy: test:";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
+    // THEN
     assertNull(candidate.fitzpatrick);
   }
 
   @Test
-  public void getAliasAt_with_one_alias_an_another_colon_right_after() {
+  public void givenOneAliasBoyAndAnotherColonRightAfter_whenParse_thenConfirmAliasBoy() {
     // GIVEN
     String str = "test :boy::test";
-
     // WHEN
     AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
-
     // THEN
     assertTrue(candidate.emoji.getAliases().contains("boy"));
+  }
+
+  @Test
+  public void givenOneAliasBoyAndAnotherColonRightAfter_whenParse_thenFitzpatrickIsNull() {
+    // GIVEN
+    String str = "test :boy::test";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
+    // THEN
     assertNull(candidate.fitzpatrick);
   }
 
   @Test
-  public void getAliasAt_with_one_alias_an_another_colon_before_after() {
+  public void givenOneAliasBoyWithAColonBeforeAndAnotherAfter_whenParseAtWrongPosition_thenReturnNull() {
     // GIVEN
     String str = "test ::boy: test";
-
     // WHEN
     AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
+    // THEN
     assertNull(candidate);
+  }
 
-    candidate = EmojiParser.getAliasAt(str, 6);
-
+  @Test
+  public void givenOneAliasBoyWithAColonBeforeAndAnotherAfter_whenParse_thenConfirmAliasBoy() {
+    // GIVEN
+    String str = "test ::boy: test";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 6);
     // THEN
     assertTrue(candidate.emoji.getAliases().contains("boy"));
+  }
+
+  @Test
+  public void givenOneAliasBoyWithAColonBeforeAndAnotherAfter_whenParse_thenFitzpatrickIsNull() {
+    // GIVEN
+    String str = "test ::boy: test";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 6);
+    // THEN
     assertNull(candidate.fitzpatrick);
   }
 
   @Test
-  public void getAliasAt_with_a_fitzpatrick_modifier() {
+  public void givenOneAliasBoyAndAFitzpatrickModifier_whenParse_thenConfirmAliasBoy() {
     // GIVEN
     String str = "test :boy|type_3: test";
-
     // WHEN
     AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
-
     // THEN
     assertTrue(candidate.emoji.getAliases().contains("boy"));
+  }
+
+  @Test
+  public void givenOneAliasBoyAndAFitzpatrickModifier_whenParse_thenFitzpatrickCandidateEqualsFitzpatrickType3() {
+    // GIVEN
+    String str = "test :boy|type_3: test";
+    // WHEN
+    AliasCandidate candidate = EmojiParser.getAliasAt(str, 5);
+    // THEN
     assertEquals(Fitzpatrick.TYPE_3, candidate.fitzpatrick);
   }
 
   @Test
-  public void test_with_a_new_flag() {
+  public void givenInputWithAlias_whenParseToUnicode_thenExpectedUnicode() {
     String input = "Cuba has a new flag! :cu:";
     String expected = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
-
     assertEquals(expected, EmojiParser.parseToUnicode(input));
-    assertEquals(input, EmojiParser.parseToAliases(expected));
+  }
+
+  @Test
+  public void givenInputWithUnicode_whenParseToAliases_thenExpectedAlias() {
+    String input = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
+    String expected = "Cuba has a new flag! :cu:";
+    assertEquals(expected, EmojiParser.parseToAliases(input));
   }
 
   @Test
   public void removeAllEmojis_removes_all_the_emojis_from_the_string() {
     // GIVEN
-    String input = "An 😀awesome 😃string 😄with " +
-      "a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
-
+    String input = "An 😀awesome 😃string 😄with " + "a \uD83D\uDC66\uD83C\uDFFFfew 😉emojis!";
     // WHEN
     String result = EmojiParser.removeAllEmojis(input);
-
     // THEN
     String expected = "An awesome string with a few emojis!";
     assertEquals(expected, result);
@@ -429,8 +444,8 @@ public class EmojiParserTest {
   @Test
   public void removeEmojis_only_removes_the_emojis_in_the_iterable_from_the_string() {
     // GIVEN
-    String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string" +
-      "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
+    String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string"
+        + "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
     List<Emoji> emojis = new ArrayList<Emoji>();
     emojis.add(EmojiManager.getForAlias("smile"));
@@ -440,16 +455,15 @@ public class EmojiParserTest {
     String result = EmojiParser.removeEmojis(input, emojis);
 
     // THEN
-    String expected = "An\uD83D\uDE03 awesome string with" +
-      "\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
+    String expected = "An\uD83D\uDE03 awesome string with" + "\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
     assertEquals(expected, result);
   }
 
   @Test
   public void removeAllEmojisExcept_removes_all_the_emojis_from_the_string_except_those_in_the_iterable() {
     // GIVEN
-    String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string" +
-      "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
+    String input = "An\uD83D\uDE03 awesome\uD83D\uDE04 string"
+        + "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
     List<Emoji> emojis = new ArrayList<Emoji>();
     emojis.add(EmojiManager.getForAlias("smile"));
@@ -459,16 +473,14 @@ public class EmojiParserTest {
     String result = EmojiParser.removeAllEmojisExcept(input, emojis);
 
     // THEN
-    String expected = "An awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF " +
-      "with a few emojis!";
+    String expected = "An awesome\uD83D\uDE04 string\uD83D\uDC4D\uD83C\uDFFF " + "with a few emojis!";
     assertEquals(expected, result);
   }
 
   @Test
   public void parseToUnicode_with_the_keycap_asterisk_emoji_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "Let's test the :keycap_asterisk: emoji and " +
-      "its other alias :star_keycap:";
+    String str = "Let's test the :keycap_asterisk: emoji and " + "its other alias :star_keycap:";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
@@ -501,42 +513,94 @@ public class EmojiParserTest {
     assertEquals(":couplekiss_woman_woman:", result);
   }
 
+
   @Test
-  public void extractEmojis() {
-    // GIVEN
-    String str = "An 😀awesome 😃string with a few 😉emojis!";
-
+  public void givenThreeEmojis_whenParseToExtractEmojis_thenConfirmFirstItem() {    
     // WHEN
-    List<String> result = EmojiParser.extractEmojis(str);
-
+    List<String> result = EmojiParser.extractEmojis(strWithThreeHappyFaceEmojis);
     // THEN
-    assertEquals("😀", result.get(0));
-    assertEquals("😃", result.get(1));
-    assertEquals("😉", result.get(2));
-
+    assertEquals("😀", result.get(FIRST_ITEM));
   }
 
   @Test
-  public void extractEmojis_withFitzpatrickModifiers() {
-    // GIVEN
-    final String surfer = EmojiManager.getForAlias("surfer").getUnicode();
-    final String surfer3 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_3);
-    final String surfer4 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_4);
-    final String surfer5 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_5);
-    final String surfer6 = EmojiManager.getForAlias("surfer").getUnicode(Fitzpatrick.TYPE_6);
-    final String surfers = surfer + " " + surfer3 + " " + surfer4 + " " + surfer5 + " " + surfer6;
+  public void givenThreeEmojis_whenParseToExtractEmojis_thenConfirmSecondItem() {    
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(strWithThreeHappyFaceEmojis);
+    // THEN
+    assertEquals("😃", result.get(SECOND_ITEM));
+  }
 
+  @Test
+  public void givenThreeEmojis_whenParseToExtractEmojis_thenConfirmThirdItem() {    
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(strWithThreeHappyFaceEmojis);
+    // THEN
+    assertEquals("😉", result.get(THIRD_ITEM));
+  }
+
+  private String getEmojisWithFitzpatrickModifiers() {
+    return surfer0 + " " + surferFitzpatrickType3 + " " + surferFitzpatrickType4 + " " + surferFitzpatrickType5 + " "
+        + surferFitzpatrickType6;
+  }
+
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenSizeEqualNumExtractedEmojis() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
     // WHEN
     List<String> result = EmojiParser.extractEmojis(surfers);
-
     // THEN
-    assertEquals(5, result.size());
-    assertEquals(surfer, result.get(0));
-    assertEquals(surfer3, result.get(1));
-    assertEquals(surfer4, result.get(2));
-    assertEquals(surfer5, result.get(3));
-    assertEquals(surfer6, result.get(4));
+    assertEquals(NUM_EXTRACTED_EMOJIS, result.size());
+  }
 
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenFirstItemEqualSurfer0() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+    // THEN
+    assertEquals(surfer0, result.get(FIRST_ITEM));
+  }
+
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenSecondItemEqualSurferFitzpatrickType3() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+    // THEN
+    assertEquals(surferFitzpatrickType3, result.get(SECOND_ITEM));
+  }
+
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenThirdItemEqualSurferFitzpatrickType4() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+    // THEN
+    assertEquals(surferFitzpatrickType4, result.get(THIRD_ITEM));
+  }
+
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenFourthItemEqualSurferFitzpatrickType5() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+    // THEN
+    assertEquals(surferFitzpatrickType5, result.get(FOURTH_ITEM));
+  }
+
+  @Test
+  public void givenEmojisWithFitzpatrickModifiers_whenExtractEmojis_thenFifthItemEqualSurferFitzpatrickType6() {
+    // GIVEN
+    final String surfers = getEmojisWithFitzpatrickModifiers();
+    // WHEN
+    List<String> result = EmojiParser.extractEmojis(surfers);
+    // THEN
+    assertEquals(surferFitzpatrickType6, result.get(FIFTH_ITEM));
   }
 
   @Test
