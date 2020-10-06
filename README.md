@@ -20,7 +20,7 @@ _The missing emoji library for java._
 </dependency>
 ```
 
-You can also download the project, build it with `mvn clean install` and add the generated jar to your buildpath.
+You can also download the project, build it with `mvn package` and add the generated jar to your buildpath.
 
 ##### Via Gradle:
 
