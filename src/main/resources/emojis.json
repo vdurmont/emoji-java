@@ -15966,6 +15966,15 @@
     "tags": []
   },
   {
+    "emojiChar": "🪜",
+    "emoji": "\uD83E\uDE9C",
+    "description": "ladder",
+    "aliases": [
+      "ladder"
+    ],
+    "tags": []
+  },
+  {
     "emojiChar": "🪶",
     "emoji": "\uD83E\uDEB6",
     "description": "feather",
