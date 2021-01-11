@@ -805,5 +805,5 @@ Here is a table of the available emojis and their aliases.
 | ☦ | orthodox_cross | ⛩ | shinto_shrine, kami_no_michi |
 | ☪ | star_and_crescent, star_crescent | ☮ | peace_symbol, peace_sign |
 | ☢ | radioactive, radioactive_symbol, radioactive_sign | ☣ | biohazard, biohazard_symbol, biohazard_sign |
-| ⚕ | medical_symbol, staff_of_aesculapius |
+| ⚕ | medical_symbol, staff_of_aesculapius | 🪶 | feather |
 

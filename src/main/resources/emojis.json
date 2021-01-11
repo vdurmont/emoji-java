@@ -15966,6 +15966,15 @@
     "tags": []
   },
   {
+    "emojiChar": "🪶",
+    "emoji": "\uD83E\uDEB6",
+    "description": "feather",
+    "aliases": [
+      "feather"
+    ],
+    "tags": []
+  },
+  {
     "emojiChar": "🛸",
     "emoji": "\uD83D\uDEF8",
     "description": "flying saucer",
