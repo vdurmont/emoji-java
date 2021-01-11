@@ -7,11 +7,14 @@ import java.io.IOException;
  * This app generate the emoji table in the README ;)
  * <p/>
  * Run with:
- * mvn exec:java -Dexec.mainClass="com.vdurmont.emoji.TableGenerator"
+ * mvn compile exec:java -Dexec.mainClass="com.vdurmont.emoji.TableGenerator" -Dexec.args=<path_to_EMOJIS.md>
  */
 public class TableGenerator {
   public static void main(String[] args) throws IOException {
     StringBuilder sb = new StringBuilder();
+
+    sb.append("## Available Emojis\n\n");
+    sb.append("Here is a table of the available emojis and their aliases.\n\n");
 
     // Table header
     sb.append("| Emoji | Aliases | Emoji | Aliases |\n");
