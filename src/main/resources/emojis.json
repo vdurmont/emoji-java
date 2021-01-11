@@ -9105,7 +9105,8 @@
     "description": "rowboat",
     "supports_fitzpatrick": true,
     "aliases": [
-      "rowboat"
+      "rowboat",
+      "person_rowing_boat"
     ],
     "tags": []
   },
@@ -15962,6 +15963,24 @@
     "description": "chopsticks",
     "aliases": [
       "chopsticks"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🪜",
+    "emoji": "\uD83E\uDE9C",
+    "description": "ladder",
+    "aliases": [
+      "ladder"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "🪶",
+    "emoji": "\uD83E\uDEB6",
+    "description": "feather",
+    "aliases": [
+      "feather"
     ],
     "tags": []
   },
