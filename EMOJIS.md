@@ -455,7 +455,7 @@ Here is a table of the available emojis and their aliases.
 | 🗽 | statue_of_liberty | 🌉 | bridge_at_night |
 | 🎠 | carousel_horse | 🎡 | ferris_wheel |
 | 🎢 | roller_coaster | 🚢 | ship |
-| 🚤 | speedboat | 🚣 | rowboat |
+| 🚤 | speedboat | 🚣 | rowboat, person_rowing_boat |
 | 🚀 | rocket | 💺 | seat |
 | 🚁 | helicopter | 🚂 | steam_locomotive |
 | 🚊 | tram | 🚉 | station |
@@ -674,4 +674,4 @@ Here is a table of the available emojis and their aliases.
 | 🧔 | beard, bearded_man, bearded_person, man_with_beard, person_with_beard | 🧓 | older_person, gender_neutral_older_person, older_adult, gender_neutral_older_adult |
 | 🧕 | person_with_headscarf, woman_with_headscarf, hijab | 🤱 | breastfeeding |
 | 🧙 | mage, gender_neutral_mage | 🧚 | fairy, gender_neutral_fairy |
-| 🧛 | vampire, gender_neutral_vampire | 🧜 |
+| 🧛 | vampire, gender_neut

@@ -9105,7 +9105,8 @@
     "description": "rowboat",
     "supports_fitzpatrick": true,
     "aliases": [
-      "rowboat"
+      "rowboat",
+      "person_rowing_boat"
     ],
     "tags": []
   },
