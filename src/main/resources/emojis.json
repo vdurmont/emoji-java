@@ -7331,7 +7331,8 @@
     "emoji": "\uD83D\uDCE7",
     "description": "e-mail symbol",
     "aliases": [
-      "e-mail"
+      "e-mail",
+      "e_mail"
     ],
     "tags": []
   },
