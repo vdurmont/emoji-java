@@ -61,15 +61,19 @@ public class JsonGenerator {
             }
             desc = tdTags.last().text().replaceAll("[^\\p{L}\\p{M}\\p{N}\\p{P}\\p{Z}\\p{Cf}\\p{Cs}\\p{Sc}\\s]", "");
 
-            if (!emojiMap.containsKey(tdTags.get(2).text())) {
+            String emojiChar = tdTags.get(2).text();
+            if (tdTags.get(1).text().endsWith("U+FE0F U+20E3")) {
+                emojiChar = new StringBuilder(emojiChar).deleteCharAt(1).toString();
+            }
+            if (!emojiMap.containsKey(emojiChar)) {
                 emoji = new JSONObject();
-                emoji.put("emojiChar", tdTags.get(2).text());
-                emoji.put("emoji", convertEmoji2Unicode(tdTags.get(2).text()));
-                emoji.put("description", emojiI18nMap.getOrDefault(tdTags.get(2).text(), desc));
+                emoji.put("emojiChar", emojiChar);
+                emoji.put("emoji", convertEmoji2Unicode(emojiChar));
+                emoji.put("description", emojiI18nMap.getOrDefault(emojiChar, desc));
                 emoji.put("aliases", desc.replace(" ", "_"));
                 emoji.put("tags", Arrays.asList(aliasBigHead, aliasMediumHead));
             } else {
-                emoji = emojiMap.get(tdTags.get(2).text());
+                emoji = emojiMap.get(emojiChar);
                 emoji.put("description", emojiI18nMap.getOrDefault(emoji.getString("emojiChar"),
                         emoji.getString("description")));
                 emoji.put("emoji", convertEmoji2Unicode(emoji.getString("emojiChar")));
@@ -97,7 +101,7 @@ public class JsonGenerator {
         StringBuilder builder = new StringBuilder();
         for (char c : chars) {
             builder.append("^^u");
-            builder.append(Integer.toHexString(c).toUpperCase());
+            builder.append(Integer.toHexString(0x10000 | c).substring(1).toUpperCase());
         }
         return builder.toString();
     }
