@@ -26,6 +26,8 @@ public class JsonGenerator {
     private static final String ARGS_NAME_OFFLINE_PATH = "path";
     private static final String ARGS_NAME_ONLINE_URL = "url";
     private static final String ARGS_NAME_SAVE_PATH = "save_url";
+    private static final String ARGS_NAME_EMOJI_JSON_PATH = "emoji_path";
+    private static final String ARGS_NAME_EMOJI_I18N_JSON_PATH = "emoji_i18n_path";
     private static final String STRING_SYMBOL_EQUAL = "=";
     private static final String EMOJI_REMOTE_ONLINE_URL = "https://unicode.org/emoji/charts/full-emoji-list.html";
     private static Map<String, String> ARGS_MAP;
@@ -40,6 +42,8 @@ public class JsonGenerator {
         JSONArray emojis = new JSONArray();
         String desc;
         JSONObject emoji;
+        Map<String, JSONObject> emojiMap = getJsonMapFromEmojiJson(ARGS_MAP.get(ARGS_NAME_EMOJI_JSON_PATH));
+        Map<String, String> emojiI18nMap = getI18nMapFromEmojiI18nJson(ARGS_MAP.get(ARGS_NAME_EMOJI_I18N_JSON_PATH));
         for (Element trTag : trTags) {
             bighead = trTag.select("th.bighead>a").first();
             if (!Objects.isNull(bighead)) {
@@ -57,34 +61,45 @@ public class JsonGenerator {
             }
             desc = tdTags.last().text().replaceAll("[^\\p{L}\\p{M}\\p{N}\\p{P}\\p{Z}\\p{Cf}\\p{Cs}\\p{Sc}\\s]", "");
 
-            emoji = new JSONObject();
-            emoji.put("emojiChar", tdTags.get(2).text());
-            emoji.put("emoji", convertEmoji2Unicode(tdTags.get(1)));
-            emoji.put("description", desc);
-            emoji.put("aliases", desc.replace(" ", "_"));
-            emoji.put("tags", Arrays.asList(aliasBigHead, aliasMediumHead));
+            if (!emojiMap.containsKey(tdTags.get(2).text())) {
+                emoji = new JSONObject();
+                emoji.put("emojiChar", tdTags.get(2).text());
+                emoji.put("emoji", convertEmoji2Unicode(tdTags.get(2).text()));
+                emoji.put("description", emojiI18nMap.getOrDefault(tdTags.get(2).text(), desc));
+                emoji.put("aliases", desc.replace(" ", "_"));
+                emoji.put("tags", Arrays.asList(aliasBigHead, aliasMediumHead));
+            } else {
+                emoji = emojiMap.get(tdTags.get(2).text());
+                emoji.put("description", emojiI18nMap.getOrDefault(emoji.getString("emojiChar"),
+                        emoji.getString("description")));
+                emoji.put("emoji", convertEmoji2Unicode(emoji.getString("emojiChar")));
+            }
             emojis.put(emoji);
-
         }
-        String emojiJson = emojis.toString(4).replaceAll("/", "\\\\");
+
+        String emojiJson = emojis.toString(4).replaceAll("/", "\\\\")
+                .replaceAll("\\^\\^u", "\\\\u");
+
         File emojiFile = new File(ARGS_MAP.getOrDefault(ARGS_NAME_SAVE_PATH, System.getProperty("java.io.tmpdir")
                 + File.separator + "emoji.json"));
-        System.out.println("save to: "+emojiFile.getAbsolutePath());
+        System.out.println("save to: " + emojiFile.getAbsolutePath());
         Files.write(emojiFile.toPath(), Collections.singleton(emojiJson), StandardCharsets.UTF_8);
     }
 
     /**
      * convert emoji to unicode
      *
-     * @param td code td tag
+     * @param emoji emoji char
      * @return emoji's unicode
      */
-    private static String convertEmoji2Unicode(Element td) {
-        Element aTag = td.select("a").first();
-        if (Objects.isNull(aTag) || isBlank(aTag.attr("name"))) {
-            return "";
+    private static String convertEmoji2Unicode(String emoji) {
+        char[] chars = emoji.toCharArray();
+        StringBuilder builder = new StringBuilder();
+        for (char c : chars) {
+            builder.append("^^u");
+            builder.append(Integer.toHexString(c).toUpperCase());
         }
-        return "/u" + aTag.attr("name").replaceAll("_", "/u");
+        return builder.toString();
     }
 
     /**
@@ -145,5 +160,43 @@ public class JsonGenerator {
             ARGS_MAP.put(arg.substring(0, index), arg.substring(index + 1));
         }
         return ARGS_MAP;
+    }
+
+    private static Map<String, JSONObject> getJsonMapFromEmojiJson(String emojiPath) {
+        if (Objects.isNull(emojiPath) || emojiPath.length() == 0) {
+            return Collections.emptyMap();
+        }
+        Map<String, JSONObject> emojiMap;
+        try {
+            JSONArray emojiArray = new JSONArray(String.join("", Files.readAllLines(new File(emojiPath).toPath())));
+            emojiMap = new HashMap<>(emojiArray.length());
+            for (Object json : emojiArray) {
+                JSONObject emoji = (JSONObject) json;
+                emojiMap.put(emoji.getString("emojiChar"), emoji);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            emojiMap = Collections.emptyMap();
+        }
+        return emojiMap;
+    }
+
+    private static Map<String, String> getI18nMapFromEmojiI18nJson(String emojiI18nPath) {
+        if (Objects.isNull(emojiI18nPath) || emojiI18nPath.length() == 0) {
+            return Collections.emptyMap();
+        }
+        Map<String, String> emojiMap;
+        try {
+            JSONArray emojiArray = new JSONArray(String.join("", Files.readAllLines(new File(emojiI18nPath).toPath())));
+            emojiMap = new HashMap<>(emojiArray.length());
+            for (Object json : emojiArray) {
+                JSONObject emoji = (JSONObject) json;
+                emojiMap.put(emoji.getString("emojiChar"), emoji.getString("description"));
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            emojiMap = Collections.emptyMap();
+        }
+        return emojiMap;
     }
 }
