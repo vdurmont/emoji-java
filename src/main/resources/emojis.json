@@ -9638,8 +9638,8 @@
     "tags": []
   },
   {
-    "emojiChar": "1⃣",
-    "emoji": "1\u20E3",
+    "emojiChar": "1️⃣",
+    "emoji": "1\uFE0F\u20E3",
     "description": "digit one + combining enclosing keycap",
     "aliases": [
       "one"
@@ -9647,8 +9647,8 @@
     "tags": []
   },
   {
-    "emojiChar": "2⃣",
-    "emoji": "2\u20E3",
+    "emojiChar": "2️⃣",
+    "emoji": "2\uFE0F\u20E3",
     "description": "digit two + combining enclosing keycap",
     "aliases": [
       "two"
@@ -9656,8 +9656,8 @@
     "tags": []
   },
   {
-    "emojiChar": "3⃣",
-    "emoji": "3\u20E3",
+    "emojiChar": "3️⃣",
+    "emoji": "3\uFE0F\u20E3",
     "description": "digit three + combining enclosing keycap",
     "aliases": [
       "three"
@@ -9665,8 +9665,8 @@
     "tags": []
   },
   {
-    "emojiChar": "4⃣",
-    "emoji": "4\u20E3",
+    "emojiChar": "4️⃣",
+    "emoji": "4\uFE0F\u20E3",
     "description": "digit four + combining enclosing keycap",
     "aliases": [
       "four"
@@ -9674,8 +9674,8 @@
     "tags": []
   },
   {
-    "emojiChar": "5⃣",
-    "emoji": "5\u20E3",
+    "emojiChar": "5️⃣",
+    "emoji": "5\uFE0F\u20E3",
     "description": "digit five + combining enclosing keycap",
     "aliases": [
       "five"
@@ -9683,8 +9683,8 @@
     "tags": []
   },
   {
-    "emojiChar": "6⃣",
-    "emoji": "6\u20E3",
+    "emojiChar": "6️⃣",
+    "emoji": "6\uFE0F\u20E3",
     "description": "digit six + combining enclosing keycap",
     "aliases": [
       "six"
@@ -9692,8 +9692,8 @@
     "tags": []
   },
   {
-    "emojiChar": "7⃣",
-    "emoji": "7\u20E3",
+    "emojiChar": "7️⃣",
+    "emoji": "7\uFE0F\u20E3",
     "description": "digit seven + combining enclosing keycap",
     "aliases": [
       "seven"
@@ -9701,8 +9701,8 @@
     "tags": []
   },
   {
-    "emojiChar": "8⃣",
-    "emoji": "8\u20E3",
+    "emojiChar": "8️⃣",
+    "emoji": "8\uFE0F\u20E3",
     "description": "digit eight + combining enclosing keycap",
     "aliases": [
       "eight"
@@ -9710,8 +9710,8 @@
     "tags": []
   },
   {
-    "emojiChar": "9⃣",
-    "emoji": "9\u20E3",
+    "emojiChar": "9️⃣",
+    "emoji": "9\uFE0F\u20E3",
     "description": "digit nine + combining enclosing keycap",
     "aliases": [
       "nine"
@@ -9719,8 +9719,8 @@
     "tags": []
   },
   {
-    "emojiChar": "0⃣",
-    "emoji": "0\u20E3",
+    "emojiChar": "0️⃣",
+    "emoji": "0\uFE0F\u20E3",
     "description": "digit zero + combining enclosing keycap",
     "aliases": [
       "zero"
