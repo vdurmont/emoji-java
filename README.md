@@ -155,6 +155,28 @@ System.out.println(resultHexadecimal);
 // "An &#x1f600;awesome &#x1f603;string with a few &#x1f609;emojis!"
 ```
 
+#### To hexadecimal
+
+To replace all the emoji's unicodes found in a string by their hexadecimal codes representation, use `EmojiParser#parseToStringHexadecimalWithEscapeSequences(String)` or `EmojiParser#parseToStringHexadecimalWithEscapeSequences(String)`.
+
+For example:
+
+```java
+String str1 = "Hello World! 😀";
+
+String resultHexadecimal1 = EmojiParser.parseToHtmlDecimal(str1);
+System.out.println(resultHexadecimal1);
+// Prints:
+// "Hello World! \\ud83d\\ude00"
+
+String str2 = "An 😀awesome 😃string with a few 😉emojis!";
+
+String resultHexadecimal2 = EmojiParser.parseToStringHexadecimalWithEscapeSequences(str2);
+System.out.println(resultHexadecimal2);
+// Prints:
+// "An \\ud83d\\ude00awesome \\ud83d\\ude03string with a few \\ud83d\\ude09emojis!"
+```
+
 By default, any Fitzpatrick modifier will be removed. If you want to ignore the Fitzpatrick modifiers, use `EmojiParser#parseToAliases(String, FitzpatrickAction)`. Examples:
 
 ```java
