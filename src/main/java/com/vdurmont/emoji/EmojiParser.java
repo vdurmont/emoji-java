@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import com.vdurmont.emoji.EmojiParser.EmojiTransformer;
+import com.vdurmont.emoji.EmojiParser.FitzpatrickAction;
+import com.vdurmont.emoji.EmojiParser.UnicodeCandidate;
+
 /**
  * Provides methods to parse strings with emojis.
  *
@@ -573,4 +577,38 @@ public class EmojiParser {
   public interface EmojiTransformer {
     String transform(UnicodeCandidate unicodeCandidate);
   }
+
+  /**
+   * See {@link #parseToStringHexadecimalWithEscapeSequences(String, FitzpatrickAction)} with the
+   * action "PARSE"
+   *
+   * @param input the string to parse
+   *
+   * @return the string with the emojis replaced by their text hex
+   * representation.
+   */
+  public static String parseToStringHexadecimalWithEscapeSequences(String input) {
+      return parseToStringHexadecimalWithEscapeSequences(input, FitzpatrickAction.PARSE);
+  }
+  
+  public static String parseToStringHexadecimalWithEscapeSequences(
+          String input,
+          final FitzpatrickAction fitzpatrickAction
+        ) {
+          EmojiTransformer emojiTransformer = new EmojiTransformer() {
+            public String transform(UnicodeCandidate unicodeCandidate) {
+              switch (fitzpatrickAction) {
+                default:
+                case PARSE:
+                case REMOVE:
+                  return unicodeCandidate.getEmoji().getStringHexadecimalWithEscapeSequences();
+                case IGNORE:
+                  return unicodeCandidate.getEmoji().getStringHexadecimalWithEscapeSequences() +
+                    unicodeCandidate.getFitzpatrickUnicode();
+              }
+            }
+          };
+
+          return parseFromUnicode(input, emojiTransformer);
+    }
 }

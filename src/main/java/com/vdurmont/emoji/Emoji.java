@@ -19,6 +19,7 @@ public class Emoji {
   private final String unicode;
   private final String htmlDec;
   private final String htmlHex;
+  private final String stringHex;
 
   /**
    * Constructor for the Emoji.
@@ -47,20 +48,31 @@ public class Emoji {
       int stringLength = getUnicode().length();
       String[] pointCodes = new String[stringLength];
       String[] pointCodesHex = new String[stringLength];
+      String[] pointCodesStringHex = new String[stringLength];
 
       for (int offset = 0; offset < stringLength; ) {
         final int codePoint = getUnicode().codePointAt(offset);
 
         pointCodes[count] = String.format("&#%d;", codePoint);
-        pointCodesHex[count++] = String.format("&#x%x;", codePoint);
+        pointCodesHex[count] = String.format("&#x%x;", codePoint);
+        pointCodesStringHex[count++] = convertEscapeSequence(codePoint);
 
         offset += Character.charCount(codePoint);
       }
       this.htmlDec = stringJoin(pointCodes, count);
       this.htmlHex = stringJoin(pointCodesHex, count);
+      this.stringHex = stringJoin(pointCodesStringHex, count);
     } catch (UnsupportedEncodingException e) {
       throw new RuntimeException(e);
     }
+  }
+  
+  public String convertEscapeSequence(int codePoint) {
+      String scapes = "";
+      for(char c : new StringBuilder().appendCodePoint(codePoint).toString().toCharArray()) {
+          scapes += "\\\\u"+String.valueOf(Integer.toHexString(c));
+      }
+      return scapes;
   }
 
   /**
@@ -210,5 +222,14 @@ public class Emoji {
       ", htmlDec='" + htmlDec + '\'' +
       ", htmlHex='" + htmlHex + '\'' +
       '}';
+  }
+  
+  /**
+   * Returns the string codepoint representation of the emoji
+   *
+   * @return the String codepoint hexadecimal representation 
+   */
+  public String getStringHexadecimalWithEscapeSequences() {
+      return this.stringHex;
   }
 }

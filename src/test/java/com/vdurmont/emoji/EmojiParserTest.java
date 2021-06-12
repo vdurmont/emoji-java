@@ -550,4 +550,16 @@ public class EmojiParserTest {
     // THEN
     assertEquals(":first_place_medal:", result);
   }
+  
+  @Test
+  public void parseToAliases_with_first_medala() {
+    // GIVEN
+    String str = "Hello World! 😀";
+
+    // WHEN
+    String result = EmojiParser.parseToStringHexadecimalWithEscapeSequences(str);
+    
+    // THEN
+    assertEquals("Hello World! \\\\ud83d\\\\ude00", result);
+  }
 }
