@@ -554,13 +554,12 @@ public class EmojiParserTest {
   @Test
   public void parseToAliases_with_first_medala() {
     // GIVEN
-    String str = "An 😀awesome 😃string with a few 😉emojis!";
+    String str = "Hello World! 😀";
 
     // WHEN
     String result = EmojiParser.parseToStringHexadecimalWithEscapeSequences(str);
     
-    System.out.println("Hell Worlda "+result);
     // THEN
-    assertEquals("Hello World \\\\ud83d\\\\ude00", result);
+    assertEquals("Hello World! \\\\ud83d\\\\ude00", result);
   }
 }
