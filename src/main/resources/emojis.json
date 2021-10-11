@@ -4636,6 +4636,7 @@
   , "tags": [
       "bunny"
     ]
+  , "supports_fitzpatrick": true
   }
 , {
     "emoji": "👯‍♂️"
@@ -4647,6 +4648,7 @@
   , "tags": [
       "bunny"
     ]
+  , "supports_fitzpatrick": true
 
   }
 , {
@@ -4659,6 +4661,7 @@
   , "tags": [
       "bunny"
     ]
+  , "supports_fitzpatrick": true
   }
 , {
     "emoji": "🧖"
