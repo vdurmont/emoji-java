@@ -1749,7 +1749,7 @@
   , "supports_fitzpatrick": true
   }
 , {
-    "emoji": "🖐️"
+    "emoji": "🖐"
   , "description": "hand with fingers splayed"
   , "category": "People & Body"
   , "aliases": [
@@ -1820,7 +1820,7 @@
   , "supports_fitzpatrick": true
   }
 , {
-    "emoji": "✌️"
+    "emoji":"✌️"
   , "description": "victory hand"
   , "category": "People & Body"
   , "aliases": [
@@ -2080,6 +2080,7 @@
   , "tags": [
       "deal"
     ]
+  , "supports_fitzpatrick": true
   }
 , {
     "emoji": "🙏"
@@ -2104,7 +2105,7 @@
     ]
   , "tags": [
     ]
-, "supports_fitzpatrick": true
+  , "supports_fitzpatrick": true
   }
 , {
     "emoji": "💅"
@@ -3604,7 +3605,7 @@
   , "supports_fitzpatrick": true
   }
 , {
-    "emoji": "🕵"
+    "emoji": "🕵️"
   , "description": "detective"
   , "category": "People & Body"
   , "aliases": [
@@ -3613,7 +3614,6 @@
   , "tags": [
       "sleuth"
     ]
-
   , "supports_fitzpatrick": true
   }
 , {
@@ -4615,7 +4615,7 @@
   , "supports_fitzpatrick": true
   }
 , {
-    "emoji": "🕴️"
+    "emoji":"🕴️"
   , "description": "person in suit levitating"
   , "category": "People & Body"
   , "aliases": [
@@ -7119,16 +7119,6 @@
   , "category": "Animals & Nature"
   , "aliases": [
       "ear_of_rice"
-    ]
-  , "tags": [
-    ]
-  }
-  , {
-    "emoji": "‍"
-  , "description": "Serves to combine flesh-colored emojis with other emojis"
-  , "category": "junction"
-  , "aliases": [
-      "junction"
     ]
   , "tags": [
     ]
@@ -19312,6 +19302,125 @@
     ]
   , "tags": [
     ]
+  , "supports_fitzpatrick": true
+  }
+  , {
+    "emoji": "‍"
+  , "description": "Serves to combine flesh-colored emojis with other emojis"
+  , "category": "junction"
+  , "aliases": [
+      "junction"
+    ]
+  , "tags": [
+    ]
+  }
+  , {
+    "emoji":"✌"
+  , "description": "victory hand"
+  , "category": "People & Body"
+  , "aliases": [
+      "v_for_use_tone"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "supports_fitzpatrick": true
+  }
+, {
+    "emoji":"🕵"
+  , "description": "detective"
+  , "category": "People & Body"
+  , "aliases": [
+      "detective"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "supports_fitzpatrick": true
+  }
+  , {
+    "emoji": "⛹"
+  , "description": "person bouncing ball"
+  , "category": "People & Body"
+  , "aliases": [
+      "bouncing_ball_person"
+    ]
+  , "tags": [
+      "basketball"
+    ]
+, "supports_fitzpatrick": true
+  }
+, {
+    "emoji": "🏋"
+  , "description": "person lifting weights"
+  , "category": "People & Body"
+  , "aliases": [
+      "weight_lifting"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+
+  , "supports_fitzpatrick": true
+  }
+  , {
+    "emoji": "🏌"
+  , "description": "person golfing"
+  , "category": "People & Body"
+  , "aliases": [
+      "golfing"
+    ]
+  , "tags": [
+    ]
+
+  , "supports_fitzpatrick": true
+  }
+, {
+    "emoji": "☝"
+  , "description": "index pointing up"
+  , "category": "People & Body"
+  , "aliases": [
+      "point_up_for_use_tone"
+    ]
+  , "tags": [
+    ]
+  , "supports_fitzpatrick": true
+  }
+, {
+    "emoji": "✋"
+  , "description": "hand with fingers splayed"
+  , "category": "People & Body"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_for_use_tone"
+    ]
+  , "tags": [
+    ]
+
+  , "supports_fitzpatrick": true
+  }
+  , {
+    "emoji": "✍"
+  , "description": "writing hand"
+  , "category": "People & Body"
+  , "aliases": [
+      "writing_hand_for_use_tone"
+    ]
+  , "tags": [
+    ]
+  , "supports_fitzpatrick": true
+  }
+  , {
+    "emoji":"🕴"
+  , "description": "person in suit levitating"
+  , "category": "People & Body"
+  , "aliases": [
+      "business_suit_levitating_for_use_tone"
+    ]
+  , "tags": [
+    ]
+
   , "supports_fitzpatrick": true
   }
 ]
