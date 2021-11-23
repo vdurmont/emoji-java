@@ -405,7 +405,7 @@ public class EmojiParserTest {
 
   @Test
   public void test_with_a_new_flag() {
-    String input = "Cuba has a new flag! :cu:";
+    String input = "Cuba has a new flag! :cuba:";
     String expected = "Cuba has a new flag! \uD83C\uDDE8\uD83C\uDDFA";
 
     assertEquals(expected, EmojiParser.parseToUnicode(input));
@@ -464,17 +464,17 @@ public class EmojiParserTest {
     assertEquals(expected, result);
   }
 
-  @Test
-  public void parseToUnicode_with_the_keycap_asterisk_emoji_replaces_the_alias_by_the_emoji() {
+ @Test
+  public void parseToUnicode_with_the_laughing_emoji_replaces_the_alias_by_the_emoji() {
     // GIVEN
-    String str = "Let's test the :keycap_asterisk: emoji and " +
-      "its other alias :star_keycap:";
+    String str = "Let's test the :laughing: emoji and " +
+      "its other alias :satisfied:";
 
     // WHEN
     String result = EmojiParser.parseToUnicode(str);
 
     // THEN
-    assertEquals("Let's test the *⃣ emoji and its other alias *⃣", result);
+    assertEquals("Let's test the 😆 emoji and its other alias 😆", result);
   }
 
   @Test
@@ -486,7 +486,7 @@ public class EmojiParserTest {
     String result = EmojiParser.parseToAliases(str);
 
     // THEN
-    assertEquals("Nigeria is :ng:, NG is :squared_ng:", result);
+    assertEquals("Nigeria is :nigeria:, NG is :ng:", result);
   }
 
   @Test
@@ -548,6 +548,6 @@ public class EmojiParserTest {
     String result = EmojiParser.parseToAliases(str);
 
     // THEN
-    assertEquals(":first_place_medal:", result);
+    assertEquals(":1st_place_medal:", result);
   }
 }
