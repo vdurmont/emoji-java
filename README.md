@@ -25,7 +25,7 @@ You can also download the project, build it with `mvn clean install` and add the
 ##### Via Gradle:
 
 ```gradle
-compile 'com.vdurmont:emoji-java:5.1.1'
+compile 'com.vdurmont:emoji-java:5.1.2'
 ```
 
 ##### Via Direct Download:
