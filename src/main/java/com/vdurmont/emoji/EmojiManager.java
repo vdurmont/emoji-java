@@ -31,7 +31,7 @@ public class EmojiManager {
 
       ALL_EMOJIS.addAll(emojis);
       ALL_EMOJIS.addAll(rumojiEmojis);
-      for (Emoji emoji : emojis) {
+      for (Emoji emoji : ALL_EMOJIS) {
         for (String tag : emoji.getTags()) {
           if (EMOJIS_BY_TAG.get(tag) == null) {
             EMOJIS_BY_TAG.put(tag, new HashSet<Emoji>());
@@ -43,7 +43,7 @@ public class EmojiManager {
         }
       }
 
-      EMOJI_TRIE = new EmojiTrie(emojis);
+      EMOJI_TRIE = new EmojiTrie(ALL_EMOJIS);
       Collections.sort(ALL_EMOJIS, new Comparator<Emoji>() {
         public int compare(Emoji e1, Emoji e2) {
           return e2.getUnicode().length() - e1.getUnicode().length();
