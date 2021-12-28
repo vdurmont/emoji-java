@@ -134,7 +134,7 @@
         <repository>
             <id>yotpo</id>
             <name>java-virt</name>
-            <url>https://yotpo.jfrog.io/yotpo/java-virt/</url>
+            <url>https://yotpo.jfrog.io/yotpo/java-local</url>
         </repository>
     </distributionManagement>
 </project>
