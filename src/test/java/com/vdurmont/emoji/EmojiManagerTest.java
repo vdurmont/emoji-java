@@ -224,7 +224,7 @@ public class EmojiManagerTest {
 
     // THEN
     // We know the number of distinct tags int the...!
-    assertEquals(917, tags.size());
+    assertEquals(656, tags.size());
   }
 
   @Test
