@@ -16,7 +16,7 @@ _The missing emoji library for java._
 <dependency>
   <groupId>com.vdurmont</groupId>
   <artifactId>emoji-java</artifactId>
-  <version>5.1.1</version>
+  <version>5.1.2</version>
 </dependency>
 ```
 
