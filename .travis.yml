@@ -7,7 +7,9 @@ before_install:
   - cp .travis.settings.xml $HOME/.m2/settings.xml
 deploy:
   provider: script
-  script: "mvn -B -V deploy"
+  script:
+    - "cp .travis.settings.xml $HOME/.m2/settings.xml"
+    - "mvn -B deploy"
   skip_cleanup: true
 after_success:
   - mvn clean cobertura:cobertura coveralls:cobertura
