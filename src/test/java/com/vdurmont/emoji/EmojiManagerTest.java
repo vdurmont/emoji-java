@@ -228,6 +228,25 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void getAll_doesnt_return_duplicates() {
+    // GIVEN
+
+    // WHEN
+    Collection<Emoji> emojis = EmojiManager.getAll();
+
+    // THEN
+    Set<String> unicodes = new HashSet<String>();
+    for (Emoji emoji : emojis) {
+      assertFalse(
+        "Duplicate: " + emoji.getDescription(),
+        unicodes.contains(emoji.getUnicode())
+      );
+      unicodes.add(emoji.getUnicode());
+    }
+    assertEquals(unicodes.size(), emojis.size());
+  }
+
+  @Test
   public void no_duplicate_alias() {
     // GIVEN
 
