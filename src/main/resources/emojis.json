@@ -12353,7 +12353,8 @@
     "supports_fitzpatrick": true,
     "aliases": [
       "raised_hand_with_fingers_splayed",
-      "splayed_hand"
+      "splayed_hand",
+      "fingers_splayed"
     ],
     "tags": []
   },
