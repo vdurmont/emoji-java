@@ -550,4 +550,16 @@ public class EmojiParserTest {
     // THEN
     assertEquals(":first_place_medal:", result);
   }
+
+  @Test
+  public void parseToUnicode_replaces_the_aliases_and_the_html_by_their_emoji_newly_added_alias() {
+    // GIVEN
+    String str = "An :fingers_splayed:";
+
+    // WHEN
+    String result = EmojiParser.parseToUnicode(str);
+
+    // THEN
+    assertEquals("An 🖐", result);
+  }
 }
