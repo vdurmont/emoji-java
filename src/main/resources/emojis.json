@@ -12383,7 +12383,10 @@
     "emoji": "\u2763",
     "description": "heavy heart exclamation mark ornament",
     "aliases": [
-      "exclamation_heart"
+      "exclamation_heart",
+      "heart_exclamation",
+      "heavy_heart_exclamation",
+      "heavy_heart_exclamation_mark_ornament"
     ],
     "tags": []
   },
