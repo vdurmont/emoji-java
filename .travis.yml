@@ -1,10 +1,13 @@
 sudo: false
 language: java
-dist: precise
+dist: xenial
 jdk:
-  - openjdk6
-  - oraclejdk7
-  - openjdk7
-  - oraclejdk8
+  - openjdk8
+before_install:
+  - cp .travis.settings.xml $HOME/.m2/settings.xml
+deploy:
+  provider: script
+  script: cp .travis.settings.xml $HOME/.m2/settings.xml; mvn -B deploy
+  skip_cleanup: true
 after_success:
   - mvn clean cobertura:cobertura coveralls:cobertura

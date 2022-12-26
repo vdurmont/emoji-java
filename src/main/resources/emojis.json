@@ -12353,7 +12353,8 @@
     "supports_fitzpatrick": true,
     "aliases": [
       "raised_hand_with_fingers_splayed",
-      "splayed_hand"
+      "splayed_hand",
+      "fingers_splayed"
     ],
     "tags": []
   },
@@ -12382,7 +12383,10 @@
     "emoji": "\u2763",
     "description": "heavy heart exclamation mark ornament",
     "aliases": [
-      "exclamation_heart"
+      "exclamation_heart",
+      "heart_exclamation",
+      "heavy_heart_exclamation",
+      "heavy_heart_exclamation_mark_ornament"
     ],
     "tags": []
   },
