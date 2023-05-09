@@ -3,6 +3,7 @@ package com.vdurmont.emoji;
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * This class represents an emoji.<br>
@@ -51,8 +52,8 @@ public class Emoji {
       for (int offset = 0; offset < stringLength; ) {
         final int codePoint = getUnicode().codePointAt(offset);
 
-        pointCodes[count] = String.format("&#%d;", codePoint);
-        pointCodesHex[count++] = String.format("&#x%x;", codePoint);
+        pointCodes[count] = String.format(Locale.getDefault(), "&#%d;", codePoint);
+        pointCodesHex[count++] = String.format(Locale.getDefault(), "&#x%x;", codePoint);
 
         offset += Character.charCount(codePoint);
       }
