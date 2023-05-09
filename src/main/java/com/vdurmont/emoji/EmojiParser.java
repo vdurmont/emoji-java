@@ -3,6 +3,7 @@ package com.vdurmont.emoji;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Provides methods to parse strings with emojis.
@@ -514,7 +515,7 @@ public class EmojiParser {
     }
 
     public String getFitzpatrickType() {
-      return hasFitzpatrick() ? fitzpatrick.name().toLowerCase() : "";
+      return hasFitzpatrick() ? fitzpatrick.name().toLowerCase(Locale.getDefault()) : "";
     }
 
     public String getFitzpatrickUnicode() {
