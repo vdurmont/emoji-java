@@ -9,6 +9,7 @@ import org.junit.runners.JUnit4;
 import java.util.ArrayList;
 import java.util.List;
 
+import static junit.framework.TestCase.assertNotSame;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
@@ -549,5 +550,12 @@ public class EmojiParserTest {
 
     // THEN
     assertEquals(":first_place_medal:", result);
+  }
+
+  @Test
+  public void testParserWithTwoEmojisButGettingForFour() {
+    String input = "I'm 👨🏽‍🔬 and she's 👩🏻‍💻";
+    List<String> emojis = EmojiParser.extractEmojis(input);
+    assertNotSame("Expected 2 but given 4", 2, emojis.size());
   }
 }

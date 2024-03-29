@@ -1,5 +1,7 @@
 package com.vdurmont.emoji;
 
+import com.vdurmont.emoji.validator.NonNullAndEmptyValidator;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
@@ -131,11 +133,33 @@ public class EmojiManager {
   public static boolean isEmoji(String string) {
     if (string == null) return false;
 
+    // Get the next Unicode candidate from the string
+    EmojiParser.UnicodeCandidate unicodeCandidate = EmojiParser.getNextUnicodeCandidate(string.toCharArray(), 0);
+
+    // Check if the unicodeCandidate is not null
+    boolean unicodeCandidateNotNull = unicodeCandidate != null;
+
+    // Check if the emoji starts at index 0
+    boolean emojiStartsAtIndexZero = unicodeCandidateNotNull && unicodeCandidate.getEmojiStartIndex() == 0;
+
+    // Check if the Fitzpatrick end index of the unicodeCandidate matches the length of the string
+    boolean fitsStringLength = unicodeCandidateNotNull && unicodeCandidate.getFitzpatrickEndIndex() == string.length();
+
+    // Return true only if all conditions are met
+    return unicodeCandidateNotNull && emojiStartsAtIndexZero && fitsStringLength;
+  }
+
+  /*old version
+  * public static boolean isEmoji(String string) {
+    if (string == null) return false;
+
     EmojiParser.UnicodeCandidate unicodeCandidate = EmojiParser.getNextUnicodeCandidate(string.toCharArray(), 0);
     return unicodeCandidate != null &&
             unicodeCandidate.getEmojiStartIndex() == 0 &&
             unicodeCandidate.getFitzpatrickEndIndex() == string.length();
   }
+  *
+  * */
 
   /**
    * Tests if a given String contains an emoji.
@@ -158,7 +182,7 @@ public class EmojiManager {
    * @return true if the string only contains emojis, false else
    */
   public static boolean isOnlyEmojis(String string) {
-    return string != null && EmojiParser.removeAllEmojis(string).isEmpty();
+    return (new NonNullAndEmptyValidator()).isValid(string);
   }
 
   /**

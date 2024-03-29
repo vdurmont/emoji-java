@@ -186,7 +186,7 @@ public class EmojiParser {
             input.charAt(codePointStart) == '&' &&
             input.charAt(codePointStart + 1) == '#' &&
             charsIndex < chars.length &&
-            !EmojiManager.EMOJI_TRIE.isEmoji(chars, 0, charsIndex).impossibleMatch());
+            !EmojiManager.EMOJI_TRIE.isEmoji(chars, 0, charsIndex).isImpossibleMatch());
 
     if (longestEmoji == null) return null;
     return new AliasCandidate(longestEmoji, null, start, longestCodePointEnd);
@@ -478,10 +478,9 @@ public class EmojiParser {
     int best = -1;
     for (int j = startPos + 1; j <= text.length; j++) {
       EmojiTrie.Matches status = EmojiManager.EMOJI_TRIE.isEmoji(text, startPos, j);
-
-      if (status.exactMatch()) {
+      if (status.isExactMatch()) {
         best = j;
-      } else if (status.impossibleMatch()) {
+      } else if (status.isImpossibleMatch()) {
         return best;
       }
     }

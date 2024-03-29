@@ -4,3 +4,4 @@ target
 # IntelliJ files
 *.iml
 .idea
+tmp/

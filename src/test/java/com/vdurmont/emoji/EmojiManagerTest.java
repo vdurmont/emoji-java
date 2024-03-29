@@ -274,4 +274,26 @@ public class EmojiManagerTest {
     assertEquals(wavingHand, e.getUnicode());
     assertEquals("waving hand sign", e.getDescription());
   }
+
+  @Test
+  public void EmojiManagerTest_with_depicts_a_person_swimming() {
+    String depicts_a_person_swimming = "\uD83C\uDFCA\u200D♂\uFE0F"; //🏊‍♂️
+    boolean isItEmoji = EmojiManager.isEmoji(depicts_a_person_swimming);
+    assertFalse(isItEmoji);
+  }
+
+  @Test
+  public void EmojiManagerTest_with_woman_rowing_boat() {
+    String woman_rowing_boat = "\uD83D\uDEA3\u200D♀\uFE0F"; //🚣‍♀️
+    boolean isItEmoji = EmojiManager.isEmoji(woman_rowing_boat);
+    assertFalse(isItEmoji);
+  }
+
+
+  @Test
+  public void EmojiManagerTest_with_skier() {
+    String Skier = "⛷\uFE0F";//⛷️
+    boolean isItEmoji = EmojiManager.isEmoji(Skier);
+    assertFalse(isItEmoji);
+  }
 }

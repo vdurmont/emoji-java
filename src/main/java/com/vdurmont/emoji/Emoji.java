@@ -134,6 +134,22 @@ public class Emoji {
    */
   public String getUnicode(Fitzpatrick fitzpatrick) {
     if (!this.supportsFitzpatrick()) {
+      throwUnsupportedOperationExceptionForFitzpatrick();
+    } else if (fitzpatrick == null) {
+      return this.getUnicode();
+    }
+    return this.getUnicode() + fitzpatrick.unicode;
+  }
+
+  private void throwUnsupportedOperationExceptionForFitzpatrick() {
+    throw new UnsupportedOperationException(
+            "Cannot get the unicode with a fitzpatrick modifier, " +
+                    "the emoji doesn't support fitzpatrick."
+    );
+  }
+
+/*  public String getUnicode(Fitzpatrick fitzpatrick) {
+    if (!this.supportsFitzpatrick()) {
       throw new UnsupportedOperationException(
         "Cannot get the unicode with a fitzpatrick modifier, " +
         "the emoji doesn't support fitzpatrick."
@@ -142,7 +158,7 @@ public class Emoji {
       return this.getUnicode();
     }
     return this.getUnicode() + fitzpatrick.unicode;
-  }
+  }*/
 
   /**
    * Returns the HTML decimal representation of the emoji
@@ -174,8 +190,14 @@ public class Emoji {
 
   @Override
   public boolean equals(Object other) {
-    return !(other == null || !(other instanceof Emoji)) &&
-      ((Emoji) other).getUnicode().equals(getUnicode());
+    if (this == other) return true;
+    if (other == null || getClass() != other.getClass()) return false;
+
+    Emoji otherEmoji = (Emoji) other;
+    String thisUnicode = getUnicode();
+    String otherUnicode = otherEmoji.getUnicode();
+
+    return thisUnicode.equals(otherUnicode);
   }
 
   @Override
@@ -199,16 +221,10 @@ public class Emoji {
    *
    * @return the string representation
    */
+
+
   @Override
   public String toString() {
-    return "Emoji{" +
-      "description='" + description + '\'' +
-      ", supportsFitzpatrick=" + supportsFitzpatrick +
-      ", aliases=" + aliases +
-      ", tags=" + tags +
-      ", unicode='" + unicode + '\'' +
-      ", htmlDec='" + htmlDec + '\'' +
-      ", htmlHex='" + htmlHex + '\'' +
-      '}';
+    return EmojiFormatter.formatToString(this);
   }
 }

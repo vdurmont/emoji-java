@@ -102,11 +102,11 @@ public class EmojiTrie {
   public enum Matches {
     EXACTLY, POSSIBLY, IMPOSSIBLE;
 
-    public boolean exactMatch() {
+    public boolean isExactMatch() {
       return this == EXACTLY;
     }
 
-    public boolean impossibleMatch() {
+    public boolean isImpossibleMatch() {
       return this == IMPOSSIBLE;
     }
   }
