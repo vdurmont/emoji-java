@@ -318,6 +318,22 @@ public class EmojiParser {
     return parseFromUnicode(str, emojiTransformer);
   }
 
+  /**
+   * judge char in selector range
+   * @param ch
+   * @return
+   */
+  public static boolean isVariationSelector(char ch) {
+    int codePoint = ch;
+    if (codePoint >= 0xFE00 && codePoint <= 0xFE0F) {
+      return true;
+    }
+    if (Character.isHighSurrogate(ch) || Character.isLowSurrogate(ch)) {
+      return false;
+    }
+    return false;
+  }
+
 
   /**
    * Removes a set of emojis from a String
@@ -387,7 +403,11 @@ public class EmojiParser {
     StringBuilder sb = new StringBuilder(input.length());
     List<UnicodeCandidate> replacements = getUnicodeCandidates(input);
     for (UnicodeCandidate candidate : replacements) {
-      sb.append(input, prev, candidate.getEmojiStartIndex());
+      char character = input.charAt(prev);
+
+      if (!isVariationSelector(character)) {
+        sb.append(input, prev, candidate.getEmojiStartIndex());
+      }
 
       sb.append(transformer.transform(candidate));
       prev = candidate.getFitzpatrickEndIndex();

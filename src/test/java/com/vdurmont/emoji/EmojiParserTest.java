@@ -550,4 +550,28 @@ public class EmojiParserTest {
     // THEN
     assertEquals(":first_place_medal:", result);
   }
+
+  @Test
+  public void removeAllEmojiParser_with_continuous_emojis() {
+    // GIVEN
+    String str = "♣︎❤︎♣︎❤️Love♣︎❤︎♣";
+
+    // WHEN
+    String result = EmojiParser.removeAllEmojis(str);
+
+    // THEN
+    assertEquals("Love", result);
+  }
+
+  @Test
+  public void removeAllEmojiParser_with_continuous_emojis2() {
+    // GIVEN
+    String str = "Love♣︎❤︎♣︎❤♣︎❤︎♣";
+
+    // WHEN
+    String result = EmojiParser.removeAllEmojis(str);
+
+    // THEN
+    assertEquals("Love", result);
+  }
 }
