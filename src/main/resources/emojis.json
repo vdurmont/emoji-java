@@ -16802,5 +16802,23 @@
       "jolly_roger"
     ],
     "tags": []
+  },
+  {
+    "emojiChar": "♀️️",
+    "emoji": "\u2640\ufe0f",
+    "description": "female sign",
+    "aliases": [
+      "female_sign"
+    ],
+    "tags": []
+  },
+  {
+    "emojiChar": "♂️",
+    "emoji": "\u2642\ufe0f",
+    "description": "male sign",
+    "aliases": [
+      "male_sign"
+    ],
+    "tags": []
   }
 ]
