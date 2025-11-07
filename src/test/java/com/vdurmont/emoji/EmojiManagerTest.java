@@ -120,6 +120,54 @@ public class EmojiManagerTest {
   }
 
   @Test
+  public void isEmoji_with_male_gender_modifier_returns_true() {
+    // GIVEN
+    String str = "🏃‍♂";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isEmoji(str);
+
+    // THEN
+    assertTrue(isEmoji);
+  }
+
+  @Test
+  public void isEmoji_with_female_gender_modifier_returns_true() {
+    // GIVEN
+    String str = "🏃♀️";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isEmoji(str);
+
+    // THEN
+    assertTrue(isEmoji);
+  }
+
+  @Test
+  public void isEmoji_with_gender_modifier_and_extra_text_returns_false() {
+    // GIVEN
+    String str = "🏃♀️test";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isEmoji(str);
+
+    // THEN
+    assertFalse(isEmoji);
+  }
+
+  @Test
+  public void isEmoji_empty_string_returns_false() {
+    // GIVEN
+    String str = "";
+
+    // WHEN
+    boolean isEmoji = EmojiManager.isEmoji(str);
+
+    // THEN
+    assertFalse(isEmoji);
+  }
+
+  @Test
   public void isEmoji_for_a_non_emoji_returns_false() {
     // GIVEN
     String str = "test";
