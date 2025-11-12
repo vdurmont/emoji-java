@@ -238,7 +238,7 @@ Here is a table of the available emojis and their aliases.
 | 💨 | dash | 👂 | ear |
 | 👀 | eyes | 👃 | nose |
 | 👅 | tongue | 👄 | lips |
-| 👍 | +1, thumbsup | 👎 | -1, thumbsdown |
+| 👍 | +1, like, thumbsup | 👎 | -1, thumbsdown |
 | 👌 | ok_hand | 👊 | facepunch, punch |
 | 👋 | wave | 👐 | open_hands |
 | 👆 | point_up_2 | 👇 | point_down |
@@ -336,7 +336,7 @@ Here is a table of the available emojis and their aliases.
 | 🎒 | school_satchel | 🎓 | mortar_board |
 | 🎏 | flags | 🎆 | fireworks |
 | 🎇 | sparkler | 🎐 | wind_chime |
-| 🎑 | rice_scene | 🎃 | jack_o_lantern |
+| 🎑 | rice_scene | 🎃 | jack_o_lantern, pumpkin |
 | 👻 | ghost | 🎅 | santa |
 | 🎄 | christmas_tree | 🎁 | gift |
 | 🎋 | tanabata_tree | 🎉 | tada |
@@ -455,7 +455,7 @@ Here is a table of the available emojis and their aliases.
 | 🗽 | statue_of_liberty | 🌉 | bridge_at_night |
 | 🎠 | carousel_horse | 🎡 | ferris_wheel |
 | 🎢 | roller_coaster | 🚢 | ship |
-| 🚤 | speedboat | 🚣 | rowboat |
+| 🚤 | speedboat | 🚣 | rowboat, person_rowing_boat |
 | 🚀 | rocket | 💺 | seat |
 | 🚁 | helicopter | 🚂 | steam_locomotive |
 | 🚊 | tram | 🚉 | station |
@@ -674,136 +674,4 @@ Here is a table of the available emojis and their aliases.
 | 🧔 | beard, bearded_man, bearded_person, man_with_beard, person_with_beard | 🧓 | older_person, gender_neutral_older_person, older_adult, gender_neutral_older_adult |
 | 🧕 | person_with_headscarf, woman_with_headscarf, hijab | 🤱 | breastfeeding |
 | 🧙 | mage, gender_neutral_mage | 🧚 | fairy, gender_neutral_fairy |
-| 🧛 | vampire, gender_neutral_vampire | 🧜 | merperson, gender_neutral_merperson |
-| 🧝 | elf, gender_neutral_elf | 🧞 | genie, gender_neutral_genie, djinni, jinni |
-| 🧟 | zombie, gender_neutral_zombie | 🧖 | person_in_steamy_room, sauna |
-| 🧗 | person_climbing, climber, rock_climbing | 🧘 | person_in_lotus_position, yoga, meditation |
-| 🦓 | zebra_face, zebra | 🦒 | giraffe_face, giraffe |
-| 🦔 | hedgehog | 🦕 | sauropod, brontosaurus, diplodocus, dinosaur |
-| 🦖 | trex, t_rex, tyrannosaurus_rex | 🦗 | cricket |
-| 🥥 | coconut, cocoanut | 🥦 | broccoli |
-| 🥨 | pretzel | 🥩 | cut_of_meat, meat, steak |
-| 🥪 | sandwich | 🥣 | bowl_with_spoon, cereal_bowl |
-| 🥫 | canned_food, tin_can, can_of_food, tinned_food | 🥟 | dumpling, jiaozi, gyoza, pierogi, empanada, xiaolongbao |
-| 🥠 | fortune_cookie | 🥡 | takeout_box, chinese_food_box, oyster_pail |
-| 🥧 | pie | 🥤 | cup_with_straw, milkshake, smoothie, soda_pop, soft_drink, to_go_cup |
-| 🥢 | chopsticks | 🛸 | flying_saucer, ufo, unidentified_flying_object |
-| 🛷 | sled | 🥌 | curling_stone |
-| 🧣 | scarf | 🧤 | gloves |
-| 🧥 | coat | 🧦 | socks |
-| 🧢 | billed_cap, baseball_cap, billed_hat | 🥰 | smiling_face_with_hearts, in_love_face, smiling_face_with_smiling_eyes_and_three_hearts |
-| 🥵 | hot_face, overheated_face | 🥶 | cold_face, freezing_face |
-| 🥴 | woozy_face, drunk_face, face_with_uneven_eyes_and_wavy_mouth | 🥳 | partying_face, party_face, face_with_party_horn_and_party_hat |
-| 🥺 | pleading_face, face_with_pleading_eyes | 🦵 | leg |
-| 🦶 | foot | 🦷 | tooth |
-| 🦴 | bone | 🦸 | superhero |
-| 🦹 | supervillain | 🦝 | raccoon |
-| 🦙 | llama, alpaca | 🦛 | hippo, hippopotamus |
-| 🦘 | roo, kangaroo | 🦡 | badger |
-| 🦢 | swan | 🦚 | peacock |
-| 🦜 | parrot | 🦟 | mosquito |
-| 🦠 | microbe | 🥭 | mango |
-| 🥬 | leafy_green, bok_choy, chinese_cabbage, cos_lettuce, romaine_lettuce, leafy_greens | 🥯 | bagel |
-| 🧂 | salt_shaker, salt | 🥮 | moon_cake, mooncake |
-| 🦞 | lobster | 🧁 | cupcake, fairy_cake |
-| 🧭 | compass | 🧱 | brick, bricks |
-| 🛹 | skateboard | 🧳 | lugagge, suitcase |
-| 🧨 | firecracker, dynamite | 🧧 | red_envelope, red_gift_envelope, ang_pao, hongbao, lai_see, red_packet |
-| 🥎 | softball | 🥏 | flying_disc |
-| 🥍 | lacrosse, lacrosse_stick_and_ball | 🧿 | nazar_amulet, evil_eye_talisman, nazar_boncugu |
-| 🧩 | jigsaw, puzzle_piece, jigsaw_puzzle_piece | 🧸 | teddy_bear |
-| ♟️ | black_chess_pawn, chess_pawn | 🧵 | spool_of_thread, thread |
-| 🧶 | ball_of_yarn, yarn | 🥽 | goggles |
-| 🥼 | lab_coat | 🥾 | hiking_boot |
-| 🥿 | flat_shoe | 🧮 | abacus |
-| 🧾 | receipt | 🧰 | toolbox |
-| 🧲 | magnet | 🧪 | test_tube |
-| 🧫 | petri_dish | 🧬 | dna, dna_double_helix |
-| 🧴 | lotion_bottle | 🧷 | safety_pin |
-| 🧹 | broom | 🧺 | basket |
-| 🧻 | roll_of_paper, toilet_paper | 🧼 | bar_of_soap, soap |
-| 🧽 | sponge | 🧯 | fire_extinguisher |
-| ♾️ | infinity, permanent_paper_sign | ☺ | relaxed |
-| ✨ | sparkles | ✊ | fist |
-| ✌ | v | ✋ | hand, raised_hand |
-| ☝ | point_up | ❤ | heart |
-| ⭐ | star | ☀ | sunny |
-| ⛅ | partly_sunny | ☁ | cloud |
-| ⚡ | zap | ☔ | umbrella |
-| ❄ | snowflake | ⛄ | snowman |
-| ☎ | phone, telephone | ⏳ | hourglass_flowing_sand |
-| ⌛ | hourglass | ⏰ | alarm_clock |
-| ⌚ | watch | ✉ | email, envelope |
-| ✂ | scissors | ✒ | black_nib |
-| ✏ | pencil2 | ⚽ | soccer |
-| ⚾ | baseball | ⛳ | golf |
-| ☕ | coffee | ⛪ | church |
-| ⛺ | tent | ⛲ | fountain |
-| ⛵ | boat, sailboat | ⚓ | anchor |
-| ✈ | airplane | ⚠ | warning |
-| ⛽ | fuelpump | ♨ | hotsprings |
-| ⬆ | arrow_up | ⬇ | arrow_down |
-| ⬅ | arrow_left | ➡ | arrow_right |
-| ↗ | arrow_upper_right | ↖ | arrow_upper_left |
-| ↘ | arrow_lower_right | ↙ | arrow_lower_left |
-| ↔ | left_right_arrow | ↕ | arrow_up_down |
-| ◀ | arrow_backward | ▶ | arrow_forward |
-| ↩ | leftwards_arrow_with_hook | ↪ | arrow_right_hook |
-| ℹ | information_source | ⏪ | rewind |
-| ⏩ | fast_forward | ⏫ | arrow_double_up |
-| ⏬ | arrow_double_down | ⤵ | arrow_heading_down |
-| ⤴ | arrow_heading_up | ♿ | wheelchair |
-| Ⓜ | m | ㊙ | secret |
-| ㊗ | congratulations | ⛔ | no_entry |
-| ✳ | eight_spoked_asterisk | ❇ | sparkle |
-| ❎ | negative_squared_cross_mark | ✅ | white_check_mark |
-| ✴ | eight_pointed_black_star | ➿ | loop |
-| ♻ | recycle | ♈ | aries |
-| ♉ | taurus | ♊ | gemini |
-| ♋ | cancer | ♌ | leo |
-| ♍ | virgo | ♎ | libra |
-| ♏ | scorpius | ♐ | sagittarius |
-| ♑ | capricorn | ♒ | aquarius |
-| ♓ | pisces | ⛎ | ophiuchus |
-| © | copyright | ® | registered |
-| ™ | tm | ❌ | x |
-| ‼ | bangbang | ⁉ | interrobang |
-| ❗ | exclamation, heavy_exclamation_mark | ❓ | question |
-| ❕ | grey_exclamation | ❔ | grey_question |
-| ⭕ | o | ✖ | heavy_multiplication_x |
-| ➕ | heavy_plus_sign | ➖ | heavy_minus_sign |
-| ➗ | heavy_division_sign | ♠ | spades |
-| ♥ | hearts | ♣ | clubs |
-| ♦ | diamonds | ✔ | heavy_check_mark |
-| ☑ | ballot_box_with_check | ➰ | curly_loop |
-| 〰 | wavy_dash | 〽 | part_alternation_mark |
-| ◼ | black_medium_square | ◻ | white_medium_square |
-| ◾ | black_medium_small_square | ◽ | white_medium_small_square |
-| ▪ | black_small_square | ▫ | white_small_square |
-| ⚫ | black_circle | ⚪ | white_circle |
-| ⬜ | white_large_square | ⬛ | black_large_square |
-| ☹ | frowning_face | ⛑ | helmet_white_cross |
-| ✍ | writing, writing_hand | ❣ | exclamation_heart |
-| ☠ | skull_crossbones | ☘ | shamrock, st_patrick |
-| ⛰ | mountain | ⛴ | ferry |
-| ⏱ | stopwatch | ⏲ | timer_clock |
-| ⛈ | thunder_cloud_rain | ☂ | open_umbrella |
-| ⛱ | planted_umbrella, umbrella_on_ground | ☃ | snowman_with_snow, snowing_snowman |
-| ☄ | comet, light_beam, blue_beam | ⛸ | ice_skate, ice_skating |
-| ⛷ | skier | ⛹ | person_with_ball |
-| ⏭ | black_right_pointing_double_triangle_with_vertical_bar | ⏯ | black_right_pointing_triangle_with_double_vertical_bar |
-| ⏮ | black_left_pointing_double_triangle_with_vertical_bar | ⏸ | double_vertical_bar |
-| ⏹ | black_square_for_stop | ⏺ | black_circle_for_record |
-| ⌨ | keyboard | ⛏ | pick |
-| ⚒ | hammer_and_pick | ⚙ | gear |
-| ⚗ | alembic | ⚖ | scales, scales_of_justice |
-| ⛓ | chains | ⚔ | crossed_swords |
-| ⚰ | coffin, funeral, casket | ⚱ | funeral_urn |
-| ⚜ | fleur_de_lis, scouts | ⚛ | atom, atom_symbol |
-| ✡ | star_of_david | ☸ | wheel_of_dharma |
-| ☯ | yin_yang | ✝ | latin_cross, christian_cross |
-| ☦ | orthodox_cross | ⛩ | shinto_shrine, kami_no_michi |
-| ☪ | star_and_crescent, star_crescent | ☮ | peace_symbol, peace_sign |
-| ☢ | radioactive, radioactive_symbol, radioactive_sign | ☣ | biohazard, biohazard_symbol, biohazard_sign |
-| ⚕ | medical_symbol, staff_of_aesculapius |
-
+| 🧛 | vampire, gender_neut
