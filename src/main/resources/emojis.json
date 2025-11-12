@@ -6634,7 +6634,9 @@
     "aliases": [
       "crossed_flags"
     ],
-    "tags": []
+    "tags": [
+      "flag"
+    ]
   },
   {
     "emojiChar": "🔮",
@@ -8122,7 +8124,8 @@
     ],
     "tags": [
       "milestone",
-      "finish"
+      "finish",
+      "flag"
     ]
   },
   {
@@ -9635,7 +9638,9 @@
     "aliases": [
       "triangular_flag_on_post"
     ],
-    "tags": []
+    "tags": [
+      "flag"
+    ]
   },
   {
     "emojiChar": "1⃣",
@@ -13804,18 +13809,24 @@
     "emoji": "\uD83C\uDFF3",
     "description": "waving white flag",
     "aliases": [
-      "waving_white_flag"
+      "waving_white_flag",
+      "white_flag"
     ],
-    "tags": []
+    "tags": [
+      "flag"
+    ]
   },
   {
     "emojiChar": "🏴",
     "emoji": "\uD83C\uDFF4",
     "description": "waving black flag",
     "aliases": [
-      "waving_black_flag"
+      "waving_black_flag",
+      "black_flag"
     ],
-    "tags": []
+    "tags": [
+      "flag"
+    ]
   },
   {
     "emojiChar": "⚜",
@@ -16801,6 +16812,19 @@
       "pirate_flag",
       "jolly_roger"
     ],
-    "tags": []
+    "tags": [
+      "flag"
+    ]
+  },
+  {
+    "emojiChar": "🏳️‍⚧️",
+    "emoji": "\uD83C\uDFF3\uFE0F\u200D\uD83C\uDF08",
+    "description": "transgender flag",
+    "aliases": [
+      "transgender_flag"
+    ],
+    "tags": [
+      "flag"
+    ]
   }
 ]
