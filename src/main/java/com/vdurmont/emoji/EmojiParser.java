@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class EmojiParser {
 
-  /**
+  /** 
    * See {@link #parseToAliases(String, FitzpatrickAction)} with the action
    * "PARSE"
    *
