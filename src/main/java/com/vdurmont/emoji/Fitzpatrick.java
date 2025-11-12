@@ -1,5 +1,7 @@
 package com.vdurmont.emoji;
 
+import java.util.Locale;
+
 /**
  * Enum that represents the Fitzpatrick modifiers supported by the emojis.
  */
@@ -50,7 +52,7 @@ public enum Fitzpatrick {
 
   public static Fitzpatrick fitzpatrickFromType(String type) {
     try {
-      return Fitzpatrick.valueOf(type.toUpperCase());
+      return Fitzpatrick.valueOf(type.toUpperCase(Locale.getDefault()));
     } catch (IllegalArgumentException e) {
       return null;
     }
