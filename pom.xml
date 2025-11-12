@@ -4,7 +4,7 @@
 
     <groupId>com.vdurmont</groupId>
     <artifactId>emoji-java</artifactId>
-    <version>5.1.1</version>
+    <version>5.1.2</version>
     <packaging>jar</packaging>
 
     <name>emoji-java</name>
@@ -55,6 +55,17 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifestEntries>
+                                <Automatic-Module-Name>com.vdurmont.emoji</Automatic-Module-Name>
+                            </manifestEntries>
+                        </archive>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>cobertura-maven-plugin</artifactId>
