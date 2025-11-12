@@ -1,10 +1,8 @@
 sudo: false
 language: java
-dist: precise
+
 jdk:
-  - openjdk6
-  - oraclejdk7
-  - openjdk7
-  - oraclejdk8
+  - openjdk8
+  - openjdk11
 after_success:
   - mvn clean cobertura:cobertura coveralls:cobertura
