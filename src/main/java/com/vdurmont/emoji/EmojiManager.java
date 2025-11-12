@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Holds the loaded emojis and provides search functions.
@@ -18,6 +20,8 @@ import java.util.Set;
  */
 public class EmojiManager {
   private static final String PATH = "/emojis.json";
+  private static final String RUMOJI_PATH = "/rumojiExtendedEmojis.json";
+
   private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
     new HashMap<String, Emoji>();
   private static final Map<String, Set<Emoji>> EMOJIS_BY_TAG =
@@ -29,7 +33,11 @@ public class EmojiManager {
     try {
       InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
       List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
+      InputStream rumojiStream = EmojiLoader.class.getResourceAsStream(RUMOJI_PATH);
+      List<Emoji> rumojiEmojis = EmojiLoader.loadEmojis(rumojiStream);
+
       ALL_EMOJIS = emojis;
+      ALL_EMOJIS.addAll(rumojiEmojis);
       for (Emoji emoji : emojis) {
         for (String tag : emoji.getTags()) {
           if (EMOJIS_BY_TAG.get(tag) == null) {
