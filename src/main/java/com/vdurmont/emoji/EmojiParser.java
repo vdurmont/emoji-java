@@ -140,13 +140,21 @@ public class EmojiParser {
     int aliasEnd = input.indexOf(':', start + 2);  // Alias must be at least 1 char in length
     if (aliasEnd == -1) return null; // No alias end found
 
+    int separatorLength = 1; // length of '|'
     int fitzpatrickStart = input.indexOf('|', start + 2);
-    if (fitzpatrickStart != -1 && fitzpatrickStart < aliasEnd) {
+    int emojiEnd = aliasEnd;
+    if (fitzpatrickStart == -1) {
+      separatorLength = 2; // length of '::'
+      int deltaStart = input.indexOf("::");
+      emojiEnd = input.indexOf(':', start + 2 + deltaStart);  // Alias must be at least 1 char in length
+      fitzpatrickStart = input.indexOf("::", start + 2);
+    }
+    if (fitzpatrickStart != -1 && fitzpatrickStart < emojiEnd) {
       Emoji emoji = EmojiManager.getForAlias(input.substring(start, fitzpatrickStart));
       if (emoji == null) return null; // Not a valid alias
       if (!emoji.supportsFitzpatrick()) return null; // Fitzpatrick was specified, but the emoji does not support it
-      Fitzpatrick fitzpatrick = Fitzpatrick.fitzpatrickFromType(input.substring(fitzpatrickStart + 1, aliasEnd));
-      return new AliasCandidate(emoji, fitzpatrick, start, aliasEnd);
+      Fitzpatrick fitzpatrick = Fitzpatrick.fitzpatrickFromType(input.substring(fitzpatrickStart + separatorLength, emojiEnd));
+      return new AliasCandidate(emoji, fitzpatrick, start, emojiEnd);
     }
 
     Emoji emoji = EmojiManager.getForAlias(input.substring(start, aliasEnd));
