@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.1.2
+
+- Upgrade emoji database to Unicode 16.0 (+330 emojis)
+- Add support for almost all gemoji aliases (+742 aliases, 2711 total)
+- FE0F handled transparently: `getUnicode()` return values for existing emojis unchanged
+- `:bride_with_veil:`, `:guardsman:`, `:man_in_tuxedo:`, `:man_with_turban:`,
+  `:ok_woman:` now map to their gender-explicit ZWJ variants
+- `:jolly_roger:` / `:pirate_flag:` had an erroneous leading ♾ removed (bugfix)
+
 ## v5.1.1
 
 - Bugfix: respect fitzpatrick modifier when extracting emojis (thanks @sullis)

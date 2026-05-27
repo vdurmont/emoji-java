@@ -12,8 +12,10 @@ public class EmojiTrie {
     int maxDepth = 0;
     for (Emoji emoji : emojis) {
       Node tree = root;
-      char[] chars = emoji.getUnicode().toCharArray();
-      maxDepth = Math.max(maxDepth, chars.length);
+      // Build trie keys without variation selectors; use full unicode length for
+      // buffer sizing in getHtmlEncodedEmojiAt (which may decode FE0F entities).
+      char[] chars = emoji.getUnicode().replace("\ufe0f", "").toCharArray();
+      maxDepth = Math.max(maxDepth, emoji.getUnicode().length());
       for (char c: chars) {
         if (!tree.hasChild(c)) {
           tree.addChild(c);
@@ -64,6 +66,7 @@ public class EmojiTrie {
 
     Node tree = root;
     for (int i = start; i < end; i++) {
+      if (sequence[i] == '\ufe0f') continue;
       if (!tree.hasChild(sequence[i])) {
         return Matches.IMPOSSIBLE;
       }
@@ -91,6 +94,7 @@ public class EmojiTrie {
 
     Node tree = root;
     for (int i = 0; i < end; i++) {
+      if (sequence[i] == '\ufe0f') continue;
       if (!tree.hasChild(sequence[i])) {
         return null;
       }
