@@ -48,15 +48,21 @@ public class EmojiLoader {
   private static String inputStreamToString(
     InputStream stream
   ) throws IOException {
-    StringBuilder sb = new StringBuilder();
-    InputStreamReader isr = new InputStreamReader(stream, "UTF-8");
-    BufferedReader br = new BufferedReader(isr);
-    String read;
-    while((read = br.readLine()) != null) {
-      sb.append(read);
+    BufferedReader br = null;
+    try {
+      StringBuilder sb = new StringBuilder();
+      InputStreamReader isr = new InputStreamReader(stream, "UTF-8");
+      br = new BufferedReader(isr);
+      String read;
+      while ((read = br.readLine()) != null) {
+        sb.append(read);
+      }
+      return sb.toString();
+    } finally {
+      if (br != null) {
+        br.close();
+      }
     }
-    br.close();
-    return sb.toString();
   }
 
   protected static Emoji buildEmojiFromJSON(
@@ -67,14 +73,8 @@ public class EmojiLoader {
     }
 
     byte[] bytes = json.getString("emoji").getBytes("UTF-8");
-    String description = null;
-    if (json.has("description")) {
-      description = json.getString("description");
-    }
-    boolean supportsFitzpatrick = false;
-    if (json.has("supports_fitzpatrick")) {
-      supportsFitzpatrick = json.getBoolean("supports_fitzpatrick");
-    }
+    String description = json.optString("description", null);
+    boolean supportsFitzpatrick = json.optBoolean("supports_fitzpatrick", false);
     List<String> aliases = jsonArrayToStringList(json.getJSONArray("aliases"));
     List<String> tags = jsonArrayToStringList(json.getJSONArray("tags"));
     return new Emoji(description, supportsFitzpatrick, aliases, tags, bytes);

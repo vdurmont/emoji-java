@@ -26,31 +26,27 @@ public class EmojiManager {
   static final EmojiTrie EMOJI_TRIE;
 
   static {
+    InputStream stream = null;
     try {
-      InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
+      stream = EmojiLoader.class.getResourceAsStream(PATH);
+      if (stream == null) {
+        throw new IllegalStateException("Emoji database not found on classpath: " + PATH);
+      }
       List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
       ALL_EMOJIS = emojis;
-      for (Emoji emoji : emojis) {
-        for (String tag : emoji.getTags()) {
-          if (EMOJIS_BY_TAG.get(tag) == null) {
-            EMOJIS_BY_TAG.put(tag, new HashSet<Emoji>());
-          }
-          EMOJIS_BY_TAG.get(tag).add(emoji);
-        }
-        for (String alias : emoji.getAliases()) {
-          EMOJIS_BY_ALIAS.put(alias, emoji);
-        }
-      }
-
+      indexEmojis(emojis);
       EMOJI_TRIE = new EmojiTrie(emojis);
-      Collections.sort(ALL_EMOJIS, new Comparator<Emoji>() {
-        public int compare(Emoji e1, Emoji e2) {
-          return e2.getUnicode().length() - e1.getUnicode().length();
-        }
-      });
-      stream.close();
+      sortEmojisByUnicodeLength(ALL_EMOJIS);
     } catch (IOException e) {
       throw new RuntimeException(e);
+    } finally {
+      if (stream != null) {
+        try {
+          stream.close();
+        } catch (IOException e) {
+          // Ignore cleanup failures while loading the emoji database.
+        }
+      }
     }
   }
 
@@ -58,6 +54,36 @@ public class EmojiManager {
    * No need for a constructor, all the methods are static.
    */
   private EmojiManager() {}
+
+  private static void indexEmojis(List<Emoji> emojis) {
+    for (Emoji emoji : emojis) {
+      addEmojiToTagIndex(emoji);
+      addEmojiToAliasIndex(emoji);
+    }
+  }
+
+  private static void addEmojiToTagIndex(Emoji emoji) {
+    for (String tag : emoji.getTags()) {
+      if (EMOJIS_BY_TAG.get(tag) == null) {
+        EMOJIS_BY_TAG.put(tag, new HashSet<Emoji>());
+      }
+      EMOJIS_BY_TAG.get(tag).add(emoji);
+    }
+  }
+
+  private static void addEmojiToAliasIndex(Emoji emoji) {
+    for (String alias : emoji.getAliases()) {
+      EMOJIS_BY_ALIAS.put(alias, emoji);
+    }
+  }
+
+  private static void sortEmojisByUnicodeLength(List<Emoji> emojis) {
+    Collections.sort(emojis, new Comparator<Emoji>() {
+      public int compare(Emoji e1, Emoji e2) {
+        return e2.getUnicode().length() - e1.getUnicode().length();
+      }
+    });
+  }
 
   /**
    * Returns all the {@link com.vdurmont.emoji.Emoji}s for a given tag.
